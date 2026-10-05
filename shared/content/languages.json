@@ -1,0 +1,2224 @@
+[
+ {
+  "code": "en",
+  "name": "English",
+  "nativeName": "English",
+  "flag": "🇬🇧",
+  "ttsLocale": "en-US",
+  "enabled": true,
+  "groups": [
+   {
+    "title": "Alphabet",
+    "letters": [
+     {
+      "char": "A",
+      "sound": "ay",
+      "words": [
+       {
+        "word": "Apple",
+        "emoji": "🍎",
+        "meaning": "a red or green fruit"
+       },
+       {
+        "word": "Ant",
+        "emoji": "🐜",
+        "meaning": "a tiny insect"
+       }
+      ]
+     },
+     {
+      "char": "B",
+      "sound": "bee",
+      "words": [
+       {
+        "word": "Ball",
+        "emoji": "⚽",
+        "meaning": "a round toy to kick"
+       },
+       {
+        "word": "Bear",
+        "emoji": "🐻",
+        "meaning": "a big furry animal"
+       }
+      ]
+     },
+     {
+      "char": "C",
+      "sound": "see",
+      "words": [
+       {
+        "word": "Cat",
+        "emoji": "🐱",
+        "meaning": "a pet that says meow"
+       },
+       {
+        "word": "Car",
+        "emoji": "🚗",
+        "meaning": "a vehicle with four wheels"
+       }
+      ]
+     },
+     {
+      "char": "D",
+      "sound": "dee",
+      "words": [
+       {
+        "word": "Dog",
+        "emoji": "🐶",
+        "meaning": "a pet that says woof"
+       },
+       {
+        "word": "Duck",
+        "emoji": "🦆",
+        "meaning": "a bird that says quack"
+       }
+      ]
+     },
+     {
+      "char": "E",
+      "sound": "ee",
+      "words": [
+       {
+        "word": "Elephant",
+        "emoji": "🐘",
+        "meaning": "a huge animal with a trunk"
+       },
+       {
+        "word": "Egg",
+        "emoji": "🥚",
+        "meaning": "birds hatch from it"
+       }
+      ]
+     },
+     {
+      "char": "F",
+      "sound": "ef",
+      "words": [
+       {
+        "word": "Fish",
+        "emoji": "🐟",
+        "meaning": "it swims in water"
+       },
+       {
+        "word": "Frog",
+        "emoji": "🐸",
+        "meaning": "it hops and says ribbit"
+       }
+      ]
+     },
+     {
+      "char": "G",
+      "sound": "jee",
+      "words": [
+       {
+        "word": "Grapes",
+        "emoji": "🍇",
+        "meaning": "small sweet fruits"
+       },
+       {
+        "word": "Giraffe",
+        "emoji": "🦒",
+        "meaning": "the tallest animal"
+       }
+      ]
+     },
+     {
+      "char": "H",
+      "sound": "aych",
+      "words": [
+       {
+        "word": "Hat",
+        "emoji": "🎩",
+        "meaning": "you wear it on your head"
+       },
+       {
+        "word": "Horse",
+        "emoji": "🐴",
+        "meaning": "an animal you can ride"
+       }
+      ]
+     },
+     {
+      "char": "I",
+      "sound": "eye",
+      "words": [
+       {
+        "word": "Ice cream",
+        "emoji": "🍦",
+        "meaning": "a cold sweet treat"
+       },
+       {
+        "word": "Island",
+        "emoji": "🏝️",
+        "meaning": "land with water all around"
+       }
+      ]
+     },
+     {
+      "char": "J",
+      "sound": "jay",
+      "words": [
+       {
+        "word": "Juice",
+        "emoji": "🧃",
+        "meaning": "a fruity drink"
+       },
+       {
+        "word": "Jet",
+        "emoji": "✈️",
+        "meaning": "a very fast airplane"
+       }
+      ]
+     },
+     {
+      "char": "K",
+      "sound": "kay",
+      "words": [
+       {
+        "word": "Kite",
+        "emoji": "🪁",
+        "meaning": "it flies in the wind"
+       },
+       {
+        "word": "Koala",
+        "emoji": "🐨",
+        "meaning": "a sleepy tree animal"
+       }
+      ]
+     },
+     {
+      "char": "L",
+      "sound": "el",
+      "words": [
+       {
+        "word": "Lion",
+        "emoji": "🦁",
+        "meaning": "the king of the jungle"
+       },
+       {
+        "word": "Lemon",
+        "emoji": "🍋",
+        "meaning": "a sour yellow fruit"
+       }
+      ]
+     },
+     {
+      "char": "M",
+      "sound": "em",
+      "words": [
+       {
+        "word": "Monkey",
+        "emoji": "🐒",
+        "meaning": "it loves bananas"
+       },
+       {
+        "word": "Moon",
+        "emoji": "🌙",
+        "meaning": "it shines at night"
+       }
+      ]
+     },
+     {
+      "char": "N",
+      "sound": "en",
+      "words": [
+       {
+        "word": "Nose",
+        "emoji": "👃",
+        "meaning": "you smell with it"
+       },
+       {
+        "word": "Nut",
+        "emoji": "🥜",
+        "meaning": "a crunchy snack"
+       }
+      ]
+     },
+     {
+      "char": "O",
+      "sound": "oh",
+      "words": [
+       {
+        "word": "Orange",
+        "emoji": "🍊",
+        "meaning": "a juicy round fruit"
+       },
+       {
+        "word": "Owl",
+        "emoji": "🦉",
+        "meaning": "a bird awake at night"
+       }
+      ]
+     },
+     {
+      "char": "P",
+      "sound": "pee",
+      "words": [
+       {
+        "word": "Panda",
+        "emoji": "🐼",
+        "meaning": "a black and white bear"
+       },
+       {
+        "word": "Pizza",
+        "emoji": "🍕",
+        "meaning": "a yummy round food"
+       }
+      ]
+     },
+     {
+      "char": "Q",
+      "sound": "kyoo",
+      "words": [
+       {
+        "word": "Queen",
+        "emoji": "👸",
+        "meaning": "she wears a crown"
+       },
+       {
+        "word": "Question",
+        "emoji": "❓",
+        "meaning": "something you ask"
+       }
+      ]
+     },
+     {
+      "char": "R",
+      "sound": "ar",
+      "words": [
+       {
+        "word": "Rabbit",
+        "emoji": "🐰",
+        "meaning": "it has long ears"
+       },
+       {
+        "word": "Rainbow",
+        "emoji": "🌈",
+        "meaning": "colors in the sky"
+       }
+      ]
+     },
+     {
+      "char": "S",
+      "sound": "es",
+      "words": [
+       {
+        "word": "Sun",
+        "emoji": "☀️",
+        "meaning": "it gives us light"
+       },
+       {
+        "word": "Star",
+        "emoji": "⭐",
+        "meaning": "it twinkles at night"
+       }
+      ]
+     },
+     {
+      "char": "T",
+      "sound": "tee",
+      "words": [
+       {
+        "word": "Tiger",
+        "emoji": "🐯",
+        "meaning": "a big striped cat"
+       },
+       {
+        "word": "Train",
+        "emoji": "🚂",
+        "meaning": "it runs on tracks"
+       }
+      ]
+     },
+     {
+      "char": "U",
+      "sound": "yoo",
+      "words": [
+       {
+        "word": "Umbrella",
+        "emoji": "☂️",
+        "meaning": "it keeps you dry"
+       },
+       {
+        "word": "Unicorn",
+        "emoji": "🦄",
+        "meaning": "a magical horse"
+       }
+      ]
+     },
+     {
+      "char": "V",
+      "sound": "vee",
+      "words": [
+       {
+        "word": "Violin",
+        "emoji": "🎻",
+        "meaning": "a musical instrument"
+       },
+       {
+        "word": "Volcano",
+        "emoji": "🌋",
+        "meaning": "a fiery mountain"
+       }
+      ]
+     },
+     {
+      "char": "W",
+      "sound": "double-yoo",
+      "words": [
+       {
+        "word": "Whale",
+        "emoji": "🐳",
+        "meaning": "the biggest sea animal"
+       },
+       {
+        "word": "Watch",
+        "emoji": "⌚",
+        "meaning": "it tells the time"
+       }
+      ]
+     },
+     {
+      "char": "X",
+      "sound": "ex",
+      "words": [
+       {
+        "word": "Xylophone",
+        "emoji": "🎼",
+        "meaning": "you tap it to make music"
+       },
+       {
+        "word": "X-ray",
+        "emoji": "🩻",
+        "meaning": "a photo of your bones"
+       }
+      ]
+     },
+     {
+      "char": "Y",
+      "sound": "why",
+      "words": [
+       {
+        "word": "Yo-yo",
+        "emoji": "🪀",
+        "meaning": "a toy on a string"
+       },
+       {
+        "word": "Yak",
+        "emoji": "🐃",
+        "meaning": "a hairy mountain animal"
+       }
+      ]
+     },
+     {
+      "char": "Z",
+      "sound": "zee",
+      "words": [
+       {
+        "word": "Zebra",
+        "emoji": "🦓",
+        "meaning": "a horse with stripes"
+       },
+       {
+        "word": "Zoo",
+        "emoji": "🏞️",
+        "meaning": "a place to see animals"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "code": "bn",
+  "name": "Bangla",
+  "nativeName": "বাংলা",
+  "flag": "🇧🇩",
+  "ttsLocale": "bn-BD",
+  "enabled": true,
+  "groups": [
+   {
+    "title": "স্বরবর্ণ (Vowels)",
+    "letters": [
+     {
+      "char": "অ",
+      "sound": "ô",
+      "words": [
+       {
+        "word": "অজগর",
+        "emoji": "🐍",
+        "meaning": "python"
+       }
+      ]
+     },
+     {
+      "char": "আ",
+      "sound": "a",
+      "words": [
+       {
+        "word": "আম",
+        "emoji": "🥭",
+        "meaning": "mango"
+       }
+      ]
+     },
+     {
+      "char": "ই",
+      "sound": "i",
+      "words": [
+       {
+        "word": "ইঁদুর",
+        "emoji": "🐭",
+        "meaning": "mouse"
+       }
+      ]
+     },
+     {
+      "char": "ঈ",
+      "sound": "ee",
+      "words": [
+       {
+        "word": "ঈগল",
+        "emoji": "🦅",
+        "meaning": "eagle"
+       }
+      ]
+     },
+     {
+      "char": "উ",
+      "sound": "u",
+      "words": [
+       {
+        "word": "উট",
+        "emoji": "🐫",
+        "meaning": "camel"
+       }
+      ]
+     },
+     {
+      "char": "ঊ",
+      "sound": "oo",
+      "words": [
+       {
+        "word": "ঊষা",
+        "emoji": "🌅",
+        "meaning": "dawn"
+       }
+      ]
+     },
+     {
+      "char": "ঋ",
+      "sound": "ri",
+      "words": [
+       {
+        "word": "ঋষি",
+        "emoji": "🧙",
+        "meaning": "sage"
+       }
+      ]
+     },
+     {
+      "char": "এ",
+      "sound": "e",
+      "words": [
+       {
+        "word": "একতারা",
+        "emoji": "🪕",
+        "meaning": "one-string instrument"
+       }
+      ]
+     },
+     {
+      "char": "ঐ",
+      "sound": "oi",
+      "words": [
+       {
+        "word": "ঐরাবত",
+        "emoji": "🐘",
+        "meaning": "royal elephant"
+       }
+      ]
+     },
+     {
+      "char": "ও",
+      "sound": "o",
+      "words": [
+       {
+        "word": "ওল",
+        "emoji": "🥔",
+        "meaning": "yam"
+       }
+      ]
+     },
+     {
+      "char": "ঔ",
+      "sound": "ou",
+      "words": [
+       {
+        "word": "ঔষধ",
+        "emoji": "💊",
+        "meaning": "medicine"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "ব্যঞ্জনবর্ণ (Consonants)",
+    "letters": [
+     {
+      "char": "ক",
+      "sound": "ko",
+      "words": [
+       {
+        "word": "কলা",
+        "emoji": "🍌",
+        "meaning": "banana"
+       }
+      ]
+     },
+     {
+      "char": "খ",
+      "sound": "kho",
+      "words": [
+       {
+        "word": "খরগোশ",
+        "emoji": "🐇",
+        "meaning": "rabbit"
+       }
+      ]
+     },
+     {
+      "char": "গ",
+      "sound": "go",
+      "words": [
+       {
+        "word": "গরু",
+        "emoji": "🐄",
+        "meaning": "cow"
+       }
+      ]
+     },
+     {
+      "char": "ঘ",
+      "sound": "gho",
+      "words": [
+       {
+        "word": "ঘড়ি",
+        "emoji": "⏰",
+        "meaning": "clock"
+       }
+      ]
+     },
+     {
+      "char": "ঙ",
+      "sound": "ngo",
+      "words": [
+       {
+        "word": "ব্যাঙ",
+        "emoji": "🐸",
+        "meaning": "frog"
+       }
+      ]
+     },
+     {
+      "char": "চ",
+      "sound": "cho",
+      "words": [
+       {
+        "word": "চাঁদ",
+        "emoji": "🌙",
+        "meaning": "moon"
+       }
+      ]
+     },
+     {
+      "char": "ছ",
+      "sound": "chho",
+      "words": [
+       {
+        "word": "ছাতা",
+        "emoji": "☂️",
+        "meaning": "umbrella"
+       }
+      ]
+     },
+     {
+      "char": "জ",
+      "sound": "jo",
+      "words": [
+       {
+        "word": "জাহাজ",
+        "emoji": "🚢",
+        "meaning": "ship"
+       }
+      ]
+     },
+     {
+      "char": "ঝ",
+      "sound": "jho",
+      "words": [
+       {
+        "word": "ঝুড়ি",
+        "emoji": "🧺",
+        "meaning": "basket"
+       }
+      ]
+     },
+     {
+      "char": "ঞ",
+      "sound": "yo",
+      "words": [
+       {
+        "word": "মিঞা",
+        "emoji": "👨",
+        "meaning": "gentleman"
+       }
+      ]
+     },
+     {
+      "char": "ট",
+      "sound": "to",
+      "words": [
+       {
+        "word": "টমেটো",
+        "emoji": "🍅",
+        "meaning": "tomato"
+       }
+      ]
+     },
+     {
+      "char": "ঠ",
+      "sound": "tho",
+      "words": [
+       {
+        "word": "ঠোঁট",
+        "emoji": "👄",
+        "meaning": "lips"
+       }
+      ]
+     },
+     {
+      "char": "ড",
+      "sound": "do",
+      "words": [
+       {
+        "word": "ডাব",
+        "emoji": "🥥",
+        "meaning": "green coconut"
+       }
+      ]
+     },
+     {
+      "char": "ঢ",
+      "sound": "dho",
+      "words": [
+       {
+        "word": "ঢোল",
+        "emoji": "🥁",
+        "meaning": "drum"
+       }
+      ]
+     },
+     {
+      "char": "ণ",
+      "sound": "no",
+      "words": [
+       {
+        "word": "হরিণ",
+        "emoji": "🦌",
+        "meaning": "deer"
+       }
+      ]
+     },
+     {
+      "char": "ত",
+      "sound": "to",
+      "words": [
+       {
+        "word": "তরমুজ",
+        "emoji": "🍉",
+        "meaning": "watermelon"
+       }
+      ]
+     },
+     {
+      "char": "থ",
+      "sound": "tho",
+      "words": [
+       {
+        "word": "থালা",
+        "emoji": "🍽️",
+        "meaning": "plate"
+       }
+      ]
+     },
+     {
+      "char": "দ",
+      "sound": "do",
+      "words": [
+       {
+        "word": "দরজা",
+        "emoji": "🚪",
+        "meaning": "door"
+       }
+      ]
+     },
+     {
+      "char": "ধ",
+      "sound": "dho",
+      "words": [
+       {
+        "word": "ধান",
+        "emoji": "🌾",
+        "meaning": "paddy (rice plant)"
+       }
+      ]
+     },
+     {
+      "char": "ন",
+      "sound": "no",
+      "words": [
+       {
+        "word": "নৌকা",
+        "emoji": "⛵",
+        "meaning": "boat"
+       }
+      ]
+     },
+     {
+      "char": "প",
+      "sound": "po",
+      "words": [
+       {
+        "word": "পাখি",
+        "emoji": "🐦",
+        "meaning": "bird"
+       }
+      ]
+     },
+     {
+      "char": "ফ",
+      "sound": "pho",
+      "words": [
+       {
+        "word": "ফুল",
+        "emoji": "🌸",
+        "meaning": "flower"
+       }
+      ]
+     },
+     {
+      "char": "ব",
+      "sound": "bo",
+      "words": [
+       {
+        "word": "বল",
+        "emoji": "⚽",
+        "meaning": "ball"
+       }
+      ]
+     },
+     {
+      "char": "ভ",
+      "sound": "bho",
+      "words": [
+       {
+        "word": "ভালুক",
+        "emoji": "🐻",
+        "meaning": "bear"
+       }
+      ]
+     },
+     {
+      "char": "ম",
+      "sound": "mo",
+      "words": [
+       {
+        "word": "মাছ",
+        "emoji": "🐟",
+        "meaning": "fish"
+       }
+      ]
+     },
+     {
+      "char": "য",
+      "sound": "jo",
+      "words": [
+       {
+        "word": "যাদুঘর",
+        "emoji": "🏛️",
+        "meaning": "museum"
+       }
+      ]
+     },
+     {
+      "char": "র",
+      "sound": "ro",
+      "words": [
+       {
+        "word": "রংধনু",
+        "emoji": "🌈",
+        "meaning": "rainbow"
+       }
+      ]
+     },
+     {
+      "char": "ল",
+      "sound": "lo",
+      "words": [
+       {
+        "word": "লাটিম",
+        "emoji": "🪀",
+        "meaning": "spinning top"
+       }
+      ]
+     },
+     {
+      "char": "শ",
+      "sound": "sho",
+      "words": [
+       {
+        "word": "শাপলা",
+        "emoji": "🪷",
+        "meaning": "water lily"
+       }
+      ]
+     },
+     {
+      "char": "ষ",
+      "sound": "sho",
+      "words": [
+       {
+        "word": "ষাঁড়",
+        "emoji": "🐂",
+        "meaning": "bull"
+       }
+      ]
+     },
+     {
+      "char": "স",
+      "sound": "sho",
+      "words": [
+       {
+        "word": "সূর্য",
+        "emoji": "☀️",
+        "meaning": "sun"
+       }
+      ]
+     },
+     {
+      "char": "হ",
+      "sound": "ho",
+      "words": [
+       {
+        "word": "হাতি",
+        "emoji": "🐘",
+        "meaning": "elephant"
+       }
+      ]
+     },
+     {
+      "char": "ড়",
+      "sound": "ro",
+      "words": [
+       {
+        "word": "পাহাড়",
+        "emoji": "⛰️",
+        "meaning": "mountain"
+       }
+      ]
+     },
+     {
+      "char": "ঢ়",
+      "sound": "rho",
+      "words": [
+       {
+        "word": "আষাঢ়",
+        "emoji": "🌧️",
+        "meaning": "rainy month"
+       }
+      ]
+     },
+     {
+      "char": "য়",
+      "sound": "yo",
+      "words": [
+       {
+        "word": "ময়ূর",
+        "emoji": "🦚",
+        "meaning": "peacock"
+       }
+      ]
+     },
+     {
+      "char": "ৎ",
+      "sound": "t",
+      "words": [
+       {
+        "word": "উৎসব",
+        "emoji": "🎉",
+        "meaning": "festival"
+       }
+      ]
+     },
+     {
+      "char": "ং",
+      "sound": "ng",
+      "words": [
+       {
+        "word": "রং",
+        "emoji": "🎨",
+        "meaning": "color"
+       }
+      ]
+     },
+     {
+      "char": "ঃ",
+      "sound": "h",
+      "words": [
+       {
+        "word": "দুঃখ",
+        "emoji": "😢",
+        "meaning": "sadness"
+       }
+      ]
+     },
+     {
+      "char": "ঁ",
+      "sound": "n (nasal)",
+      "words": [
+       {
+        "word": "চাঁদ",
+        "emoji": "🌙",
+        "meaning": "moon"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "সংখ্যা (Numbers)",
+    "letters": [
+     {
+      "char": "০",
+      "sound": "shunno",
+      "words": [
+       {
+        "word": "শূন্য",
+        "emoji": "0️⃣",
+        "meaning": "zero"
+       }
+      ]
+     },
+     {
+      "char": "১",
+      "sound": "ek",
+      "words": [
+       {
+        "word": "এক",
+        "emoji": "1️⃣",
+        "meaning": "one"
+       }
+      ]
+     },
+     {
+      "char": "২",
+      "sound": "dui",
+      "words": [
+       {
+        "word": "দুই",
+        "emoji": "2️⃣",
+        "meaning": "two"
+       }
+      ]
+     },
+     {
+      "char": "৩",
+      "sound": "tin",
+      "words": [
+       {
+        "word": "তিন",
+        "emoji": "3️⃣",
+        "meaning": "three"
+       }
+      ]
+     },
+     {
+      "char": "৪",
+      "sound": "char",
+      "words": [
+       {
+        "word": "চার",
+        "emoji": "4️⃣",
+        "meaning": "four"
+       }
+      ]
+     },
+     {
+      "char": "৫",
+      "sound": "pach",
+      "words": [
+       {
+        "word": "পাঁচ",
+        "emoji": "5️⃣",
+        "meaning": "five"
+       }
+      ]
+     },
+     {
+      "char": "৬",
+      "sound": "chhoy",
+      "words": [
+       {
+        "word": "ছয়",
+        "emoji": "6️⃣",
+        "meaning": "six"
+       }
+      ]
+     },
+     {
+      "char": "৭",
+      "sound": "shat",
+      "words": [
+       {
+        "word": "সাত",
+        "emoji": "7️⃣",
+        "meaning": "seven"
+       }
+      ]
+     },
+     {
+      "char": "৮",
+      "sound": "at",
+      "words": [
+       {
+        "word": "আট",
+        "emoji": "8️⃣",
+        "meaning": "eight"
+       }
+      ]
+     },
+     {
+      "char": "৯",
+      "sound": "noy",
+      "words": [
+       {
+        "word": "নয়",
+        "emoji": "9️⃣",
+        "meaning": "nine"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "code": "es",
+  "name": "Spanish",
+  "nativeName": "Español",
+  "flag": "🇪🇸",
+  "ttsLocale": "es-ES",
+  "enabled": true,
+  "groups": [
+   {
+    "title": "Alfabeto",
+    "letters": [
+     {
+      "char": "A",
+      "sound": "a",
+      "words": [
+       {
+        "word": "Abeja",
+        "emoji": "🐝",
+        "meaning": "bee"
+       }
+      ]
+     },
+     {
+      "char": "B",
+      "sound": "be",
+      "words": [
+       {
+        "word": "Barco",
+        "emoji": "⛵",
+        "meaning": "boat"
+       }
+      ]
+     },
+     {
+      "char": "C",
+      "sound": "ce",
+      "words": [
+       {
+        "word": "Casa",
+        "emoji": "🏠",
+        "meaning": "house"
+       }
+      ]
+     },
+     {
+      "char": "D",
+      "sound": "de",
+      "words": [
+       {
+        "word": "Dinosaurio",
+        "emoji": "🦕",
+        "meaning": "dinosaur"
+       }
+      ]
+     },
+     {
+      "char": "E",
+      "sound": "e",
+      "words": [
+       {
+        "word": "Elefante",
+        "emoji": "🐘",
+        "meaning": "elephant"
+       }
+      ]
+     },
+     {
+      "char": "F",
+      "sound": "efe",
+      "words": [
+       {
+        "word": "Flor",
+        "emoji": "🌸",
+        "meaning": "flower"
+       }
+      ]
+     },
+     {
+      "char": "G",
+      "sound": "ge",
+      "words": [
+       {
+        "word": "Gato",
+        "emoji": "🐱",
+        "meaning": "cat"
+       }
+      ]
+     },
+     {
+      "char": "H",
+      "sound": "hache",
+      "words": [
+       {
+        "word": "Helado",
+        "emoji": "🍦",
+        "meaning": "ice cream"
+       }
+      ]
+     },
+     {
+      "char": "I",
+      "sound": "i",
+      "words": [
+       {
+        "word": "Isla",
+        "emoji": "🏝️",
+        "meaning": "island"
+       }
+      ]
+     },
+     {
+      "char": "J",
+      "sound": "jota",
+      "words": [
+       {
+        "word": "Jirafa",
+        "emoji": "🦒",
+        "meaning": "giraffe"
+       }
+      ]
+     },
+     {
+      "char": "K",
+      "sound": "ka",
+      "words": [
+       {
+        "word": "Koala",
+        "emoji": "🐨",
+        "meaning": "koala"
+       }
+      ]
+     },
+     {
+      "char": "L",
+      "sound": "ele",
+      "words": [
+       {
+        "word": "León",
+        "emoji": "🦁",
+        "meaning": "lion"
+       }
+      ]
+     },
+     {
+      "char": "M",
+      "sound": "eme",
+      "words": [
+       {
+        "word": "Manzana",
+        "emoji": "🍎",
+        "meaning": "apple"
+       }
+      ]
+     },
+     {
+      "char": "N",
+      "sound": "ene",
+      "words": [
+       {
+        "word": "Nube",
+        "emoji": "☁️",
+        "meaning": "cloud"
+       }
+      ]
+     },
+     {
+      "char": "Ñ",
+      "sound": "eñe",
+      "words": [
+       {
+        "word": "Ñandú",
+        "emoji": "🐦",
+        "meaning": "rhea (a big bird)"
+       }
+      ]
+     },
+     {
+      "char": "O",
+      "sound": "o",
+      "words": [
+       {
+        "word": "Oso",
+        "emoji": "🐻",
+        "meaning": "bear"
+       }
+      ]
+     },
+     {
+      "char": "P",
+      "sound": "pe",
+      "words": [
+       {
+        "word": "Pato",
+        "emoji": "🦆",
+        "meaning": "duck"
+       }
+      ]
+     },
+     {
+      "char": "Q",
+      "sound": "cu",
+      "words": [
+       {
+        "word": "Queso",
+        "emoji": "🧀",
+        "meaning": "cheese"
+       }
+      ]
+     },
+     {
+      "char": "R",
+      "sound": "erre",
+      "words": [
+       {
+        "word": "Ratón",
+        "emoji": "🐭",
+        "meaning": "mouse"
+       }
+      ]
+     },
+     {
+      "char": "S",
+      "sound": "ese",
+      "words": [
+       {
+        "word": "Sol",
+        "emoji": "☀️",
+        "meaning": "sun"
+       }
+      ]
+     },
+     {
+      "char": "T",
+      "sound": "te",
+      "words": [
+       {
+        "word": "Tortuga",
+        "emoji": "🐢",
+        "meaning": "turtle"
+       }
+      ]
+     },
+     {
+      "char": "U",
+      "sound": "u",
+      "words": [
+       {
+        "word": "Uva",
+        "emoji": "🍇",
+        "meaning": "grape"
+       }
+      ]
+     },
+     {
+      "char": "V",
+      "sound": "uve",
+      "words": [
+       {
+        "word": "Vaca",
+        "emoji": "🐄",
+        "meaning": "cow"
+       }
+      ]
+     },
+     {
+      "char": "W",
+      "sound": "uve doble",
+      "words": [
+       {
+        "word": "Wafle",
+        "emoji": "🧇",
+        "meaning": "waffle"
+       }
+      ]
+     },
+     {
+      "char": "X",
+      "sound": "equis",
+      "words": [
+       {
+        "word": "Xilófono",
+        "emoji": "🎼",
+        "meaning": "xylophone"
+       }
+      ]
+     },
+     {
+      "char": "Y",
+      "sound": "ye",
+      "words": [
+       {
+        "word": "Yoyó",
+        "emoji": "🪀",
+        "meaning": "yo-yo"
+       }
+      ]
+     },
+     {
+      "char": "Z",
+      "sound": "zeta",
+      "words": [
+       {
+        "word": "Zapato",
+        "emoji": "👟",
+        "meaning": "shoe"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "code": "fr",
+  "name": "French",
+  "nativeName": "Français",
+  "flag": "🇫🇷",
+  "ttsLocale": "fr-FR",
+  "enabled": true,
+  "groups": [
+   {
+    "title": "Alphabet",
+    "letters": [
+     {
+      "char": "A",
+      "sound": "a",
+      "words": [
+       {
+        "word": "Avion",
+        "emoji": "✈️",
+        "meaning": "airplane"
+       }
+      ]
+     },
+     {
+      "char": "B",
+      "sound": "bé",
+      "words": [
+       {
+        "word": "Ballon",
+        "emoji": "🎈",
+        "meaning": "balloon"
+       }
+      ]
+     },
+     {
+      "char": "C",
+      "sound": "cé",
+      "words": [
+       {
+        "word": "Chat",
+        "emoji": "🐱",
+        "meaning": "cat"
+       }
+      ]
+     },
+     {
+      "char": "D",
+      "sound": "dé",
+      "words": [
+       {
+        "word": "Dauphin",
+        "emoji": "🐬",
+        "meaning": "dolphin"
+       }
+      ]
+     },
+     {
+      "char": "E",
+      "sound": "e",
+      "words": [
+       {
+        "word": "Éléphant",
+        "emoji": "🐘",
+        "meaning": "elephant"
+       }
+      ]
+     },
+     {
+      "char": "F",
+      "sound": "effe",
+      "words": [
+       {
+        "word": "Fraise",
+        "emoji": "🍓",
+        "meaning": "strawberry"
+       }
+      ]
+     },
+     {
+      "char": "G",
+      "sound": "gé",
+      "words": [
+       {
+        "word": "Girafe",
+        "emoji": "🦒",
+        "meaning": "giraffe"
+       }
+      ]
+     },
+     {
+      "char": "H",
+      "sound": "ache",
+      "words": [
+       {
+        "word": "Hibou",
+        "emoji": "🦉",
+        "meaning": "owl"
+       }
+      ]
+     },
+     {
+      "char": "I",
+      "sound": "i",
+      "words": [
+       {
+        "word": "Île",
+        "emoji": "🏝️",
+        "meaning": "island"
+       }
+      ]
+     },
+     {
+      "char": "J",
+      "sound": "ji",
+      "words": [
+       {
+        "word": "Jus",
+        "emoji": "🧃",
+        "meaning": "juice"
+       }
+      ]
+     },
+     {
+      "char": "K",
+      "sound": "ka",
+      "words": [
+       {
+        "word": "Kangourou",
+        "emoji": "🦘",
+        "meaning": "kangaroo"
+       }
+      ]
+     },
+     {
+      "char": "L",
+      "sound": "elle",
+      "words": [
+       {
+        "word": "Lion",
+        "emoji": "🦁",
+        "meaning": "lion"
+       }
+      ]
+     },
+     {
+      "char": "M",
+      "sound": "emme",
+      "words": [
+       {
+        "word": "Maison",
+        "emoji": "🏠",
+        "meaning": "house"
+       }
+      ]
+     },
+     {
+      "char": "N",
+      "sound": "enne",
+      "words": [
+       {
+        "word": "Nuage",
+        "emoji": "☁️",
+        "meaning": "cloud"
+       }
+      ]
+     },
+     {
+      "char": "O",
+      "sound": "o",
+      "words": [
+       {
+        "word": "Orange",
+        "emoji": "🍊",
+        "meaning": "orange"
+       }
+      ]
+     },
+     {
+      "char": "P",
+      "sound": "pé",
+      "words": [
+       {
+        "word": "Pomme",
+        "emoji": "🍎",
+        "meaning": "apple"
+       }
+      ]
+     },
+     {
+      "char": "Q",
+      "sound": "ku",
+      "words": [
+       {
+        "word": "Quatre",
+        "emoji": "4️⃣",
+        "meaning": "four"
+       }
+      ]
+     },
+     {
+      "char": "R",
+      "sound": "erre",
+      "words": [
+       {
+        "word": "Renard",
+        "emoji": "🦊",
+        "meaning": "fox"
+       }
+      ]
+     },
+     {
+      "char": "S",
+      "sound": "esse",
+      "words": [
+       {
+        "word": "Soleil",
+        "emoji": "☀️",
+        "meaning": "sun"
+       }
+      ]
+     },
+     {
+      "char": "T",
+      "sound": "té",
+      "words": [
+       {
+        "word": "Tortue",
+        "emoji": "🐢",
+        "meaning": "turtle"
+       }
+      ]
+     },
+     {
+      "char": "U",
+      "sound": "u",
+      "words": [
+       {
+        "word": "Univers",
+        "emoji": "🌌",
+        "meaning": "universe"
+       }
+      ]
+     },
+     {
+      "char": "V",
+      "sound": "vé",
+      "words": [
+       {
+        "word": "Vache",
+        "emoji": "🐄",
+        "meaning": "cow"
+       }
+      ]
+     },
+     {
+      "char": "W",
+      "sound": "double vé",
+      "words": [
+       {
+        "word": "Wagon",
+        "emoji": "🚃",
+        "meaning": "train car"
+       }
+      ]
+     },
+     {
+      "char": "X",
+      "sound": "ixe",
+      "words": [
+       {
+        "word": "Xylophone",
+        "emoji": "🎼",
+        "meaning": "xylophone"
+       }
+      ]
+     },
+     {
+      "char": "Y",
+      "sound": "i grec",
+      "words": [
+       {
+        "word": "Yaourt",
+        "emoji": "🥛",
+        "meaning": "yogurt"
+       }
+      ]
+     },
+     {
+      "char": "Z",
+      "sound": "zède",
+      "words": [
+       {
+        "word": "Zèbre",
+        "emoji": "🦓",
+        "meaning": "zebra"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "code": "hi",
+  "name": "Hindi",
+  "nativeName": "हिन्दी",
+  "flag": "🇮🇳",
+  "ttsLocale": "hi-IN",
+  "enabled": true,
+  "groups": [
+   {
+    "title": "स्वर (Vowels)",
+    "letters": [
+     {
+      "char": "अ",
+      "sound": "a",
+      "words": [
+       {
+        "word": "अनार",
+        "emoji": "🍎",
+        "meaning": "pomegranate"
+       }
+      ]
+     },
+     {
+      "char": "आ",
+      "sound": "aa",
+      "words": [
+       {
+        "word": "आम",
+        "emoji": "🥭",
+        "meaning": "mango"
+       }
+      ]
+     },
+     {
+      "char": "इ",
+      "sound": "i",
+      "words": [
+       {
+        "word": "इमली",
+        "emoji": "🌰",
+        "meaning": "tamarind"
+       }
+      ]
+     },
+     {
+      "char": "ई",
+      "sound": "ee",
+      "words": [
+       {
+        "word": "ईख",
+        "emoji": "🎋",
+        "meaning": "sugarcane"
+       }
+      ]
+     },
+     {
+      "char": "उ",
+      "sound": "u",
+      "words": [
+       {
+        "word": "उल्लू",
+        "emoji": "🦉",
+        "meaning": "owl"
+       }
+      ]
+     },
+     {
+      "char": "ऊ",
+      "sound": "oo",
+      "words": [
+       {
+        "word": "ऊन",
+        "emoji": "🧶",
+        "meaning": "wool"
+       }
+      ]
+     },
+     {
+      "char": "ऋ",
+      "sound": "ri",
+      "words": [
+       {
+        "word": "ऋषि",
+        "emoji": "🧙",
+        "meaning": "sage"
+       }
+      ]
+     },
+     {
+      "char": "ए",
+      "sound": "e",
+      "words": [
+       {
+        "word": "एड़ी",
+        "emoji": "🦶",
+        "meaning": "heel"
+       }
+      ]
+     },
+     {
+      "char": "ऐ",
+      "sound": "ai",
+      "words": [
+       {
+        "word": "ऐनक",
+        "emoji": "👓",
+        "meaning": "spectacles"
+       }
+      ]
+     },
+     {
+      "char": "ओ",
+      "sound": "o",
+      "words": [
+       {
+        "word": "ओखली",
+        "emoji": "🥣",
+        "meaning": "mortar"
+       }
+      ]
+     },
+     {
+      "char": "औ",
+      "sound": "au",
+      "words": [
+       {
+        "word": "औरत",
+        "emoji": "👩",
+        "meaning": "woman"
+       }
+      ]
+     },
+     {
+      "char": "अं",
+      "sound": "am",
+      "words": [
+       {
+        "word": "अंगूर",
+        "emoji": "🍇",
+        "meaning": "grapes"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "व्यंजन (Consonants)",
+    "letters": [
+     {
+      "char": "क",
+      "sound": "ka",
+      "words": [
+       {
+        "word": "कबूतर",
+        "emoji": "🕊️",
+        "meaning": "pigeon"
+       }
+      ]
+     },
+     {
+      "char": "ख",
+      "sound": "kha",
+      "words": [
+       {
+        "word": "खरगोश",
+        "emoji": "🐇",
+        "meaning": "rabbit"
+       }
+      ]
+     },
+     {
+      "char": "ग",
+      "sound": "ga",
+      "words": [
+       {
+        "word": "गमला",
+        "emoji": "🪴",
+        "meaning": "flower pot"
+       }
+      ]
+     },
+     {
+      "char": "घ",
+      "sound": "gha",
+      "words": [
+       {
+        "word": "घड़ी",
+        "emoji": "⏰",
+        "meaning": "clock"
+       }
+      ]
+     },
+     {
+      "char": "च",
+      "sound": "cha",
+      "words": [
+       {
+        "word": "चम्मच",
+        "emoji": "🥄",
+        "meaning": "spoon"
+       }
+      ]
+     },
+     {
+      "char": "छ",
+      "sound": "chha",
+      "words": [
+       {
+        "word": "छतरी",
+        "emoji": "☂️",
+        "meaning": "umbrella"
+       }
+      ]
+     },
+     {
+      "char": "ज",
+      "sound": "ja",
+      "words": [
+       {
+        "word": "जहाज़",
+        "emoji": "🚢",
+        "meaning": "ship"
+       }
+      ]
+     },
+     {
+      "char": "झ",
+      "sound": "jha",
+      "words": [
+       {
+        "word": "झंडा",
+        "emoji": "🚩",
+        "meaning": "flag"
+       }
+      ]
+     },
+     {
+      "char": "ट",
+      "sound": "ta",
+      "words": [
+       {
+        "word": "टमाटर",
+        "emoji": "🍅",
+        "meaning": "tomato"
+       }
+      ]
+     },
+     {
+      "char": "ठ",
+      "sound": "tha",
+      "words": [
+       {
+        "word": "ठेला",
+        "emoji": "🛒",
+        "meaning": "hand cart"
+       }
+      ]
+     },
+     {
+      "char": "ड",
+      "sound": "da",
+      "words": [
+       {
+        "word": "डमरू",
+        "emoji": "🥁",
+        "meaning": "small drum"
+       }
+      ]
+     },
+     {
+      "char": "ढ",
+      "sound": "dha",
+      "words": [
+       {
+        "word": "ढोलक",
+        "emoji": "🪘",
+        "meaning": "drum"
+       }
+      ]
+     },
+     {
+      "char": "ण",
+      "sound": "na",
+      "words": [
+       {
+        "word": "बाण",
+        "emoji": "🏹",
+        "meaning": "arrow"
+       }
+      ]
+     },
+     {
+      "char": "त",
+      "sound": "ta",
+      "words": [
+       {
+        "word": "तरबूज़",
+        "emoji": "🍉",
+        "meaning": "watermelon"
+       }
+      ]
+     },
+     {
+      "char": "थ",
+      "sound": "tha",
+      "words": [
+       {
+        "word": "थाली",
+        "emoji": "🍽️",
+        "meaning": "plate"
+       }
+      ]
+     },
+     {
+      "char": "द",
+      "sound": "da",
+      "words": [
+       {
+        "word": "दरवाज़ा",
+        "emoji": "🚪",
+        "meaning": "door"
+       }
+      ]
+     },
+     {
+      "char": "ध",
+      "sound": "dha",
+      "words": [
+       {
+        "word": "धनुष",
+        "emoji": "🏹",
+        "meaning": "bow"
+       }
+      ]
+     },
+     {
+      "char": "न",
+      "sound": "na",
+      "words": [
+       {
+        "word": "नल",
+        "emoji": "🚰",
+        "meaning": "tap"
+       }
+      ]
+     },
+     {
+      "char": "प",
+      "sound": "pa",
+      "words": [
+       {
+        "word": "पतंग",
+        "emoji": "🪁",
+        "meaning": "kite"
+       }
+      ]
+     },
+     {
+      "char": "फ",
+      "sound": "pha",
+      "words": [
+       {
+        "word": "फल",
+        "emoji": "🍎",
+        "meaning": "fruit"
+       }
+      ]
+     },
+     {
+      "char": "ब",
+      "sound": "ba",
+      "words": [
+       {
+        "word": "बतख़",
+        "emoji": "🦆",
+        "meaning": "duck"
+       }
+      ]
+     },
+     {
+      "char": "भ",
+      "sound": "bha",
+      "words": [
+       {
+        "word": "भालू",
+        "emoji": "🐻",
+        "meaning": "bear"
+       }
+      ]
+     },
+     {
+      "char": "म",
+      "sound": "ma",
+      "words": [
+       {
+        "word": "मछली",
+        "emoji": "🐟",
+        "meaning": "fish"
+       }
+      ]
+     },
+     {
+      "char": "य",
+      "sound": "ya",
+      "words": [
+       {
+        "word": "याक",
+        "emoji": "🐃",
+        "meaning": "yak"
+       }
+      ]
+     },
+     {
+      "char": "र",
+      "sound": "ra",
+      "words": [
+       {
+        "word": "रथ",
+        "emoji": "🛞",
+        "meaning": "chariot"
+       }
+      ]
+     },
+     {
+      "char": "ल",
+      "sound": "la",
+      "words": [
+       {
+        "word": "लट्टू",
+        "emoji": "🪀",
+        "meaning": "spinning top"
+       }
+      ]
+     },
+     {
+      "char": "व",
+      "sound": "va",
+      "words": [
+       {
+        "word": "वन",
+        "emoji": "🌳",
+        "meaning": "forest"
+       }
+      ]
+     },
+     {
+      "char": "श",
+      "sound": "sha",
+      "words": [
+       {
+        "word": "शेर",
+        "emoji": "🦁",
+        "meaning": "lion"
+       }
+      ]
+     },
+     {
+      "char": "ष",
+      "sound": "sha",
+      "words": [
+       {
+        "word": "षट्कोण",
+        "emoji": "⬡",
+        "meaning": "hexagon"
+       }
+      ]
+     },
+     {
+      "char": "स",
+      "sound": "sa",
+      "words": [
+       {
+        "word": "सेब",
+        "emoji": "🍎",
+        "meaning": "apple"
+       }
+      ]
+     },
+     {
+      "char": "ह",
+      "sound": "ha",
+      "words": [
+       {
+        "word": "हाथी",
+        "emoji": "🐘",
+        "meaning": "elephant"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

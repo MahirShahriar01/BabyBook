@@ -1,0 +1,275 @@
+[
+ {
+  "q": "How many legs does a spider have?",
+  "options": [
+   "6",
+   "8",
+   "4"
+  ],
+  "answer": 1,
+  "emoji": "🕷️",
+  "ageGroups": [
+   "5-7",
+   "8-10"
+  ]
+ },
+ {
+  "q": "Which animal says \"moo\"?",
+  "options": [
+   "Cow 🐮",
+   "Cat 🐱",
+   "Duck 🦆"
+  ],
+  "answer": 0,
+  "emoji": "🐮",
+  "ageGroups": [
+   "2-4",
+   "5-7"
+  ]
+ },
+ {
+  "q": "What color is the sky on a sunny day?",
+  "options": [
+   "Green",
+   "Blue",
+   "Red"
+  ],
+  "answer": 1,
+  "emoji": "☀️",
+  "ageGroups": [
+   "2-4",
+   "5-7"
+  ]
+ },
+ {
+  "q": "How many days are in a week?",
+  "options": [
+   "5",
+   "7",
+   "10"
+  ],
+  "answer": 1,
+  "emoji": "📅",
+  "ageGroups": [
+   "5-7",
+   "8-10"
+  ]
+ },
+ {
+  "q": "Which planet do we live on?",
+  "options": [
+   "Mars",
+   "Earth",
+   "Jupiter"
+  ],
+  "answer": 1,
+  "emoji": "🌍",
+  "ageGroups": [
+   "5-7",
+   "8-10"
+  ]
+ },
+ {
+  "q": "What is the capital of Bangladesh?",
+  "options": [
+   "Chattogram",
+   "Dhaka",
+   "Sylhet"
+  ],
+  "answer": 1,
+  "emoji": "🇧🇩",
+  "ageGroups": [
+   "5-7",
+   "8-10"
+  ]
+ },
+ {
+  "q": "Which is the biggest animal in the world?",
+  "options": [
+   "Elephant",
+   "Blue whale",
+   "Giraffe"
+  ],
+  "answer": 1,
+  "emoji": "🐳",
+  "ageGroups": [
+   "5-7",
+   "8-10"
+  ]
+ },
+ {
+  "q": "What do bees make?",
+  "options": [
+   "Milk",
+   "Honey",
+   "Bread"
+  ],
+  "answer": 1,
+  "emoji": "🐝",
+  "ageGroups": [
+   "2-4",
+   "5-7"
+  ]
+ },
+ {
+  "q": "How many sides does a triangle have?",
+  "options": [
+   "3",
+   "4",
+   "5"
+  ],
+  "answer": 0,
+  "emoji": "🔺",
+  "ageGroups": [
+   "2-4",
+   "5-7"
+  ]
+ },
+ {
+  "q": "Which one can fly?",
+  "options": [
+   "Fish 🐟",
+   "Bird 🐦",
+   "Dog 🐶"
+  ],
+  "answer": 1,
+  "emoji": "🪽",
+  "ageGroups": [
+   "2-4"
+  ]
+ },
+ {
+  "q": "Water turns into ___ when it is very cold.",
+  "options": [
+   "Ice",
+   "Steam",
+   "Sand"
+  ],
+  "answer": 0,
+  "emoji": "🧊",
+  "ageGroups": [
+   "5-7",
+   "8-10"
+  ]
+ },
+ {
+  "q": "What gives plants their food?",
+  "options": [
+   "Sunlight",
+   "Moonlight",
+   "Music"
+  ],
+  "answer": 0,
+  "emoji": "🌱",
+  "ageGroups": [
+   "8-10"
+  ]
+ },
+ {
+  "q": "How many continents are there?",
+  "options": [
+   "5",
+   "7",
+   "9"
+  ],
+  "answer": 1,
+  "emoji": "🗺️",
+  "ageGroups": [
+   "8-10"
+  ]
+ },
+ {
+  "q": "Which is the national bird of Bangladesh?",
+  "options": [
+   "Doel (Magpie Robin)",
+   "Peacock",
+   "Crow"
+  ],
+  "answer": 0,
+  "emoji": "🐦",
+  "ageGroups": [
+   "5-7",
+   "8-10"
+  ]
+ },
+ {
+  "q": "What is 5 + 3?",
+  "options": [
+   "7",
+   "8",
+   "9"
+  ],
+  "answer": 1,
+  "emoji": "➕",
+  "ageGroups": [
+   "5-7"
+  ]
+ },
+ {
+  "q": "What is 6 × 7?",
+  "options": [
+   "42",
+   "36",
+   "48"
+  ],
+  "answer": 0,
+  "emoji": "✖️",
+  "ageGroups": [
+   "8-10"
+  ]
+ },
+ {
+  "q": "Which is the largest ocean?",
+  "options": [
+   "Atlantic",
+   "Indian",
+   "Pacific"
+  ],
+  "answer": 2,
+  "emoji": "🌊",
+  "ageGroups": [
+   "8-10"
+  ]
+ },
+ {
+  "q": "Who helps us when we are sick?",
+  "options": [
+   "Doctor 🧑‍⚕️",
+   "Pilot 🧑‍✈️",
+   "Chef 🧑‍🍳"
+  ],
+  "answer": 0,
+  "emoji": "🏥",
+  "ageGroups": [
+   "2-4",
+   "5-7"
+  ]
+ },
+ {
+  "q": "What do we call computer programs that learn from examples?",
+  "options": [
+   "Artificial Intelligence",
+   "A magic spell",
+   "A bicycle"
+  ],
+  "answer": 0,
+  "emoji": "🤖",
+  "ageGroups": [
+   "8-10"
+  ]
+ },
+ {
+  "q": "Which is a fruit?",
+  "options": [
+   "Carrot 🥕",
+   "Apple 🍎",
+   "Potato 🥔"
+  ],
+  "answer": 1,
+  "emoji": "🍎",
+  "ageGroups": [
+   "2-4",
+   "5-7"
+  ]
+ }
+]

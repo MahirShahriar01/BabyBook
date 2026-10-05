@@ -1,0 +1,5678 @@
+{
+ "version": 1,
+ "updatedAt": "2026-10-05",
+ "settings": {
+  "appName": "Kids Explorer AI",
+  "tagline": "Learn • Play • Imagine",
+  "announcement": "",
+  "fontFamily": "Baloo 2",
+  "themeMode": "kid_choice",
+  "defaultThemeId": "bubblegum",
+  "forcedThemeId": "cyber",
+  "genderThemes": {
+   "boy": "ocean",
+   "girl": "bubblegum",
+   "neutral": "jungle"
+  },
+  "themes": [
+   {
+    "id": "cyber",
+    "name": "Cyber Neon",
+    "emoji": "⚡",
+    "dark": true,
+    "primary": "#00E5FF",
+    "secondary": "#FF2BD6",
+    "accent": "#C6FF00",
+    "bgFrom": "#0B0B2B",
+    "bgTo": "#2A0B4F",
+    "surface": "#1A1A40",
+    "text": "#F2F7FF"
+   },
+   {
+    "id": "bubblegum",
+    "name": "Bubblegum Pink",
+    "emoji": "🍬",
+    "dark": false,
+    "primary": "#FF4FA3",
+    "secondary": "#9B5CFF",
+    "accent": "#FFC93C",
+    "bgFrom": "#FFE3F1",
+    "bgTo": "#E9DDFF",
+    "surface": "#FFFFFF",
+    "text": "#4A1942"
+   },
+   {
+    "id": "space",
+    "name": "Space Dark",
+    "emoji": "🚀",
+    "dark": true,
+    "primary": "#7C5CFF",
+    "secondary": "#3DD6FF",
+    "accent": "#FFD23F",
+    "bgFrom": "#060B1F",
+    "bgTo": "#1B1446",
+    "surface": "#161B3D",
+    "text": "#EEF0FF"
+   },
+   {
+    "id": "jungle",
+    "name": "Jungle Green",
+    "emoji": "🌴",
+    "dark": false,
+    "primary": "#22B573",
+    "secondary": "#FF8A3D",
+    "accent": "#FFE14D",
+    "bgFrom": "#DFFBE9",
+    "bgTo": "#FFF6D6",
+    "surface": "#FFFFFF",
+    "text": "#173B2A"
+   },
+   {
+    "id": "ocean",
+    "name": "Ocean Blue",
+    "emoji": "🐳",
+    "dark": false,
+    "primary": "#1E90FF",
+    "secondary": "#00C2A8",
+    "accent": "#FFB23F",
+    "bgFrom": "#DDF1FF",
+    "bgTo": "#E0FFF7",
+    "surface": "#FFFFFF",
+    "text": "#0F2D4A"
+   },
+   {
+    "id": "sunshine",
+    "name": "Sunshine",
+    "emoji": "🌞",
+    "dark": false,
+    "primary": "#FF9F1C",
+    "secondary": "#FF5D73",
+    "accent": "#2EC4B6",
+    "bgFrom": "#FFF4CC",
+    "bgTo": "#FFE1D6",
+    "surface": "#FFFFFF",
+    "text": "#4A2B05"
+   }
+  ],
+  "ageGroups": [
+   {
+    "id": "2-4",
+    "label": "Tiny Explorer",
+    "emoji": "🐣",
+    "range": "2 - 4"
+   },
+   {
+    "id": "5-7",
+    "label": "Junior Explorer",
+    "emoji": "🦊",
+    "range": "5 - 7"
+   },
+   {
+    "id": "8-10",
+    "label": "Super Explorer",
+    "emoji": "🦅",
+    "range": "8 - 10+"
+   }
+  ],
+  "avatars": [
+   {
+    "id": "boy",
+    "emoji": "👦",
+    "name": "Boy",
+    "gender": "boy"
+   },
+   {
+    "id": "girl",
+    "emoji": "👧",
+    "name": "Girl",
+    "gender": "girl"
+   },
+   {
+    "id": "superhero",
+    "emoji": "🦸",
+    "name": "Superhero",
+    "gender": "neutral"
+   },
+   {
+    "id": "robot",
+    "emoji": "🤖",
+    "name": "Robot",
+    "gender": "neutral"
+   },
+   {
+    "id": "astronaut",
+    "emoji": "🧑‍🚀",
+    "name": "Cosmic Explorer",
+    "gender": "neutral"
+   },
+   {
+    "id": "unicorn",
+    "emoji": "🦄",
+    "name": "Unicorn",
+    "gender": "neutral"
+   }
+  ],
+  "features": {
+   "alphabet": true,
+   "explore": true,
+   "stories": true,
+   "games": true,
+   "quiz": true,
+   "videos": true,
+   "buddy": true,
+   "ailab": true,
+   "rewards": true,
+   "parents": true
+  },
+  "ads": {
+   "enabled": true,
+   "testMode": true,
+   "banner": true,
+   "interstitial": true,
+   "rewarded": true,
+   "interstitialEveryN": 4,
+   "tagForChildDirectedTreatment": true,
+   "tagForUnderAgeOfConsent": true,
+   "maxAdContentRating": "G",
+   "nonPersonalizedOnly": true,
+   "androidAppId": "ca-app-pub-3940256099942544~3347511713",
+   "bannerUnitId": "ca-app-pub-3940256099942544/6300978111",
+   "interstitialUnitId": "ca-app-pub-3940256099942544/1033173712",
+   "rewardedUnitId": "ca-app-pub-3940256099942544/5224354917"
+  },
+  "buddy": {
+   "enabled": true,
+   "defaultPersona": "robot",
+   "languages": [
+    "en",
+    "bn",
+    "es",
+    "fr",
+    "hi"
+   ],
+   "useRemoteAi": false,
+   "remoteAiUrl": "",
+   "personas": [
+    {
+     "id": "robot",
+     "name": "Robo Bolt",
+     "emoji": "🤖",
+     "pitch": 0.6,
+     "rate": 0.95
+    },
+    {
+     "id": "bunny",
+     "name": "Magic Bunny",
+     "emoji": "🐰",
+     "pitch": 1.8,
+     "rate": 1.1
+    },
+    {
+     "id": "bear",
+     "name": "Friendly Bear",
+     "emoji": "🐻",
+     "pitch": 0.75,
+     "rate": 0.85
+    },
+    {
+     "id": "astronaut",
+     "name": "Space Astronaut",
+     "emoji": "🧑‍🚀",
+     "pitch": 1.1,
+     "rate": 1
+    },
+    {
+     "id": "fairy",
+     "name": "Sparkle Fairy",
+     "emoji": "🧚",
+     "pitch": 1.5,
+     "rate": 1
+    }
+   ]
+  },
+  "screenTime": {
+   "defaultDailyMinutes": 45,
+   "breakReminderMinutes": 20
+  },
+  "rewards": {
+   "starsPerActivity": 1,
+   "stickers": [
+    "🦁",
+    "🐼",
+    "🦄",
+    "🐬",
+    "🚀",
+    "🌈",
+    "🍩",
+    "🦖",
+    "🐝",
+    "🌻",
+    "🎈",
+    "🏆",
+    "🐙",
+    "🦋",
+    "🍉",
+    "⭐"
+   ]
+  },
+  "homeOrder": [
+   "alphabet",
+   "explore",
+   "stories",
+   "games",
+   "buddy",
+   "quiz",
+   "videos",
+   "ailab"
+  ],
+  "uiLanguages": [
+   "en",
+   "bn"
+  ],
+  "video": {
+   "privacyEnhanced": true,
+   "allowFullscreen": true,
+   "categories": [
+    "Songs",
+    "Alphabet",
+    "Stories",
+    "Science",
+    "Math",
+    "Animals"
+   ]
+  },
+  "dailyMissions": 3
+ },
+ "languages": [
+  {
+   "code": "en",
+   "name": "English",
+   "nativeName": "English",
+   "flag": "🇬🇧",
+   "ttsLocale": "en-US",
+   "enabled": true,
+   "groups": [
+    {
+     "title": "Alphabet",
+     "letters": [
+      {
+       "char": "A",
+       "sound": "ay",
+       "words": [
+        {
+         "word": "Apple",
+         "emoji": "🍎",
+         "meaning": "a red or green fruit"
+        },
+        {
+         "word": "Ant",
+         "emoji": "🐜",
+         "meaning": "a tiny insect"
+        }
+       ]
+      },
+      {
+       "char": "B",
+       "sound": "bee",
+       "words": [
+        {
+         "word": "Ball",
+         "emoji": "⚽",
+         "meaning": "a round toy to kick"
+        },
+        {
+         "word": "Bear",
+         "emoji": "🐻",
+         "meaning": "a big furry animal"
+        }
+       ]
+      },
+      {
+       "char": "C",
+       "sound": "see",
+       "words": [
+        {
+         "word": "Cat",
+         "emoji": "🐱",
+         "meaning": "a pet that says meow"
+        },
+        {
+         "word": "Car",
+         "emoji": "🚗",
+         "meaning": "a vehicle with four wheels"
+        }
+       ]
+      },
+      {
+       "char": "D",
+       "sound": "dee",
+       "words": [
+        {
+         "word": "Dog",
+         "emoji": "🐶",
+         "meaning": "a pet that says woof"
+        },
+        {
+         "word": "Duck",
+         "emoji": "🦆",
+         "meaning": "a bird that says quack"
+        }
+       ]
+      },
+      {
+       "char": "E",
+       "sound": "ee",
+       "words": [
+        {
+         "word": "Elephant",
+         "emoji": "🐘",
+         "meaning": "a huge animal with a trunk"
+        },
+        {
+         "word": "Egg",
+         "emoji": "🥚",
+         "meaning": "birds hatch from it"
+        }
+       ]
+      },
+      {
+       "char": "F",
+       "sound": "ef",
+       "words": [
+        {
+         "word": "Fish",
+         "emoji": "🐟",
+         "meaning": "it swims in water"
+        },
+        {
+         "word": "Frog",
+         "emoji": "🐸",
+         "meaning": "it hops and says ribbit"
+        }
+       ]
+      },
+      {
+       "char": "G",
+       "sound": "jee",
+       "words": [
+        {
+         "word": "Grapes",
+         "emoji": "🍇",
+         "meaning": "small sweet fruits"
+        },
+        {
+         "word": "Giraffe",
+         "emoji": "🦒",
+         "meaning": "the tallest animal"
+        }
+       ]
+      },
+      {
+       "char": "H",
+       "sound": "aych",
+       "words": [
+        {
+         "word": "Hat",
+         "emoji": "🎩",
+         "meaning": "you wear it on your head"
+        },
+        {
+         "word": "Horse",
+         "emoji": "🐴",
+         "meaning": "an animal you can ride"
+        }
+       ]
+      },
+      {
+       "char": "I",
+       "sound": "eye",
+       "words": [
+        {
+         "word": "Ice cream",
+         "emoji": "🍦",
+         "meaning": "a cold sweet treat"
+        },
+        {
+         "word": "Island",
+         "emoji": "🏝️",
+         "meaning": "land with water all around"
+        }
+       ]
+      },
+      {
+       "char": "J",
+       "sound": "jay",
+       "words": [
+        {
+         "word": "Juice",
+         "emoji": "🧃",
+         "meaning": "a fruity drink"
+        },
+        {
+         "word": "Jet",
+         "emoji": "✈️",
+         "meaning": "a very fast airplane"
+        }
+       ]
+      },
+      {
+       "char": "K",
+       "sound": "kay",
+       "words": [
+        {
+         "word": "Kite",
+         "emoji": "🪁",
+         "meaning": "it flies in the wind"
+        },
+        {
+         "word": "Koala",
+         "emoji": "🐨",
+         "meaning": "a sleepy tree animal"
+        }
+       ]
+      },
+      {
+       "char": "L",
+       "sound": "el",
+       "words": [
+        {
+         "word": "Lion",
+         "emoji": "🦁",
+         "meaning": "the king of the jungle"
+        },
+        {
+         "word": "Lemon",
+         "emoji": "🍋",
+         "meaning": "a sour yellow fruit"
+        }
+       ]
+      },
+      {
+       "char": "M",
+       "sound": "em",
+       "words": [
+        {
+         "word": "Monkey",
+         "emoji": "🐒",
+         "meaning": "it loves bananas"
+        },
+        {
+         "word": "Moon",
+         "emoji": "🌙",
+         "meaning": "it shines at night"
+        }
+       ]
+      },
+      {
+       "char": "N",
+       "sound": "en",
+       "words": [
+        {
+         "word": "Nose",
+         "emoji": "👃",
+         "meaning": "you smell with it"
+        },
+        {
+         "word": "Nut",
+         "emoji": "🥜",
+         "meaning": "a crunchy snack"
+        }
+       ]
+      },
+      {
+       "char": "O",
+       "sound": "oh",
+       "words": [
+        {
+         "word": "Orange",
+         "emoji": "🍊",
+         "meaning": "a juicy round fruit"
+        },
+        {
+         "word": "Owl",
+         "emoji": "🦉",
+         "meaning": "a bird awake at night"
+        }
+       ]
+      },
+      {
+       "char": "P",
+       "sound": "pee",
+       "words": [
+        {
+         "word": "Panda",
+         "emoji": "🐼",
+         "meaning": "a black and white bear"
+        },
+        {
+         "word": "Pizza",
+         "emoji": "🍕",
+         "meaning": "a yummy round food"
+        }
+       ]
+      },
+      {
+       "char": "Q",
+       "sound": "kyoo",
+       "words": [
+        {
+         "word": "Queen",
+         "emoji": "👸",
+         "meaning": "she wears a crown"
+        },
+        {
+         "word": "Question",
+         "emoji": "❓",
+         "meaning": "something you ask"
+        }
+       ]
+      },
+      {
+       "char": "R",
+       "sound": "ar",
+       "words": [
+        {
+         "word": "Rabbit",
+         "emoji": "🐰",
+         "meaning": "it has long ears"
+        },
+        {
+         "word": "Rainbow",
+         "emoji": "🌈",
+         "meaning": "colors in the sky"
+        }
+       ]
+      },
+      {
+       "char": "S",
+       "sound": "es",
+       "words": [
+        {
+         "word": "Sun",
+         "emoji": "☀️",
+         "meaning": "it gives us light"
+        },
+        {
+         "word": "Star",
+         "emoji": "⭐",
+         "meaning": "it twinkles at night"
+        }
+       ]
+      },
+      {
+       "char": "T",
+       "sound": "tee",
+       "words": [
+        {
+         "word": "Tiger",
+         "emoji": "🐯",
+         "meaning": "a big striped cat"
+        },
+        {
+         "word": "Train",
+         "emoji": "🚂",
+         "meaning": "it runs on tracks"
+        }
+       ]
+      },
+      {
+       "char": "U",
+       "sound": "yoo",
+       "words": [
+        {
+         "word": "Umbrella",
+         "emoji": "☂️",
+         "meaning": "it keeps you dry"
+        },
+        {
+         "word": "Unicorn",
+         "emoji": "🦄",
+         "meaning": "a magical horse"
+        }
+       ]
+      },
+      {
+       "char": "V",
+       "sound": "vee",
+       "words": [
+        {
+         "word": "Violin",
+         "emoji": "🎻",
+         "meaning": "a musical instrument"
+        },
+        {
+         "word": "Volcano",
+         "emoji": "🌋",
+         "meaning": "a fiery mountain"
+        }
+       ]
+      },
+      {
+       "char": "W",
+       "sound": "double-yoo",
+       "words": [
+        {
+         "word": "Whale",
+         "emoji": "🐳",
+         "meaning": "the biggest sea animal"
+        },
+        {
+         "word": "Watch",
+         "emoji": "⌚",
+         "meaning": "it tells the time"
+        }
+       ]
+      },
+      {
+       "char": "X",
+       "sound": "ex",
+       "words": [
+        {
+         "word": "Xylophone",
+         "emoji": "🎼",
+         "meaning": "you tap it to make music"
+        },
+        {
+         "word": "X-ray",
+         "emoji": "🩻",
+         "meaning": "a photo of your bones"
+        }
+       ]
+      },
+      {
+       "char": "Y",
+       "sound": "why",
+       "words": [
+        {
+         "word": "Yo-yo",
+         "emoji": "🪀",
+         "meaning": "a toy on a string"
+        },
+        {
+         "word": "Yak",
+         "emoji": "🐃",
+         "meaning": "a hairy mountain animal"
+        }
+       ]
+      },
+      {
+       "char": "Z",
+       "sound": "zee",
+       "words": [
+        {
+         "word": "Zebra",
+         "emoji": "🦓",
+         "meaning": "a horse with stripes"
+        },
+        {
+         "word": "Zoo",
+         "emoji": "🏞️",
+         "meaning": "a place to see animals"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "bn",
+   "name": "Bangla",
+   "nativeName": "বাংলা",
+   "flag": "🇧🇩",
+   "ttsLocale": "bn-BD",
+   "enabled": true,
+   "groups": [
+    {
+     "title": "স্বরবর্ণ (Vowels)",
+     "letters": [
+      {
+       "char": "অ",
+       "sound": "ô",
+       "words": [
+        {
+         "word": "অজগর",
+         "emoji": "🐍",
+         "meaning": "python"
+        }
+       ]
+      },
+      {
+       "char": "আ",
+       "sound": "a",
+       "words": [
+        {
+         "word": "আম",
+         "emoji": "🥭",
+         "meaning": "mango"
+        }
+       ]
+      },
+      {
+       "char": "ই",
+       "sound": "i",
+       "words": [
+        {
+         "word": "ইঁদুর",
+         "emoji": "🐭",
+         "meaning": "mouse"
+        }
+       ]
+      },
+      {
+       "char": "ঈ",
+       "sound": "ee",
+       "words": [
+        {
+         "word": "ঈগল",
+         "emoji": "🦅",
+         "meaning": "eagle"
+        }
+       ]
+      },
+      {
+       "char": "উ",
+       "sound": "u",
+       "words": [
+        {
+         "word": "উট",
+         "emoji": "🐫",
+         "meaning": "camel"
+        }
+       ]
+      },
+      {
+       "char": "ঊ",
+       "sound": "oo",
+       "words": [
+        {
+         "word": "ঊষা",
+         "emoji": "🌅",
+         "meaning": "dawn"
+        }
+       ]
+      },
+      {
+       "char": "ঋ",
+       "sound": "ri",
+       "words": [
+        {
+         "word": "ঋষি",
+         "emoji": "🧙",
+         "meaning": "sage"
+        }
+       ]
+      },
+      {
+       "char": "এ",
+       "sound": "e",
+       "words": [
+        {
+         "word": "একতারা",
+         "emoji": "🪕",
+         "meaning": "one-string instrument"
+        }
+       ]
+      },
+      {
+       "char": "ঐ",
+       "sound": "oi",
+       "words": [
+        {
+         "word": "ঐরাবত",
+         "emoji": "🐘",
+         "meaning": "royal elephant"
+        }
+       ]
+      },
+      {
+       "char": "ও",
+       "sound": "o",
+       "words": [
+        {
+         "word": "ওল",
+         "emoji": "🥔",
+         "meaning": "yam"
+        }
+       ]
+      },
+      {
+       "char": "ঔ",
+       "sound": "ou",
+       "words": [
+        {
+         "word": "ঔষধ",
+         "emoji": "💊",
+         "meaning": "medicine"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "ব্যঞ্জনবর্ণ (Consonants)",
+     "letters": [
+      {
+       "char": "ক",
+       "sound": "ko",
+       "words": [
+        {
+         "word": "কলা",
+         "emoji": "🍌",
+         "meaning": "banana"
+        }
+       ]
+      },
+      {
+       "char": "খ",
+       "sound": "kho",
+       "words": [
+        {
+         "word": "খরগোশ",
+         "emoji": "🐇",
+         "meaning": "rabbit"
+        }
+       ]
+      },
+      {
+       "char": "গ",
+       "sound": "go",
+       "words": [
+        {
+         "word": "গরু",
+         "emoji": "🐄",
+         "meaning": "cow"
+        }
+       ]
+      },
+      {
+       "char": "ঘ",
+       "sound": "gho",
+       "words": [
+        {
+         "word": "ঘড়ি",
+         "emoji": "⏰",
+         "meaning": "clock"
+        }
+       ]
+      },
+      {
+       "char": "ঙ",
+       "sound": "ngo",
+       "words": [
+        {
+         "word": "ব্যাঙ",
+         "emoji": "🐸",
+         "meaning": "frog"
+        }
+       ]
+      },
+      {
+       "char": "চ",
+       "sound": "cho",
+       "words": [
+        {
+         "word": "চাঁদ",
+         "emoji": "🌙",
+         "meaning": "moon"
+        }
+       ]
+      },
+      {
+       "char": "ছ",
+       "sound": "chho",
+       "words": [
+        {
+         "word": "ছাতা",
+         "emoji": "☂️",
+         "meaning": "umbrella"
+        }
+       ]
+      },
+      {
+       "char": "জ",
+       "sound": "jo",
+       "words": [
+        {
+         "word": "জাহাজ",
+         "emoji": "🚢",
+         "meaning": "ship"
+        }
+       ]
+      },
+      {
+       "char": "ঝ",
+       "sound": "jho",
+       "words": [
+        {
+         "word": "ঝুড়ি",
+         "emoji": "🧺",
+         "meaning": "basket"
+        }
+       ]
+      },
+      {
+       "char": "ঞ",
+       "sound": "yo",
+       "words": [
+        {
+         "word": "মিঞা",
+         "emoji": "👨",
+         "meaning": "gentleman"
+        }
+       ]
+      },
+      {
+       "char": "ট",
+       "sound": "to",
+       "words": [
+        {
+         "word": "টমেটো",
+         "emoji": "🍅",
+         "meaning": "tomato"
+        }
+       ]
+      },
+      {
+       "char": "ঠ",
+       "sound": "tho",
+       "words": [
+        {
+         "word": "ঠোঁট",
+         "emoji": "👄",
+         "meaning": "lips"
+        }
+       ]
+      },
+      {
+       "char": "ড",
+       "sound": "do",
+       "words": [
+        {
+         "word": "ডাব",
+         "emoji": "🥥",
+         "meaning": "green coconut"
+        }
+       ]
+      },
+      {
+       "char": "ঢ",
+       "sound": "dho",
+       "words": [
+        {
+         "word": "ঢোল",
+         "emoji": "🥁",
+         "meaning": "drum"
+        }
+       ]
+      },
+      {
+       "char": "ণ",
+       "sound": "no",
+       "words": [
+        {
+         "word": "হরিণ",
+         "emoji": "🦌",
+         "meaning": "deer"
+        }
+       ]
+      },
+      {
+       "char": "ত",
+       "sound": "to",
+       "words": [
+        {
+         "word": "তরমুজ",
+         "emoji": "🍉",
+         "meaning": "watermelon"
+        }
+       ]
+      },
+      {
+       "char": "থ",
+       "sound": "tho",
+       "words": [
+        {
+         "word": "থালা",
+         "emoji": "🍽️",
+         "meaning": "plate"
+        }
+       ]
+      },
+      {
+       "char": "দ",
+       "sound": "do",
+       "words": [
+        {
+         "word": "দরজা",
+         "emoji": "🚪",
+         "meaning": "door"
+        }
+       ]
+      },
+      {
+       "char": "ধ",
+       "sound": "dho",
+       "words": [
+        {
+         "word": "ধান",
+         "emoji": "🌾",
+         "meaning": "paddy (rice plant)"
+        }
+       ]
+      },
+      {
+       "char": "ন",
+       "sound": "no",
+       "words": [
+        {
+         "word": "নৌকা",
+         "emoji": "⛵",
+         "meaning": "boat"
+        }
+       ]
+      },
+      {
+       "char": "প",
+       "sound": "po",
+       "words": [
+        {
+         "word": "পাখি",
+         "emoji": "🐦",
+         "meaning": "bird"
+        }
+       ]
+      },
+      {
+       "char": "ফ",
+       "sound": "pho",
+       "words": [
+        {
+         "word": "ফুল",
+         "emoji": "🌸",
+         "meaning": "flower"
+        }
+       ]
+      },
+      {
+       "char": "ব",
+       "sound": "bo",
+       "words": [
+        {
+         "word": "বল",
+         "emoji": "⚽",
+         "meaning": "ball"
+        }
+       ]
+      },
+      {
+       "char": "ভ",
+       "sound": "bho",
+       "words": [
+        {
+         "word": "ভালুক",
+         "emoji": "🐻",
+         "meaning": "bear"
+        }
+       ]
+      },
+      {
+       "char": "ম",
+       "sound": "mo",
+       "words": [
+        {
+         "word": "মাছ",
+         "emoji": "🐟",
+         "meaning": "fish"
+        }
+       ]
+      },
+      {
+       "char": "য",
+       "sound": "jo",
+       "words": [
+        {
+         "word": "যাদুঘর",
+         "emoji": "🏛️",
+         "meaning": "museum"
+        }
+       ]
+      },
+      {
+       "char": "র",
+       "sound": "ro",
+       "words": [
+        {
+         "word": "রংধনু",
+         "emoji": "🌈",
+         "meaning": "rainbow"
+        }
+       ]
+      },
+      {
+       "char": "ল",
+       "sound": "lo",
+       "words": [
+        {
+         "word": "লাটিম",
+         "emoji": "🪀",
+         "meaning": "spinning top"
+        }
+       ]
+      },
+      {
+       "char": "শ",
+       "sound": "sho",
+       "words": [
+        {
+         "word": "শাপলা",
+         "emoji": "🪷",
+         "meaning": "water lily"
+        }
+       ]
+      },
+      {
+       "char": "ষ",
+       "sound": "sho",
+       "words": [
+        {
+         "word": "ষাঁড়",
+         "emoji": "🐂",
+         "meaning": "bull"
+        }
+       ]
+      },
+      {
+       "char": "স",
+       "sound": "sho",
+       "words": [
+        {
+         "word": "সূর্য",
+         "emoji": "☀️",
+         "meaning": "sun"
+        }
+       ]
+      },
+      {
+       "char": "হ",
+       "sound": "ho",
+       "words": [
+        {
+         "word": "হাতি",
+         "emoji": "🐘",
+         "meaning": "elephant"
+        }
+       ]
+      },
+      {
+       "char": "ড়",
+       "sound": "ro",
+       "words": [
+        {
+         "word": "পাহাড়",
+         "emoji": "⛰️",
+         "meaning": "mountain"
+        }
+       ]
+      },
+      {
+       "char": "ঢ়",
+       "sound": "rho",
+       "words": [
+        {
+         "word": "আষাঢ়",
+         "emoji": "🌧️",
+         "meaning": "rainy month"
+        }
+       ]
+      },
+      {
+       "char": "য়",
+       "sound": "yo",
+       "words": [
+        {
+         "word": "ময়ূর",
+         "emoji": "🦚",
+         "meaning": "peacock"
+        }
+       ]
+      },
+      {
+       "char": "ৎ",
+       "sound": "t",
+       "words": [
+        {
+         "word": "উৎসব",
+         "emoji": "🎉",
+         "meaning": "festival"
+        }
+       ]
+      },
+      {
+       "char": "ং",
+       "sound": "ng",
+       "words": [
+        {
+         "word": "রং",
+         "emoji": "🎨",
+         "meaning": "color"
+        }
+       ]
+      },
+      {
+       "char": "ঃ",
+       "sound": "h",
+       "words": [
+        {
+         "word": "দুঃখ",
+         "emoji": "😢",
+         "meaning": "sadness"
+        }
+       ]
+      },
+      {
+       "char": "ঁ",
+       "sound": "n (nasal)",
+       "words": [
+        {
+         "word": "চাঁদ",
+         "emoji": "🌙",
+         "meaning": "moon"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "সংখ্যা (Numbers)",
+     "letters": [
+      {
+       "char": "০",
+       "sound": "shunno",
+       "words": [
+        {
+         "word": "শূন্য",
+         "emoji": "0️⃣",
+         "meaning": "zero"
+        }
+       ]
+      },
+      {
+       "char": "১",
+       "sound": "ek",
+       "words": [
+        {
+         "word": "এক",
+         "emoji": "1️⃣",
+         "meaning": "one"
+        }
+       ]
+      },
+      {
+       "char": "২",
+       "sound": "dui",
+       "words": [
+        {
+         "word": "দুই",
+         "emoji": "2️⃣",
+         "meaning": "two"
+        }
+       ]
+      },
+      {
+       "char": "৩",
+       "sound": "tin",
+       "words": [
+        {
+         "word": "তিন",
+         "emoji": "3️⃣",
+         "meaning": "three"
+        }
+       ]
+      },
+      {
+       "char": "৪",
+       "sound": "char",
+       "words": [
+        {
+         "word": "চার",
+         "emoji": "4️⃣",
+         "meaning": "four"
+        }
+       ]
+      },
+      {
+       "char": "৫",
+       "sound": "pach",
+       "words": [
+        {
+         "word": "পাঁচ",
+         "emoji": "5️⃣",
+         "meaning": "five"
+        }
+       ]
+      },
+      {
+       "char": "৬",
+       "sound": "chhoy",
+       "words": [
+        {
+         "word": "ছয়",
+         "emoji": "6️⃣",
+         "meaning": "six"
+        }
+       ]
+      },
+      {
+       "char": "৭",
+       "sound": "shat",
+       "words": [
+        {
+         "word": "সাত",
+         "emoji": "7️⃣",
+         "meaning": "seven"
+        }
+       ]
+      },
+      {
+       "char": "৮",
+       "sound": "at",
+       "words": [
+        {
+         "word": "আট",
+         "emoji": "8️⃣",
+         "meaning": "eight"
+        }
+       ]
+      },
+      {
+       "char": "৯",
+       "sound": "noy",
+       "words": [
+        {
+         "word": "নয়",
+         "emoji": "9️⃣",
+         "meaning": "nine"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "es",
+   "name": "Spanish",
+   "nativeName": "Español",
+   "flag": "🇪🇸",
+   "ttsLocale": "es-ES",
+   "enabled": true,
+   "groups": [
+    {
+     "title": "Alfabeto",
+     "letters": [
+      {
+       "char": "A",
+       "sound": "a",
+       "words": [
+        {
+         "word": "Abeja",
+         "emoji": "🐝",
+         "meaning": "bee"
+        }
+       ]
+      },
+      {
+       "char": "B",
+       "sound": "be",
+       "words": [
+        {
+         "word": "Barco",
+         "emoji": "⛵",
+         "meaning": "boat"
+        }
+       ]
+      },
+      {
+       "char": "C",
+       "sound": "ce",
+       "words": [
+        {
+         "word": "Casa",
+         "emoji": "🏠",
+         "meaning": "house"
+        }
+       ]
+      },
+      {
+       "char": "D",
+       "sound": "de",
+       "words": [
+        {
+         "word": "Dinosaurio",
+         "emoji": "🦕",
+         "meaning": "dinosaur"
+        }
+       ]
+      },
+      {
+       "char": "E",
+       "sound": "e",
+       "words": [
+        {
+         "word": "Elefante",
+         "emoji": "🐘",
+         "meaning": "elephant"
+        }
+       ]
+      },
+      {
+       "char": "F",
+       "sound": "efe",
+       "words": [
+        {
+         "word": "Flor",
+         "emoji": "🌸",
+         "meaning": "flower"
+        }
+       ]
+      },
+      {
+       "char": "G",
+       "sound": "ge",
+       "words": [
+        {
+         "word": "Gato",
+         "emoji": "🐱",
+         "meaning": "cat"
+        }
+       ]
+      },
+      {
+       "char": "H",
+       "sound": "hache",
+       "words": [
+        {
+         "word": "Helado",
+         "emoji": "🍦",
+         "meaning": "ice cream"
+        }
+       ]
+      },
+      {
+       "char": "I",
+       "sound": "i",
+       "words": [
+        {
+         "word": "Isla",
+         "emoji": "🏝️",
+         "meaning": "island"
+        }
+       ]
+      },
+      {
+       "char": "J",
+       "sound": "jota",
+       "words": [
+        {
+         "word": "Jirafa",
+         "emoji": "🦒",
+         "meaning": "giraffe"
+        }
+       ]
+      },
+      {
+       "char": "K",
+       "sound": "ka",
+       "words": [
+        {
+         "word": "Koala",
+         "emoji": "🐨",
+         "meaning": "koala"
+        }
+       ]
+      },
+      {
+       "char": "L",
+       "sound": "ele",
+       "words": [
+        {
+         "word": "León",
+         "emoji": "🦁",
+         "meaning": "lion"
+        }
+       ]
+      },
+      {
+       "char": "M",
+       "sound": "eme",
+       "words": [
+        {
+         "word": "Manzana",
+         "emoji": "🍎",
+         "meaning": "apple"
+        }
+       ]
+      },
+      {
+       "char": "N",
+       "sound": "ene",
+       "words": [
+        {
+         "word": "Nube",
+         "emoji": "☁️",
+         "meaning": "cloud"
+        }
+       ]
+      },
+      {
+       "char": "Ñ",
+       "sound": "eñe",
+       "words": [
+        {
+         "word": "Ñandú",
+         "emoji": "🐦",
+         "meaning": "rhea (a big bird)"
+        }
+       ]
+      },
+      {
+       "char": "O",
+       "sound": "o",
+       "words": [
+        {
+         "word": "Oso",
+         "emoji": "🐻",
+         "meaning": "bear"
+        }
+       ]
+      },
+      {
+       "char": "P",
+       "sound": "pe",
+       "words": [
+        {
+         "word": "Pato",
+         "emoji": "🦆",
+         "meaning": "duck"
+        }
+       ]
+      },
+      {
+       "char": "Q",
+       "sound": "cu",
+       "words": [
+        {
+         "word": "Queso",
+         "emoji": "🧀",
+         "meaning": "cheese"
+        }
+       ]
+      },
+      {
+       "char": "R",
+       "sound": "erre",
+       "words": [
+        {
+         "word": "Ratón",
+         "emoji": "🐭",
+         "meaning": "mouse"
+        }
+       ]
+      },
+      {
+       "char": "S",
+       "sound": "ese",
+       "words": [
+        {
+         "word": "Sol",
+         "emoji": "☀️",
+         "meaning": "sun"
+        }
+       ]
+      },
+      {
+       "char": "T",
+       "sound": "te",
+       "words": [
+        {
+         "word": "Tortuga",
+         "emoji": "🐢",
+         "meaning": "turtle"
+        }
+       ]
+      },
+      {
+       "char": "U",
+       "sound": "u",
+       "words": [
+        {
+         "word": "Uva",
+         "emoji": "🍇",
+         "meaning": "grape"
+        }
+       ]
+      },
+      {
+       "char": "V",
+       "sound": "uve",
+       "words": [
+        {
+         "word": "Vaca",
+         "emoji": "🐄",
+         "meaning": "cow"
+        }
+       ]
+      },
+      {
+       "char": "W",
+       "sound": "uve doble",
+       "words": [
+        {
+         "word": "Wafle",
+         "emoji": "🧇",
+         "meaning": "waffle"
+        }
+       ]
+      },
+      {
+       "char": "X",
+       "sound": "equis",
+       "words": [
+        {
+         "word": "Xilófono",
+         "emoji": "🎼",
+         "meaning": "xylophone"
+        }
+       ]
+      },
+      {
+       "char": "Y",
+       "sound": "ye",
+       "words": [
+        {
+         "word": "Yoyó",
+         "emoji": "🪀",
+         "meaning": "yo-yo"
+        }
+       ]
+      },
+      {
+       "char": "Z",
+       "sound": "zeta",
+       "words": [
+        {
+         "word": "Zapato",
+         "emoji": "👟",
+         "meaning": "shoe"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "fr",
+   "name": "French",
+   "nativeName": "Français",
+   "flag": "🇫🇷",
+   "ttsLocale": "fr-FR",
+   "enabled": true,
+   "groups": [
+    {
+     "title": "Alphabet",
+     "letters": [
+      {
+       "char": "A",
+       "sound": "a",
+       "words": [
+        {
+         "word": "Avion",
+         "emoji": "✈️",
+         "meaning": "airplane"
+        }
+       ]
+      },
+      {
+       "char": "B",
+       "sound": "bé",
+       "words": [
+        {
+         "word": "Ballon",
+         "emoji": "🎈",
+         "meaning": "balloon"
+        }
+       ]
+      },
+      {
+       "char": "C",
+       "sound": "cé",
+       "words": [
+        {
+         "word": "Chat",
+         "emoji": "🐱",
+         "meaning": "cat"
+        }
+       ]
+      },
+      {
+       "char": "D",
+       "sound": "dé",
+       "words": [
+        {
+         "word": "Dauphin",
+         "emoji": "🐬",
+         "meaning": "dolphin"
+        }
+       ]
+      },
+      {
+       "char": "E",
+       "sound": "e",
+       "words": [
+        {
+         "word": "Éléphant",
+         "emoji": "🐘",
+         "meaning": "elephant"
+        }
+       ]
+      },
+      {
+       "char": "F",
+       "sound": "effe",
+       "words": [
+        {
+         "word": "Fraise",
+         "emoji": "🍓",
+         "meaning": "strawberry"
+        }
+       ]
+      },
+      {
+       "char": "G",
+       "sound": "gé",
+       "words": [
+        {
+         "word": "Girafe",
+         "emoji": "🦒",
+         "meaning": "giraffe"
+        }
+       ]
+      },
+      {
+       "char": "H",
+       "sound": "ache",
+       "words": [
+        {
+         "word": "Hibou",
+         "emoji": "🦉",
+         "meaning": "owl"
+        }
+       ]
+      },
+      {
+       "char": "I",
+       "sound": "i",
+       "words": [
+        {
+         "word": "Île",
+         "emoji": "🏝️",
+         "meaning": "island"
+        }
+       ]
+      },
+      {
+       "char": "J",
+       "sound": "ji",
+       "words": [
+        {
+         "word": "Jus",
+         "emoji": "🧃",
+         "meaning": "juice"
+        }
+       ]
+      },
+      {
+       "char": "K",
+       "sound": "ka",
+       "words": [
+        {
+         "word": "Kangourou",
+         "emoji": "🦘",
+         "meaning": "kangaroo"
+        }
+       ]
+      },
+      {
+       "char": "L",
+       "sound": "elle",
+       "words": [
+        {
+         "word": "Lion",
+         "emoji": "🦁",
+         "meaning": "lion"
+        }
+       ]
+      },
+      {
+       "char": "M",
+       "sound": "emme",
+       "words": [
+        {
+         "word": "Maison",
+         "emoji": "🏠",
+         "meaning": "house"
+        }
+       ]
+      },
+      {
+       "char": "N",
+       "sound": "enne",
+       "words": [
+        {
+         "word": "Nuage",
+         "emoji": "☁️",
+         "meaning": "cloud"
+        }
+       ]
+      },
+      {
+       "char": "O",
+       "sound": "o",
+       "words": [
+        {
+         "word": "Orange",
+         "emoji": "🍊",
+         "meaning": "orange"
+        }
+       ]
+      },
+      {
+       "char": "P",
+       "sound": "pé",
+       "words": [
+        {
+         "word": "Pomme",
+         "emoji": "🍎",
+         "meaning": "apple"
+        }
+       ]
+      },
+      {
+       "char": "Q",
+       "sound": "ku",
+       "words": [
+        {
+         "word": "Quatre",
+         "emoji": "4️⃣",
+         "meaning": "four"
+        }
+       ]
+      },
+      {
+       "char": "R",
+       "sound": "erre",
+       "words": [
+        {
+         "word": "Renard",
+         "emoji": "🦊",
+         "meaning": "fox"
+        }
+       ]
+      },
+      {
+       "char": "S",
+       "sound": "esse",
+       "words": [
+        {
+         "word": "Soleil",
+         "emoji": "☀️",
+         "meaning": "sun"
+        }
+       ]
+      },
+      {
+       "char": "T",
+       "sound": "té",
+       "words": [
+        {
+         "word": "Tortue",
+         "emoji": "🐢",
+         "meaning": "turtle"
+        }
+       ]
+      },
+      {
+       "char": "U",
+       "sound": "u",
+       "words": [
+        {
+         "word": "Univers",
+         "emoji": "🌌",
+         "meaning": "universe"
+        }
+       ]
+      },
+      {
+       "char": "V",
+       "sound": "vé",
+       "words": [
+        {
+         "word": "Vache",
+         "emoji": "🐄",
+         "meaning": "cow"
+        }
+       ]
+      },
+      {
+       "char": "W",
+       "sound": "double vé",
+       "words": [
+        {
+         "word": "Wagon",
+         "emoji": "🚃",
+         "meaning": "train car"
+        }
+       ]
+      },
+      {
+       "char": "X",
+       "sound": "ixe",
+       "words": [
+        {
+         "word": "Xylophone",
+         "emoji": "🎼",
+         "meaning": "xylophone"
+        }
+       ]
+      },
+      {
+       "char": "Y",
+       "sound": "i grec",
+       "words": [
+        {
+         "word": "Yaourt",
+         "emoji": "🥛",
+         "meaning": "yogurt"
+        }
+       ]
+      },
+      {
+       "char": "Z",
+       "sound": "zède",
+       "words": [
+        {
+         "word": "Zèbre",
+         "emoji": "🦓",
+         "meaning": "zebra"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "hi",
+   "name": "Hindi",
+   "nativeName": "हिन्दी",
+   "flag": "🇮🇳",
+   "ttsLocale": "hi-IN",
+   "enabled": true,
+   "groups": [
+    {
+     "title": "स्वर (Vowels)",
+     "letters": [
+      {
+       "char": "अ",
+       "sound": "a",
+       "words": [
+        {
+         "word": "अनार",
+         "emoji": "🍎",
+         "meaning": "pomegranate"
+        }
+       ]
+      },
+      {
+       "char": "आ",
+       "sound": "aa",
+       "words": [
+        {
+         "word": "आम",
+         "emoji": "🥭",
+         "meaning": "mango"
+        }
+       ]
+      },
+      {
+       "char": "इ",
+       "sound": "i",
+       "words": [
+        {
+         "word": "इमली",
+         "emoji": "🌰",
+         "meaning": "tamarind"
+        }
+       ]
+      },
+      {
+       "char": "ई",
+       "sound": "ee",
+       "words": [
+        {
+         "word": "ईख",
+         "emoji": "🎋",
+         "meaning": "sugarcane"
+        }
+       ]
+      },
+      {
+       "char": "उ",
+       "sound": "u",
+       "words": [
+        {
+         "word": "उल्लू",
+         "emoji": "🦉",
+         "meaning": "owl"
+        }
+       ]
+      },
+      {
+       "char": "ऊ",
+       "sound": "oo",
+       "words": [
+        {
+         "word": "ऊन",
+         "emoji": "🧶",
+         "meaning": "wool"
+        }
+       ]
+      },
+      {
+       "char": "ऋ",
+       "sound": "ri",
+       "words": [
+        {
+         "word": "ऋषि",
+         "emoji": "🧙",
+         "meaning": "sage"
+        }
+       ]
+      },
+      {
+       "char": "ए",
+       "sound": "e",
+       "words": [
+        {
+         "word": "एड़ी",
+         "emoji": "🦶",
+         "meaning": "heel"
+        }
+       ]
+      },
+      {
+       "char": "ऐ",
+       "sound": "ai",
+       "words": [
+        {
+         "word": "ऐनक",
+         "emoji": "👓",
+         "meaning": "spectacles"
+        }
+       ]
+      },
+      {
+       "char": "ओ",
+       "sound": "o",
+       "words": [
+        {
+         "word": "ओखली",
+         "emoji": "🥣",
+         "meaning": "mortar"
+        }
+       ]
+      },
+      {
+       "char": "औ",
+       "sound": "au",
+       "words": [
+        {
+         "word": "औरत",
+         "emoji": "👩",
+         "meaning": "woman"
+        }
+       ]
+      },
+      {
+       "char": "अं",
+       "sound": "am",
+       "words": [
+        {
+         "word": "अंगूर",
+         "emoji": "🍇",
+         "meaning": "grapes"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "व्यंजन (Consonants)",
+     "letters": [
+      {
+       "char": "क",
+       "sound": "ka",
+       "words": [
+        {
+         "word": "कबूतर",
+         "emoji": "🕊️",
+         "meaning": "pigeon"
+        }
+       ]
+      },
+      {
+       "char": "ख",
+       "sound": "kha",
+       "words": [
+        {
+         "word": "खरगोश",
+         "emoji": "🐇",
+         "meaning": "rabbit"
+        }
+       ]
+      },
+      {
+       "char": "ग",
+       "sound": "ga",
+       "words": [
+        {
+         "word": "गमला",
+         "emoji": "🪴",
+         "meaning": "flower pot"
+        }
+       ]
+      },
+      {
+       "char": "घ",
+       "sound": "gha",
+       "words": [
+        {
+         "word": "घड़ी",
+         "emoji": "⏰",
+         "meaning": "clock"
+        }
+       ]
+      },
+      {
+       "char": "च",
+       "sound": "cha",
+       "words": [
+        {
+         "word": "चम्मच",
+         "emoji": "🥄",
+         "meaning": "spoon"
+        }
+       ]
+      },
+      {
+       "char": "छ",
+       "sound": "chha",
+       "words": [
+        {
+         "word": "छतरी",
+         "emoji": "☂️",
+         "meaning": "umbrella"
+        }
+       ]
+      },
+      {
+       "char": "ज",
+       "sound": "ja",
+       "words": [
+        {
+         "word": "जहाज़",
+         "emoji": "🚢",
+         "meaning": "ship"
+        }
+       ]
+      },
+      {
+       "char": "झ",
+       "sound": "jha",
+       "words": [
+        {
+         "word": "झंडा",
+         "emoji": "🚩",
+         "meaning": "flag"
+        }
+       ]
+      },
+      {
+       "char": "ट",
+       "sound": "ta",
+       "words": [
+        {
+         "word": "टमाटर",
+         "emoji": "🍅",
+         "meaning": "tomato"
+        }
+       ]
+      },
+      {
+       "char": "ठ",
+       "sound": "tha",
+       "words": [
+        {
+         "word": "ठेला",
+         "emoji": "🛒",
+         "meaning": "hand cart"
+        }
+       ]
+      },
+      {
+       "char": "ड",
+       "sound": "da",
+       "words": [
+        {
+         "word": "डमरू",
+         "emoji": "🥁",
+         "meaning": "small drum"
+        }
+       ]
+      },
+      {
+       "char": "ढ",
+       "sound": "dha",
+       "words": [
+        {
+         "word": "ढोलक",
+         "emoji": "🪘",
+         "meaning": "drum"
+        }
+       ]
+      },
+      {
+       "char": "ण",
+       "sound": "na",
+       "words": [
+        {
+         "word": "बाण",
+         "emoji": "🏹",
+         "meaning": "arrow"
+        }
+       ]
+      },
+      {
+       "char": "त",
+       "sound": "ta",
+       "words": [
+        {
+         "word": "तरबूज़",
+         "emoji": "🍉",
+         "meaning": "watermelon"
+        }
+       ]
+      },
+      {
+       "char": "थ",
+       "sound": "tha",
+       "words": [
+        {
+         "word": "थाली",
+         "emoji": "🍽️",
+         "meaning": "plate"
+        }
+       ]
+      },
+      {
+       "char": "द",
+       "sound": "da",
+       "words": [
+        {
+         "word": "दरवाज़ा",
+         "emoji": "🚪",
+         "meaning": "door"
+        }
+       ]
+      },
+      {
+       "char": "ध",
+       "sound": "dha",
+       "words": [
+        {
+         "word": "धनुष",
+         "emoji": "🏹",
+         "meaning": "bow"
+        }
+       ]
+      },
+      {
+       "char": "न",
+       "sound": "na",
+       "words": [
+        {
+         "word": "नल",
+         "emoji": "🚰",
+         "meaning": "tap"
+        }
+       ]
+      },
+      {
+       "char": "प",
+       "sound": "pa",
+       "words": [
+        {
+         "word": "पतंग",
+         "emoji": "🪁",
+         "meaning": "kite"
+        }
+       ]
+      },
+      {
+       "char": "फ",
+       "sound": "pha",
+       "words": [
+        {
+         "word": "फल",
+         "emoji": "🍎",
+         "meaning": "fruit"
+        }
+       ]
+      },
+      {
+       "char": "ब",
+       "sound": "ba",
+       "words": [
+        {
+         "word": "बतख़",
+         "emoji": "🦆",
+         "meaning": "duck"
+        }
+       ]
+      },
+      {
+       "char": "भ",
+       "sound": "bha",
+       "words": [
+        {
+         "word": "भालू",
+         "emoji": "🐻",
+         "meaning": "bear"
+        }
+       ]
+      },
+      {
+       "char": "म",
+       "sound": "ma",
+       "words": [
+        {
+         "word": "मछली",
+         "emoji": "🐟",
+         "meaning": "fish"
+        }
+       ]
+      },
+      {
+       "char": "य",
+       "sound": "ya",
+       "words": [
+        {
+         "word": "याक",
+         "emoji": "🐃",
+         "meaning": "yak"
+        }
+       ]
+      },
+      {
+       "char": "र",
+       "sound": "ra",
+       "words": [
+        {
+         "word": "रथ",
+         "emoji": "🛞",
+         "meaning": "chariot"
+        }
+       ]
+      },
+      {
+       "char": "ल",
+       "sound": "la",
+       "words": [
+        {
+         "word": "लट्टू",
+         "emoji": "🪀",
+         "meaning": "spinning top"
+        }
+       ]
+      },
+      {
+       "char": "व",
+       "sound": "va",
+       "words": [
+        {
+         "word": "वन",
+         "emoji": "🌳",
+         "meaning": "forest"
+        }
+       ]
+      },
+      {
+       "char": "श",
+       "sound": "sha",
+       "words": [
+        {
+         "word": "शेर",
+         "emoji": "🦁",
+         "meaning": "lion"
+        }
+       ]
+      },
+      {
+       "char": "ष",
+       "sound": "sha",
+       "words": [
+        {
+         "word": "षट्कोण",
+         "emoji": "⬡",
+         "meaning": "hexagon"
+        }
+       ]
+      },
+      {
+       "char": "स",
+       "sound": "sa",
+       "words": [
+        {
+         "word": "सेब",
+         "emoji": "🍎",
+         "meaning": "apple"
+        }
+       ]
+      },
+      {
+       "char": "ह",
+       "sound": "ha",
+       "words": [
+        {
+         "word": "हाथी",
+         "emoji": "🐘",
+         "meaning": "elephant"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "stories": [
+  {
+   "id": "thirsty-crow",
+   "title": "The Thirsty Crow",
+   "language": "en",
+   "emoji": "🐦",
+   "color": "#3DA5FF",
+   "ageGroups": [
+    "2-4",
+    "5-7",
+    "8-10"
+   ],
+   "published": true,
+   "pages": [
+    {
+     "scene": "☀️🌵🐦",
+     "image": "",
+     "text": "One hot summer day, a crow was very, very thirsty. He flew here and there looking for water."
+    },
+    {
+     "scene": "🐦🏺",
+     "image": "",
+     "text": "At last he found a pot. But the water was at the very bottom, and his beak could not reach it."
+    },
+    {
+     "scene": "🐦🤔💭",
+     "image": "",
+     "text": "The crow did not give up. He looked around and thought hard. Then he had a clever idea!"
+    },
+    {
+     "scene": "🪨🐦🏺",
+     "image": "",
+     "text": "He picked up small pebbles, one by one, and dropped them into the pot. Plop! Plop! Plop!"
+    },
+    {
+     "scene": "💧🏺🐦😊",
+     "image": "",
+     "text": "Slowly the water rose up, up, up! The crow drank happily and flew away singing."
+    }
+   ],
+   "moral": "Never give up. Think calmly and you will find a way!",
+   "quiz": [
+    {
+     "question": "What did the crow put into the pot?",
+     "options": [
+      "Pebbles 🪨",
+      "Leaves 🍃",
+      "Bread 🍞"
+     ],
+     "answer": 0
+    },
+    {
+     "question": "How did the crow feel at the end?",
+     "options": [
+      "Sad 😢",
+      "Happy 😊",
+      "Angry 😠"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "id": "lion-and-mouse",
+   "title": "The Lion and the Mouse",
+   "language": "en",
+   "emoji": "🦁",
+   "color": "#FFB23F",
+   "ageGroups": [
+    "2-4",
+    "5-7",
+    "8-10"
+   ],
+   "published": true,
+   "pages": [
+    {
+     "scene": "🦁😴🌳",
+     "image": "",
+     "text": "A big lion was sleeping under a tree. A tiny mouse ran over his nose by mistake."
+    },
+    {
+     "scene": "🦁😠🐭",
+     "image": "",
+     "text": "The lion woke up and caught the mouse. \"Please let me go,\" said the mouse. \"One day I will help you!\""
+    },
+    {
+     "scene": "🦁😂🐭",
+     "image": "",
+     "text": "The lion laughed. \"How can a tiny mouse help me?\" But he was kind and let the mouse go."
+    },
+    {
+     "scene": "🦁🪢😟",
+     "image": "",
+     "text": "A few days later, the lion was caught in a hunter's net. He roared and roared, but he could not get out."
+    },
+    {
+     "scene": "🐭✂️🪢",
+     "image": "",
+     "text": "The little mouse heard him. She ran over and chewed the ropes with her sharp teeth."
+    },
+    {
+     "scene": "🦁❤️🐭",
+     "image": "",
+     "text": "The lion was free! \"Thank you, little friend,\" he said. From that day on, they were best friends."
+    }
+   ],
+   "moral": "Be kind to everyone. Even small friends can do big things!",
+   "quiz": [
+    {
+     "question": "Who saved the lion?",
+     "options": [
+      "An elephant 🐘",
+      "A mouse 🐭",
+      "A bird 🐦"
+     ],
+     "answer": 1
+    },
+    {
+     "question": "How did the mouse free the lion?",
+     "options": [
+      "By singing",
+      "By chewing the ropes",
+      "By calling the police"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "id": "tortoise-and-hare",
+   "title": "The Tortoise and the Hare",
+   "language": "en",
+   "emoji": "🐢",
+   "color": "#22B573",
+   "ageGroups": [
+    "5-7",
+    "8-10"
+   ],
+   "published": true,
+   "pages": [
+    {
+     "scene": "🐇💨😎",
+     "image": "",
+     "text": "Hare was very fast, and he liked to show off. \"Nobody can beat me!\" he said."
+    },
+    {
+     "scene": "🐢🙂🏁",
+     "image": "",
+     "text": "Tortoise said calmly, \"Let us have a race.\" All the animals laughed, but the race began."
+    },
+    {
+     "scene": "🐇💨🌳😴",
+     "image": "",
+     "text": "Hare ran far ahead. He was so sure he would win that he lay down under a tree and fell asleep."
+    },
+    {
+     "scene": "🐢🐢🐢➡️",
+     "image": "",
+     "text": "Tortoise kept walking. Slow and steady, step by step, he never stopped."
+    },
+    {
+     "scene": "🐢🏆🎉",
+     "image": "",
+     "text": "When Hare woke up, Tortoise was already crossing the finish line. Everyone cheered for Tortoise!"
+    }
+   ],
+   "moral": "Slow and steady wins the race. Keep trying and never be proud.",
+   "quiz": [
+    {
+     "question": "Who won the race?",
+     "options": [
+      "Hare 🐇",
+      "Tortoise 🐢",
+      "Fox 🦊"
+     ],
+     "answer": 1
+    },
+    {
+     "question": "Why did Hare lose?",
+     "options": [
+      "He fell asleep",
+      "He was hungry",
+      "He got lost"
+     ],
+     "answer": 0
+    }
+   ]
+  },
+  {
+   "id": "ant-and-grasshopper",
+   "title": "The Ant and the Grasshopper",
+   "language": "en",
+   "emoji": "🐜",
+   "color": "#FF8A3D",
+   "ageGroups": [
+    "5-7",
+    "8-10"
+   ],
+   "published": true,
+   "pages": [
+    {
+     "scene": "☀️🦗🎻",
+     "image": "",
+     "text": "All summer long, Grasshopper played music and danced in the sunshine."
+    },
+    {
+     "scene": "🐜🌾🐜",
+     "image": "",
+     "text": "Ant worked hard every day, carrying food to her home for the winter."
+    },
+    {
+     "scene": "🦗😄🐜",
+     "image": "",
+     "text": "\"Come and play!\" said Grasshopper. \"I am saving food for winter,\" said Ant."
+    },
+    {
+     "scene": "❄️🦗🥶",
+     "image": "",
+     "text": "Soon winter came. Snow covered everything. Grasshopper was cold and hungry."
+    },
+    {
+     "scene": "🐜🏠🍲🦗",
+     "image": "",
+     "text": "Kind Ant shared her food. Grasshopper said, \"Next summer, I will work AND play!\""
+    }
+   ],
+   "moral": "Work today so you are ready for tomorrow — and always share.",
+   "quiz": [
+    {
+     "question": "What did Ant do in summer?",
+     "options": [
+      "Slept",
+      "Saved food",
+      "Played music"
+     ],
+     "answer": 1
+    },
+    {
+     "question": "What came after summer?",
+     "options": [
+      "Winter ❄️",
+      "Spring 🌷",
+      "Birthday 🎂"
+     ],
+     "answer": 0
+    }
+   ]
+  },
+  {
+   "id": "boy-who-cried-wolf",
+   "title": "The Boy Who Cried Wolf",
+   "language": "en",
+   "emoji": "🐺",
+   "color": "#9B5CFF",
+   "ageGroups": [
+    "5-7",
+    "8-10"
+   ],
+   "published": true,
+   "pages": [
+    {
+     "scene": "👦🐑🐑⛰️",
+     "image": "",
+     "text": "A shepherd boy watched his sheep on a hill. He felt bored."
+    },
+    {
+     "scene": "👦📣🏃‍♂️🏃‍♀️",
+     "image": "",
+     "text": "As a joke he shouted, \"Wolf! Wolf!\" The villagers ran up the hill, but there was no wolf."
+    },
+    {
+     "scene": "👦😂😠",
+     "image": "",
+     "text": "The boy laughed. He played the same trick again, and the villagers were very upset."
+    },
+    {
+     "scene": "🐺🐑👦😱",
+     "image": "",
+     "text": "Then a real wolf came! \"Wolf! Wolf!\" he cried. But this time nobody believed him."
+    },
+    {
+     "scene": "👦😔💭",
+     "image": "",
+     "text": "The boy learned a big lesson that day. He promised to always tell the truth."
+    }
+   ],
+   "moral": "Always tell the truth, so people can trust you.",
+   "quiz": [
+    {
+     "question": "Why did nobody come the last time?",
+     "options": [
+      "They were asleep",
+      "They did not believe him",
+      "It was raining"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "id": "robo-and-seed",
+   "title": "Robo and the Little Seed",
+   "language": "en",
+   "emoji": "🤖",
+   "color": "#00C2D1",
+   "ageGroups": [
+    "2-4",
+    "5-7",
+    "8-10"
+   ],
+   "published": true,
+   "pages": [
+    {
+     "scene": "🤖🚀🌍",
+     "image": "",
+     "text": "Robo was a little robot who lived on a space station. He knew millions of facts!"
+    },
+    {
+     "scene": "🤖🌱❓",
+     "image": "",
+     "text": "One day he found a tiny seed. \"What are you?\" he asked. The seed did not answer."
+    },
+    {
+     "scene": "🤖💧☀️🌱",
+     "image": "",
+     "text": "Robo searched his memory: seeds need water, light and care. So he watered it every day."
+    },
+    {
+     "scene": "🤖⏳🌿",
+     "image": "",
+     "text": "Some days nothing happened. Robo learned that some things cannot be rushed — they need patience."
+    },
+    {
+     "scene": "🤖🌻😊",
+     "image": "",
+     "text": "One morning, a bright sunflower smiled at him! \"Facts are great,\" said Robo, \"but caring makes things grow.\""
+    }
+   ],
+   "moral": "Learning is wonderful, but kindness and patience help everything grow.",
+   "quiz": [
+    {
+     "question": "What grew from the seed?",
+     "options": [
+      "A tree 🌳",
+      "A sunflower 🌻",
+      "A cactus 🌵"
+     ],
+     "answer": 1
+    },
+    {
+     "question": "What does a seed need?",
+     "options": [
+      "Water and light",
+      "Candy",
+      "Toys"
+     ],
+     "answer": 0
+    }
+   ]
+  },
+  {
+   "id": "trishnarto-kak",
+   "title": "তৃষ্ণার্ত কাক",
+   "language": "bn",
+   "emoji": "🐦",
+   "color": "#FF4FA3",
+   "ageGroups": [
+    "2-4",
+    "5-7",
+    "8-10"
+   ],
+   "published": true,
+   "pages": [
+    {
+     "scene": "☀️🌵🐦",
+     "image": "",
+     "text": "এক গরমের দিনে একটি কাকের খুব পিপাসা পেল। সে পানির খোঁজে এদিক-ওদিক উড়ে বেড়াল।"
+    },
+    {
+     "scene": "🐦🏺",
+     "image": "",
+     "text": "অবশেষে সে একটি কলসি দেখতে পেল। কিন্তু পানি ছিল একদম নিচে, তার ঠোঁট পৌঁছাল না।"
+    },
+    {
+     "scene": "🪨🐦🏺",
+     "image": "",
+     "text": "কাকটি হাল ছাড়ল না। সে একটা একটা করে নুড়ি পাথর কলসিতে ফেলতে লাগল।"
+    },
+    {
+     "scene": "💧🐦😊",
+     "image": "",
+     "text": "ধীরে ধীরে পানি উপরে উঠে এল। কাকটি মনের আনন্দে পানি পান করে উড়ে গেল।"
+    }
+   ],
+   "moral": "ধৈর্য আর বুদ্ধি থাকলে সব সমস্যার সমাধান হয়।",
+   "quiz": [
+    {
+     "question": "কাকটি কলসিতে কী ফেলেছিল?",
+     "options": [
+      "নুড়ি পাথর 🪨",
+      "পাতা 🍃",
+      "রুটি 🍞"
+     ],
+     "answer": 0
+    }
+   ]
+  },
+  {
+   "id": "golden-goose-es",
+   "title": "La Gallina de los Huevos de Oro",
+   "language": "es",
+   "emoji": "🐔",
+   "color": "#FFC93C",
+   "ageGroups": [
+    "5-7",
+    "8-10"
+   ],
+   "published": true,
+   "pages": [
+    {
+     "scene": "👨‍🌾🐔🥚✨",
+     "image": "",
+     "text": "Un granjero tenía una gallina mágica. Cada día ponía un huevo de oro."
+    },
+    {
+     "scene": "👨‍🌾🤑",
+     "image": "",
+     "text": "El granjero quería ser rico más rápido. \"¡Quiero todos los huevos ahora!\", pensó."
+    },
+    {
+     "scene": "👨‍🌾😢🐔",
+     "image": "",
+     "text": "Por su impaciencia, perdió a la gallina y ya no tuvo más huevos de oro."
+    }
+   ],
+   "moral": "La avaricia rompe el saco. Sé paciente y agradecido.",
+   "quiz": [
+    {
+     "question": "¿Qué ponía la gallina?",
+     "options": [
+      "Huevos de oro 🥚",
+      "Manzanas 🍎",
+      "Piedras 🪨"
+     ],
+     "answer": 0
+    }
+   ]
+  }
+ ],
+ "videos": [
+  {
+   "id": "v-baby-shark",
+   "title": "Baby Shark Dance",
+   "provider": "youtube",
+   "videoId": "XqZsoesa55w",
+   "url": "",
+   "ageGroups": [
+    "2-4",
+    "5-7"
+   ],
+   "category": "Songs",
+   "published": true,
+   "sample": true
+  },
+  {
+   "id": "v-wheels-bus",
+   "title": "Wheels on the Bus",
+   "provider": "youtube",
+   "videoId": "e_04ZrNroTo",
+   "url": "",
+   "ageGroups": [
+    "2-4"
+   ],
+   "category": "Songs",
+   "published": true,
+   "sample": true
+  },
+  {
+   "id": "v-bath-song",
+   "title": "Bath Song",
+   "provider": "youtube",
+   "videoId": "WRVsOCh907o",
+   "url": "",
+   "ageGroups": [
+    "2-4"
+   ],
+   "category": "Songs",
+   "published": true,
+   "sample": true
+  },
+  {
+   "id": "v-abc-song",
+   "title": "ABC Song",
+   "provider": "youtube",
+   "videoId": "WfaHgZbIJss",
+   "url": "",
+   "ageGroups": [
+    "2-4",
+    "5-7"
+   ],
+   "category": "Alphabet",
+   "published": true,
+   "sample": true
+  },
+  {
+   "id": "v-solar-system",
+   "title": "Our Solar System (sample - replace in Admin)",
+   "provider": "youtube",
+   "videoId": "",
+   "url": "",
+   "ageGroups": [
+    "8-10"
+   ],
+   "category": "Science",
+   "published": false,
+   "sample": true
+  }
+ ],
+ "topics": [
+  {
+   "id": "animals",
+   "title": "Animals",
+   "emoji": "🦁",
+   "color": "#FF8A3D",
+   "animation": "bounce",
+   "ageGroups": [
+    "2-4",
+    "5-7",
+    "8-10"
+   ],
+   "published": true,
+   "items": [
+    {
+     "id": "lion",
+     "name": "Lion",
+     "emoji": "🦁",
+     "fact": "The lion is called the king of the jungle. A lion's roar can be heard 8 km away!",
+     "bn": "সিংহ",
+     "sound": "Roar!"
+    },
+    {
+     "id": "elephant",
+     "name": "Elephant",
+     "emoji": "🐘",
+     "fact": "Elephants are the biggest land animals. They use their trunk like a hand.",
+     "bn": "হাতি",
+     "sound": "Pawoo!"
+    },
+    {
+     "id": "tiger",
+     "name": "Tiger",
+     "emoji": "🐯",
+     "fact": "The Royal Bengal Tiger lives in the Sundarbans. Every tiger has unique stripes.",
+     "bn": "বাঘ",
+     "sound": "Grrr!"
+    },
+    {
+     "id": "dog",
+     "name": "Dog",
+     "emoji": "🐶",
+     "fact": "Dogs can smell things 10,000 times better than people.",
+     "bn": "কুকুর",
+     "sound": "Woof woof!"
+    },
+    {
+     "id": "cat",
+     "name": "Cat",
+     "emoji": "🐱",
+     "fact": "Cats sleep for about 13 to 16 hours a day.",
+     "bn": "বিড়াল",
+     "sound": "Meow!"
+    },
+    {
+     "id": "cow",
+     "name": "Cow",
+     "emoji": "🐮",
+     "fact": "Cows give us milk. They have four parts in their stomach.",
+     "bn": "গরু",
+     "sound": "Moo!"
+    },
+    {
+     "id": "monkey",
+     "name": "Monkey",
+     "emoji": "🐵",
+     "fact": "Monkeys use their tails to hold branches.",
+     "bn": "বানর",
+     "sound": "Ooh ooh aah aah!"
+    },
+    {
+     "id": "giraffe",
+     "name": "Giraffe",
+     "emoji": "🦒",
+     "fact": "The giraffe is the tallest animal in the world.",
+     "bn": "জিরাফ",
+     "sound": "Hmmm!"
+    },
+    {
+     "id": "zebra",
+     "name": "Zebra",
+     "emoji": "🦓",
+     "fact": "No two zebras have the same stripes.",
+     "bn": "জেব্রা",
+     "sound": "Neigh!"
+    },
+    {
+     "id": "panda",
+     "name": "Panda",
+     "emoji": "🐼",
+     "fact": "Pandas eat bamboo for up to 12 hours every day.",
+     "bn": "পান্ডা",
+     "sound": "Squeak!"
+    },
+    {
+     "id": "kangaroo",
+     "name": "Kangaroo",
+     "emoji": "🦘",
+     "fact": "Baby kangaroos are called joeys and live in their mother's pouch.",
+     "bn": "ক্যাঙ্গারু",
+     "sound": "Boing!"
+    },
+    {
+     "id": "rabbit",
+     "name": "Rabbit",
+     "emoji": "🐰",
+     "fact": "Rabbits can turn their ears to hear sounds all around.",
+     "bn": "খরগোশ",
+     "sound": "Sniff sniff!"
+    },
+    {
+     "id": "horse",
+     "name": "Horse",
+     "emoji": "🐴",
+     "fact": "Horses can sleep standing up.",
+     "bn": "ঘোড়া",
+     "sound": "Neigh!"
+    },
+    {
+     "id": "frog",
+     "name": "Frog",
+     "emoji": "🐸",
+     "fact": "Frogs drink water through their skin.",
+     "bn": "ব্যাঙ",
+     "sound": "Ribbit!"
+    },
+    {
+     "id": "dolphin",
+     "name": "Dolphin",
+     "emoji": "🐬",
+     "fact": "Dolphins are very smart and talk to each other with clicks and whistles.",
+     "bn": "ডলফিন",
+     "sound": "Click click!"
+    },
+    {
+     "id": "whale",
+     "name": "Whale",
+     "emoji": "🐳",
+     "fact": "The blue whale is the biggest animal that has ever lived.",
+     "bn": "তিমি",
+     "sound": "Whooo!"
+    },
+    {
+     "id": "bee",
+     "name": "Bee",
+     "emoji": "🐝",
+     "fact": "Bees make honey and help flowers grow.",
+     "bn": "মৌমাছি",
+     "sound": "Buzz buzz!"
+    },
+    {
+     "id": "butterfly",
+     "name": "Butterfly",
+     "emoji": "🦋",
+     "fact": "A butterfly starts life as a caterpillar.",
+     "bn": "প্রজাপতি"
+    }
+   ]
+  },
+  {
+   "id": "birds",
+   "title": "Birds",
+   "emoji": "🦜",
+   "color": "#22B573",
+   "animation": "fly",
+   "ageGroups": [
+    "2-4",
+    "5-7",
+    "8-10"
+   ],
+   "published": true,
+   "items": [
+    {
+     "id": "parrot",
+     "name": "Parrot",
+     "emoji": "🦜",
+     "fact": "Parrots can learn to copy human words.",
+     "bn": "টিয়া",
+     "sound": "Hello!"
+    },
+    {
+     "id": "owl",
+     "name": "Owl",
+     "emoji": "🦉",
+     "fact": "Owls can turn their heads almost all the way around.",
+     "bn": "পেঁচা",
+     "sound": "Hoo hoo!"
+    },
+    {
+     "id": "peacock",
+     "name": "Peacock",
+     "emoji": "🦚",
+     "fact": "The peacock opens its colorful tail like a fan.",
+     "bn": "ময়ূর",
+     "sound": "Mee-ow!"
+    },
+    {
+     "id": "penguin",
+     "name": "Penguin",
+     "emoji": "🐧",
+     "fact": "Penguins cannot fly, but they are great swimmers.",
+     "bn": "পেঙ্গুইন",
+     "sound": "Squawk!"
+    },
+    {
+     "id": "eagle",
+     "name": "Eagle",
+     "emoji": "🦅",
+     "fact": "Eagles can see a rabbit from very high up in the sky.",
+     "bn": "ঈগল",
+     "sound": "Screech!"
+    },
+    {
+     "id": "duck",
+     "name": "Duck",
+     "emoji": "🦆",
+     "fact": "Ducks have waterproof feathers.",
+     "bn": "হাঁস",
+     "sound": "Quack quack!"
+    },
+    {
+     "id": "hen",
+     "name": "Hen",
+     "emoji": "🐔",
+     "fact": "Hens lay eggs. A baby hen is called a chick.",
+     "bn": "মুরগি",
+     "sound": "Cluck cluck!"
+    },
+    {
+     "id": "crow",
+     "name": "Crow",
+     "emoji": "🐦‍⬛",
+     "fact": "Crows are very clever birds that can solve puzzles.",
+     "bn": "কাক",
+     "sound": "Caw caw!"
+    },
+    {
+     "id": "magpie_robin",
+     "name": "Magpie Robin",
+     "emoji": "🐦",
+     "fact": "The doel (magpie robin) is the national bird of Bangladesh.",
+     "bn": "দোয়েল",
+     "sound": "Tweet tweet!"
+    }
+   ]
+  },
+  {
+   "id": "fruits",
+   "title": "Fruits & Veggies",
+   "emoji": "🍎",
+   "color": "#FF5D73",
+   "animation": "wobble",
+   "ageGroups": [
+    "2-4",
+    "5-7"
+   ],
+   "published": true,
+   "items": [
+    {
+     "id": "apple",
+     "name": "Apple",
+     "emoji": "🍎",
+     "fact": "Apples can be red, green or yellow.",
+     "bn": "আপেল"
+    },
+    {
+     "id": "banana",
+     "name": "Banana",
+     "emoji": "🍌",
+     "fact": "Bananas give us quick energy to play.",
+     "bn": "কলা"
+    },
+    {
+     "id": "mango",
+     "name": "Mango",
+     "emoji": "🥭",
+     "fact": "The mango is the national tree of Bangladesh and a favorite summer fruit.",
+     "bn": "আম"
+    },
+    {
+     "id": "orange",
+     "name": "Orange",
+     "emoji": "🍊",
+     "fact": "Oranges are full of vitamin C.",
+     "bn": "কমলা"
+    },
+    {
+     "id": "grapes",
+     "name": "Grapes",
+     "emoji": "🍇",
+     "fact": "Grapes grow in bunches on vines.",
+     "bn": "আঙুর"
+    },
+    {
+     "id": "watermelon",
+     "name": "Watermelon",
+     "emoji": "🍉",
+     "fact": "A watermelon is about 92% water.",
+     "bn": "তরমুজ"
+    },
+    {
+     "id": "strawberry",
+     "name": "Strawberry",
+     "emoji": "🍓",
+     "fact": "Strawberries wear their seeds on the outside.",
+     "bn": "স্ট্রবেরি"
+    },
+    {
+     "id": "pineapple",
+     "name": "Pineapple",
+     "emoji": "🍍",
+     "fact": "A pineapple takes about two years to grow.",
+     "bn": "আনারস"
+    },
+    {
+     "id": "jackfruit",
+     "name": "Jackfruit",
+     "emoji": "🍈",
+     "fact": "The jackfruit is the national fruit of Bangladesh. It is the biggest tree fruit!",
+     "bn": "কাঁঠাল"
+    },
+    {
+     "id": "carrot",
+     "name": "Carrot",
+     "emoji": "🥕",
+     "fact": "Carrots help keep your eyes healthy.",
+     "bn": "গাজর"
+    },
+    {
+     "id": "tomato",
+     "name": "Tomato",
+     "emoji": "🍅",
+     "fact": "A tomato is really a fruit!",
+     "bn": "টমেটো"
+    },
+    {
+     "id": "broccoli",
+     "name": "Broccoli",
+     "emoji": "🥦",
+     "fact": "Broccoli looks like a tiny tree.",
+     "bn": "ব্রকলি"
+    }
+   ]
+  },
+  {
+   "id": "vehicles",
+   "title": "Vehicles",
+   "emoji": "🚗",
+   "color": "#1E90FF",
+   "animation": "drive",
+   "ageGroups": [
+    "2-4",
+    "5-7",
+    "8-10"
+   ],
+   "published": true,
+   "items": [
+    {
+     "id": "car",
+     "name": "Car",
+     "emoji": "🚗",
+     "fact": "Cars have four wheels and carry families.",
+     "bn": "গাড়ি",
+     "sound": "Vroom vroom!"
+    },
+    {
+     "id": "bus",
+     "name": "Bus",
+     "emoji": "🚌",
+     "fact": "A bus can carry many people at once.",
+     "bn": "বাস",
+     "sound": "Beep beep!"
+    },
+    {
+     "id": "train",
+     "name": "Train",
+     "emoji": "🚆",
+     "fact": "Trains run on tracks and pull many coaches.",
+     "bn": "ট্রেন",
+     "sound": "Choo choo!"
+    },
+    {
+     "id": "bicycle",
+     "name": "Bicycle",
+     "emoji": "🚲",
+     "fact": "A bicycle has two wheels and pedals.",
+     "bn": "সাইকেল",
+     "sound": "Ring ring!"
+    },
+    {
+     "id": "rickshaw",
+     "name": "Rickshaw",
+     "emoji": "🛺",
+     "fact": "Rickshaws are colorful rides seen in Dhaka.",
+     "bn": "রিকশা",
+     "sound": "Tring tring!"
+    },
+    {
+     "id": "fire_truck",
+     "name": "Fire Truck",
+     "emoji": "🚒",
+     "fact": "Fire trucks carry water and ladders to put out fires.",
+     "bn": "দমকল",
+     "sound": "Nee-naw!"
+    },
+    {
+     "id": "ambulance",
+     "name": "Ambulance",
+     "emoji": "🚑",
+     "fact": "An ambulance takes sick people to the hospital fast.",
+     "bn": "অ্যাম্বুলেন্স",
+     "sound": "Wee-woo!"
+    },
+    {
+     "id": "police_car",
+     "name": "Police Car",
+     "emoji": "🚓",
+     "fact": "Police cars help keep people safe.",
+     "bn": "পুলিশের গাড়ি",
+     "sound": "Wee-woo!"
+    },
+    {
+     "id": "tractor",
+     "name": "Tractor",
+     "emoji": "🚜",
+     "fact": "Tractors help farmers plough their fields.",
+     "bn": "ট্রাক্টর",
+     "sound": "Put put put!"
+    },
+    {
+     "id": "motorbike",
+     "name": "Motorbike",
+     "emoji": "🏍️",
+     "fact": "A motorbike is fast and has two wheels.",
+     "bn": "মোটরসাইকেল",
+     "sound": "Vrrrm!"
+    }
+   ]
+  },
+  {
+   "id": "ships",
+   "title": "Ships & Boats",
+   "emoji": "🚢",
+   "color": "#00C2A8",
+   "animation": "sail",
+   "ageGroups": [
+    "2-4",
+    "5-7",
+    "8-10"
+   ],
+   "published": true,
+   "items": [
+    {
+     "id": "ship",
+     "name": "Ship",
+     "emoji": "🚢",
+     "fact": "Big ships carry goods across oceans.",
+     "bn": "জাহাজ",
+     "sound": "Toot toot!"
+    },
+    {
+     "id": "sailboat",
+     "name": "Sailboat",
+     "emoji": "⛵",
+     "fact": "A sailboat uses wind to move.",
+     "bn": "পালতোলা নৌকা",
+     "sound": "Whoosh!"
+    },
+    {
+     "id": "boat",
+     "name": "Rowing Boat",
+     "emoji": "🛶",
+     "fact": "You move a canoe with paddles.",
+     "bn": "নৌকা",
+     "sound": "Splash!"
+    },
+    {
+     "id": "speedboat",
+     "name": "Speedboat",
+     "emoji": "🚤",
+     "fact": "Speedboats zoom fast on the water.",
+     "bn": "স্পিডবোট",
+     "sound": "Zoom!"
+    },
+    {
+     "id": "ferry",
+     "name": "Ferry",
+     "emoji": "⛴️",
+     "fact": "A ferry carries people and cars across rivers.",
+     "bn": "ফেরি",
+     "sound": "Hooonk!"
+    },
+    {
+     "id": "submarine",
+     "name": "Submarine",
+     "emoji": "🛳️",
+     "fact": "A submarine can travel deep under the sea.",
+     "bn": "সাবমেরিন",
+     "sound": "Bloop!"
+    },
+    {
+     "id": "anchor",
+     "name": "Anchor",
+     "emoji": "⚓",
+     "fact": "An anchor stops a ship from floating away.",
+     "bn": "নোঙর"
+    }
+   ]
+  },
+  {
+   "id": "sky",
+   "title": "Planes & Sky",
+   "emoji": "✈️",
+   "color": "#7C5CFF",
+   "animation": "fly",
+   "ageGroups": [
+    "2-4",
+    "5-7",
+    "8-10"
+   ],
+   "published": true,
+   "items": [
+    {
+     "id": "airplane",
+     "name": "Airplane",
+     "emoji": "✈️",
+     "fact": "Airplanes fly high above the clouds.",
+     "bn": "উড়োজাহাজ",
+     "sound": "Zoooom!"
+    },
+    {
+     "id": "helicopter",
+     "name": "Helicopter",
+     "emoji": "🚁",
+     "fact": "Helicopters can fly straight up and hover.",
+     "bn": "হেলিকপ্টার",
+     "sound": "Chop chop chop!"
+    },
+    {
+     "id": "rocket",
+     "name": "Rocket",
+     "emoji": "🚀",
+     "fact": "Rockets carry astronauts into space.",
+     "bn": "রকেট",
+     "sound": "3, 2, 1, blast off!"
+    },
+    {
+     "id": "balloon",
+     "name": "Hot Air Balloon",
+     "emoji": "🎈",
+     "fact": "Hot air balloons float because hot air is lighter.",
+     "bn": "বেলুন"
+    },
+    {
+     "id": "parachute",
+     "name": "Parachute",
+     "emoji": "🪂",
+     "fact": "A parachute helps people float down slowly.",
+     "bn": "প্যারাশুট"
+    },
+    {
+     "id": "satellite",
+     "name": "Satellite",
+     "emoji": "🛰️",
+     "fact": "Satellites go around Earth and help us watch the weather.",
+     "bn": "কৃত্রিম উপগ্রহ",
+     "sound": "Beep beep!"
+    }
+   ]
+  },
+  {
+   "id": "shapes",
+   "title": "Shapes",
+   "emoji": "🔷",
+   "color": "#9B5CFF",
+   "animation": "spin",
+   "ageGroups": [
+    "2-4",
+    "5-7"
+   ],
+   "published": true,
+   "items": [
+    {
+     "id": "circle",
+     "name": "Circle",
+     "emoji": "🔴",
+     "fact": "A circle is round like a ball. It has no corners.",
+     "bn": "বৃত্ত"
+    },
+    {
+     "id": "square",
+     "name": "Square",
+     "emoji": "🟥",
+     "fact": "A square has 4 equal sides and 4 corners.",
+     "bn": "বর্গ"
+    },
+    {
+     "id": "triangle",
+     "name": "Triangle",
+     "emoji": "🔺",
+     "fact": "A triangle has 3 sides and 3 corners.",
+     "bn": "ত্রিভুজ"
+    },
+    {
+     "id": "rectangle",
+     "name": "Rectangle",
+     "emoji": "▬",
+     "fact": "A rectangle has 4 sides, like a door.",
+     "bn": "আয়তক্ষেত্র"
+    },
+    {
+     "id": "star",
+     "name": "Star",
+     "emoji": "⭐",
+     "fact": "A star shape has 5 points.",
+     "bn": "তারা"
+    },
+    {
+     "id": "heart",
+     "name": "Heart",
+     "emoji": "❤️",
+     "fact": "A heart shape means love.",
+     "bn": "হৃদয়"
+    },
+    {
+     "id": "diamond",
+     "name": "Diamond",
+     "emoji": "🔷",
+     "fact": "A diamond is like a square standing on its corner.",
+     "bn": "রম্বস"
+    },
+    {
+     "id": "oval",
+     "name": "Oval",
+     "emoji": "🥚",
+     "fact": "An oval is like a stretched circle, the shape of an egg.",
+     "bn": "ডিম্বাকার"
+    }
+   ]
+  },
+  {
+   "id": "colors",
+   "title": "Colors",
+   "emoji": "🌈",
+   "color": "#FFC93C",
+   "animation": "pulse",
+   "ageGroups": [
+    "2-4",
+    "5-7"
+   ],
+   "published": true,
+   "items": [
+    {
+     "id": "red",
+     "name": "Red",
+     "emoji": "🟥",
+     "fact": "Red is the color of apples and fire trucks.",
+     "bn": "লাল",
+     "hex": "#FF3B30"
+    },
+    {
+     "id": "blue",
+     "name": "Blue",
+     "emoji": "🟦",
+     "fact": "Blue is the color of the sky and the sea.",
+     "bn": "নীল",
+     "hex": "#1E90FF"
+    },
+    {
+     "id": "yellow",
+     "name": "Yellow",
+     "emoji": "🟨",
+     "fact": "Yellow is the color of the sun and bananas.",
+     "bn": "হলুদ",
+     "hex": "#FFD60A"
+    },
+    {
+     "id": "green",
+     "name": "Green",
+     "emoji": "🟩",
+     "fact": "Green is the color of leaves and grass.",
+     "bn": "সবুজ",
+     "hex": "#34C759"
+    },
+    {
+     "id": "orange_c",
+     "name": "Orange",
+     "emoji": "🟧",
+     "fact": "Orange is red and yellow mixed together.",
+     "bn": "কমলা",
+     "hex": "#FF9500"
+    },
+    {
+     "id": "purple",
+     "name": "Purple",
+     "emoji": "🟪",
+     "fact": "Purple is red and blue mixed together.",
+     "bn": "বেগুনি",
+     "hex": "#AF52DE"
+    },
+    {
+     "id": "pink",
+     "name": "Pink",
+     "emoji": "🩷",
+     "fact": "Pink is red and white mixed together.",
+     "bn": "গোলাপি",
+     "hex": "#FF6FB5"
+    },
+    {
+     "id": "brown",
+     "name": "Brown",
+     "emoji": "🟫",
+     "fact": "Brown is the color of chocolate and tree trunks.",
+     "bn": "বাদামি",
+     "hex": "#8B5A2B"
+    },
+    {
+     "id": "black",
+     "name": "Black",
+     "emoji": "⬛",
+     "fact": "Black is the color of the night sky.",
+     "bn": "কালো",
+     "hex": "#222222"
+    },
+    {
+     "id": "white",
+     "name": "White",
+     "emoji": "⬜",
+     "fact": "White is the color of milk and clouds.",
+     "bn": "সাদা",
+     "hex": "#F5F5F5"
+    }
+   ]
+  },
+  {
+   "id": "numbers",
+   "title": "Numbers 1-10",
+   "emoji": "🔢",
+   "color": "#FF4FA3",
+   "animation": "pop",
+   "ageGroups": [
+    "2-4",
+    "5-7"
+   ],
+   "published": true,
+   "items": [
+    {
+     "id": "n1",
+     "name": "One",
+     "emoji": "1️⃣",
+     "fact": "1 — count 1 🍎!",
+     "bn": "এক",
+     "count": 1,
+     "object": "🍎"
+    },
+    {
+     "id": "n2",
+     "name": "Two",
+     "emoji": "2️⃣",
+     "fact": "2 — count 2 🐥!",
+     "bn": "দুই",
+     "count": 2,
+     "object": "🐥"
+    },
+    {
+     "id": "n3",
+     "name": "Three",
+     "emoji": "3️⃣",
+     "fact": "3 — count 3 ⭐!",
+     "bn": "তিন",
+     "count": 3,
+     "object": "⭐"
+    },
+    {
+     "id": "n4",
+     "name": "Four",
+     "emoji": "4️⃣",
+     "fact": "4 — count 4 🎈!",
+     "bn": "চার",
+     "count": 4,
+     "object": "🎈"
+    },
+    {
+     "id": "n5",
+     "name": "Five",
+     "emoji": "5️⃣",
+     "fact": "5 — count 5 🐟!",
+     "bn": "পাঁচ",
+     "count": 5,
+     "object": "🐟"
+    },
+    {
+     "id": "n6",
+     "name": "Six",
+     "emoji": "6️⃣",
+     "fact": "6 — count 6 🍓!",
+     "bn": "ছয়",
+     "count": 6,
+     "object": "🍓"
+    },
+    {
+     "id": "n7",
+     "name": "Seven",
+     "emoji": "7️⃣",
+     "fact": "7 — count 7 🌸!",
+     "bn": "সাত",
+     "count": 7,
+     "object": "🌸"
+    },
+    {
+     "id": "n8",
+     "name": "Eight",
+     "emoji": "8️⃣",
+     "fact": "8 — count 8 🐞!",
+     "bn": "আট",
+     "count": 8,
+     "object": "🐞"
+    },
+    {
+     "id": "n9",
+     "name": "Nine",
+     "emoji": "9️⃣",
+     "fact": "9 — count 9 🚗!",
+     "bn": "নয়",
+     "count": 9,
+     "object": "🚗"
+    },
+    {
+     "id": "n10",
+     "name": "Ten",
+     "emoji": "🔟",
+     "fact": "10 — count 10 🍪!",
+     "bn": "দশ",
+     "count": 10,
+     "object": "🍪"
+    }
+   ]
+  },
+  {
+   "id": "countries",
+   "title": "Countries",
+   "emoji": "🌍",
+   "color": "#3DA5FF",
+   "animation": "float",
+   "ageGroups": [
+    "5-7",
+    "8-10"
+   ],
+   "published": true,
+   "items": [
+    {
+     "id": "bangladesh",
+     "name": "Bangladesh",
+     "emoji": "🇧🇩",
+     "fact": "Capital: Dhaka. Home of the Sundarbans, the biggest mangrove forest.",
+     "bn": "বাংলাদেশ",
+     "capital": "Dhaka"
+    },
+    {
+     "id": "india",
+     "name": "India",
+     "emoji": "🇮🇳",
+     "fact": "Capital: New Delhi. The Taj Mahal is in India.",
+     "bn": "ভারত",
+     "capital": "New Delhi"
+    },
+    {
+     "id": "usa",
+     "name": "United States",
+     "emoji": "🇺🇸",
+     "fact": "Capital: Washington, D.C. It has 50 states.",
+     "bn": "যুক্তরাষ্ট্র",
+     "capital": "Washington, D.C."
+    },
+    {
+     "id": "uk",
+     "name": "United Kingdom",
+     "emoji": "🇬🇧",
+     "fact": "Capital: London. Famous for Big Ben.",
+     "bn": "যুক্তরাজ্য",
+     "capital": "London"
+    },
+    {
+     "id": "japan",
+     "name": "Japan",
+     "emoji": "🇯🇵",
+     "fact": "Capital: Tokyo. Called the land of the rising sun.",
+     "bn": "জাপান",
+     "capital": "Tokyo"
+    },
+    {
+     "id": "china",
+     "name": "China",
+     "emoji": "🇨🇳",
+     "fact": "Capital: Beijing. The Great Wall of China is very, very long.",
+     "bn": "চীন",
+     "capital": "Beijing"
+    },
+    {
+     "id": "egypt",
+     "name": "Egypt",
+     "emoji": "🇪🇬",
+     "fact": "Capital: Cairo. Home of the great pyramids.",
+     "bn": "মিশর",
+     "capital": "Cairo"
+    },
+    {
+     "id": "france",
+     "name": "France",
+     "emoji": "🇫🇷",
+     "fact": "Capital: Paris. The Eiffel Tower is in Paris.",
+     "bn": "ফ্রান্স",
+     "capital": "Paris"
+    },
+    {
+     "id": "brazil",
+     "name": "Brazil",
+     "emoji": "🇧🇷",
+     "fact": "Capital: Brasília. The Amazon rainforest is in Brazil.",
+     "bn": "ব্রাজিল",
+     "capital": "Brasília"
+    },
+    {
+     "id": "australia",
+     "name": "Australia",
+     "emoji": "🇦🇺",
+     "fact": "Capital: Canberra. Kangaroos and koalas live here.",
+     "bn": "অস্ট্রেলিয়া",
+     "capital": "Canberra"
+    },
+    {
+     "id": "saudi",
+     "name": "Saudi Arabia",
+     "emoji": "🇸🇦",
+     "fact": "Capital: Riyadh. It has huge deserts.",
+     "bn": "সৌদি আরব",
+     "capital": "Riyadh"
+    },
+    {
+     "id": "canada",
+     "name": "Canada",
+     "emoji": "🇨🇦",
+     "fact": "Capital: Ottawa. The maple leaf is on its flag.",
+     "bn": "কানাডা",
+     "capital": "Ottawa"
+    }
+   ]
+  },
+  {
+   "id": "space",
+   "title": "Space",
+   "emoji": "🪐",
+   "color": "#3D2CFF",
+   "animation": "orbit",
+   "ageGroups": [
+    "5-7",
+    "8-10"
+   ],
+   "published": true,
+   "items": [
+    {
+     "id": "sun",
+     "name": "Sun",
+     "emoji": "☀️",
+     "fact": "The Sun is a star. It gives us light and heat.",
+     "bn": "সূর্য"
+    },
+    {
+     "id": "moon",
+     "name": "Moon",
+     "emoji": "🌙",
+     "fact": "The Moon goes around the Earth.",
+     "bn": "চাঁদ"
+    },
+    {
+     "id": "earth",
+     "name": "Earth",
+     "emoji": "🌍",
+     "fact": "Earth is our home planet. It has water and air.",
+     "bn": "পৃথিবী"
+    },
+    {
+     "id": "mars",
+     "name": "Mars",
+     "emoji": "🔴",
+     "fact": "Mars is called the red planet.",
+     "bn": "মঙ্গল"
+    },
+    {
+     "id": "jupiter",
+     "name": "Jupiter",
+     "emoji": "🟠",
+     "fact": "Jupiter is the biggest planet.",
+     "bn": "বৃহস্পতি"
+    },
+    {
+     "id": "saturn",
+     "name": "Saturn",
+     "emoji": "🪐",
+     "fact": "Saturn has beautiful rings made of ice and rock.",
+     "bn": "শনি"
+    },
+    {
+     "id": "comet",
+     "name": "Comet",
+     "emoji": "☄️",
+     "fact": "A comet is a ball of ice and dust with a shiny tail.",
+     "bn": "ধূমকেতু"
+    },
+    {
+     "id": "astronaut",
+     "name": "Astronaut",
+     "emoji": "🧑‍🚀",
+     "fact": "Astronauts are people who travel to space.",
+     "bn": "নভোচারী"
+    }
+   ]
+  },
+  {
+   "id": "body",
+   "title": "My Body",
+   "emoji": "🧍",
+   "color": "#FF6F61",
+   "animation": "bounce",
+   "ageGroups": [
+    "2-4",
+    "5-7"
+   ],
+   "published": true,
+   "items": [
+    {
+     "id": "eyes",
+     "name": "Eyes",
+     "emoji": "👀",
+     "fact": "We see with our eyes.",
+     "bn": "চোখ"
+    },
+    {
+     "id": "ears",
+     "name": "Ears",
+     "emoji": "👂",
+     "fact": "We hear with our ears.",
+     "bn": "কান"
+    },
+    {
+     "id": "nose",
+     "name": "Nose",
+     "emoji": "👃",
+     "fact": "We smell with our nose.",
+     "bn": "নাক"
+    },
+    {
+     "id": "mouth",
+     "name": "Mouth",
+     "emoji": "👄",
+     "fact": "We eat and talk with our mouth.",
+     "bn": "মুখ"
+    },
+    {
+     "id": "hand",
+     "name": "Hand",
+     "emoji": "✋",
+     "fact": "We have five fingers on each hand.",
+     "bn": "হাত"
+    },
+    {
+     "id": "foot",
+     "name": "Foot",
+     "emoji": "🦶",
+     "fact": "We walk and run with our feet.",
+     "bn": "পা"
+    },
+    {
+     "id": "brain",
+     "name": "Brain",
+     "emoji": "🧠",
+     "fact": "Our brain helps us think and learn.",
+     "bn": "মস্তিষ্ক"
+    },
+    {
+     "id": "teeth",
+     "name": "Teeth",
+     "emoji": "🦷",
+     "fact": "Brush your teeth two times every day!",
+     "bn": "দাঁত"
+    }
+   ]
+  },
+  {
+   "id": "jobs",
+   "title": "Helpers & Jobs",
+   "emoji": "🧑‍⚕️",
+   "color": "#00A6FB",
+   "animation": "bounce",
+   "ageGroups": [
+    "5-7",
+    "8-10"
+   ],
+   "published": true,
+   "items": [
+    {
+     "id": "doctor",
+     "name": "Doctor",
+     "emoji": "🧑‍⚕️",
+     "fact": "Doctors help sick people get well.",
+     "bn": "ডাক্তার"
+    },
+    {
+     "id": "teacher",
+     "name": "Teacher",
+     "emoji": "🧑‍🏫",
+     "fact": "Teachers help us learn new things.",
+     "bn": "শিক্ষক"
+    },
+    {
+     "id": "farmer",
+     "name": "Farmer",
+     "emoji": "🧑‍🌾",
+     "fact": "Farmers grow the food we eat.",
+     "bn": "কৃষক"
+    },
+    {
+     "id": "firefighter",
+     "name": "Firefighter",
+     "emoji": "🧑‍🚒",
+     "fact": "Firefighters put out fires and rescue people.",
+     "bn": "দমকল কর্মী"
+    },
+    {
+     "id": "pilot",
+     "name": "Pilot",
+     "emoji": "🧑‍✈️",
+     "fact": "Pilots fly airplanes.",
+     "bn": "পাইলট"
+    },
+    {
+     "id": "chef",
+     "name": "Chef",
+     "emoji": "🧑‍🍳",
+     "fact": "Chefs cook yummy food.",
+     "bn": "রাঁধুনি"
+    },
+    {
+     "id": "scientist",
+     "name": "Scientist",
+     "emoji": "🧑‍🔬",
+     "fact": "Scientists do experiments to discover new things.",
+     "bn": "বিজ্ঞানী"
+    },
+    {
+     "id": "engineer",
+     "name": "Engineer",
+     "emoji": "🧑‍💻",
+     "fact": "Engineers build machines, bridges, apps and robots.",
+     "bn": "প্রকৌশলী"
+    }
+   ]
+  },
+  {
+   "id": "feelings",
+   "title": "Feelings",
+   "emoji": "😊",
+   "color": "#FFB23F",
+   "animation": "pulse",
+   "ageGroups": [
+    "2-4",
+    "5-7",
+    "8-10"
+   ],
+   "published": true,
+   "items": [
+    {
+     "id": "happy",
+     "name": "Happy",
+     "emoji": "😊",
+     "fact": "When we feel happy, we smile. Share your happiness!",
+     "bn": "খুশি"
+    },
+    {
+     "id": "sad",
+     "name": "Sad",
+     "emoji": "😢",
+     "fact": "It is okay to feel sad. Talk to someone you love.",
+     "bn": "দুঃখী"
+    },
+    {
+     "id": "angry",
+     "name": "Angry",
+     "emoji": "😠",
+     "fact": "When angry, take 3 deep breaths: in... and out.",
+     "bn": "রাগী"
+    },
+    {
+     "id": "scared",
+     "name": "Scared",
+     "emoji": "😨",
+     "fact": "When scared, hold a grown-up's hand. You are brave!",
+     "bn": "ভীত"
+    },
+    {
+     "id": "surprised",
+     "name": "Surprised",
+     "emoji": "😮",
+     "fact": "Wow! Surprises can be fun.",
+     "bn": "অবাক"
+    },
+    {
+     "id": "calm",
+     "name": "Calm",
+     "emoji": "😌",
+     "fact": "Calm means quiet and peaceful inside.",
+     "bn": "শান্ত"
+    },
+    {
+     "id": "kind",
+     "name": "Kind",
+     "emoji": "🤗",
+     "fact": "Being kind makes everyone feel good.",
+     "bn": "দয়ালু"
+    }
+   ]
+  },
+  {
+   "id": "habits",
+   "title": "Good Habits",
+   "emoji": "🪥",
+   "color": "#2EC4B6",
+   "animation": "wobble",
+   "ageGroups": [
+    "2-4",
+    "5-7",
+    "8-10"
+   ],
+   "published": true,
+   "items": [
+    {
+     "id": "brush",
+     "name": "Brush your teeth",
+     "emoji": "🪥",
+     "fact": "Brush in the morning and before bed.",
+     "bn": "দাঁত মাজো"
+    },
+    {
+     "id": "wash",
+     "name": "Wash your hands",
+     "emoji": "🧼",
+     "fact": "Wash hands with soap for 20 seconds before eating.",
+     "bn": "হাত ধোও"
+    },
+    {
+     "id": "sleep",
+     "name": "Sleep on time",
+     "emoji": "🛌",
+     "fact": "Good sleep helps you grow and learn.",
+     "bn": "সময়মতো ঘুমাও"
+    },
+    {
+     "id": "water",
+     "name": "Drink water",
+     "emoji": "💧",
+     "fact": "Water keeps your body happy and healthy.",
+     "bn": "পানি পান করো"
+    },
+    {
+     "id": "share",
+     "name": "Share with friends",
+     "emoji": "🤝",
+     "fact": "Sharing makes friends happy.",
+     "bn": "ভাগ করে নাও"
+    },
+    {
+     "id": "thanks",
+     "name": "Say thank you",
+     "emoji": "🙏",
+     "fact": "Say \"thank you\" when someone helps you.",
+     "bn": "ধন্যবাদ বলো"
+    },
+    {
+     "id": "tidy",
+     "name": "Tidy your toys",
+     "emoji": "🧸",
+     "fact": "Put toys back after playing.",
+     "bn": "খেলনা গুছিয়ে রাখো"
+    },
+    {
+     "id": "road",
+     "name": "Cross the road safely",
+     "emoji": "🚦",
+     "fact": "Stop, look left and right, then cross with a grown-up.",
+     "bn": "নিরাপদে রাস্তা পার হও"
+    }
+   ]
+  }
+ ],
+ "quiz": [
+  {
+   "q": "How many legs does a spider have?",
+   "options": [
+    "6",
+    "8",
+    "4"
+   ],
+   "answer": 1,
+   "emoji": "🕷️",
+   "ageGroups": [
+    "5-7",
+    "8-10"
+   ]
+  },
+  {
+   "q": "Which animal says \"moo\"?",
+   "options": [
+    "Cow 🐮",
+    "Cat 🐱",
+    "Duck 🦆"
+   ],
+   "answer": 0,
+   "emoji": "🐮",
+   "ageGroups": [
+    "2-4",
+    "5-7"
+   ]
+  },
+  {
+   "q": "What color is the sky on a sunny day?",
+   "options": [
+    "Green",
+    "Blue",
+    "Red"
+   ],
+   "answer": 1,
+   "emoji": "☀️",
+   "ageGroups": [
+    "2-4",
+    "5-7"
+   ]
+  },
+  {
+   "q": "How many days are in a week?",
+   "options": [
+    "5",
+    "7",
+    "10"
+   ],
+   "answer": 1,
+   "emoji": "📅",
+   "ageGroups": [
+    "5-7",
+    "8-10"
+   ]
+  },
+  {
+   "q": "Which planet do we live on?",
+   "options": [
+    "Mars",
+    "Earth",
+    "Jupiter"
+   ],
+   "answer": 1,
+   "emoji": "🌍",
+   "ageGroups": [
+    "5-7",
+    "8-10"
+   ]
+  },
+  {
+   "q": "What is the capital of Bangladesh?",
+   "options": [
+    "Chattogram",
+    "Dhaka",
+    "Sylhet"
+   ],
+   "answer": 1,
+   "emoji": "🇧🇩",
+   "ageGroups": [
+    "5-7",
+    "8-10"
+   ]
+  },
+  {
+   "q": "Which is the biggest animal in the world?",
+   "options": [
+    "Elephant",
+    "Blue whale",
+    "Giraffe"
+   ],
+   "answer": 1,
+   "emoji": "🐳",
+   "ageGroups": [
+    "5-7",
+    "8-10"
+   ]
+  },
+  {
+   "q": "What do bees make?",
+   "options": [
+    "Milk",
+    "Honey",
+    "Bread"
+   ],
+   "answer": 1,
+   "emoji": "🐝",
+   "ageGroups": [
+    "2-4",
+    "5-7"
+   ]
+  },
+  {
+   "q": "How many sides does a triangle have?",
+   "options": [
+    "3",
+    "4",
+    "5"
+   ],
+   "answer": 0,
+   "emoji": "🔺",
+   "ageGroups": [
+    "2-4",
+    "5-7"
+   ]
+  },
+  {
+   "q": "Which one can fly?",
+   "options": [
+    "Fish 🐟",
+    "Bird 🐦",
+    "Dog 🐶"
+   ],
+   "answer": 1,
+   "emoji": "🪽",
+   "ageGroups": [
+    "2-4"
+   ]
+  },
+  {
+   "q": "Water turns into ___ when it is very cold.",
+   "options": [
+    "Ice",
+    "Steam",
+    "Sand"
+   ],
+   "answer": 0,
+   "emoji": "🧊",
+   "ageGroups": [
+    "5-7",
+    "8-10"
+   ]
+  },
+  {
+   "q": "What gives plants their food?",
+   "options": [
+    "Sunlight",
+    "Moonlight",
+    "Music"
+   ],
+   "answer": 0,
+   "emoji": "🌱",
+   "ageGroups": [
+    "8-10"
+   ]
+  },
+  {
+   "q": "How many continents are there?",
+   "options": [
+    "5",
+    "7",
+    "9"
+   ],
+   "answer": 1,
+   "emoji": "🗺️",
+   "ageGroups": [
+    "8-10"
+   ]
+  },
+  {
+   "q": "Which is the national bird of Bangladesh?",
+   "options": [
+    "Doel (Magpie Robin)",
+    "Peacock",
+    "Crow"
+   ],
+   "answer": 0,
+   "emoji": "🐦",
+   "ageGroups": [
+    "5-7",
+    "8-10"
+   ]
+  },
+  {
+   "q": "What is 5 + 3?",
+   "options": [
+    "7",
+    "8",
+    "9"
+   ],
+   "answer": 1,
+   "emoji": "➕",
+   "ageGroups": [
+    "5-7"
+   ]
+  },
+  {
+   "q": "What is 6 × 7?",
+   "options": [
+    "42",
+    "36",
+    "48"
+   ],
+   "answer": 0,
+   "emoji": "✖️",
+   "ageGroups": [
+    "8-10"
+   ]
+  },
+  {
+   "q": "Which is the largest ocean?",
+   "options": [
+    "Atlantic",
+    "Indian",
+    "Pacific"
+   ],
+   "answer": 2,
+   "emoji": "🌊",
+   "ageGroups": [
+    "8-10"
+   ]
+  },
+  {
+   "q": "Who helps us when we are sick?",
+   "options": [
+    "Doctor 🧑‍⚕️",
+    "Pilot 🧑‍✈️",
+    "Chef 🧑‍🍳"
+   ],
+   "answer": 0,
+   "emoji": "🏥",
+   "ageGroups": [
+    "2-4",
+    "5-7"
+   ]
+  },
+  {
+   "q": "What do we call computer programs that learn from examples?",
+   "options": [
+    "Artificial Intelligence",
+    "A magic spell",
+    "A bicycle"
+   ],
+   "answer": 0,
+   "emoji": "🤖",
+   "ageGroups": [
+    "8-10"
+   ]
+  },
+  {
+   "q": "Which is a fruit?",
+   "options": [
+    "Carrot 🥕",
+    "Apple 🍎",
+    "Potato 🥔"
+   ],
+   "answer": 1,
+   "emoji": "🍎",
+   "ageGroups": [
+    "2-4",
+    "5-7"
+   ]
+  }
+ ],
+ "buddy": {
+  "en": {
+   "greeting": "Hi {name}! I am {buddy}. Say a sentence or ask me a question, and I will help you say it beautifully!",
+   "praise": [
+    "Great job!",
+    "Wonderful!",
+    "You are a superstar!",
+    "Awesome talking!",
+    "Super!"
+   ],
+   "correctIntro": "Let's say it like this:",
+   "perfect": "That sentence was perfect!",
+   "fallback": "That is a great thing to wonder about! Let's find out together with a grown-up, or ask me something else.",
+   "safetyReply": "That is a question for a grown-up you trust. Let's talk about something fun instead!",
+   "safety": [
+    "kill",
+    "gun",
+    "knife",
+    "blood",
+    "drug",
+    "address",
+    "password",
+    "phone number",
+    "where do you live",
+    "suicide",
+    "sex"
+   ],
+   "questionStarters": [
+    "what",
+    "why",
+    "how",
+    "where",
+    "when",
+    "who",
+    "which",
+    "can",
+    "could",
+    "is",
+    "are",
+    "do",
+    "does",
+    "did",
+    "will",
+    "would",
+    "should",
+    "may",
+    "shall"
+   ],
+   "corrections": [
+    {
+     "pattern": "\\bgimme\\b",
+     "replace": "give me",
+     "tip": "\"Gimme\" is short talk. We say \"give me\"."
+    },
+    {
+     "pattern": "\\bwanna\\b",
+     "replace": "want to",
+     "tip": "\"Wanna\" means \"want to\"."
+    },
+    {
+     "pattern": "\\bgonna\\b",
+     "replace": "going to",
+     "tip": "\"Gonna\" means \"going to\"."
+    },
+    {
+     "pattern": "\\bgotta\\b",
+     "replace": "have to",
+     "tip": "\"Gotta\" means \"have to\"."
+    },
+    {
+     "pattern": "\\bain'?t\\b",
+     "replace": "is not",
+     "tip": "Instead of \"ain't\" we say \"is not\" or \"am not\"."
+    },
+    {
+     "pattern": "\\bme want\\b",
+     "replace": "I want",
+     "tip": "We say \"I want\", not \"me want\"."
+    },
+    {
+     "pattern": "\\bme (?:is|am)\\b",
+     "replace": "I am",
+     "tip": "We say \"I am\"."
+    },
+    {
+     "pattern": "\\bi is\\b",
+     "replace": "I am",
+     "tip": "With \"I\" we use \"am\": I am."
+    },
+    {
+     "pattern": "\\bi has\\b",
+     "replace": "I have",
+     "tip": "With \"I\" we use \"have\": I have."
+    },
+    {
+     "pattern": "\\b(he|she|it) don'?t\\b",
+     "replace": "$1 doesn't",
+     "tip": "With he, she or it we say \"doesn't\"."
+    },
+    {
+     "pattern": "\\b(he|she|it) have\\b",
+     "replace": "$1 has",
+     "tip": "With he, she or it we say \"has\"."
+    },
+    {
+     "pattern": "\\b(he|she|it) are\\b",
+     "replace": "$1 is",
+     "tip": "With he, she or it we say \"is\"."
+    },
+    {
+     "pattern": "\\b(we|they|you) is\\b",
+     "replace": "$1 are",
+     "tip": "With we, they or you we say \"are\"."
+    },
+    {
+     "pattern": "\\b(we|they|you) was\\b",
+     "replace": "$1 were",
+     "tip": "With we, they or you we say \"were\"."
+    },
+    {
+     "pattern": "\\bgoed\\b",
+     "replace": "went",
+     "tip": "The past of \"go\" is \"went\"."
+    },
+    {
+     "pattern": "\\beated\\b",
+     "replace": "ate",
+     "tip": "The past of \"eat\" is \"ate\"."
+    },
+    {
+     "pattern": "\\brunned\\b",
+     "replace": "ran",
+     "tip": "The past of \"run\" is \"ran\"."
+    },
+    {
+     "pattern": "\\bcomed\\b",
+     "replace": "came",
+     "tip": "The past of \"come\" is \"came\"."
+    },
+    {
+     "pattern": "\\bseed\\b(?= (?:a|the|my|it|him|her))",
+     "replace": "saw",
+     "tip": "The past of \"see\" is \"saw\"."
+    },
+    {
+     "pattern": "\\bbringed\\b",
+     "replace": "brought",
+     "tip": "The past of \"bring\" is \"brought\"."
+    },
+    {
+     "pattern": "\\bbuyed\\b",
+     "replace": "bought",
+     "tip": "The past of \"buy\" is \"bought\"."
+    },
+    {
+     "pattern": "\\bthinked\\b",
+     "replace": "thought",
+     "tip": "The past of \"think\" is \"thought\"."
+    },
+    {
+     "pattern": "\\bswimmed\\b",
+     "replace": "swam",
+     "tip": "The past of \"swim\" is \"swam\"."
+    },
+    {
+     "pattern": "\\bfalled\\b",
+     "replace": "fell",
+     "tip": "The past of \"fall\" is \"fell\"."
+    },
+    {
+     "pattern": "\\bmouses\\b",
+     "replace": "mice",
+     "tip": "One mouse, two mice!"
+    },
+    {
+     "pattern": "\\bfoots\\b",
+     "replace": "feet",
+     "tip": "One foot, two feet!"
+    },
+    {
+     "pattern": "\\btooths\\b",
+     "replace": "teeth",
+     "tip": "One tooth, many teeth!"
+    },
+    {
+     "pattern": "\\bchilds\\b",
+     "replace": "children",
+     "tip": "One child, many children!"
+    },
+    {
+     "pattern": "\\bsheeps\\b",
+     "replace": "sheep",
+     "tip": "Sheep stays \"sheep\" even when there are many."
+    },
+    {
+     "pattern": "\\bmore better\\b",
+     "replace": "better",
+     "tip": "Just say \"better\"."
+    },
+    {
+     "pattern": "\\bgooder\\b",
+     "replace": "better",
+     "tip": "Good, better, best!"
+    },
+    {
+     "pattern": "\\bbadder\\b",
+     "replace": "worse",
+     "tip": "Bad, worse, worst!"
+    },
+    {
+     "pattern": "\\ba (apple|egg|orange|elephant|ant|owl|umbrella|ice cream|igloo)\\b",
+     "replace": "an $1",
+     "tip": "Before a vowel sound we say \"an\": an apple."
+    }
+   ],
+   "polite": [
+    {
+     "pattern": "^(?:please )?give me (.+?)(?: please)?$",
+     "replace": "May I please have $1",
+     "tip": "Asking with \"May I please have\" is kind and polite."
+    },
+    {
+     "pattern": "^i want (.+?)(?: please)?$",
+     "replace": "I would like $1, please",
+     "tip": "\"I would like ..., please\" is a polite way to ask."
+    },
+    {
+     "pattern": "^shut up$",
+     "replace": "Please be quiet",
+     "tip": "\"Please be quiet\" is a kinder way to say it."
+    },
+    {
+     "pattern": "^what\\??$",
+     "replace": "Pardon me",
+     "tip": "When you did not hear, say \"Pardon me?\" or \"Excuse me?\"."
+    },
+    {
+     "pattern": "^move$",
+     "replace": "Excuse me, may I pass",
+     "tip": "\"Excuse me\" is the polite way."
+    },
+    {
+     "pattern": "^(?:i'?m |i am )?hungry$",
+     "replace": "I am hungry. May I have something to eat",
+     "tip": "A full sentence is clear and polite."
+    }
+   ],
+   "kidWords": {
+    "tummy": [
+     "stomach",
+     "the part of your body where food goes"
+    ],
+    "doggy": [
+     "dog",
+     "a friendly pet that barks"
+    ],
+    "kitty": [
+     "cat",
+     "a pet that says meow"
+    ],
+    "horsey": [
+     "horse",
+     "a big animal you can ride"
+    ],
+    "choo choo": [
+     "train",
+     "a long vehicle on tracks"
+    ],
+    "boo boo": [
+     "small injury",
+     "a little hurt on your body"
+    ],
+    "nana": [
+     "grandmother",
+     "your parent's mother"
+    ],
+    "binky": [
+     "pacifier",
+     "something babies suck on"
+    ],
+    "sammich": [
+     "sandwich",
+     "food between two slices of bread"
+    ],
+    "pasketti": [
+     "spaghetti",
+     "long thin noodles"
+    ],
+    "aminal": [
+     "animal",
+     "a living creature that moves"
+    ],
+    "brekkie": [
+     "breakfast",
+     "the first meal of the day"
+    ],
+    "jammies": [
+     "pajamas",
+     "clothes you sleep in"
+    ],
+    "potty": [
+     "toilet",
+     "where you go to the bathroom"
+    ]
+   },
+   "qa": [
+    {
+     "keywords": [
+      "hello",
+      "hi",
+      "hey",
+      "good morning"
+     ],
+     "answer": "Hello, my friend! How are you today?"
+    },
+    {
+     "keywords": [
+      "how are you"
+     ],
+     "answer": "I am feeling super! Thank you for asking. How are you?"
+    },
+    {
+     "keywords": [
+      "your name",
+      "who are you"
+     ],
+     "answer": "I am {buddy}, your learning buddy! I love words, stories and questions."
+    },
+    {
+     "keywords": [
+      "sky",
+      "blue"
+     ],
+     "answer": "Sunlight has all the colors. The air scatters blue light the most, so the sky looks blue!"
+    },
+    {
+     "keywords": [
+      "rain"
+     ],
+     "answer": "Rain comes from clouds. Tiny water drops join together, get heavy, and fall down!"
+    },
+    {
+     "keywords": [
+      "rainbow"
+     ],
+     "answer": "A rainbow appears when sunlight shines through raindrops. The light splits into seven colors!"
+    },
+    {
+     "keywords": [
+      "sun",
+      "hot"
+     ],
+     "answer": "The Sun is a giant star made of very hot gas. It gives us light and warmth."
+    },
+    {
+     "keywords": [
+      "moon"
+     ],
+     "answer": "The Moon does not make its own light. It shines because sunlight bounces off it!"
+    },
+    {
+     "keywords": [
+      "star"
+     ],
+     "answer": "Stars are huge balls of fire, very very far away. Our Sun is a star too!"
+    },
+    {
+     "keywords": [
+      "dinosaur"
+     ],
+     "answer": "Dinosaurs lived millions of years ago. Some were as tall as buildings! Birds are their relatives."
+    },
+    {
+     "keywords": [
+      "fish",
+      "breathe"
+     ],
+     "answer": "Fish breathe with gills. Gills take oxygen from the water."
+    },
+    {
+     "keywords": [
+      "plant",
+      "grow"
+     ],
+     "answer": "Plants need sunlight, water, air and soil to grow. They make food from sunlight!"
+    },
+    {
+     "keywords": [
+      "sleep"
+     ],
+     "answer": "Sleep helps your body grow and your brain remember what you learned. Kids need lots of it!"
+    },
+    {
+     "keywords": [
+      "teeth",
+      "brush"
+     ],
+     "answer": "Brush your teeth two times a day to keep them strong and shiny!"
+    },
+    {
+     "keywords": [
+      "robot"
+     ],
+     "answer": "Robots are machines that follow instructions. People write the instructions, called code!"
+    },
+    {
+     "keywords": [
+      "ai",
+      "artificial intelligence"
+     ],
+     "answer": "AI means computers that learn from lots of examples, like how you learn from practice!"
+    },
+    {
+     "keywords": [
+      "computer"
+     ],
+     "answer": "A computer is a machine that follows instructions very, very fast."
+    },
+    {
+     "keywords": [
+      "earth",
+      "round"
+     ],
+     "answer": "The Earth is shaped like a ball. It spins around once every day — that makes day and night!"
+    },
+    {
+     "keywords": [
+      "night",
+      "dark"
+     ],
+     "answer": "It gets dark at night because our side of the Earth turns away from the Sun."
+    },
+    {
+     "keywords": [
+      "bird",
+      "fly"
+     ],
+     "answer": "Birds fly with light bones, strong wings and feathers that push the air."
+    },
+    {
+     "keywords": [
+      "sad"
+     ],
+     "answer": "It is okay to feel sad. Take a deep breath and talk to someone who loves you. I am here too!"
+    },
+    {
+     "keywords": [
+      "happy"
+     ],
+     "answer": "Yay! Being happy is wonderful. What made you happy today?"
+    },
+    {
+     "keywords": [
+      "count",
+      "numbers"
+     ],
+     "answer": "Let's count! One, two, three, four, five, six, seven, eight, nine, ten!"
+    },
+    {
+     "keywords": [
+      "color",
+      "colour"
+     ],
+     "answer": "Red, orange, yellow, green, blue, and purple are some of my favorite colors!"
+    },
+    {
+     "keywords": [
+      "thank"
+     ],
+     "answer": "You are welcome! You have lovely manners."
+    },
+    {
+     "keywords": [
+      "sorry"
+     ],
+     "answer": "Saying sorry is brave and kind. Well done!"
+    },
+    {
+     "keywords": [
+      "joke",
+      "funny"
+     ],
+     "answer": "Why did the teddy bear say no to dessert? Because it was already stuffed!"
+    },
+    {
+     "keywords": [
+      "bye",
+      "goodbye"
+     ],
+     "answer": "Goodbye, friend! Come back soon to learn more!"
+    }
+   ],
+   "practiceWords": [
+    "apple",
+    "butterfly",
+    "elephant",
+    "banana",
+    "rainbow",
+    "thank you",
+    "please",
+    "computer",
+    "dinosaur",
+    "umbrella",
+    "beautiful",
+    "library",
+    "astronaut",
+    "hippopotamus",
+    "excuse me"
+   ]
+  },
+  "bn": {
+   "greeting": "হ্যালো {name}! আমি {buddy}। আমাকে কিছু বলো বা প্রশ্ন করো, আমি সুন্দর করে বলতে শেখাব!",
+   "praise": [
+    "দারুণ!",
+    "খুব ভালো!",
+    "তুমি একজন সুপারস্টার!",
+    "চমৎকার বলেছ!"
+   ],
+   "correctIntro": "চলো এভাবে বলি:",
+   "perfect": "একদম সঠিক বলেছ!",
+   "fallback": "খুব সুন্দর প্রশ্ন! চলো বড় কারো সাথে মিলে খুঁজে দেখি, অথবা আমাকে অন্য কিছু জিজ্ঞেস করো।",
+   "safetyReply": "এই প্রশ্নটা তোমার বিশ্বস্ত বড় কাউকে করো। চলো মজার কিছু নিয়ে কথা বলি!",
+   "safety": [
+    "খুন",
+    "বন্দুক",
+    "ছুরি",
+    "মাদক",
+    "ঠিকানা",
+    "পাসওয়ার্ড",
+    "ফোন নম্বর"
+   ],
+   "questionStarters": [
+    "কী",
+    "কি",
+    "কেন",
+    "কীভাবে",
+    "কিভাবে",
+    "কোথায়",
+    "কখন",
+    "কে",
+    "কোন",
+    "কয়টা",
+    "কত"
+   ],
+   "questionEnders": [
+    "কি",
+    "কী",
+    "নাকি"
+   ],
+   "corrections": [
+    {
+     "pattern": "পানি খামু",
+     "replace": "পানি খাব",
+     "tip": "শুদ্ধ ভাষায় বলি \"খাব\"।"
+    },
+    {
+     "pattern": "খামু",
+     "replace": "খাব",
+     "tip": "শুদ্ধ ভাষায় বলি \"খাব\"।"
+    },
+    {
+     "pattern": "যামু",
+     "replace": "যাব",
+     "tip": "শুদ্ধ ভাষায় বলি \"যাব\"।"
+    },
+    {
+     "pattern": "করমু",
+     "replace": "করব",
+     "tip": "শুদ্ধ ভাষায় বলি \"করব\"।"
+    },
+    {
+     "pattern": "দিমু",
+     "replace": "দেব",
+     "tip": "শুদ্ধ ভাষায় বলি \"দেব\"।"
+    },
+    {
+     "pattern": "খেলমু",
+     "replace": "খেলব",
+     "tip": "শুদ্ধ ভাষায় বলি \"খেলব\"।"
+    },
+    {
+     "pattern": "কইলাম",
+     "replace": "বললাম",
+     "tip": "শুদ্ধ ভাষায় বলি \"বললাম\"।"
+    },
+    {
+     "pattern": "কইসে",
+     "replace": "বলেছে",
+     "tip": "শুদ্ধ ভাষায় বলি \"বলেছে\"।"
+    },
+    {
+     "pattern": "করসি",
+     "replace": "করেছি",
+     "tip": "শুদ্ধ ভাষায় বলি \"করেছি\"।"
+    },
+    {
+     "pattern": "খাইসি",
+     "replace": "খেয়েছি",
+     "tip": "শুদ্ধ ভাষায় বলি \"খেয়েছি\"।"
+    },
+    {
+     "pattern": "গেসি",
+     "replace": "গিয়েছি",
+     "tip": "শুদ্ধ ভাষায় বলি \"গিয়েছি\"।"
+    },
+    {
+     "pattern": "আসো",
+     "replace": "এসো",
+     "tip": "শুদ্ধ ভাষায় বলি \"এসো\"।"
+    },
+    {
+     "pattern": "কেমনে",
+     "replace": "কীভাবে",
+     "tip": "শুদ্ধ ভাষায় বলি \"কীভাবে\"।"
+    },
+    {
+     "pattern": "ক্যান",
+     "replace": "কেন",
+     "tip": "শুদ্ধ ভাষায় বলি \"কেন\"।"
+    }
+   ],
+   "polite": [
+    {
+     "pattern": "^(.+) দাও$",
+     "replace": "দয়া করে আমাকে $1 দিন",
+     "tip": "\"দয়া করে ... দিন\" বললে অনেক ভদ্র শোনায়।"
+    },
+    {
+     "pattern": "^আমি (.+) চাই$",
+     "replace": "আমি কি $1 পেতে পারি",
+     "tip": "\"আমি কি ... পেতে পারি?\" — এভাবে চাইলে সবাই খুশি হয়।"
+    },
+    {
+     "pattern": "^চুপ কর$",
+     "replace": "দয়া করে একটু চুপ করুন",
+     "tip": "\"দয়া করে\" বলা সুন্দর অভ্যাস।"
+    },
+    {
+     "pattern": "^সরো$",
+     "replace": "একটু সরবেন, প্লিজ",
+     "tip": "ভদ্রভাবে বললে সবাই সাহায্য করে।"
+    }
+   ],
+   "kidWords": {
+    "মাম": [
+     "পানি",
+     "যা আমরা পান করি"
+    ],
+    "দুদু": [
+     "দুধ",
+     "সাদা পুষ্টিকর পানীয়"
+    ],
+    "ভাতু": [
+     "ভাত",
+     "চাল সেদ্ধ করে তৈরি খাবার"
+    ],
+    "নানু": [
+     "নানি",
+     "মায়ের মা"
+    ]
+   },
+   "qa": [
+    {
+     "keywords": [
+      "হ্যালো",
+      "হাই",
+      "সালাম",
+      "নমস্কার"
+     ],
+     "answer": "হ্যালো বন্ধু! তুমি কেমন আছ?"
+    },
+    {
+     "keywords": [
+      "কেমন আছ"
+     ],
+     "answer": "আমি খুব ভালো আছি! জিজ্ঞেস করার জন্য ধন্যবাদ।"
+    },
+    {
+     "keywords": [
+      "তোমার নাম"
+     ],
+     "answer": "আমি {buddy}, তোমার শেখার বন্ধু!"
+    },
+    {
+     "keywords": [
+      "আকাশ",
+      "নীল"
+     ],
+     "answer": "সূর্যের আলোর নীল রং বাতাসে সবচেয়ে বেশি ছড়ায়, তাই আকাশ নীল দেখায়!"
+    },
+    {
+     "keywords": [
+      "বৃষ্টি"
+     ],
+     "answer": "মেঘের ছোট ছোট পানির ফোঁটা একসাথে ভারী হয়ে বৃষ্টি হয়ে পড়ে।"
+    },
+    {
+     "keywords": [
+      "চাঁদ"
+     ],
+     "answer": "চাঁদের নিজের আলো নেই। সূর্যের আলো পড়ে চাঁদ ঝলমল করে।"
+    },
+    {
+     "keywords": [
+      "সূর্য"
+     ],
+     "answer": "সূর্য একটি বিশাল তারা। এটি আমাদের আলো আর তাপ দেয়।"
+    },
+    {
+     "keywords": [
+      "রোবট"
+     ],
+     "answer": "রোবট হলো যন্ত্র যা নির্দেশনা মেনে কাজ করে। মানুষ সেই নির্দেশনা লেখে, যাকে কোড বলে।"
+    },
+    {
+     "keywords": [
+      "এআই",
+      "কৃত্রিম বুদ্ধিমত্তা"
+     ],
+     "answer": "এআই হলো এমন কম্পিউটার যা অনেক উদাহরণ দেখে শেখে, ঠিক যেমন তুমি অনুশীলন করে শেখো!"
+    },
+    {
+     "keywords": [
+      "গাছ"
+     ],
+     "answer": "গাছ আমাদের অক্সিজেন দেয়, ফল দেয়, ছায়া দেয়। গাছ লাগাও, পৃথিবী বাঁচাও!"
+    },
+    {
+     "keywords": [
+      "ধন্যবাদ"
+     ],
+     "answer": "তোমাকেও ধন্যবাদ! তোমার আচরণ খুব সুন্দর।"
+    },
+    {
+     "keywords": [
+      "বিদায়",
+      "টাটা"
+     ],
+     "answer": "বিদায় বন্ধু! আবার এসো।"
+    }
+   ],
+   "practiceWords": [
+    "আম",
+    "পাখি",
+    "ফুল",
+    "ধন্যবাদ",
+    "বাংলাদেশ",
+    "প্রজাপতি",
+    "রংধনু",
+    "বই",
+    "স্কুল",
+    "মা"
+   ]
+  },
+  "es": {
+   "greeting": "¡Hola {name}! Soy {buddy}. ¡Dime una frase o hazme una pregunta!",
+   "praise": [
+    "¡Muy bien!",
+    "¡Excelente!",
+    "¡Eres una estrella!",
+    "¡Genial!"
+   ],
+   "correctIntro": "Digámoslo así:",
+   "perfect": "¡Tu frase fue perfecta!",
+   "fallback": "¡Qué buena pregunta! Busquemos la respuesta con un adulto.",
+   "safetyReply": "Esa pregunta es para un adulto de confianza. ¡Hablemos de algo divertido!",
+   "safety": [
+    "matar",
+    "pistola",
+    "cuchillo",
+    "droga",
+    "dirección",
+    "contraseña"
+   ],
+   "questionStarters": [
+    "qué",
+    "que",
+    "por qué",
+    "porque",
+    "cómo",
+    "como",
+    "dónde",
+    "donde",
+    "cuándo",
+    "cuando",
+    "quién",
+    "quien",
+    "cuál",
+    "puedo",
+    "puedes"
+   ],
+   "corrections": [
+    {
+     "pattern": "\\byo sabo\\b",
+     "replace": "yo sé",
+     "tip": "Decimos \"yo sé\"."
+    },
+    {
+     "pattern": "\\bhaiga\\b",
+     "replace": "haya",
+     "tip": "Decimos \"haya\"."
+    },
+    {
+     "pattern": "\\bdijistes\\b",
+     "replace": "dijiste",
+     "tip": "Decimos \"dijiste\" sin s."
+    },
+    {
+     "pattern": "\\bhicistes\\b",
+     "replace": "hiciste",
+     "tip": "Decimos \"hiciste\" sin s."
+    }
+   ],
+   "polite": [
+    {
+     "pattern": "^dame (.+?)$",
+     "replace": "¿Me das $1, por favor",
+     "tip": "\"Por favor\" hace todo más amable."
+    },
+    {
+     "pattern": "^quiero (.+?)$",
+     "replace": "Me gustaría $1, por favor",
+     "tip": "\"Me gustaría\" es más educado."
+    }
+   ],
+   "kidWords": {
+    "guau guau": [
+     "perro",
+     "un animal que ladra"
+    ],
+    "pipí": [
+     "baño",
+     "lugar para ir al servicio"
+    ]
+   },
+   "qa": [
+    {
+     "keywords": [
+      "hola"
+     ],
+     "answer": "¡Hola, amigo! ¿Cómo estás?"
+    },
+    {
+     "keywords": [
+      "cielo",
+      "azul"
+     ],
+     "answer": "El aire dispersa más la luz azul del sol, por eso el cielo es azul."
+    },
+    {
+     "keywords": [
+      "luna"
+     ],
+     "answer": "La luna brilla porque refleja la luz del sol."
+    },
+    {
+     "keywords": [
+      "gracias"
+     ],
+     "answer": "¡De nada! Tienes muy buenos modales."
+    },
+    {
+     "keywords": [
+      "adiós"
+     ],
+     "answer": "¡Adiós, amigo! Vuelve pronto."
+    }
+   ],
+   "practiceWords": [
+    "manzana",
+    "mariposa",
+    "gracias",
+    "por favor",
+    "elefante",
+    "arcoíris"
+   ]
+  },
+  "fr": {
+   "greeting": "Bonjour {name} ! Je suis {buddy}. Dis-moi une phrase ou pose-moi une question !",
+   "praise": [
+    "Bravo !",
+    "Super !",
+    "Tu es une star !",
+    "Excellent !"
+   ],
+   "correctIntro": "Disons-le comme ça :",
+   "perfect": "Ta phrase était parfaite !",
+   "fallback": "Quelle belle question ! Cherchons la réponse avec un adulte.",
+   "safetyReply": "C'est une question pour un adulte de confiance. Parlons de quelque chose d'amusant !",
+   "safety": [
+    "tuer",
+    "pistolet",
+    "couteau",
+    "drogue",
+    "adresse",
+    "mot de passe"
+   ],
+   "questionStarters": [
+    "quoi",
+    "pourquoi",
+    "comment",
+    "où",
+    "quand",
+    "qui",
+    "quel",
+    "quelle",
+    "est-ce",
+    "peux"
+   ],
+   "corrections": [
+    {
+     "pattern": "\\bj'ai allé\\b",
+     "replace": "je suis allé",
+     "tip": "Avec \"aller\" on dit \"je suis allé\"."
+    },
+    {
+     "pattern": "\\bsi j'aurais\\b",
+     "replace": "si j'avais",
+     "tip": "Après \"si\" on dit \"j'avais\"."
+    },
+    {
+     "pattern": "\\bvous faisez\\b",
+     "replace": "vous faites",
+     "tip": "On dit \"vous faites\"."
+    },
+    {
+     "pattern": "\\bvous disez\\b",
+     "replace": "vous dites",
+     "tip": "On dit \"vous dites\"."
+    }
+   ],
+   "polite": [
+    {
+     "pattern": "^donne-?moi (.+?)$",
+     "replace": "Est-ce que je peux avoir $1, s'il te plaît",
+     "tip": "\"S'il te plaît\" est très poli."
+    },
+    {
+     "pattern": "^je veux (.+?)$",
+     "replace": "Je voudrais $1, s'il vous plaît",
+     "tip": "\"Je voudrais\" est plus poli que \"je veux\"."
+    }
+   ],
+   "kidWords": {
+    "toutou": [
+     "chien",
+     "un animal qui aboie"
+    ],
+    "dodo": [
+     "sommeil",
+     "quand on dort"
+    ]
+   },
+   "qa": [
+    {
+     "keywords": [
+      "bonjour",
+      "salut"
+     ],
+     "answer": "Bonjour mon ami ! Comment vas-tu ?"
+    },
+    {
+     "keywords": [
+      "ciel",
+      "bleu"
+     ],
+     "answer": "L'air disperse surtout la lumière bleue du soleil, alors le ciel est bleu !"
+    },
+    {
+     "keywords": [
+      "merci"
+     ],
+     "answer": "De rien ! Tu es très poli."
+    },
+    {
+     "keywords": [
+      "au revoir"
+     ],
+     "answer": "Au revoir, à bientôt !"
+    }
+   ],
+   "practiceWords": [
+    "pomme",
+    "papillon",
+    "merci",
+    "s'il vous plaît",
+    "éléphant",
+    "arc-en-ciel"
+   ]
+  },
+  "hi": {
+   "greeting": "नमस्ते {name}! मैं {buddy} हूँ। मुझसे कुछ भी पूछो!",
+   "praise": [
+    "शाबाश!",
+    "बहुत बढ़िया!",
+    "तुम सुपरस्टार हो!"
+   ],
+   "correctIntro": "चलो ऐसे कहते हैं:",
+   "perfect": "तुम्हारा वाक्य बिल्कुल सही था!",
+   "fallback": "बहुत अच्छा सवाल! चलो किसी बड़े के साथ जवाब ढूँढते हैं।",
+   "safetyReply": "यह सवाल किसी भरोसेमंद बड़े से पूछो। चलो कुछ मज़ेदार बात करते हैं!",
+   "safety": [
+    "मारना",
+    "बंदूक",
+    "चाकू",
+    "पता",
+    "पासवर्ड"
+   ],
+   "questionStarters": [
+    "क्या",
+    "क्यों",
+    "कैसे",
+    "कहाँ",
+    "कब",
+    "कौन",
+    "कितना",
+    "कितने"
+   ],
+   "corrections": [
+    {
+     "pattern": "मेरे को",
+     "replace": "मुझे",
+     "tip": "शुद्ध हिंदी में \"मुझे\" कहते हैं।"
+    },
+    {
+     "pattern": "तेरे को",
+     "replace": "तुम्हें",
+     "tip": "शुद्ध हिंदी में \"तुम्हें\" कहते हैं।"
+    }
+   ],
+   "polite": [
+    {
+     "pattern": "^(.+) दो$",
+     "replace": "कृपया मुझे $1 दीजिए",
+     "tip": "\"कृपया\" कहना अच्छी आदत है।"
+    },
+    {
+     "pattern": "^मुझे (.+) चाहिए$",
+     "replace": "क्या मुझे $1 मिल सकता है",
+     "tip": "ऐसे पूछना ज़्यादा विनम्र है।"
+    }
+   ],
+   "kidWords": {
+    "मम्मम": [
+     "खाना",
+     "जो हम खाते हैं"
+    ]
+   },
+   "qa": [
+    {
+     "keywords": [
+      "नमस्ते",
+      "हेलो"
+     ],
+     "answer": "नमस्ते दोस्त! तुम कैसे हो?"
+    },
+    {
+     "keywords": [
+      "आसमान",
+      "नीला"
+     ],
+     "answer": "हवा सूरज की नीली रोशनी को सबसे ज़्यादा फैलाती है, इसलिए आसमान नीला दिखता है।"
+    },
+    {
+     "keywords": [
+      "धन्यवाद",
+      "शुक्रिया"
+     ],
+     "answer": "आपका स्वागत है! तुम बहुत अच्छे हो।"
+    }
+   ],
+   "practiceWords": [
+    "आम",
+    "तितली",
+    "धन्यवाद",
+    "कृपया",
+    "हाथी",
+    "इंद्रधनुष"
+   ]
+  }
+ }
+}
