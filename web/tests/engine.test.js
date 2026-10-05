@@ -97,3 +97,14 @@ test('content: every story, topic and video is well-formed', () => {
   for (const tp of seed.topics) assert.ok(tp.items.every((i) => i.id && i.name && i.emoji), tp.id);
   for (const q of seed.quiz) assert.ok(q.answer < q.options.length, q.q);
 });
+
+test('daily missions never loop forever, whatever features are on', async () => {
+  const { missionsFor } = await import('../src/lib/progress.js');
+  const keys = ['alphabet', 'story', 'game', 'explore', 'buddy', 'quiz', 'ailab'];
+  for (let off = 0; off < keys.length; off++) {
+    const features = Object.fromEntries(keys.slice(0, off).map((k) => [k, false]));
+    const m = missionsFor('2026-10-05', 3, features);
+    assert.ok(m.length <= 3);
+    assert.equal(new Set(m.map((x) => x.id)).size, m.length);
+  }
+});

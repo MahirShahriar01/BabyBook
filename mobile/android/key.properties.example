@@ -1,0 +1,6 @@
+# Copy to android/key.properties (git-ignored) for signed Play Store builds.
+storePassword=CHANGE_ME
+keyPassword=CHANGE_ME
+keyAlias=upload
+# Absolute path, e.g. C:/Users/you/upload-keystore.jks or /Users/you/upload-keystore.jks
+storeFile=/path/to/upload-keystore.jks

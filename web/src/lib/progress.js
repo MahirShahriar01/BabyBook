@@ -66,10 +66,7 @@ const MISSION_POOL = [
 export function missionsFor(dateStr, count = 3, features = {}) {
   const pool = MISSION_POOL.filter((m) => features[m.key === 'letter' ? 'alphabet' : m.key] !== false);
   const seed = [...dateStr].reduce((n, c) => n + c.charCodeAt(0), 0);
-  const out = [];
-  for (let i = 0; out.length < Math.min(count, pool.length); i++) {
-    const m = pool[(seed + i * 3) % pool.length];
-    if (!out.includes(m)) out.push(m);
-  }
-  return out.map((m) => ({ ...m, count: 0 }));
+  // rotate through the pool so each day starts with a different mission
+  const n = Math.min(count, pool.length);
+  return Array.from({ length: n }, (_, i) => ({ ...pool[(seed + i) % pool.length], count: 0 }));
 }
