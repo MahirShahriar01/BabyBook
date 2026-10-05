@@ -1,0 +1,1294 @@
+[
+ {
+  "id": "animals",
+  "title": "Animals",
+  "emoji": "🦁",
+  "color": "#FF8A3D",
+  "animation": "bounce",
+  "ageGroups": [
+   "2-4",
+   "5-7",
+   "8-10"
+  ],
+  "published": true,
+  "items": [
+   {
+    "id": "lion",
+    "name": "Lion",
+    "emoji": "🦁",
+    "fact": "The lion is called the king of the jungle. A lion's roar can be heard 8 km away!",
+    "bn": "সিংহ",
+    "sound": "Roar!"
+   },
+   {
+    "id": "elephant",
+    "name": "Elephant",
+    "emoji": "🐘",
+    "fact": "Elephants are the biggest land animals. They use their trunk like a hand.",
+    "bn": "হাতি",
+    "sound": "Pawoo!"
+   },
+   {
+    "id": "tiger",
+    "name": "Tiger",
+    "emoji": "🐯",
+    "fact": "The Royal Bengal Tiger lives in the Sundarbans. Every tiger has unique stripes.",
+    "bn": "বাঘ",
+    "sound": "Grrr!"
+   },
+   {
+    "id": "dog",
+    "name": "Dog",
+    "emoji": "🐶",
+    "fact": "Dogs can smell things 10,000 times better than people.",
+    "bn": "কুকুর",
+    "sound": "Woof woof!"
+   },
+   {
+    "id": "cat",
+    "name": "Cat",
+    "emoji": "🐱",
+    "fact": "Cats sleep for about 13 to 16 hours a day.",
+    "bn": "বিড়াল",
+    "sound": "Meow!"
+   },
+   {
+    "id": "cow",
+    "name": "Cow",
+    "emoji": "🐮",
+    "fact": "Cows give us milk. They have four parts in their stomach.",
+    "bn": "গরু",
+    "sound": "Moo!"
+   },
+   {
+    "id": "monkey",
+    "name": "Monkey",
+    "emoji": "🐵",
+    "fact": "Monkeys use their tails to hold branches.",
+    "bn": "বানর",
+    "sound": "Ooh ooh aah aah!"
+   },
+   {
+    "id": "giraffe",
+    "name": "Giraffe",
+    "emoji": "🦒",
+    "fact": "The giraffe is the tallest animal in the world.",
+    "bn": "জিরাফ",
+    "sound": "Hmmm!"
+   },
+   {
+    "id": "zebra",
+    "name": "Zebra",
+    "emoji": "🦓",
+    "fact": "No two zebras have the same stripes.",
+    "bn": "জেব্রা",
+    "sound": "Neigh!"
+   },
+   {
+    "id": "panda",
+    "name": "Panda",
+    "emoji": "🐼",
+    "fact": "Pandas eat bamboo for up to 12 hours every day.",
+    "bn": "পান্ডা",
+    "sound": "Squeak!"
+   },
+   {
+    "id": "kangaroo",
+    "name": "Kangaroo",
+    "emoji": "🦘",
+    "fact": "Baby kangaroos are called joeys and live in their mother's pouch.",
+    "bn": "ক্যাঙ্গারু",
+    "sound": "Boing!"
+   },
+   {
+    "id": "rabbit",
+    "name": "Rabbit",
+    "emoji": "🐰",
+    "fact": "Rabbits can turn their ears to hear sounds all around.",
+    "bn": "খরগোশ",
+    "sound": "Sniff sniff!"
+   },
+   {
+    "id": "horse",
+    "name": "Horse",
+    "emoji": "🐴",
+    "fact": "Horses can sleep standing up.",
+    "bn": "ঘোড়া",
+    "sound": "Neigh!"
+   },
+   {
+    "id": "frog",
+    "name": "Frog",
+    "emoji": "🐸",
+    "fact": "Frogs drink water through their skin.",
+    "bn": "ব্যাঙ",
+    "sound": "Ribbit!"
+   },
+   {
+    "id": "dolphin",
+    "name": "Dolphin",
+    "emoji": "🐬",
+    "fact": "Dolphins are very smart and talk to each other with clicks and whistles.",
+    "bn": "ডলফিন",
+    "sound": "Click click!"
+   },
+   {
+    "id": "whale",
+    "name": "Whale",
+    "emoji": "🐳",
+    "fact": "The blue whale is the biggest animal that has ever lived.",
+    "bn": "তিমি",
+    "sound": "Whooo!"
+   },
+   {
+    "id": "bee",
+    "name": "Bee",
+    "emoji": "🐝",
+    "fact": "Bees make honey and help flowers grow.",
+    "bn": "মৌমাছি",
+    "sound": "Buzz buzz!"
+   },
+   {
+    "id": "butterfly",
+    "name": "Butterfly",
+    "emoji": "🦋",
+    "fact": "A butterfly starts life as a caterpillar.",
+    "bn": "প্রজাপতি"
+   }
+  ]
+ },
+ {
+  "id": "birds",
+  "title": "Birds",
+  "emoji": "🦜",
+  "color": "#22B573",
+  "animation": "fly",
+  "ageGroups": [
+   "2-4",
+   "5-7",
+   "8-10"
+  ],
+  "published": true,
+  "items": [
+   {
+    "id": "parrot",
+    "name": "Parrot",
+    "emoji": "🦜",
+    "fact": "Parrots can learn to copy human words.",
+    "bn": "টিয়া",
+    "sound": "Hello!"
+   },
+   {
+    "id": "owl",
+    "name": "Owl",
+    "emoji": "🦉",
+    "fact": "Owls can turn their heads almost all the way around.",
+    "bn": "পেঁচা",
+    "sound": "Hoo hoo!"
+   },
+   {
+    "id": "peacock",
+    "name": "Peacock",
+    "emoji": "🦚",
+    "fact": "The peacock opens its colorful tail like a fan.",
+    "bn": "ময়ূর",
+    "sound": "Mee-ow!"
+   },
+   {
+    "id": "penguin",
+    "name": "Penguin",
+    "emoji": "🐧",
+    "fact": "Penguins cannot fly, but they are great swimmers.",
+    "bn": "পেঙ্গুইন",
+    "sound": "Squawk!"
+   },
+   {
+    "id": "eagle",
+    "name": "Eagle",
+    "emoji": "🦅",
+    "fact": "Eagles can see a rabbit from very high up in the sky.",
+    "bn": "ঈগল",
+    "sound": "Screech!"
+   },
+   {
+    "id": "duck",
+    "name": "Duck",
+    "emoji": "🦆",
+    "fact": "Ducks have waterproof feathers.",
+    "bn": "হাঁস",
+    "sound": "Quack quack!"
+   },
+   {
+    "id": "hen",
+    "name": "Hen",
+    "emoji": "🐔",
+    "fact": "Hens lay eggs. A baby hen is called a chick.",
+    "bn": "মুরগি",
+    "sound": "Cluck cluck!"
+   },
+   {
+    "id": "crow",
+    "name": "Crow",
+    "emoji": "🐦‍⬛",
+    "fact": "Crows are very clever birds that can solve puzzles.",
+    "bn": "কাক",
+    "sound": "Caw caw!"
+   },
+   {
+    "id": "magpie_robin",
+    "name": "Magpie Robin",
+    "emoji": "🐦",
+    "fact": "The doel (magpie robin) is the national bird of Bangladesh.",
+    "bn": "দোয়েল",
+    "sound": "Tweet tweet!"
+   }
+  ]
+ },
+ {
+  "id": "fruits",
+  "title": "Fruits & Veggies",
+  "emoji": "🍎",
+  "color": "#FF5D73",
+  "animation": "wobble",
+  "ageGroups": [
+   "2-4",
+   "5-7"
+  ],
+  "published": true,
+  "items": [
+   {
+    "id": "apple",
+    "name": "Apple",
+    "emoji": "🍎",
+    "fact": "Apples can be red, green or yellow.",
+    "bn": "আপেল"
+   },
+   {
+    "id": "banana",
+    "name": "Banana",
+    "emoji": "🍌",
+    "fact": "Bananas give us quick energy to play.",
+    "bn": "কলা"
+   },
+   {
+    "id": "mango",
+    "name": "Mango",
+    "emoji": "🥭",
+    "fact": "The mango is the national tree of Bangladesh and a favorite summer fruit.",
+    "bn": "আম"
+   },
+   {
+    "id": "orange",
+    "name": "Orange",
+    "emoji": "🍊",
+    "fact": "Oranges are full of vitamin C.",
+    "bn": "কমলা"
+   },
+   {
+    "id": "grapes",
+    "name": "Grapes",
+    "emoji": "🍇",
+    "fact": "Grapes grow in bunches on vines.",
+    "bn": "আঙুর"
+   },
+   {
+    "id": "watermelon",
+    "name": "Watermelon",
+    "emoji": "🍉",
+    "fact": "A watermelon is about 92% water.",
+    "bn": "তরমুজ"
+   },
+   {
+    "id": "strawberry",
+    "name": "Strawberry",
+    "emoji": "🍓",
+    "fact": "Strawberries wear their seeds on the outside.",
+    "bn": "স্ট্রবেরি"
+   },
+   {
+    "id": "pineapple",
+    "name": "Pineapple",
+    "emoji": "🍍",
+    "fact": "A pineapple takes about two years to grow.",
+    "bn": "আনারস"
+   },
+   {
+    "id": "jackfruit",
+    "name": "Jackfruit",
+    "emoji": "🍈",
+    "fact": "The jackfruit is the national fruit of Bangladesh. It is the biggest tree fruit!",
+    "bn": "কাঁঠাল"
+   },
+   {
+    "id": "carrot",
+    "name": "Carrot",
+    "emoji": "🥕",
+    "fact": "Carrots help keep your eyes healthy.",
+    "bn": "গাজর"
+   },
+   {
+    "id": "tomato",
+    "name": "Tomato",
+    "emoji": "🍅",
+    "fact": "A tomato is really a fruit!",
+    "bn": "টমেটো"
+   },
+   {
+    "id": "broccoli",
+    "name": "Broccoli",
+    "emoji": "🥦",
+    "fact": "Broccoli looks like a tiny tree.",
+    "bn": "ব্রকলি"
+   }
+  ]
+ },
+ {
+  "id": "vehicles",
+  "title": "Vehicles",
+  "emoji": "🚗",
+  "color": "#1E90FF",
+  "animation": "drive",
+  "ageGroups": [
+   "2-4",
+   "5-7",
+   "8-10"
+  ],
+  "published": true,
+  "items": [
+   {
+    "id": "car",
+    "name": "Car",
+    "emoji": "🚗",
+    "fact": "Cars have four wheels and carry families.",
+    "bn": "গাড়ি",
+    "sound": "Vroom vroom!"
+   },
+   {
+    "id": "bus",
+    "name": "Bus",
+    "emoji": "🚌",
+    "fact": "A bus can carry many people at once.",
+    "bn": "বাস",
+    "sound": "Beep beep!"
+   },
+   {
+    "id": "train",
+    "name": "Train",
+    "emoji": "🚆",
+    "fact": "Trains run on tracks and pull many coaches.",
+    "bn": "ট্রেন",
+    "sound": "Choo choo!"
+   },
+   {
+    "id": "bicycle",
+    "name": "Bicycle",
+    "emoji": "🚲",
+    "fact": "A bicycle has two wheels and pedals.",
+    "bn": "সাইকেল",
+    "sound": "Ring ring!"
+   },
+   {
+    "id": "rickshaw",
+    "name": "Rickshaw",
+    "emoji": "🛺",
+    "fact": "Rickshaws are colorful rides seen in Dhaka.",
+    "bn": "রিকশা",
+    "sound": "Tring tring!"
+   },
+   {
+    "id": "fire_truck",
+    "name": "Fire Truck",
+    "emoji": "🚒",
+    "fact": "Fire trucks carry water and ladders to put out fires.",
+    "bn": "দমকল",
+    "sound": "Nee-naw!"
+   },
+   {
+    "id": "ambulance",
+    "name": "Ambulance",
+    "emoji": "🚑",
+    "fact": "An ambulance takes sick people to the hospital fast.",
+    "bn": "অ্যাম্বুলেন্স",
+    "sound": "Wee-woo!"
+   },
+   {
+    "id": "police_car",
+    "name": "Police Car",
+    "emoji": "🚓",
+    "fact": "Police cars help keep people safe.",
+    "bn": "পুলিশের গাড়ি",
+    "sound": "Wee-woo!"
+   },
+   {
+    "id": "tractor",
+    "name": "Tractor",
+    "emoji": "🚜",
+    "fact": "Tractors help farmers plough their fields.",
+    "bn": "ট্রাক্টর",
+    "sound": "Put put put!"
+   },
+   {
+    "id": "motorbike",
+    "name": "Motorbike",
+    "emoji": "🏍️",
+    "fact": "A motorbike is fast and has two wheels.",
+    "bn": "মোটরসাইকেল",
+    "sound": "Vrrrm!"
+   }
+  ]
+ },
+ {
+  "id": "ships",
+  "title": "Ships & Boats",
+  "emoji": "🚢",
+  "color": "#00C2A8",
+  "animation": "sail",
+  "ageGroups": [
+   "2-4",
+   "5-7",
+   "8-10"
+  ],
+  "published": true,
+  "items": [
+   {
+    "id": "ship",
+    "name": "Ship",
+    "emoji": "🚢",
+    "fact": "Big ships carry goods across oceans.",
+    "bn": "জাহাজ",
+    "sound": "Toot toot!"
+   },
+   {
+    "id": "sailboat",
+    "name": "Sailboat",
+    "emoji": "⛵",
+    "fact": "A sailboat uses wind to move.",
+    "bn": "পালতোলা নৌকা",
+    "sound": "Whoosh!"
+   },
+   {
+    "id": "boat",
+    "name": "Rowing Boat",
+    "emoji": "🛶",
+    "fact": "You move a canoe with paddles.",
+    "bn": "নৌকা",
+    "sound": "Splash!"
+   },
+   {
+    "id": "speedboat",
+    "name": "Speedboat",
+    "emoji": "🚤",
+    "fact": "Speedboats zoom fast on the water.",
+    "bn": "স্পিডবোট",
+    "sound": "Zoom!"
+   },
+   {
+    "id": "ferry",
+    "name": "Ferry",
+    "emoji": "⛴️",
+    "fact": "A ferry carries people and cars across rivers.",
+    "bn": "ফেরি",
+    "sound": "Hooonk!"
+   },
+   {
+    "id": "submarine",
+    "name": "Submarine",
+    "emoji": "🛳️",
+    "fact": "A submarine can travel deep under the sea.",
+    "bn": "সাবমেরিন",
+    "sound": "Bloop!"
+   },
+   {
+    "id": "anchor",
+    "name": "Anchor",
+    "emoji": "⚓",
+    "fact": "An anchor stops a ship from floating away.",
+    "bn": "নোঙর"
+   }
+  ]
+ },
+ {
+  "id": "sky",
+  "title": "Planes & Sky",
+  "emoji": "✈️",
+  "color": "#7C5CFF",
+  "animation": "fly",
+  "ageGroups": [
+   "2-4",
+   "5-7",
+   "8-10"
+  ],
+  "published": true,
+  "items": [
+   {
+    "id": "airplane",
+    "name": "Airplane",
+    "emoji": "✈️",
+    "fact": "Airplanes fly high above the clouds.",
+    "bn": "উড়োজাহাজ",
+    "sound": "Zoooom!"
+   },
+   {
+    "id": "helicopter",
+    "name": "Helicopter",
+    "emoji": "🚁",
+    "fact": "Helicopters can fly straight up and hover.",
+    "bn": "হেলিকপ্টার",
+    "sound": "Chop chop chop!"
+   },
+   {
+    "id": "rocket",
+    "name": "Rocket",
+    "emoji": "🚀",
+    "fact": "Rockets carry astronauts into space.",
+    "bn": "রকেট",
+    "sound": "3, 2, 1, blast off!"
+   },
+   {
+    "id": "balloon",
+    "name": "Hot Air Balloon",
+    "emoji": "🎈",
+    "fact": "Hot air balloons float because hot air is lighter.",
+    "bn": "বেলুন"
+   },
+   {
+    "id": "parachute",
+    "name": "Parachute",
+    "emoji": "🪂",
+    "fact": "A parachute helps people float down slowly.",
+    "bn": "প্যারাশুট"
+   },
+   {
+    "id": "satellite",
+    "name": "Satellite",
+    "emoji": "🛰️",
+    "fact": "Satellites go around Earth and help us watch the weather.",
+    "bn": "কৃত্রিম উপগ্রহ",
+    "sound": "Beep beep!"
+   }
+  ]
+ },
+ {
+  "id": "shapes",
+  "title": "Shapes",
+  "emoji": "🔷",
+  "color": "#9B5CFF",
+  "animation": "spin",
+  "ageGroups": [
+   "2-4",
+   "5-7"
+  ],
+  "published": true,
+  "items": [
+   {
+    "id": "circle",
+    "name": "Circle",
+    "emoji": "🔴",
+    "fact": "A circle is round like a ball. It has no corners.",
+    "bn": "বৃত্ত"
+   },
+   {
+    "id": "square",
+    "name": "Square",
+    "emoji": "🟥",
+    "fact": "A square has 4 equal sides and 4 corners.",
+    "bn": "বর্গ"
+   },
+   {
+    "id": "triangle",
+    "name": "Triangle",
+    "emoji": "🔺",
+    "fact": "A triangle has 3 sides and 3 corners.",
+    "bn": "ত্রিভুজ"
+   },
+   {
+    "id": "rectangle",
+    "name": "Rectangle",
+    "emoji": "▬",
+    "fact": "A rectangle has 4 sides, like a door.",
+    "bn": "আয়তক্ষেত্র"
+   },
+   {
+    "id": "star",
+    "name": "Star",
+    "emoji": "⭐",
+    "fact": "A star shape has 5 points.",
+    "bn": "তারা"
+   },
+   {
+    "id": "heart",
+    "name": "Heart",
+    "emoji": "❤️",
+    "fact": "A heart shape means love.",
+    "bn": "হৃদয়"
+   },
+   {
+    "id": "diamond",
+    "name": "Diamond",
+    "emoji": "🔷",
+    "fact": "A diamond is like a square standing on its corner.",
+    "bn": "রম্বস"
+   },
+   {
+    "id": "oval",
+    "name": "Oval",
+    "emoji": "🥚",
+    "fact": "An oval is like a stretched circle, the shape of an egg.",
+    "bn": "ডিম্বাকার"
+   }
+  ]
+ },
+ {
+  "id": "colors",
+  "title": "Colors",
+  "emoji": "🌈",
+  "color": "#FFC93C",
+  "animation": "pulse",
+  "ageGroups": [
+   "2-4",
+   "5-7"
+  ],
+  "published": true,
+  "items": [
+   {
+    "id": "red",
+    "name": "Red",
+    "emoji": "🟥",
+    "fact": "Red is the color of apples and fire trucks.",
+    "bn": "লাল",
+    "hex": "#FF3B30"
+   },
+   {
+    "id": "blue",
+    "name": "Blue",
+    "emoji": "🟦",
+    "fact": "Blue is the color of the sky and the sea.",
+    "bn": "নীল",
+    "hex": "#1E90FF"
+   },
+   {
+    "id": "yellow",
+    "name": "Yellow",
+    "emoji": "🟨",
+    "fact": "Yellow is the color of the sun and bananas.",
+    "bn": "হলুদ",
+    "hex": "#FFD60A"
+   },
+   {
+    "id": "green",
+    "name": "Green",
+    "emoji": "🟩",
+    "fact": "Green is the color of leaves and grass.",
+    "bn": "সবুজ",
+    "hex": "#34C759"
+   },
+   {
+    "id": "orange_c",
+    "name": "Orange",
+    "emoji": "🟧",
+    "fact": "Orange is red and yellow mixed together.",
+    "bn": "কমলা",
+    "hex": "#FF9500"
+   },
+   {
+    "id": "purple",
+    "name": "Purple",
+    "emoji": "🟪",
+    "fact": "Purple is red and blue mixed together.",
+    "bn": "বেগুনি",
+    "hex": "#AF52DE"
+   },
+   {
+    "id": "pink",
+    "name": "Pink",
+    "emoji": "🩷",
+    "fact": "Pink is red and white mixed together.",
+    "bn": "গোলাপি",
+    "hex": "#FF6FB5"
+   },
+   {
+    "id": "brown",
+    "name": "Brown",
+    "emoji": "🟫",
+    "fact": "Brown is the color of chocolate and tree trunks.",
+    "bn": "বাদামি",
+    "hex": "#8B5A2B"
+   },
+   {
+    "id": "black",
+    "name": "Black",
+    "emoji": "⬛",
+    "fact": "Black is the color of the night sky.",
+    "bn": "কালো",
+    "hex": "#222222"
+   },
+   {
+    "id": "white",
+    "name": "White",
+    "emoji": "⬜",
+    "fact": "White is the color of milk and clouds.",
+    "bn": "সাদা",
+    "hex": "#F5F5F5"
+   }
+  ]
+ },
+ {
+  "id": "numbers",
+  "title": "Numbers 1-10",
+  "emoji": "🔢",
+  "color": "#FF4FA3",
+  "animation": "pop",
+  "ageGroups": [
+   "2-4",
+   "5-7"
+  ],
+  "published": true,
+  "items": [
+   {
+    "id": "n1",
+    "name": "One",
+    "emoji": "1️⃣",
+    "fact": "1 — count 1 🍎!",
+    "bn": "এক",
+    "count": 1,
+    "object": "🍎"
+   },
+   {
+    "id": "n2",
+    "name": "Two",
+    "emoji": "2️⃣",
+    "fact": "2 — count 2 🐥!",
+    "bn": "দুই",
+    "count": 2,
+    "object": "🐥"
+   },
+   {
+    "id": "n3",
+    "name": "Three",
+    "emoji": "3️⃣",
+    "fact": "3 — count 3 ⭐!",
+    "bn": "তিন",
+    "count": 3,
+    "object": "⭐"
+   },
+   {
+    "id": "n4",
+    "name": "Four",
+    "emoji": "4️⃣",
+    "fact": "4 — count 4 🎈!",
+    "bn": "চার",
+    "count": 4,
+    "object": "🎈"
+   },
+   {
+    "id": "n5",
+    "name": "Five",
+    "emoji": "5️⃣",
+    "fact": "5 — count 5 🐟!",
+    "bn": "পাঁচ",
+    "count": 5,
+    "object": "🐟"
+   },
+   {
+    "id": "n6",
+    "name": "Six",
+    "emoji": "6️⃣",
+    "fact": "6 — count 6 🍓!",
+    "bn": "ছয়",
+    "count": 6,
+    "object": "🍓"
+   },
+   {
+    "id": "n7",
+    "name": "Seven",
+    "emoji": "7️⃣",
+    "fact": "7 — count 7 🌸!",
+    "bn": "সাত",
+    "count": 7,
+    "object": "🌸"
+   },
+   {
+    "id": "n8",
+    "name": "Eight",
+    "emoji": "8️⃣",
+    "fact": "8 — count 8 🐞!",
+    "bn": "আট",
+    "count": 8,
+    "object": "🐞"
+   },
+   {
+    "id": "n9",
+    "name": "Nine",
+    "emoji": "9️⃣",
+    "fact": "9 — count 9 🚗!",
+    "bn": "নয়",
+    "count": 9,
+    "object": "🚗"
+   },
+   {
+    "id": "n10",
+    "name": "Ten",
+    "emoji": "🔟",
+    "fact": "10 — count 10 🍪!",
+    "bn": "দশ",
+    "count": 10,
+    "object": "🍪"
+   }
+  ]
+ },
+ {
+  "id": "countries",
+  "title": "Countries",
+  "emoji": "🌍",
+  "color": "#3DA5FF",
+  "animation": "float",
+  "ageGroups": [
+   "5-7",
+   "8-10"
+  ],
+  "published": true,
+  "items": [
+   {
+    "id": "bangladesh",
+    "name": "Bangladesh",
+    "emoji": "🇧🇩",
+    "fact": "Capital: Dhaka. Home of the Sundarbans, the biggest mangrove forest.",
+    "bn": "বাংলাদেশ",
+    "capital": "Dhaka"
+   },
+   {
+    "id": "india",
+    "name": "India",
+    "emoji": "🇮🇳",
+    "fact": "Capital: New Delhi. The Taj Mahal is in India.",
+    "bn": "ভারত",
+    "capital": "New Delhi"
+   },
+   {
+    "id": "usa",
+    "name": "United States",
+    "emoji": "🇺🇸",
+    "fact": "Capital: Washington, D.C. It has 50 states.",
+    "bn": "যুক্তরাষ্ট্র",
+    "capital": "Washington, D.C."
+   },
+   {
+    "id": "uk",
+    "name": "United Kingdom",
+    "emoji": "🇬🇧",
+    "fact": "Capital: London. Famous for Big Ben.",
+    "bn": "যুক্তরাজ্য",
+    "capital": "London"
+   },
+   {
+    "id": "japan",
+    "name": "Japan",
+    "emoji": "🇯🇵",
+    "fact": "Capital: Tokyo. Called the land of the rising sun.",
+    "bn": "জাপান",
+    "capital": "Tokyo"
+   },
+   {
+    "id": "china",
+    "name": "China",
+    "emoji": "🇨🇳",
+    "fact": "Capital: Beijing. The Great Wall of China is very, very long.",
+    "bn": "চীন",
+    "capital": "Beijing"
+   },
+   {
+    "id": "egypt",
+    "name": "Egypt",
+    "emoji": "🇪🇬",
+    "fact": "Capital: Cairo. Home of the great pyramids.",
+    "bn": "মিশর",
+    "capital": "Cairo"
+   },
+   {
+    "id": "france",
+    "name": "France",
+    "emoji": "🇫🇷",
+    "fact": "Capital: Paris. The Eiffel Tower is in Paris.",
+    "bn": "ফ্রান্স",
+    "capital": "Paris"
+   },
+   {
+    "id": "brazil",
+    "name": "Brazil",
+    "emoji": "🇧🇷",
+    "fact": "Capital: Brasília. The Amazon rainforest is in Brazil.",
+    "bn": "ব্রাজিল",
+    "capital": "Brasília"
+   },
+   {
+    "id": "australia",
+    "name": "Australia",
+    "emoji": "🇦🇺",
+    "fact": "Capital: Canberra. Kangaroos and koalas live here.",
+    "bn": "অস্ট্রেলিয়া",
+    "capital": "Canberra"
+   },
+   {
+    "id": "saudi",
+    "name": "Saudi Arabia",
+    "emoji": "🇸🇦",
+    "fact": "Capital: Riyadh. It has huge deserts.",
+    "bn": "সৌদি আরব",
+    "capital": "Riyadh"
+   },
+   {
+    "id": "canada",
+    "name": "Canada",
+    "emoji": "🇨🇦",
+    "fact": "Capital: Ottawa. The maple leaf is on its flag.",
+    "bn": "কানাডা",
+    "capital": "Ottawa"
+   }
+  ]
+ },
+ {
+  "id": "space",
+  "title": "Space",
+  "emoji": "🪐",
+  "color": "#3D2CFF",
+  "animation": "orbit",
+  "ageGroups": [
+   "5-7",
+   "8-10"
+  ],
+  "published": true,
+  "items": [
+   {
+    "id": "sun",
+    "name": "Sun",
+    "emoji": "☀️",
+    "fact": "The Sun is a star. It gives us light and heat.",
+    "bn": "সূর্য"
+   },
+   {
+    "id": "moon",
+    "name": "Moon",
+    "emoji": "🌙",
+    "fact": "The Moon goes around the Earth.",
+    "bn": "চাঁদ"
+   },
+   {
+    "id": "earth",
+    "name": "Earth",
+    "emoji": "🌍",
+    "fact": "Earth is our home planet. It has water and air.",
+    "bn": "পৃথিবী"
+   },
+   {
+    "id": "mars",
+    "name": "Mars",
+    "emoji": "🔴",
+    "fact": "Mars is called the red planet.",
+    "bn": "মঙ্গল"
+   },
+   {
+    "id": "jupiter",
+    "name": "Jupiter",
+    "emoji": "🟠",
+    "fact": "Jupiter is the biggest planet.",
+    "bn": "বৃহস্পতি"
+   },
+   {
+    "id": "saturn",
+    "name": "Saturn",
+    "emoji": "🪐",
+    "fact": "Saturn has beautiful rings made of ice and rock.",
+    "bn": "শনি"
+   },
+   {
+    "id": "comet",
+    "name": "Comet",
+    "emoji": "☄️",
+    "fact": "A comet is a ball of ice and dust with a shiny tail.",
+    "bn": "ধূমকেতু"
+   },
+   {
+    "id": "astronaut",
+    "name": "Astronaut",
+    "emoji": "🧑‍🚀",
+    "fact": "Astronauts are people who travel to space.",
+    "bn": "নভোচারী"
+   }
+  ]
+ },
+ {
+  "id": "body",
+  "title": "My Body",
+  "emoji": "🧍",
+  "color": "#FF6F61",
+  "animation": "bounce",
+  "ageGroups": [
+   "2-4",
+   "5-7"
+  ],
+  "published": true,
+  "items": [
+   {
+    "id": "eyes",
+    "name": "Eyes",
+    "emoji": "👀",
+    "fact": "We see with our eyes.",
+    "bn": "চোখ"
+   },
+   {
+    "id": "ears",
+    "name": "Ears",
+    "emoji": "👂",
+    "fact": "We hear with our ears.",
+    "bn": "কান"
+   },
+   {
+    "id": "nose",
+    "name": "Nose",
+    "emoji": "👃",
+    "fact": "We smell with our nose.",
+    "bn": "নাক"
+   },
+   {
+    "id": "mouth",
+    "name": "Mouth",
+    "emoji": "👄",
+    "fact": "We eat and talk with our mouth.",
+    "bn": "মুখ"
+   },
+   {
+    "id": "hand",
+    "name": "Hand",
+    "emoji": "✋",
+    "fact": "We have five fingers on each hand.",
+    "bn": "হাত"
+   },
+   {
+    "id": "foot",
+    "name": "Foot",
+    "emoji": "🦶",
+    "fact": "We walk and run with our feet.",
+    "bn": "পা"
+   },
+   {
+    "id": "brain",
+    "name": "Brain",
+    "emoji": "🧠",
+    "fact": "Our brain helps us think and learn.",
+    "bn": "মস্তিষ্ক"
+   },
+   {
+    "id": "teeth",
+    "name": "Teeth",
+    "emoji": "🦷",
+    "fact": "Brush your teeth two times every day!",
+    "bn": "দাঁত"
+   }
+  ]
+ },
+ {
+  "id": "jobs",
+  "title": "Helpers & Jobs",
+  "emoji": "🧑‍⚕️",
+  "color": "#00A6FB",
+  "animation": "bounce",
+  "ageGroups": [
+   "5-7",
+   "8-10"
+  ],
+  "published": true,
+  "items": [
+   {
+    "id": "doctor",
+    "name": "Doctor",
+    "emoji": "🧑‍⚕️",
+    "fact": "Doctors help sick people get well.",
+    "bn": "ডাক্তার"
+   },
+   {
+    "id": "teacher",
+    "name": "Teacher",
+    "emoji": "🧑‍🏫",
+    "fact": "Teachers help us learn new things.",
+    "bn": "শিক্ষক"
+   },
+   {
+    "id": "farmer",
+    "name": "Farmer",
+    "emoji": "🧑‍🌾",
+    "fact": "Farmers grow the food we eat.",
+    "bn": "কৃষক"
+   },
+   {
+    "id": "firefighter",
+    "name": "Firefighter",
+    "emoji": "🧑‍🚒",
+    "fact": "Firefighters put out fires and rescue people.",
+    "bn": "দমকল কর্মী"
+   },
+   {
+    "id": "pilot",
+    "name": "Pilot",
+    "emoji": "🧑‍✈️",
+    "fact": "Pilots fly airplanes.",
+    "bn": "পাইলট"
+   },
+   {
+    "id": "chef",
+    "name": "Chef",
+    "emoji": "🧑‍🍳",
+    "fact": "Chefs cook yummy food.",
+    "bn": "রাঁধুনি"
+   },
+   {
+    "id": "scientist",
+    "name": "Scientist",
+    "emoji": "🧑‍🔬",
+    "fact": "Scientists do experiments to discover new things.",
+    "bn": "বিজ্ঞানী"
+   },
+   {
+    "id": "engineer",
+    "name": "Engineer",
+    "emoji": "🧑‍💻",
+    "fact": "Engineers build machines, bridges, apps and robots.",
+    "bn": "প্রকৌশলী"
+   }
+  ]
+ },
+ {
+  "id": "feelings",
+  "title": "Feelings",
+  "emoji": "😊",
+  "color": "#FFB23F",
+  "animation": "pulse",
+  "ageGroups": [
+   "2-4",
+   "5-7",
+   "8-10"
+  ],
+  "published": true,
+  "items": [
+   {
+    "id": "happy",
+    "name": "Happy",
+    "emoji": "😊",
+    "fact": "When we feel happy, we smile. Share your happiness!",
+    "bn": "খুশি"
+   },
+   {
+    "id": "sad",
+    "name": "Sad",
+    "emoji": "😢",
+    "fact": "It is okay to feel sad. Talk to someone you love.",
+    "bn": "দুঃখী"
+   },
+   {
+    "id": "angry",
+    "name": "Angry",
+    "emoji": "😠",
+    "fact": "When angry, take 3 deep breaths: in... and out.",
+    "bn": "রাগী"
+   },
+   {
+    "id": "scared",
+    "name": "Scared",
+    "emoji": "😨",
+    "fact": "When scared, hold a grown-up's hand. You are brave!",
+    "bn": "ভীত"
+   },
+   {
+    "id": "surprised",
+    "name": "Surprised",
+    "emoji": "😮",
+    "fact": "Wow! Surprises can be fun.",
+    "bn": "অবাক"
+   },
+   {
+    "id": "calm",
+    "name": "Calm",
+    "emoji": "😌",
+    "fact": "Calm means quiet and peaceful inside.",
+    "bn": "শান্ত"
+   },
+   {
+    "id": "kind",
+    "name": "Kind",
+    "emoji": "🤗",
+    "fact": "Being kind makes everyone feel good.",
+    "bn": "দয়ালু"
+   }
+  ]
+ },
+ {
+  "id": "habits",
+  "title": "Good Habits",
+  "emoji": "🪥",
+  "color": "#2EC4B6",
+  "animation": "wobble",
+  "ageGroups": [
+   "2-4",
+   "5-7",
+   "8-10"
+  ],
+  "published": true,
+  "items": [
+   {
+    "id": "brush",
+    "name": "Brush your teeth",
+    "emoji": "🪥",
+    "fact": "Brush in the morning and before bed.",
+    "bn": "দাঁত মাজো"
+   },
+   {
+    "id": "wash",
+    "name": "Wash your hands",
+    "emoji": "🧼",
+    "fact": "Wash hands with soap for 20 seconds before eating.",
+    "bn": "হাত ধোও"
+   },
+   {
+    "id": "sleep",
+    "name": "Sleep on time",
+    "emoji": "🛌",
+    "fact": "Good sleep helps you grow and learn.",
+    "bn": "সময়মতো ঘুমাও"
+   },
+   {
+    "id": "water",
+    "name": "Drink water",
+    "emoji": "💧",
+    "fact": "Water keeps your body happy and healthy.",
+    "bn": "পানি পান করো"
+   },
+   {
+    "id": "share",
+    "name": "Share with friends",
+    "emoji": "🤝",
+    "fact": "Sharing makes friends happy.",
+    "bn": "ভাগ করে নাও"
+   },
+   {
+    "id": "thanks",
+    "name": "Say thank you",
+    "emoji": "🙏",
+    "fact": "Say \"thank you\" when someone helps you.",
+    "bn": "ধন্যবাদ বলো"
+   },
+   {
+    "id": "tidy",
+    "name": "Tidy your toys",
+    "emoji": "🧸",
+    "fact": "Put toys back after playing.",
+    "bn": "খেলনা গুছিয়ে রাখো"
+   },
+   {
+    "id": "road",
+    "name": "Cross the road safely",
+    "emoji": "🚦",
+    "fact": "Stop, look left and right, then cross with a grown-up.",
+    "bn": "নিরাপদে রাস্তা পার হও"
+   }
+  ]
+ }
+]
