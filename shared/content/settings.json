@@ -1,0 +1,282 @@
+{
+  "appName": "Kids Explorer AI",
+  "tagline": "Learn • Play • Imagine",
+  "announcement": "",
+  "fontFamily": "Baloo 2",
+  "themeMode": "kid_choice",
+  "defaultThemeId": "bubblegum",
+  "forcedThemeId": "cyber",
+  "genderThemes": {
+    "boy": "ocean",
+    "girl": "bubblegum",
+    "neutral": "jungle"
+  },
+  "themes": [
+    {
+      "id": "cyber",
+      "name": "Cyber Neon",
+      "emoji": "⚡",
+      "dark": true,
+      "primary": "#00E5FF",
+      "secondary": "#FF2BD6",
+      "accent": "#C6FF00",
+      "bgFrom": "#0B0B2B",
+      "bgTo": "#2A0B4F",
+      "surface": "#1A1A40",
+      "text": "#F2F7FF"
+    },
+    {
+      "id": "bubblegum",
+      "name": "Bubblegum Pink",
+      "emoji": "🍬",
+      "dark": false,
+      "primary": "#FF4FA3",
+      "secondary": "#9B5CFF",
+      "accent": "#FFC93C",
+      "bgFrom": "#FFE3F1",
+      "bgTo": "#E9DDFF",
+      "surface": "#FFFFFF",
+      "text": "#4A1942"
+    },
+    {
+      "id": "space",
+      "name": "Space Dark",
+      "emoji": "🚀",
+      "dark": true,
+      "primary": "#7C5CFF",
+      "secondary": "#3DD6FF",
+      "accent": "#FFD23F",
+      "bgFrom": "#060B1F",
+      "bgTo": "#1B1446",
+      "surface": "#161B3D",
+      "text": "#EEF0FF"
+    },
+    {
+      "id": "jungle",
+      "name": "Jungle Green",
+      "emoji": "🌴",
+      "dark": false,
+      "primary": "#22B573",
+      "secondary": "#FF8A3D",
+      "accent": "#FFE14D",
+      "bgFrom": "#DFFBE9",
+      "bgTo": "#FFF6D6",
+      "surface": "#FFFFFF",
+      "text": "#173B2A"
+    },
+    {
+      "id": "ocean",
+      "name": "Ocean Blue",
+      "emoji": "🐳",
+      "dark": false,
+      "primary": "#1E90FF",
+      "secondary": "#00C2A8",
+      "accent": "#FFB23F",
+      "bgFrom": "#DDF1FF",
+      "bgTo": "#E0FFF7",
+      "surface": "#FFFFFF",
+      "text": "#0F2D4A"
+    },
+    {
+      "id": "sunshine",
+      "name": "Sunshine",
+      "emoji": "🌞",
+      "dark": false,
+      "primary": "#FF9F1C",
+      "secondary": "#FF5D73",
+      "accent": "#2EC4B6",
+      "bgFrom": "#FFF4CC",
+      "bgTo": "#FFE1D6",
+      "surface": "#FFFFFF",
+      "text": "#4A2B05"
+    }
+  ],
+  "ageGroups": [
+    {
+      "id": "2-4",
+      "label": "Tiny Explorer",
+      "emoji": "🐣",
+      "range": "2 - 4"
+    },
+    {
+      "id": "5-7",
+      "label": "Junior Explorer",
+      "emoji": "🦊",
+      "range": "5 - 7"
+    },
+    {
+      "id": "8-10",
+      "label": "Super Explorer",
+      "emoji": "🦅",
+      "range": "8 - 10+"
+    }
+  ],
+  "avatars": [
+    {
+      "id": "boy",
+      "emoji": "👦",
+      "name": "Boy",
+      "gender": "boy"
+    },
+    {
+      "id": "girl",
+      "emoji": "👧",
+      "name": "Girl",
+      "gender": "girl"
+    },
+    {
+      "id": "superhero",
+      "emoji": "🦸",
+      "name": "Superhero",
+      "gender": "neutral"
+    },
+    {
+      "id": "robot",
+      "emoji": "🤖",
+      "name": "Robot",
+      "gender": "neutral"
+    },
+    {
+      "id": "astronaut",
+      "emoji": "🧑‍🚀",
+      "name": "Cosmic Explorer",
+      "gender": "neutral"
+    },
+    {
+      "id": "unicorn",
+      "emoji": "🦄",
+      "name": "Unicorn",
+      "gender": "neutral"
+    }
+  ],
+  "features": {
+    "alphabet": true,
+    "explore": true,
+    "stories": true,
+    "games": true,
+    "quiz": true,
+    "videos": true,
+    "buddy": true,
+    "ailab": true,
+    "rewards": true,
+    "parents": true
+  },
+  "ads": {
+    "enabled": true,
+    "testMode": true,
+    "banner": true,
+    "interstitial": true,
+    "rewarded": true,
+    "interstitialEveryN": 4,
+    "tagForChildDirectedTreatment": true,
+    "tagForUnderAgeOfConsent": true,
+    "maxAdContentRating": "G",
+    "nonPersonalizedOnly": true,
+    "androidAppId": "ca-app-pub-3940256099942544~3347511713",
+    "bannerUnitId": "ca-app-pub-3940256099942544/6300978111",
+    "interstitialUnitId": "ca-app-pub-3940256099942544/1033173712",
+    "rewardedUnitId": "ca-app-pub-3940256099942544/5224354917"
+  },
+  "buddy": {
+    "enabled": true,
+    "defaultPersona": "robot",
+    "languages": [
+      "en",
+      "bn",
+      "es",
+      "fr",
+      "hi"
+    ],
+    "useRemoteAi": false,
+    "remoteAiUrl": "",
+    "personas": [
+      {
+        "id": "robot",
+        "name": "Robo Bolt",
+        "emoji": "🤖",
+        "pitch": 0.6,
+        "rate": 0.95
+      },
+      {
+        "id": "bunny",
+        "name": "Magic Bunny",
+        "emoji": "🐰",
+        "pitch": 1.8,
+        "rate": 1.1
+      },
+      {
+        "id": "bear",
+        "name": "Friendly Bear",
+        "emoji": "🐻",
+        "pitch": 0.75,
+        "rate": 0.85
+      },
+      {
+        "id": "astronaut",
+        "name": "Space Astronaut",
+        "emoji": "🧑‍🚀",
+        "pitch": 1.1,
+        "rate": 1.0
+      },
+      {
+        "id": "fairy",
+        "name": "Sparkle Fairy",
+        "emoji": "🧚",
+        "pitch": 1.5,
+        "rate": 1.0
+      }
+    ]
+  },
+  "screenTime": {
+    "defaultDailyMinutes": 45,
+    "breakReminderMinutes": 20
+  },
+  "rewards": {
+    "starsPerActivity": 1,
+    "stickers": [
+      "🦁",
+      "🐼",
+      "🦄",
+      "🐬",
+      "🚀",
+      "🌈",
+      "🍩",
+      "🦖",
+      "🐝",
+      "🌻",
+      "🎈",
+      "🏆",
+      "🐙",
+      "🦋",
+      "🍉",
+      "⭐"
+    ]
+  },
+  "homeOrder": [
+    "alphabet",
+    "explore",
+    "stories",
+    "games",
+    "buddy",
+    "quiz",
+    "videos",
+    "ailab"
+  ],
+  "uiLanguages": [
+    "en",
+    "bn"
+  ],
+  "video": {
+    "privacyEnhanced": true,
+    "allowFullscreen": true,
+    "categories": [
+      "Songs",
+      "Alphabet",
+      "Stories",
+      "Science",
+      "Math",
+      "Animals"
+    ]
+  },
+  "dailyMissions": 3
+}

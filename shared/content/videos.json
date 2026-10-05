@@ -1,0 +1,7 @@
+[
+  { "id": "v-baby-shark", "title": "Baby Shark Dance", "provider": "youtube", "videoId": "XqZsoesa55w", "url": "", "ageGroups": ["2-4", "5-7"], "category": "Songs", "published": true, "sample": true },
+  { "id": "v-wheels-bus", "title": "Wheels on the Bus", "provider": "youtube", "videoId": "e_04ZrNroTo", "url": "", "ageGroups": ["2-4"], "category": "Songs", "published": true, "sample": true },
+  { "id": "v-bath-song", "title": "Bath Song", "provider": "youtube", "videoId": "WRVsOCh907o", "url": "", "ageGroups": ["2-4"], "category": "Songs", "published": true, "sample": true },
+  { "id": "v-abc-song", "title": "ABC Song", "provider": "youtube", "videoId": "WfaHgZbIJss", "url": "", "ageGroups": ["2-4", "5-7"], "category": "Alphabet", "published": true, "sample": true },
+  { "id": "v-solar-system", "title": "Our Solar System (sample - replace in Admin)", "provider": "youtube", "videoId": "", "url": "", "ageGroups": ["8-10"], "category": "Science", "published": false, "sample": true }
+]
