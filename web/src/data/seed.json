@@ -4321,6 +4321,7 @@
  ],
  "quiz": [
   {
+   "id": "q1",
    "q": "How many legs does a spider have?",
    "options": [
     "6",
@@ -4332,9 +4333,11 @@
    "ageGroups": [
     "5-7",
     "8-10"
-   ]
+   ],
+   "published": true
   },
   {
+   "id": "q2",
    "q": "Which animal says \"moo\"?",
    "options": [
     "Cow 🐮",
@@ -4346,9 +4349,11 @@
    "ageGroups": [
     "2-4",
     "5-7"
-   ]
+   ],
+   "published": true
   },
   {
+   "id": "q3",
    "q": "What color is the sky on a sunny day?",
    "options": [
     "Green",
@@ -4360,9 +4365,11 @@
    "ageGroups": [
     "2-4",
     "5-7"
-   ]
+   ],
+   "published": true
   },
   {
+   "id": "q4",
    "q": "How many days are in a week?",
    "options": [
     "5",
@@ -4374,9 +4381,11 @@
    "ageGroups": [
     "5-7",
     "8-10"
-   ]
+   ],
+   "published": true
   },
   {
+   "id": "q5",
    "q": "Which planet do we live on?",
    "options": [
     "Mars",
@@ -4388,9 +4397,11 @@
    "ageGroups": [
     "5-7",
     "8-10"
-   ]
+   ],
+   "published": true
   },
   {
+   "id": "q6",
    "q": "What is the capital of Bangladesh?",
    "options": [
     "Chattogram",
@@ -4402,9 +4413,11 @@
    "ageGroups": [
     "5-7",
     "8-10"
-   ]
+   ],
+   "published": true
   },
   {
+   "id": "q7",
    "q": "Which is the biggest animal in the world?",
    "options": [
     "Elephant",
@@ -4416,9 +4429,11 @@
    "ageGroups": [
     "5-7",
     "8-10"
-   ]
+   ],
+   "published": true
   },
   {
+   "id": "q8",
    "q": "What do bees make?",
    "options": [
     "Milk",
@@ -4430,9 +4445,11 @@
    "ageGroups": [
     "2-4",
     "5-7"
-   ]
+   ],
+   "published": true
   },
   {
+   "id": "q9",
    "q": "How many sides does a triangle have?",
    "options": [
     "3",
@@ -4444,9 +4461,11 @@
    "ageGroups": [
     "2-4",
     "5-7"
-   ]
+   ],
+   "published": true
   },
   {
+   "id": "q10",
    "q": "Which one can fly?",
    "options": [
     "Fish 🐟",
@@ -4457,9 +4476,11 @@
    "emoji": "🪽",
    "ageGroups": [
     "2-4"
-   ]
+   ],
+   "published": true
   },
   {
+   "id": "q11",
    "q": "Water turns into ___ when it is very cold.",
    "options": [
     "Ice",
@@ -4471,9 +4492,11 @@
    "ageGroups": [
     "5-7",
     "8-10"
-   ]
+   ],
+   "published": true
   },
   {
+   "id": "q12",
    "q": "What gives plants their food?",
    "options": [
     "Sunlight",
@@ -4484,9 +4507,11 @@
    "emoji": "🌱",
    "ageGroups": [
     "8-10"
-   ]
+   ],
+   "published": true
   },
   {
+   "id": "q13",
    "q": "How many continents are there?",
    "options": [
     "5",
@@ -4497,9 +4522,11 @@
    "emoji": "🗺️",
    "ageGroups": [
     "8-10"
-   ]
+   ],
+   "published": true
   },
   {
+   "id": "q14",
    "q": "Which is the national bird of Bangladesh?",
    "options": [
     "Doel (Magpie Robin)",
@@ -4511,9 +4538,11 @@
    "ageGroups": [
     "5-7",
     "8-10"
-   ]
+   ],
+   "published": true
   },
   {
+   "id": "q15",
    "q": "What is 5 + 3?",
    "options": [
     "7",
@@ -4524,9 +4553,11 @@
    "emoji": "➕",
    "ageGroups": [
     "5-7"
-   ]
+   ],
+   "published": true
   },
   {
+   "id": "q16",
    "q": "What is 6 × 7?",
    "options": [
     "42",
@@ -4537,9 +4568,11 @@
    "emoji": "✖️",
    "ageGroups": [
     "8-10"
-   ]
+   ],
+   "published": true
   },
   {
+   "id": "q17",
    "q": "Which is the largest ocean?",
    "options": [
     "Atlantic",
@@ -4550,9 +4583,11 @@
    "emoji": "🌊",
    "ageGroups": [
     "8-10"
-   ]
+   ],
+   "published": true
   },
   {
+   "id": "q18",
    "q": "Who helps us when we are sick?",
    "options": [
     "Doctor 🧑‍⚕️",
@@ -4564,9 +4599,11 @@
    "ageGroups": [
     "2-4",
     "5-7"
-   ]
+   ],
+   "published": true
   },
   {
+   "id": "q19",
    "q": "What do we call computer programs that learn from examples?",
    "options": [
     "Artificial Intelligence",
@@ -4577,9 +4614,11 @@
    "emoji": "🤖",
    "ageGroups": [
     "8-10"
-   ]
+   ],
+   "published": true
   },
   {
+   "id": "q20",
    "q": "Which is a fruit?",
    "options": [
     "Carrot 🥕",
@@ -4591,7 +4630,8 @@
    "ageGroups": [
     "2-4",
     "5-7"
-   ]
+   ],
+   "published": true
   }
  ],
  "buddy": {
