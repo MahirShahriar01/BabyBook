@@ -18,6 +18,7 @@ test('buddy: fixes grammar, capitals and punctuation', () => {
 test('buddy: teaches polite phrasing', () => {
   const r = analyze('gimme water', kb, { lang: 'en', seed: 0 });
   assert.match(r.corrected, /^May I please have water\?$/);
+  assert.equal(r.answer, '', 'a polite request should not get the question fallback');
 });
 
 test('buddy: baby words become formal words with meaning', () => {

@@ -19,7 +19,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: ^3.13.5
+  sdk: ^3.12.0
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -63,6 +63,23 @@ flutter:
   uses-material-design: true
   assets:
     - assets/content/
+  fonts:
+    - family: Baloo2
+      fonts:
+        - asset: assets/fonts/Baloo2_400Regular.ttf
+        - asset: assets/fonts/Baloo2_600SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Baloo2_700Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Baloo2_800ExtraBold.ttf
+          weight: 800
+    - family: HindSiliguri
+      fonts:
+        - asset: assets/fonts/HindSiliguri_400Regular.ttf
+        - asset: assets/fonts/HindSiliguri_600SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/HindSiliguri_700Bold.ttf
+          weight: 700
 
   # To add assets to your application, add an assets section, like this:
   # assets:

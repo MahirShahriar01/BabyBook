@@ -41,11 +41,14 @@ class KidsExplorerApp extends StatelessWidget {
       ),
       scaffoldBackgroundColor: t.bgFrom,
     );
-    TextTheme text;
-    try {
-      text = GoogleFonts.getTextTheme(st.settings.fontFamily, base.textTheme);
-    } catch (_) {
-      text = GoogleFonts.baloo2TextTheme(base.textTheme);
+    // Baloo 2 + Hind Siliguri (Bangla) are bundled for offline use; other admin-chosen
+    // fonts are fetched once by google_fonts and cached.
+    const bundled = ['Baloo 2', 'Baloo2', 'Hind Siliguri'];
+    var text = base.textTheme.apply(fontFamily: 'Baloo2', fontFamilyFallback: const ['HindSiliguri']);
+    if (!bundled.contains(st.settings.fontFamily)) {
+      try {
+        text = GoogleFonts.getTextTheme(st.settings.fontFamily, text);
+      } catch (_) {/* unknown font name: keep bundled font */}
     }
     return MaterialApp(
       title: st.settings.appName,

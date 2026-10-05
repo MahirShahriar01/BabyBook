@@ -136,6 +136,7 @@ BuddyResult analyze(
 
   final endedWithBang = RegExp(r'!\s*$').hasMatch(text);
   var isQuestion = detectQuestion(text, kb, code);
+  final askedQuestion = isQuestion; // a polite rewrite ("May I…?") is a request, not a question to answer
   var core = text.replaceFirst(_re(r'[.!?।]+$'), '').replaceFirst(RegExp(r'^¿'), '').trim();
 
   // 1) grammar / dialect corrections
@@ -214,7 +215,7 @@ BuddyResult analyze(
     }
     if (best != null) {
       r.answer = _fill(best['answer'], vars);
-    } else if (isQuestion) {
+    } else if (askedQuestion) {
       r.answer = _fill(kb['fallback'], vars);
     }
   }

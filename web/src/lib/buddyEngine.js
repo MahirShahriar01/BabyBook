@@ -91,6 +91,7 @@ export function analyze(input, kbAll, opts = {}) {
 
   const endedWithBang = /!\s*$/.test(text);
   let isQuestion = detectQuestion(text, kb, lang);
+  const askedQuestion = isQuestion; // a polite rewrite ("May I…?") is a request, not a question to answer
   let core = text.replace(/[.!?।]+$/u, '').replace(/^¿/, '').trim();
 
   // 1) grammar / dialect corrections
@@ -164,7 +165,7 @@ export function analyze(input, kbAll, opts = {}) {
       }
     }
     if (best) result.answer = fill(best.answer, vars);
-    else if (isQuestion) result.answer = fill(kb.fallback, vars);
+    else if (askedQuestion) result.answer = fill(kb.fallback, vars);
   }
 
   result.praise = pickOne(kb.praise, seedNum);

@@ -15,7 +15,9 @@ void main() {
       expect(analyze('i is happy', kb, seed: 0).corrected, 'I am happy.');
     });
     test('polite phrasing', () {
-      expect(analyze('gimme water', kb, seed: 0).corrected, 'May I please have water?');
+      final r = analyze('gimme water', kb, seed: 0);
+      expect(r.corrected, 'May I please have water?');
+      expect(r.answer, isEmpty, reason: 'a polite request should not get the question fallback');
     });
     test('baby words -> formal words', () {
       final r = analyze('my tummy hurts', kb, seed: 0);
