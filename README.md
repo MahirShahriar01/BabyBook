@@ -1,6 +1,6 @@
 # 🚀 Kids Explorer AI (BabyBook)
 
-> **This branch contains the 🌐 Website (React + Vite) — folder [`web/`](web/)** plus the shared content, Supabase backend and docs. The other components live on their own branches (see *Branches* below); everything together is on `claude/gallant-gates-3jkz4c`.
+> **This branch contains the 📱 Android app (Flutter) — folder [`mobile/`](mobile/)** plus the shared content, Supabase backend and docs. The other components live on their own branches (see *Branches* below); everything together is on `claude/gallant-gates-3jkz4c`.
 
 A free, colorful, **no sign-up** learning world for kids aged 2–10+. It ships as three apps that share one content model:
 
