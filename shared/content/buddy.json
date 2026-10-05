@@ -1,0 +1,1081 @@
+{
+  "en": {
+    "greeting": "Hi {name}! I am {buddy}. Say a sentence or ask me a question, and I will help you say it beautifully!",
+    "praise": [
+      "Great job!",
+      "Wonderful!",
+      "You are a superstar!",
+      "Awesome talking!",
+      "Super!"
+    ],
+    "correctIntro": "Let's say it like this:",
+    "perfect": "That sentence was perfect!",
+    "fallback": "That is a great thing to wonder about! Let's find out together with a grown-up, or ask me something else.",
+    "safetyReply": "That is a question for a grown-up you trust. Let's talk about something fun instead!",
+    "safety": [
+      "kill",
+      "gun",
+      "knife",
+      "blood",
+      "drug",
+      "address",
+      "password",
+      "phone number",
+      "where do you live",
+      "suicide",
+      "sex"
+    ],
+    "questionStarters": [
+      "what",
+      "why",
+      "how",
+      "where",
+      "when",
+      "who",
+      "which",
+      "can",
+      "could",
+      "is",
+      "are",
+      "do",
+      "does",
+      "did",
+      "will",
+      "would",
+      "should",
+      "may",
+      "shall"
+    ],
+    "corrections": [
+      {
+        "pattern": "\\bgimme\\b",
+        "replace": "give me",
+        "tip": "\"Gimme\" is short talk. We say \"give me\"."
+      },
+      {
+        "pattern": "\\bwanna\\b",
+        "replace": "want to",
+        "tip": "\"Wanna\" means \"want to\"."
+      },
+      {
+        "pattern": "\\bgonna\\b",
+        "replace": "going to",
+        "tip": "\"Gonna\" means \"going to\"."
+      },
+      {
+        "pattern": "\\bgotta\\b",
+        "replace": "have to",
+        "tip": "\"Gotta\" means \"have to\"."
+      },
+      {
+        "pattern": "\\bain'?t\\b",
+        "replace": "is not",
+        "tip": "Instead of \"ain't\" we say \"is not\" or \"am not\"."
+      },
+      {
+        "pattern": "\\bme want\\b",
+        "replace": "I want",
+        "tip": "We say \"I want\", not \"me want\"."
+      },
+      {
+        "pattern": "\\bme (?:is|am)\\b",
+        "replace": "I am",
+        "tip": "We say \"I am\"."
+      },
+      {
+        "pattern": "\\bi is\\b",
+        "replace": "I am",
+        "tip": "With \"I\" we use \"am\": I am."
+      },
+      {
+        "pattern": "\\bi has\\b",
+        "replace": "I have",
+        "tip": "With \"I\" we use \"have\": I have."
+      },
+      {
+        "pattern": "\\b(he|she|it) don'?t\\b",
+        "replace": "$1 doesn't",
+        "tip": "With he, she or it we say \"doesn't\"."
+      },
+      {
+        "pattern": "\\b(he|she|it) have\\b",
+        "replace": "$1 has",
+        "tip": "With he, she or it we say \"has\"."
+      },
+      {
+        "pattern": "\\b(he|she|it) are\\b",
+        "replace": "$1 is",
+        "tip": "With he, she or it we say \"is\"."
+      },
+      {
+        "pattern": "\\b(we|they|you) is\\b",
+        "replace": "$1 are",
+        "tip": "With we, they or you we say \"are\"."
+      },
+      {
+        "pattern": "\\b(we|they|you) was\\b",
+        "replace": "$1 were",
+        "tip": "With we, they or you we say \"were\"."
+      },
+      {
+        "pattern": "\\bgoed\\b",
+        "replace": "went",
+        "tip": "The past of \"go\" is \"went\"."
+      },
+      {
+        "pattern": "\\beated\\b",
+        "replace": "ate",
+        "tip": "The past of \"eat\" is \"ate\"."
+      },
+      {
+        "pattern": "\\brunned\\b",
+        "replace": "ran",
+        "tip": "The past of \"run\" is \"ran\"."
+      },
+      {
+        "pattern": "\\bcomed\\b",
+        "replace": "came",
+        "tip": "The past of \"come\" is \"came\"."
+      },
+      {
+        "pattern": "\\bseed\\b(?= (?:a|the|my|it|him|her))",
+        "replace": "saw",
+        "tip": "The past of \"see\" is \"saw\"."
+      },
+      {
+        "pattern": "\\bbringed\\b",
+        "replace": "brought",
+        "tip": "The past of \"bring\" is \"brought\"."
+      },
+      {
+        "pattern": "\\bbuyed\\b",
+        "replace": "bought",
+        "tip": "The past of \"buy\" is \"bought\"."
+      },
+      {
+        "pattern": "\\bthinked\\b",
+        "replace": "thought",
+        "tip": "The past of \"think\" is \"thought\"."
+      },
+      {
+        "pattern": "\\bswimmed\\b",
+        "replace": "swam",
+        "tip": "The past of \"swim\" is \"swam\"."
+      },
+      {
+        "pattern": "\\bfalled\\b",
+        "replace": "fell",
+        "tip": "The past of \"fall\" is \"fell\"."
+      },
+      {
+        "pattern": "\\bmouses\\b",
+        "replace": "mice",
+        "tip": "One mouse, two mice!"
+      },
+      {
+        "pattern": "\\bfoots\\b",
+        "replace": "feet",
+        "tip": "One foot, two feet!"
+      },
+      {
+        "pattern": "\\btooths\\b",
+        "replace": "teeth",
+        "tip": "One tooth, many teeth!"
+      },
+      {
+        "pattern": "\\bchilds\\b",
+        "replace": "children",
+        "tip": "One child, many children!"
+      },
+      {
+        "pattern": "\\bsheeps\\b",
+        "replace": "sheep",
+        "tip": "Sheep stays \"sheep\" even when there are many."
+      },
+      {
+        "pattern": "\\bmore better\\b",
+        "replace": "better",
+        "tip": "Just say \"better\"."
+      },
+      {
+        "pattern": "\\bgooder\\b",
+        "replace": "better",
+        "tip": "Good, better, best!"
+      },
+      {
+        "pattern": "\\bbadder\\b",
+        "replace": "worse",
+        "tip": "Bad, worse, worst!"
+      },
+      {
+        "pattern": "\\ba (apple|egg|orange|elephant|ant|owl|umbrella|ice cream|igloo)\\b",
+        "replace": "an $1",
+        "tip": "Before a vowel sound we say \"an\": an apple."
+      }
+    ],
+    "polite": [
+      {
+        "pattern": "^(?:please )?give me (.+?)(?: please)?$",
+        "replace": "May I please have $1",
+        "tip": "Asking with \"May I please have\" is kind and polite."
+      },
+      {
+        "pattern": "^i want (.+?)(?: please)?$",
+        "replace": "I would like $1, please",
+        "tip": "\"I would like ..., please\" is a polite way to ask."
+      },
+      {
+        "pattern": "^shut up$",
+        "replace": "Please be quiet",
+        "tip": "\"Please be quiet\" is a kinder way to say it."
+      },
+      {
+        "pattern": "^what\\??$",
+        "replace": "Pardon me",
+        "tip": "When you did not hear, say \"Pardon me?\" or \"Excuse me?\"."
+      },
+      {
+        "pattern": "^move$",
+        "replace": "Excuse me, may I pass",
+        "tip": "\"Excuse me\" is the polite way."
+      },
+      {
+        "pattern": "^(?:i'?m |i am )?hungry$",
+        "replace": "I am hungry. May I have something to eat",
+        "tip": "A full sentence is clear and polite."
+      }
+    ],
+    "kidWords": {
+      "tummy": [
+        "stomach",
+        "the part of your body where food goes"
+      ],
+      "doggy": [
+        "dog",
+        "a friendly pet that barks"
+      ],
+      "kitty": [
+        "cat",
+        "a pet that says meow"
+      ],
+      "horsey": [
+        "horse",
+        "a big animal you can ride"
+      ],
+      "choo choo": [
+        "train",
+        "a long vehicle on tracks"
+      ],
+      "boo boo": [
+        "small injury",
+        "a little hurt on your body"
+      ],
+      "nana": [
+        "grandmother",
+        "your parent's mother"
+      ],
+      "binky": [
+        "pacifier",
+        "something babies suck on"
+      ],
+      "sammich": [
+        "sandwich",
+        "food between two slices of bread"
+      ],
+      "pasketti": [
+        "spaghetti",
+        "long thin noodles"
+      ],
+      "aminal": [
+        "animal",
+        "a living creature that moves"
+      ],
+      "brekkie": [
+        "breakfast",
+        "the first meal of the day"
+      ],
+      "jammies": [
+        "pajamas",
+        "clothes you sleep in"
+      ],
+      "potty": [
+        "toilet",
+        "where you go to the bathroom"
+      ]
+    },
+    "qa": [
+      {
+        "keywords": [
+          "hello",
+          "hi",
+          "hey",
+          "good morning"
+        ],
+        "answer": "Hello, my friend! How are you today?"
+      },
+      {
+        "keywords": [
+          "how are you"
+        ],
+        "answer": "I am feeling super! Thank you for asking. How are you?"
+      },
+      {
+        "keywords": [
+          "your name",
+          "who are you"
+        ],
+        "answer": "I am {buddy}, your learning buddy! I love words, stories and questions."
+      },
+      {
+        "keywords": [
+          "sky",
+          "blue"
+        ],
+        "answer": "Sunlight has all the colors. The air scatters blue light the most, so the sky looks blue!"
+      },
+      {
+        "keywords": [
+          "rain"
+        ],
+        "answer": "Rain comes from clouds. Tiny water drops join together, get heavy, and fall down!"
+      },
+      {
+        "keywords": [
+          "rainbow"
+        ],
+        "answer": "A rainbow appears when sunlight shines through raindrops. The light splits into seven colors!"
+      },
+      {
+        "keywords": [
+          "sun",
+          "hot"
+        ],
+        "answer": "The Sun is a giant star made of very hot gas. It gives us light and warmth."
+      },
+      {
+        "keywords": [
+          "moon"
+        ],
+        "answer": "The Moon does not make its own light. It shines because sunlight bounces off it!"
+      },
+      {
+        "keywords": [
+          "star"
+        ],
+        "answer": "Stars are huge balls of fire, very very far away. Our Sun is a star too!"
+      },
+      {
+        "keywords": [
+          "dinosaur"
+        ],
+        "answer": "Dinosaurs lived millions of years ago. Some were as tall as buildings! Birds are their relatives."
+      },
+      {
+        "keywords": [
+          "fish",
+          "breathe"
+        ],
+        "answer": "Fish breathe with gills. Gills take oxygen from the water."
+      },
+      {
+        "keywords": [
+          "plant",
+          "grow"
+        ],
+        "answer": "Plants need sunlight, water, air and soil to grow. They make food from sunlight!"
+      },
+      {
+        "keywords": [
+          "sleep"
+        ],
+        "answer": "Sleep helps your body grow and your brain remember what you learned. Kids need lots of it!"
+      },
+      {
+        "keywords": [
+          "teeth",
+          "brush"
+        ],
+        "answer": "Brush your teeth two times a day to keep them strong and shiny!"
+      },
+      {
+        "keywords": [
+          "robot"
+        ],
+        "answer": "Robots are machines that follow instructions. People write the instructions, called code!"
+      },
+      {
+        "keywords": [
+          "ai",
+          "artificial intelligence"
+        ],
+        "answer": "AI means computers that learn from lots of examples, like how you learn from practice!"
+      },
+      {
+        "keywords": [
+          "computer"
+        ],
+        "answer": "A computer is a machine that follows instructions very, very fast."
+      },
+      {
+        "keywords": [
+          "earth",
+          "round"
+        ],
+        "answer": "The Earth is shaped like a ball. It spins around once every day — that makes day and night!"
+      },
+      {
+        "keywords": [
+          "night",
+          "dark"
+        ],
+        "answer": "It gets dark at night because our side of the Earth turns away from the Sun."
+      },
+      {
+        "keywords": [
+          "bird",
+          "fly"
+        ],
+        "answer": "Birds fly with light bones, strong wings and feathers that push the air."
+      },
+      {
+        "keywords": [
+          "sad"
+        ],
+        "answer": "It is okay to feel sad. Take a deep breath and talk to someone who loves you. I am here too!"
+      },
+      {
+        "keywords": [
+          "happy"
+        ],
+        "answer": "Yay! Being happy is wonderful. What made you happy today?"
+      },
+      {
+        "keywords": [
+          "count",
+          "numbers"
+        ],
+        "answer": "Let's count! One, two, three, four, five, six, seven, eight, nine, ten!"
+      },
+      {
+        "keywords": [
+          "color",
+          "colour"
+        ],
+        "answer": "Red, orange, yellow, green, blue, and purple are some of my favorite colors!"
+      },
+      {
+        "keywords": [
+          "thank"
+        ],
+        "answer": "You are welcome! You have lovely manners."
+      },
+      {
+        "keywords": [
+          "sorry"
+        ],
+        "answer": "Saying sorry is brave and kind. Well done!"
+      },
+      {
+        "keywords": [
+          "joke",
+          "funny"
+        ],
+        "answer": "Why did the teddy bear say no to dessert? Because it was already stuffed!"
+      },
+      {
+        "keywords": [
+          "bye",
+          "goodbye"
+        ],
+        "answer": "Goodbye, friend! Come back soon to learn more!"
+      }
+    ],
+    "practiceWords": [
+      "apple",
+      "butterfly",
+      "elephant",
+      "banana",
+      "rainbow",
+      "thank you",
+      "please",
+      "computer",
+      "dinosaur",
+      "umbrella",
+      "beautiful",
+      "library",
+      "astronaut",
+      "hippopotamus",
+      "excuse me"
+    ]
+  },
+  "bn": {
+    "greeting": "হ্যালো {name}! আমি {buddy}। আমাকে কিছু বলো বা প্রশ্ন করো, আমি সুন্দর করে বলতে শেখাব!",
+    "praise": [
+      "দারুণ!",
+      "খুব ভালো!",
+      "তুমি একজন সুপারস্টার!",
+      "চমৎকার বলেছ!"
+    ],
+    "correctIntro": "চলো এভাবে বলি:",
+    "perfect": "একদম সঠিক বলেছ!",
+    "fallback": "খুব সুন্দর প্রশ্ন! চলো বড় কারো সাথে মিলে খুঁজে দেখি, অথবা আমাকে অন্য কিছু জিজ্ঞেস করো।",
+    "safetyReply": "এই প্রশ্নটা তোমার বিশ্বস্ত বড় কাউকে করো। চলো মজার কিছু নিয়ে কথা বলি!",
+    "safety": [
+      "খুন",
+      "বন্দুক",
+      "ছুরি",
+      "মাদক",
+      "ঠিকানা",
+      "পাসওয়ার্ড",
+      "ফোন নম্বর"
+    ],
+    "questionStarters": [
+      "কী",
+      "কি",
+      "কেন",
+      "কীভাবে",
+      "কিভাবে",
+      "কোথায়",
+      "কখন",
+      "কে",
+      "কোন",
+      "কয়টা",
+      "কত"
+    ],
+    "questionEnders": [
+      "কি",
+      "কী",
+      "নাকি"
+    ],
+    "corrections": [
+      {
+        "pattern": "পানি খামু",
+        "replace": "পানি খাব",
+        "tip": "শুদ্ধ ভাষায় বলি \"খাব\"।"
+      },
+      {
+        "pattern": "খামু",
+        "replace": "খাব",
+        "tip": "শুদ্ধ ভাষায় বলি \"খাব\"।"
+      },
+      {
+        "pattern": "যামু",
+        "replace": "যাব",
+        "tip": "শুদ্ধ ভাষায় বলি \"যাব\"।"
+      },
+      {
+        "pattern": "করমু",
+        "replace": "করব",
+        "tip": "শুদ্ধ ভাষায় বলি \"করব\"।"
+      },
+      {
+        "pattern": "দিমু",
+        "replace": "দেব",
+        "tip": "শুদ্ধ ভাষায় বলি \"দেব\"।"
+      },
+      {
+        "pattern": "খেলমু",
+        "replace": "খেলব",
+        "tip": "শুদ্ধ ভাষায় বলি \"খেলব\"।"
+      },
+      {
+        "pattern": "কইলাম",
+        "replace": "বললাম",
+        "tip": "শুদ্ধ ভাষায় বলি \"বললাম\"।"
+      },
+      {
+        "pattern": "কইসে",
+        "replace": "বলেছে",
+        "tip": "শুদ্ধ ভাষায় বলি \"বলেছে\"।"
+      },
+      {
+        "pattern": "করসি",
+        "replace": "করেছি",
+        "tip": "শুদ্ধ ভাষায় বলি \"করেছি\"।"
+      },
+      {
+        "pattern": "খাইসি",
+        "replace": "খেয়েছি",
+        "tip": "শুদ্ধ ভাষায় বলি \"খেয়েছি\"।"
+      },
+      {
+        "pattern": "গেসি",
+        "replace": "গিয়েছি",
+        "tip": "শুদ্ধ ভাষায় বলি \"গিয়েছি\"।"
+      },
+      {
+        "pattern": "আসো",
+        "replace": "এসো",
+        "tip": "শুদ্ধ ভাষায় বলি \"এসো\"।"
+      },
+      {
+        "pattern": "কেমনে",
+        "replace": "কীভাবে",
+        "tip": "শুদ্ধ ভাষায় বলি \"কীভাবে\"।"
+      },
+      {
+        "pattern": "ক্যান",
+        "replace": "কেন",
+        "tip": "শুদ্ধ ভাষায় বলি \"কেন\"।"
+      }
+    ],
+    "polite": [
+      {
+        "pattern": "^(.+) দাও$",
+        "replace": "দয়া করে আমাকে $1 দিন",
+        "tip": "\"দয়া করে ... দিন\" বললে অনেক ভদ্র শোনায়।"
+      },
+      {
+        "pattern": "^আমি (.+) চাই$",
+        "replace": "আমি কি $1 পেতে পারি",
+        "tip": "\"আমি কি ... পেতে পারি?\" — এভাবে চাইলে সবাই খুশি হয়।"
+      },
+      {
+        "pattern": "^চুপ কর$",
+        "replace": "দয়া করে একটু চুপ করুন",
+        "tip": "\"দয়া করে\" বলা সুন্দর অভ্যাস।"
+      },
+      {
+        "pattern": "^সরো$",
+        "replace": "একটু সরবেন, প্লিজ",
+        "tip": "ভদ্রভাবে বললে সবাই সাহায্য করে।"
+      }
+    ],
+    "kidWords": {
+      "মাম": [
+        "পানি",
+        "যা আমরা পান করি"
+      ],
+      "দুদু": [
+        "দুধ",
+        "সাদা পুষ্টিকর পানীয়"
+      ],
+      "ভাতু": [
+        "ভাত",
+        "চাল সেদ্ধ করে তৈরি খাবার"
+      ],
+      "নানু": [
+        "নানি",
+        "মায়ের মা"
+      ]
+    },
+    "qa": [
+      {
+        "keywords": [
+          "হ্যালো",
+          "হাই",
+          "সালাম",
+          "নমস্কার"
+        ],
+        "answer": "হ্যালো বন্ধু! তুমি কেমন আছ?"
+      },
+      {
+        "keywords": [
+          "কেমন আছ"
+        ],
+        "answer": "আমি খুব ভালো আছি! জিজ্ঞেস করার জন্য ধন্যবাদ।"
+      },
+      {
+        "keywords": [
+          "তোমার নাম"
+        ],
+        "answer": "আমি {buddy}, তোমার শেখার বন্ধু!"
+      },
+      {
+        "keywords": [
+          "আকাশ",
+          "নীল"
+        ],
+        "answer": "সূর্যের আলোর নীল রং বাতাসে সবচেয়ে বেশি ছড়ায়, তাই আকাশ নীল দেখায়!"
+      },
+      {
+        "keywords": [
+          "বৃষ্টি"
+        ],
+        "answer": "মেঘের ছোট ছোট পানির ফোঁটা একসাথে ভারী হয়ে বৃষ্টি হয়ে পড়ে।"
+      },
+      {
+        "keywords": [
+          "চাঁদ"
+        ],
+        "answer": "চাঁদের নিজের আলো নেই। সূর্যের আলো পড়ে চাঁদ ঝলমল করে।"
+      },
+      {
+        "keywords": [
+          "সূর্য"
+        ],
+        "answer": "সূর্য একটি বিশাল তারা। এটি আমাদের আলো আর তাপ দেয়।"
+      },
+      {
+        "keywords": [
+          "রোবট"
+        ],
+        "answer": "রোবট হলো যন্ত্র যা নির্দেশনা মেনে কাজ করে। মানুষ সেই নির্দেশনা লেখে, যাকে কোড বলে।"
+      },
+      {
+        "keywords": [
+          "এআই",
+          "কৃত্রিম বুদ্ধিমত্তা"
+        ],
+        "answer": "এআই হলো এমন কম্পিউটার যা অনেক উদাহরণ দেখে শেখে, ঠিক যেমন তুমি অনুশীলন করে শেখো!"
+      },
+      {
+        "keywords": [
+          "গাছ"
+        ],
+        "answer": "গাছ আমাদের অক্সিজেন দেয়, ফল দেয়, ছায়া দেয়। গাছ লাগাও, পৃথিবী বাঁচাও!"
+      },
+      {
+        "keywords": [
+          "ধন্যবাদ"
+        ],
+        "answer": "তোমাকেও ধন্যবাদ! তোমার আচরণ খুব সুন্দর।"
+      },
+      {
+        "keywords": [
+          "বিদায়",
+          "টাটা"
+        ],
+        "answer": "বিদায় বন্ধু! আবার এসো।"
+      }
+    ],
+    "practiceWords": [
+      "আম",
+      "পাখি",
+      "ফুল",
+      "ধন্যবাদ",
+      "বাংলাদেশ",
+      "প্রজাপতি",
+      "রংধনু",
+      "বই",
+      "স্কুল",
+      "মা"
+    ]
+  },
+  "es": {
+    "greeting": "¡Hola {name}! Soy {buddy}. ¡Dime una frase o hazme una pregunta!",
+    "praise": [
+      "¡Muy bien!",
+      "¡Excelente!",
+      "¡Eres una estrella!",
+      "¡Genial!"
+    ],
+    "correctIntro": "Digámoslo así:",
+    "perfect": "¡Tu frase fue perfecta!",
+    "fallback": "¡Qué buena pregunta! Busquemos la respuesta con un adulto.",
+    "safetyReply": "Esa pregunta es para un adulto de confianza. ¡Hablemos de algo divertido!",
+    "safety": [
+      "matar",
+      "pistola",
+      "cuchillo",
+      "droga",
+      "dirección",
+      "contraseña"
+    ],
+    "questionStarters": [
+      "qué",
+      "que",
+      "por qué",
+      "porque",
+      "cómo",
+      "como",
+      "dónde",
+      "donde",
+      "cuándo",
+      "cuando",
+      "quién",
+      "quien",
+      "cuál",
+      "puedo",
+      "puedes"
+    ],
+    "corrections": [
+      {
+        "pattern": "\\byo sabo\\b",
+        "replace": "yo sé",
+        "tip": "Decimos \"yo sé\"."
+      },
+      {
+        "pattern": "\\bhaiga\\b",
+        "replace": "haya",
+        "tip": "Decimos \"haya\"."
+      },
+      {
+        "pattern": "\\bdijistes\\b",
+        "replace": "dijiste",
+        "tip": "Decimos \"dijiste\" sin s."
+      },
+      {
+        "pattern": "\\bhicistes\\b",
+        "replace": "hiciste",
+        "tip": "Decimos \"hiciste\" sin s."
+      }
+    ],
+    "polite": [
+      {
+        "pattern": "^dame (.+?)$",
+        "replace": "¿Me das $1, por favor",
+        "tip": "\"Por favor\" hace todo más amable."
+      },
+      {
+        "pattern": "^quiero (.+?)$",
+        "replace": "Me gustaría $1, por favor",
+        "tip": "\"Me gustaría\" es más educado."
+      }
+    ],
+    "kidWords": {
+      "guau guau": [
+        "perro",
+        "un animal que ladra"
+      ],
+      "pipí": [
+        "baño",
+        "lugar para ir al servicio"
+      ]
+    },
+    "qa": [
+      {
+        "keywords": [
+          "hola"
+        ],
+        "answer": "¡Hola, amigo! ¿Cómo estás?"
+      },
+      {
+        "keywords": [
+          "cielo",
+          "azul"
+        ],
+        "answer": "El aire dispersa más la luz azul del sol, por eso el cielo es azul."
+      },
+      {
+        "keywords": [
+          "luna"
+        ],
+        "answer": "La luna brilla porque refleja la luz del sol."
+      },
+      {
+        "keywords": [
+          "gracias"
+        ],
+        "answer": "¡De nada! Tienes muy buenos modales."
+      },
+      {
+        "keywords": [
+          "adiós"
+        ],
+        "answer": "¡Adiós, amigo! Vuelve pronto."
+      }
+    ],
+    "practiceWords": [
+      "manzana",
+      "mariposa",
+      "gracias",
+      "por favor",
+      "elefante",
+      "arcoíris"
+    ]
+  },
+  "fr": {
+    "greeting": "Bonjour {name} ! Je suis {buddy}. Dis-moi une phrase ou pose-moi une question !",
+    "praise": [
+      "Bravo !",
+      "Super !",
+      "Tu es une star !",
+      "Excellent !"
+    ],
+    "correctIntro": "Disons-le comme ça :",
+    "perfect": "Ta phrase était parfaite !",
+    "fallback": "Quelle belle question ! Cherchons la réponse avec un adulte.",
+    "safetyReply": "C'est une question pour un adulte de confiance. Parlons de quelque chose d'amusant !",
+    "safety": [
+      "tuer",
+      "pistolet",
+      "couteau",
+      "drogue",
+      "adresse",
+      "mot de passe"
+    ],
+    "questionStarters": [
+      "quoi",
+      "pourquoi",
+      "comment",
+      "où",
+      "quand",
+      "qui",
+      "quel",
+      "quelle",
+      "est-ce",
+      "peux"
+    ],
+    "corrections": [
+      {
+        "pattern": "\\bj'ai allé\\b",
+        "replace": "je suis allé",
+        "tip": "Avec \"aller\" on dit \"je suis allé\"."
+      },
+      {
+        "pattern": "\\bsi j'aurais\\b",
+        "replace": "si j'avais",
+        "tip": "Après \"si\" on dit \"j'avais\"."
+      },
+      {
+        "pattern": "\\bvous faisez\\b",
+        "replace": "vous faites",
+        "tip": "On dit \"vous faites\"."
+      },
+      {
+        "pattern": "\\bvous disez\\b",
+        "replace": "vous dites",
+        "tip": "On dit \"vous dites\"."
+      }
+    ],
+    "polite": [
+      {
+        "pattern": "^donne-?moi (.+?)$",
+        "replace": "Est-ce que je peux avoir $1, s'il te plaît",
+        "tip": "\"S'il te plaît\" est très poli."
+      },
+      {
+        "pattern": "^je veux (.+?)$",
+        "replace": "Je voudrais $1, s'il vous plaît",
+        "tip": "\"Je voudrais\" est plus poli que \"je veux\"."
+      }
+    ],
+    "kidWords": {
+      "toutou": [
+        "chien",
+        "un animal qui aboie"
+      ],
+      "dodo": [
+        "sommeil",
+        "quand on dort"
+      ]
+    },
+    "qa": [
+      {
+        "keywords": [
+          "bonjour",
+          "salut"
+        ],
+        "answer": "Bonjour mon ami ! Comment vas-tu ?"
+      },
+      {
+        "keywords": [
+          "ciel",
+          "bleu"
+        ],
+        "answer": "L'air disperse surtout la lumière bleue du soleil, alors le ciel est bleu !"
+      },
+      {
+        "keywords": [
+          "merci"
+        ],
+        "answer": "De rien ! Tu es très poli."
+      },
+      {
+        "keywords": [
+          "au revoir"
+        ],
+        "answer": "Au revoir, à bientôt !"
+      }
+    ],
+    "practiceWords": [
+      "pomme",
+      "papillon",
+      "merci",
+      "s'il vous plaît",
+      "éléphant",
+      "arc-en-ciel"
+    ]
+  },
+  "hi": {
+    "greeting": "नमस्ते {name}! मैं {buddy} हूँ। मुझसे कुछ भी पूछो!",
+    "praise": [
+      "शाबाश!",
+      "बहुत बढ़िया!",
+      "तुम सुपरस्टार हो!"
+    ],
+    "correctIntro": "चलो ऐसे कहते हैं:",
+    "perfect": "तुम्हारा वाक्य बिल्कुल सही था!",
+    "fallback": "बहुत अच्छा सवाल! चलो किसी बड़े के साथ जवाब ढूँढते हैं।",
+    "safetyReply": "यह सवाल किसी भरोसेमंद बड़े से पूछो। चलो कुछ मज़ेदार बात करते हैं!",
+    "safety": [
+      "मारना",
+      "बंदूक",
+      "चाकू",
+      "पता",
+      "पासवर्ड"
+    ],
+    "questionStarters": [
+      "क्या",
+      "क्यों",
+      "कैसे",
+      "कहाँ",
+      "कब",
+      "कौन",
+      "कितना",
+      "कितने"
+    ],
+    "corrections": [
+      {
+        "pattern": "मेरे को",
+        "replace": "मुझे",
+        "tip": "शुद्ध हिंदी में \"मुझे\" कहते हैं।"
+      },
+      {
+        "pattern": "तेरे को",
+        "replace": "तुम्हें",
+        "tip": "शुद्ध हिंदी में \"तुम्हें\" कहते हैं।"
+      }
+    ],
+    "polite": [
+      {
+        "pattern": "^(.+) दो$",
+        "replace": "कृपया मुझे $1 दीजिए",
+        "tip": "\"कृपया\" कहना अच्छी आदत है।"
+      },
+      {
+        "pattern": "^मुझे (.+) चाहिए$",
+        "replace": "क्या मुझे $1 मिल सकता है",
+        "tip": "ऐसे पूछना ज़्यादा विनम्र है।"
+      }
+    ],
+    "kidWords": {
+      "मम्मम": [
+        "खाना",
+        "जो हम खाते हैं"
+      ]
+    },
+    "qa": [
+      {
+        "keywords": [
+          "नमस्ते",
+          "हेलो"
+        ],
+        "answer": "नमस्ते दोस्त! तुम कैसे हो?"
+      },
+      {
+        "keywords": [
+          "आसमान",
+          "नीला"
+        ],
+        "answer": "हवा सूरज की नीली रोशनी को सबसे ज़्यादा फैलाती है, इसलिए आसमान नीला दिखता है।"
+      },
+      {
+        "keywords": [
+          "धन्यवाद",
+          "शुक्रिया"
+        ],
+        "answer": "आपका स्वागत है! तुम बहुत अच्छे हो।"
+      }
+    ],
+    "practiceWords": [
+      "आम",
+      "तितली",
+      "धन्यवाद",
+      "कृपया",
+      "हाथी",
+      "इंद्रधनुष"
+    ]
+  }
+}
