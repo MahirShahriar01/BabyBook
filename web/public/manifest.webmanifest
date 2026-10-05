@@ -1,0 +1,9 @@
+{
+  "name": "Kids Explorer AI",
+  "short_name": "Kids Explorer",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#FFE3F1",
+  "theme_color": "#FF4FA3",
+  "icons": [{ "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}

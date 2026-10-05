@@ -1,0 +1,66 @@
+// Interface strings (navigation + prompts). Learning content itself is multi-language.
+const _strings = {
+  'en': {
+    'hello': 'Hello',
+    'askName': "Hi! I'm Bolt. What's your name?",
+    'namePlaceholder': 'Type your name',
+    'askAge': 'How old are you, {name}?',
+    'askHero': 'Choose your hero!',
+    'askTheme': 'Pick your magic colors!',
+    'next': 'Next',
+    'back': 'Back',
+    'letsGo': "Let's go!",
+    'level': 'Level',
+    'missions': "Today's missions",
+    'alphabet': 'Alphabet',
+    'explore': 'Explore',
+    'stories': 'Stories',
+    'games': 'Brain Games',
+    'buddy': 'Talking Buddy',
+    'quiz': 'Quiz Time',
+    'videos': 'Cartoons',
+    'ailab': 'AI Lab',
+    'rewards': 'My Stickers',
+    'parents': 'Grown-ups',
+    'listen': 'Listen',
+    'sayIt': 'Say it',
+    'step': 'Step {n} of 4',
+    'timeUp': 'Time for a break! Stretch, drink water and come back later 🌈',
+    'breakTime': 'Wiggle break! Stand up, stretch and blink 10 times 🙆',
+  },
+  'bn': {
+    'hello': 'হ্যালো',
+    'askName': 'হাই! আমি বোল্ট। তোমার নাম কী?',
+    'namePlaceholder': 'তোমার নাম লেখো',
+    'askAge': '{name}, তোমার বয়স কত?',
+    'askHero': 'তোমার হিরো বেছে নাও!',
+    'askTheme': 'তোমার জাদুর রং বেছে নাও!',
+    'next': 'পরের ধাপ',
+    'back': 'পেছনে',
+    'letsGo': 'চলো শুরু করি!',
+    'level': 'লেভেল',
+    'missions': 'আজকের মিশন',
+    'alphabet': 'বর্ণমালা',
+    'explore': 'জানো ও শেখো',
+    'stories': 'গল্প',
+    'games': 'বুদ্ধির খেলা',
+    'buddy': 'কথা বলা বন্ধু',
+    'quiz': 'কুইজ',
+    'videos': 'কার্টুন',
+    'ailab': 'এআই ল্যাব',
+    'rewards': 'আমার স্টিকার',
+    'parents': 'অভিভাবক',
+    'listen': 'শোনো',
+    'sayIt': 'বলো',
+    'step': 'ধাপ {n} / ৪',
+    'timeUp': 'এখন একটু বিরতি! একটু নড়াচড়া করো, পানি খাও, পরে আবার এসো 🌈',
+    'breakTime': 'একটু বিরতি! দাঁড়িয়ে হাত-পা নাড়াও 🙆',
+  },
+};
+
+const uiLanguages = {'en': 'English', 'bn': 'বাংলা'};
+
+String tr(String lang, String key, [Map<String, String> vars = const {}]) {
+  final s = _strings[lang]?[key] ?? _strings['en']![key] ?? key;
+  return s.replaceAllMapped(RegExp(r'\{(\w+)\}'), (m) => vars[m[1]] ?? '');
+}
