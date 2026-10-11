@@ -84,6 +84,7 @@ class Settings {
   List<String> get stickers => strings((j['rewards'] as Map?)?['stickers']);
   int get dailyMissions => (j['dailyMissions'] as num?)?.toInt() ?? 3;
   bool get privacyVideo => (j['video'] as Map?)?['privacyEnhanced'] != false;
+  Json get voice => Json.from((j['voice'] as Map?) ?? const {});
 
   KidTheme themeFor({String? themeId, String? gender}) {
     final all = themes;
@@ -105,12 +106,16 @@ class Word {
   String get word => j['word'] ?? '';
   String get emoji => j['emoji'] ?? '';
   String get meaning => j['meaning'] ?? '';
+  String get sentence => j['sentence'] ?? '';
 }
 
 class Letter {
   Letter(this.j);
   final Json j;
   String get char => j['char'] ?? '';
+  /// Traditional spoken name, e.g. "দন্ত্য ন" (falls back to the symbol).
+  String get name => (j['name'] as String?)?.isNotEmpty == true ? j['name'] : char;
+  bool get hasName => (j['name'] as String?)?.isNotEmpty == true;
   String get sound => j['sound'] ?? '';
   String get audio => j['audio'] ?? '';
   List<Word> get words => _list(j['words'], Word.new);
@@ -131,6 +136,7 @@ class Language {
   String get nativeName => j['nativeName'] ?? name;
   String get flag => j['flag'] ?? '🏳️';
   String get ttsLocale => j['ttsLocale'] ?? code;
+  String get letterPhrase => j['letterPhrase'] ?? '{char} — {word}';
   bool get enabled => j['enabled'] != false;
   List<LetterGroup> get groups => _list(j['groups'], LetterGroup.new);
 }
@@ -154,6 +160,8 @@ class QuizQ {
   int get answer => (j['answer'] as num?)?.toInt() ?? 0;
   List<String> get ageGroups => strings(j['ageGroups']);
   bool get published => j['published'] != false;
+  String get questionBn => (j['bn'] as Map?)?['q'] ?? '';
+  List<String> get optionsBn => strings((j['bn'] as Map?)?['options']);
 }
 
 class Story {
@@ -199,6 +207,7 @@ class TopicItem {
   String get emoji => j['emoji'] ?? '';
   String get fact => j['fact'] ?? '';
   String get bn => j['bn'] ?? '';
+  String get bnFact => j['bnFact'] ?? '';
   String get sound => j['sound'] ?? '';
   Color? get color => j['hex'] == null ? null : hexColor(j['hex']);
   int get count => (j['count'] as num?)?.toInt() ?? 0;
@@ -210,6 +219,7 @@ class Topic {
   final Json j;
   String get id => j['id'] ?? '';
   String get title => j['title'] ?? '';
+  String get titleBn => j['titleBn'] ?? '';
   String get emoji => j['emoji'] ?? '✨';
   Color get color => hexColor(j['color'], const Color(0xFFFF8A3D));
   String get animation => j['animation'] ?? 'bounce';

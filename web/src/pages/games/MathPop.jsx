@@ -42,7 +42,7 @@ export function makeProblem(age, rnd = Math.random) {
 }
 
 export default function MathPop() {
-  const { profile, complete } = useApp();
+  const { profile, complete, t } = useApp();
   const [p, setP] = useState(() => makeProblem(profile.age));
   const [score, setScore] = useState(0);
   const [popped, setPopped] = useState(null);
@@ -52,14 +52,14 @@ export default function MathPop() {
     setPopped(o);
     if (o === p.answer) {
       sfx.success();
-      speak(`${o}! Correct!`);
+      speak(`${o}! ${t('correct')}`, { lang: profile.uiLang });
       const s = score + 1;
       setScore(s);
       if (s % 5 === 0) complete('game', { id: 'math', name: 'Number Pop x5', stars: 3 });
       else sfx.star();
     } else {
       sfx.wrong();
-      speak(`Oops. The answer is ${p.answer}.`);
+      speak(t('oops', { x: p.answer }), { lang: profile.uiLang });
     }
     setTimeout(() => {
       setPopped(null);

@@ -28,13 +28,20 @@ Greeting by time of day, level & progress bar, 🔥 streak, 🎯 3 daily mission
 Languages: English (26), Bangla (11 vowels, 39 consonants, 10 numerals), Spanish (27 incl. Ñ), French (26), Hindi (12 vowels, 31 consonants) — plus any language the admin adds. Letter pop-in animations, giant gradient letter, "A for Apple" voice-over, animated word cards with meanings, **tracing canvas with sparkle particles and coverage detection**, **pronunciation scoring** (0–3 ⭐ + slow syllable model).
 
 ### 📖 Storyteller
-8 sample stories (Thirsty Crow, Lion & Mouse, Tortoise & Hare, Ant & Grasshopper, Boy Who Cried Wolf, Robo & the Little Seed, তৃষ্ণার্ত কাক, La Gallina de los Huevos de Oro). 3D page-flip, swipe, **read-to-me with word highlighting**, auto-play mode, uploaded narration audio, moral card, quiz, stars.
+21 stories — **10 English** (Thirsty Crow, Lion & Mouse, Tortoise & Hare, Ant & Grasshopper, Boy Who Cried Wolf, Robo & the Little Seed, Fox & Grapes, Greedy Dog, Honest Woodcutter, Monkey & Crocodile), **10 Bangla** (তৃষ্ণার্ত কাক, শিয়াল ও সারস, খরগোশ ও কচ্ছপ, সিংহ ও ইঁদুর, পিঁপড়া ও ঘাসফড়িং, রাখাল ছেলে ও বাঘ, লোভী কুকুর, সৎ কাঠুরে, টুনটুনি ও বিড়াল, বানরের রুটি ভাগ) and 1 Spanish. Bangla stories appear first in Bangla mode. 3D page-flip, swipe, **read-to-me with word highlighting**, auto-play mode, uploaded narration audio, moral card, quiz, stars.
 
 ### 📺 Cartoon hub
 Admin-curated YouTube (and Vimeo / MP4 on web) by age group and category; privacy-enhanced embed; no outbound links.
 
+### 🗣️ Bangla done properly
+* Speech is **script-aware**: mixed text like "Car. গাড়ি" is split so every part is read by the right voice — Bangla is never read by an English voice.
+* Letters are introduced the way teachers do: **"অ-তে অজগর"** (and "A for Apple", "अ से अनार"), with traditional names (দন্ত্য ন, মূর্ধন্য ণ, তালব্য শ, অনুস্বার, চন্দ্রবিন্দু …) and a short Bangla sentence for every word.
+* In the Bangla interface, explore facts (141), topic names, quiz questions (20), game instructions, praise and buttons are all in Bangla, with Bangla digits (১২৩).
+* Slower, kid-friendly speaking speed (admin-adjustable).
+* If a device has **no Bangla voice**, a grown-up hint explains how to install one (with a one-tap shortcut to Android's voice settings), and an optional free cloud voice (`supabase/functions/tts`) speaks instead.
+
 ### 🧩 Brain games
-Kids Sudoku (3×3 pictures, 4×4, 6×6 with hint & conflict highlighting), Memory Match (4 themes), What Comes Next (AB/AAB/ABC… and number sequences, drag & drop), Number Pop (counting, addition, subtraction, multiplication by age), Odd One Out (cross-topic reasoning).
+Ten games: Kids Sudoku (3×3 pictures, 4×4, 6×6 with hint & conflict highlighting), Memory Match (4 themes), **Word Builder** (spell picture words letter by letter in English, বাংলা and more), **Letter Pop** (hear a letter, pop the balloon), What Comes Next (AB/AAB/ABC… and number sequences, drag & drop), Number Pop (counting, addition, subtraction, multiplication by age), **More or Less** (compare amounts and numbers), **Shadow Match** (visual discrimination), Odd One Out (cross-topic reasoning) and **Tic-Tac-Toe vs Robot** (a minimax AI whose skill adapts to age).
 
 ### 🌍 Explore (15 topics, 141 items)
 Animals, Birds, Fruits & Veggies, Vehicles, Ships & Boats, Planes & Sky, Shapes, Colors, Numbers 1–10, Countries (flags & capitals), Space, My Body, Helpers & Jobs, Feelings, Good Habits. Each item: emoji animation matched to the topic, English + Bangla name, sound, spoken fun fact, "say it" pronunciation, and a **Find-it** listening game.

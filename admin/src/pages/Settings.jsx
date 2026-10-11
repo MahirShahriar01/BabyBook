@@ -102,6 +102,23 @@ export default function Settings() {
           </Field>
         </Card>
 
+        <Card title="🗣️ Voices (Bangla & other languages)">
+          <div className="space-y-3">
+            <Field label={`Speaking speed for kids: ${s.voice?.kidRate ?? 0.85}`} hint="Slower is easier for young children (0.85 recommended).">
+              <input type="range" min="0.6" max="1.1" step="0.05" className="w-full" value={s.voice?.kidRate ?? 0.85} onChange={(e) => setS({ ...s, voice: { ...s.voice, kidRate: Number(e.target.value) } })} />
+            </Field>
+            <Toggle
+              checked={s.voice?.cloudFallback !== false}
+              onChange={(v) => setS({ ...s, voice: { ...s.voice, cloudFallback: v } })}
+              label="Use the cloud voice when a device has no voice for a language"
+              hint="Many computers and some phones have no Bangla voice. With this on, the apps ask your free cloud voice function instead of staying silent."
+            />
+            <Field label="Cloud voice URL (Supabase Edge Function 'tts')" hint="https://YOUR-PROJECT.functions.supabase.co/tts — see supabase/README.md. Leave empty to use only device voices.">
+              <Input value={s.voice?.cloudTtsUrl} onChange={(v) => setS({ ...s, voice: { ...s.voice, cloudTtsUrl: v.trim() } })} />
+            </Field>
+          </div>
+        </Card>
+
         <Card title="📺 Video player">
           <div className="space-y-3">
             <Toggle checked={s.video?.privacyEnhanced !== false} onChange={(v) => setS({ ...s, video: { ...s.video, privacyEnhanced: v } })} label="Privacy-enhanced YouTube (youtube-nocookie.com)" />

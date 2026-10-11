@@ -18,6 +18,9 @@ import 'package:kids_explorer/screens/alphabet_screen.dart';
 import 'package:kids_explorer/screens/buddy_screen.dart';
 import 'package:kids_explorer/screens/explore_screen.dart';
 import 'package:kids_explorer/screens/games/sudoku_game.dart';
+import 'package:kids_explorer/screens/games/tic_tac_toe.dart';
+import 'package:kids_explorer/screens/games/word_builder.dart';
+import 'package:kids_explorer/screens/quiz_screen.dart';
 import 'package:kids_explorer/screens/games_screen.dart';
 import 'package:kids_explorer/screens/home_screen.dart';
 import 'package:kids_explorer/screens/onboarding_screen.dart';
@@ -47,9 +50,9 @@ void main() {
     }
   });
 
-  Future<AppState> state(WidgetTester tester, {required String theme, required String age, required String avatar, String gender = 'neutral', bool done = true}) async {
+  Future<AppState> state(WidgetTester tester, {required String theme, required String age, required String avatar, String gender = 'neutral', bool done = true, String ui = 'en'}) async {
     SharedPreferences.setMockInitialValues({
-      if (done) 'kea.profile.v1': '{"name":"Mahi","age":"$age","gender":"$gender","avatar":"$avatar","themeId":"$theme","done":true}',
+      if (done) 'kea.profile.v1': '{"name":"Mahi","age":"$age","gender":"$gender","avatar":"$avatar","themeId":"$theme","uiLang":"$ui","learnLang":"$ui","done":true}',
       'kea.progress.v1': '{"stars":27,"stickers":["🦁","🐼","🦄","🐬","🚀"],"streakCount":4,"streakLast":"2026-10-05"}',
     });
     final st = AppState();
@@ -106,4 +109,39 @@ void main() {
     });
   });
   testWidgets('10 ai lab', (t) async => shot(t, await state(t, theme: 'cyber', age: '8-10', avatar: 'robot'), const AiLabScreen(), '10-ai-lab'));
+  testWidgets('11 bangla home', (t) async => shot(t, await state(t, theme: 'jungle', age: '5-7', avatar: 'girl', gender: 'girl', ui: 'bn'), const HomeScreen(), '11-bn-home'));
+  testWidgets('12 bangla explore', (t) async {
+    final st = await state(t, theme: 'sunshine', age: '5-7', avatar: 'boy', ui: 'bn');
+    await shot(t, st, TopicScreen(topic: st.content.topics.first), '12-bn-explore');
+  });
+  testWidgets('13 bangla story', (t) async {
+    final st = await state(t, theme: 'ocean', age: '5-7', avatar: 'boy', ui: 'bn');
+    await shot(t, st, StoryReader(story: st.content.stories.firstWhere((x) => x.id == 'tuntuni-o-biral')), '13-bn-story');
+  });
+  testWidgets('14 bangla quiz', (t) async => shot(t, await state(t, theme: 'bubblegum', age: '5-7', avatar: 'girl', ui: 'bn'), const QuizScreen(), '14-bn-quiz'));
+  testWidgets('15 bangla tracing', (t) async {
+    final st = await state(t, theme: 'bubblegum', age: '5-7', avatar: 'girl', ui: 'bn');
+    final bn = st.content.languages.firstWhere((l) => l.code == 'bn');
+    await shot(t, st, Scaffold(body: LetterSheet(lang: bn, letters: bn.groups.first.letters, index: 0)), '15-bn-trace', interact: () async {
+      await t.tap(find.textContaining('লেখো').first);
+      await t.pump(const Duration(milliseconds: 400));
+      await t.runAsync(() => Future.delayed(const Duration(milliseconds: 300)));
+      await t.pump();
+      final pad = t.getRect(find.byType(AspectRatio).last);
+      final g = await t.startGesture(pad.center + Offset(-pad.width * 0.18, -pad.height * 0.12));
+      for (var i = 0; i <= 30; i++) {
+        final a = i / 30 * 5.5;
+        await g.moveTo(pad.center + Offset(-pad.width * 0.18 + (a - 1.2) * pad.width * 0.06, -pad.height * 0.12 + (i % 10) * pad.height * 0.025));
+      }
+      await g.up();
+    });
+  });
+  testWidgets('16 word builder bangla', (t) async => shot(t, await state(t, theme: 'space', age: '5-7', avatar: 'robot', ui: 'bn'), const WordBuilder(), '16-bn-word-builder'));
+  testWidgets('17 tic tac toe', (t) async {
+    final st = await state(t, theme: 'cyber', age: '8-10', avatar: 'robot');
+    await shot(t, st, const TicTacToe(), '17-tictactoe', interact: () async {
+      await t.tap(find.byType(AnimatedContainer).at(4));
+      await t.pump(const Duration(milliseconds: 900));
+    });
+  });
 }

@@ -10,7 +10,7 @@ export const MODULES = {
   alphabet: { emoji: '🔤', color: '#FF4FA3', to: '/alphabet', sub: 'ABC • অআ • ¡Hola!', anim: 'anim-wobble' },
   explore: { emoji: '🦁', color: '#FF8A3D', to: '/explore', sub: 'Animals • Planes • World', anim: 'anim-bounce' },
   stories: { emoji: '📖', color: '#1E90FF', to: '/stories', sub: 'Read & learn morals', anim: 'anim-float' },
-  games: { emoji: '🧩', color: '#22B573', to: '/games', sub: 'Sudoku • Memory • Logic', anim: 'anim-wobble' },
+  games: { emoji: '🧩', color: '#22B573', to: '/games', sub: '10 games: Sudoku • Words • Robot', anim: 'anim-wobble' },
   buddy: { emoji: '🤖', color: '#7C5CFF', to: '/buddy', sub: 'Talk & speak better', anim: 'anim-pulse' },
   quiz: { emoji: '❓', color: '#FF5D73', to: '/quiz', sub: 'General knowledge', anim: 'anim-bounce' },
   videos: { emoji: '📺', color: '#00C2A8', to: '/videos', sub: 'Safe cartoons', anim: 'anim-float' },
@@ -58,10 +58,10 @@ export default function Home() {
             <h3>
               🏆 {t('level')} {level}
             </h3>
-            <span className="chip">🔥 {progress.streak?.count || 0} day streak</span>
+            <span className="chip">🔥 {t('streak', { n: progress.streak?.count || 0 })}</span>
           </div>
           <p className="muted" style={{ margin: '6px 0' }}>
-            {need - inLevel} more ⭐ to reach {t('level')} {level + 1}
+            {t('toNext', { n: need - inLevel, m: level + 1 })}
           </p>
           <ProgressBar value={inLevel} max={need} />
         </div>
@@ -71,7 +71,7 @@ export default function Home() {
             {missions.map((m) => (
               <button key={m.id} className="row" style={{ width: '100%', marginTop: 8, flexWrap: 'nowrap', textAlign: 'left' }} onClick={() => nav(m.to)}>
                 <span style={{ fontSize: '1.6rem' }}>{m.count >= m.goal ? '✅' : m.emoji}</span>
-                <span style={{ flex: 1, fontWeight: 700, textDecoration: m.count >= m.goal ? 'line-through' : 'none' }}>{m.text}</span>
+                <span style={{ flex: 1, fontWeight: 700, textDecoration: m.count >= m.goal ? 'line-through' : 'none' }}>{t(`mission_${m.id}`)}</span>
                 <span className="chip">
                   {m.count}/{m.goal}
                 </span>
@@ -81,7 +81,7 @@ export default function Home() {
         )}
       </div>
 
-      <h2 className="section-title">🗺️ Adventure Map</h2>
+      <h2 className="section-title">🗺️ {t('map')}</h2>
       <div className="map">
         {order.map((key, i) => {
           const m = MODULES[key];
@@ -90,7 +90,7 @@ export default function Home() {
               <span className="level-badge">
                 {t('level')} {i + 1}
               </span>
-              <Tile emoji={m.emoji} label={t(key)} sub={m.sub} color={m.color} delay={i * 0.06} anim={m.anim} onClick={() => nav(m.to)} />
+              <Tile emoji={m.emoji} label={t(key)} sub={t(`sub_${key}`)} color={m.color} delay={i * 0.06} anim={m.anim} onClick={() => nav(m.to)} />
             </div>
           );
         })}

@@ -2,8 +2,8 @@ import { useEffect, useMemo, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useApp } from '../store/AppContext.jsx';
-import { Page, ProgressBar, TopBar } from '../components/ui.jsx';
-import { speak, stopSpeaking } from '../lib/speech.js';
+import { Page, ProgressBar, TopBar, VoiceHint } from '../components/ui.jsx';
+import { playAudio, speak, stopSpeaking } from '../lib/speech.js';
 import { sfx } from '../lib/sound.js';
 
 /** Split text into words with character offsets so we can highlight during narration. */
@@ -17,7 +17,7 @@ function tokenize(text) {
 
 export default function StoryReader() {
   const { id } = useParams();
-  const { content, complete } = useApp();
+  const { content, complete, t } = useApp();
   const nav = useNavigate();
   const story = content.stories.find((s) => s.id === id);
   const [page, setPage] = useState(0);
@@ -40,25 +40,14 @@ export default function StoryReader() {
   const narrate = async () => {
     if (!current) return;
     setReading(true);
-    if (current.audio) {
-      // admin-uploaded narration audio takes priority over text-to-speech
-      await new Promise((resolve) => {
-        const a = new Audio(current.audio);
-        a.onended = resolve;
-        a.onerror = resolve;
-        a.play().catch(resolve);
-      });
-    } else {
-      await speak(current.text, {
-        lang,
-        rate: 0.88,
-        onWord: (ci) => {
-          let idx = 0;
-          for (let i = 0; i < words.length; i++) if (words[i].start <= ci) idx = i;
-          setActive(idx);
-        },
-      });
-    }
+    const onWord = (ci) => {
+      let idx = 0;
+      for (let i = 0; i < words.length; i++) if (words[i].start <= ci) idx = i;
+      setActive(idx);
+    };
+    // admin-uploaded narration wins over text-to-speech; both highlight words
+    if (current.audio) await playAudio(current.audio, { text: current.text, onWord });
+    else await speak(current.text, { lang, rate: 0.85, onWord });
     setActive(-1);
     setReading(false);
     return true;
@@ -124,6 +113,7 @@ export default function StoryReader() {
   return (
     <Page>
       <TopBar title={story.title} emoji={story.emoji} back="/stories" />
+      <VoiceHint lang={lang} />
       {phase === 'read' && (
         <>
           <div style={{ marginBottom: 10 }}>
@@ -178,7 +168,7 @@ export default function StoryReader() {
               ⬅️
             </button>
             <button className="btn" onClick={() => (reading ? stopSpeaking() : narrate())}>
-              {reading ? '⏹️ Stop' : '🔊 Read to me'}
+              {reading ? `⏹️ ${t('stop')}` : `🔊 ${t('readToMe')}`}
             </button>
             <button className={`btn ${auto ? 'accent' : 'ghost'}`} onClick={() => setAuto((a) => !a)}>
               {auto ? '⏸️ Auto' : '▶️ Auto'}
@@ -195,11 +185,11 @@ export default function StoryReader() {
           <motion.div style={{ fontSize: '5rem' }} animate={{ rotate: [0, 12, -12, 0] }} transition={{ repeat: Infinity, duration: 2 }}>
             💡
           </motion.div>
-          <h2>Moral of the story</h2>
+          <h2>{t('moral')}</h2>
           <p style={{ fontSize: '1.5rem', fontWeight: 700 }}>{story.moral}</p>
           <div className="row" style={{ justifyContent: 'center' }}>
             <button className="btn ghost" onClick={() => speak(story.moral, { lang })}>
-              🔊 Hear again
+              🔊 {t('hearAgain')}
             </button>
             <button
               className="btn"
@@ -211,7 +201,7 @@ export default function StoryReader() {
                 }
               }}
             >
-              {quiz.length ? '❓ Quiz time!' : '🎉 Finish'}
+              {quiz.length ? `❓ ${t('quizTime')}` : `🎉 ${t('finish')}`}
             </button>
           </div>
         </motion.div>
@@ -220,7 +210,7 @@ export default function StoryReader() {
       {phase === 'quiz' && q && (
         <motion.div key={qIdx} className="card center" style={{ gap: 16, padding: 26 }} initial={{ x: 80, opacity: 0 }} animate={{ x: 0, opacity: 1 }}>
           <span className="chip">
-            Question {qIdx + 1} / {quiz.length}
+            {t('question', { n: qIdx + 1, t: quiz.length })}
           </span>
           <h2>{q.question}</h2>
           <button className="btn ghost small" onClick={() => speak(q.question, { lang })}>
@@ -248,7 +238,7 @@ export default function StoryReader() {
       {phase === 'done' && (
         <motion.div className="card center" style={{ gap: 14, padding: 30 }} initial={{ scale: 0 }} animate={{ scale: 1 }}>
           <div style={{ fontSize: '5rem' }}>🏆</div>
-          <h2>You finished the story!</h2>
+          <h2>{t('finishedStory')}</h2>
           {quiz.length > 0 && (
             <p style={{ fontSize: '1.4rem' }}>
               Quiz: {score} / {quiz.length} {'⭐'.repeat(score)}
@@ -264,10 +254,10 @@ export default function StoryReader() {
                 setScore(0);
               }}
             >
-              🔁 Read again
+              🔁 {t('readAgain')}
             </button>
             <button className="btn" onClick={() => nav('/stories')}>
-              📚 More stories
+              📚 {t('moreStories')}
             </button>
           </div>
         </motion.div>

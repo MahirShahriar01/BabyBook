@@ -173,6 +173,7 @@ class _BuddyScreenState extends State<BuddyScreen> {
       emoji: '🤖',
       body: Column(
         children: [
+          VoiceHint(lang: lang),
           SizedBox(
             height: 50,
             child: ListView(

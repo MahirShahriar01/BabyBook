@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../i18n.dart';
+import '../localize.dart';
 import '../models/content.dart';
 import '../services/logic.dart';
 import '../services/speech_service.dart';
@@ -16,6 +17,7 @@ class QuizScreen extends StatefulWidget {
 
 class _QuizScreenState extends State<QuizScreen> {
   late List<QuizQ> qs;
+  String get _ui => context.read<AppState>().profile.uiLang == 'bn' ? 'bn' : 'en';
   int i = 0, score = 0;
   int? picked;
 
@@ -40,10 +42,10 @@ class _QuizScreenState extends State<QuizScreen> {
     if (k == q.answer) {
       score++;
       finishActivity(context, 'quiz', id: q.id, name: q.question, celebrate: false);
-      SpeechService.instance.speak('Correct!');
+      SpeechService.instance.speak(tr(_ui, 'correct'), lang: _ui);
     } else {
       tapFeedback();
-      SpeechService.instance.speak('The answer is ${q.options[q.answer]}');
+      SpeechService.instance.speak(tr(_ui, 'answerIs', {'x': quizText(q, _ui).$2[q.answer]}), lang: _ui);
     }
     Future.delayed(const Duration(milliseconds: 1500), () {
       if (mounted) {
@@ -75,15 +77,15 @@ class _QuizScreenState extends State<QuizScreen> {
                       const SizedBox(height: 12),
                       AnimatedEmoji(qs[i].emoji, size: 72, anim: 'wobble'),
                       Text(
-                        qs[i].question,
+                        quizText(qs[i], _ui).$1,
                         textAlign: TextAlign.center,
                         style: const TextStyle(fontSize: 26, fontWeight: FontWeight.w800),
                       ),
                       TextButton(
-                        onPressed: () => SpeechService.instance.speak(qs[i].question),
+                        onPressed: () => SpeechService.instance.speak(quizText(qs[i], _ui).$1, lang: _ui),
                         child: Text('🔈 ${tr(lang, 'listen')}', style: const TextStyle(fontSize: 18)),
                       ),
-                      for (final (k, o) in qs[i].options.indexed)
+                      for (final (k, o) in quizText(qs[i], _ui).$2.indexed)
                         Padding(
                           padding: const EdgeInsets.only(top: 10),
                           child: SizedBox(
@@ -105,12 +107,12 @@ class _QuizScreenState extends State<QuizScreen> {
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       AnimatedEmoji(score >= qs.length - 1 ? '🏆' : '🌟', size: 80),
-                      Text('$score / ${qs.length} correct!', style: const TextStyle(fontSize: 28, fontWeight: FontWeight.w800)),
+                      Text('${digits(score, _ui)} / ${digits(qs.length, _ui)} ✅', style: const TextStyle(fontSize: 28, fontWeight: FontWeight.w800)),
                       Text('⭐' * score, style: const TextStyle(fontSize: 30)),
                       const SizedBox(height: 14),
                       KidButton(
                         big: true,
-                        label: '🔁 Play again',
+                        label: '🔁 ${tr(_ui, 'playAgain')}',
                         onTap: () {
                           if (score > 0) finishActivity(context, 'game', id: 'quiz-round', name: 'Quiz round');
                           setState(_new);

@@ -14,7 +14,7 @@ const SETS = {
 const SIZES = { '2-4': 3, '5-7': 6, '8-10': 8 };
 
 export default function Memory() {
-  const { profile, complete } = useApp();
+  const { profile, complete, t } = useApp();
   const [set, setSet] = useState('Animals');
   const pairs = SIZES[profile.age] || 6;
   const [deck, setDeck] = useState([]);
@@ -48,7 +48,7 @@ export default function Memory() {
           setOpen([]);
           if (m.length === pairs) {
             complete('game', { id: 'memory', name: `Memory ${set}`, stars: pairs >= 6 ? 3 : 2 });
-            speak('You found all the pairs! Super memory!');
+            speak(t('memoryWin'), { lang: profile.uiLang });
           }
         }, 450);
       } else setTimeout(() => setOpen([]), 900);
@@ -98,7 +98,7 @@ export default function Memory() {
         <motion.div className="card center" style={{ marginTop: 16, gap: 10 }} initial={{ scale: 0 }} animate={{ scale: 1 }}>
           <h2>🎉 All pairs in {moves} moves!</h2>
           <button className="btn" onClick={() => deal()}>
-            🔁 Play again
+            🔁 {t('playAgain')}
           </button>
         </motion.div>
       )}

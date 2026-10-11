@@ -10,6 +10,7 @@ import '../models/content.dart';
 import '../services/ads_service.dart';
 import '../services/analytics.dart';
 import '../services/content_service.dart';
+import '../services/speech_service.dart';
 
 class Profile {
   Profile({
@@ -118,6 +119,7 @@ class AppState extends ChangeNotifier {
       missions = _missionPool.where((m) => saved.containsKey(m.id)).map((m) => Mission(m.id, m.emoji, m.text, m.route, m.kind, m.goal, saved[m.id]!)).toList();
     }
     _freshDay();
+    SpeechService.instance.configure(settings.voice);
     Analytics.instance.setContext(age: profile.age, gender: profile.gender, theme: theme.id);
     if (startClock) _clock = Timer.periodic(const Duration(minutes: 1), (_) => _tick());
     // pull latest Admin Panel content in the background
@@ -126,6 +128,7 @@ class AppState extends ChangeNotifier {
         if (fresh == null) return;
         content = fresh;
         AdsService.instance.updateConfig(settings.ads);
+        SpeechService.instance.configure(settings.voice);
         notifyListeners();
       }),
     );

@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../i18n.dart';
 import '../../services/logic.dart';
 import '../../services/speech_service.dart';
 import '../../state/app_state.dart';
@@ -60,7 +61,7 @@ class _MemoryGameState extends State<MemoryGame> {
         });
         if (matched.length == pairs) {
           finishActivity(context, 'game', id: 'memory', name: 'Memory $set', stars: pairs >= 6 ? 3 : 2);
-          SpeechService.instance.speak('You found all the pairs! Super memory!');
+          SpeechService.instance.speak(tr(context.read<AppState>().profile.uiLang, 'memoryWin'), lang: context.read<AppState>().profile.uiLang);
         }
       });
     } else {
@@ -154,7 +155,7 @@ class _MemoryGameState extends State<MemoryGame> {
             Padding(
               padding: const EdgeInsets.only(top: 16),
               child: Center(
-                child: KidButton(big: true, label: '🎉 Play again', onTap: () => setState(_deal)),
+                child: KidButton(big: true, label: '🎉 ${tr(context.read<AppState>().profile.uiLang, 'playAgain')}', onTap: () => setState(_deal)),
               ),
             ),
         ],

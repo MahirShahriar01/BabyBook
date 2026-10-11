@@ -1,10 +1,11 @@
 import { useMemo, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useApp } from '../store/AppContext.jsx';
-import { Modal, Page, SpeakButton, TopBar, colorAt } from '../components/ui.jsx';
+import { Modal, Page, SpeakButton, TopBar, VoiceHint, colorAt } from '../components/ui.jsx';
 import TraceCanvas from '../components/TraceCanvas.jsx';
 import SayIt from '../components/SayIt.jsx';
-import { speak } from '../lib/speech.js';
+import { playAudio, speak } from '../lib/speech.js';
+import { letterPhrase, letterSpeech } from '../lib/localize.js';
 import { sfx } from '../lib/sound.js';
 
 export default function Alphabet() {
@@ -25,8 +26,9 @@ export default function Alphabet() {
     setOpen(i);
     setTab('words');
     const l = letters[i];
-    const w = l.words?.[0];
-    speak(w ? `${l.char}. ${l.char} for ${w.word}` : l.char, { lang: lang.code, rate: 0.85 });
+    // admin-recorded phonics audio wins; otherwise "অ। অ-তে অজগর। অজগর অনেক বড় একটা সাপ।"
+    if (l.audio) playAudio(l.audio);
+    else speak(letterSpeech(lang, l), { lang: lang.code });
   };
 
   const markLearned = (stars = 1) => {
@@ -39,6 +41,7 @@ export default function Alphabet() {
   return (
     <Page>
       <TopBar title={t('alphabet')} emoji="🔤" />
+      <VoiceHint lang={lang.code} />
       <div className="pill-tabs">
         {languages.map((l) => (
           <button
@@ -103,7 +106,7 @@ export default function Alphabet() {
                   animate={{ scale: [0, 1.25, 1], rotate: 0 }}
                   exit={{ scale: 0, rotate: 180 }}
                   transition={{ duration: 0.6 }}
-                  onClick={() => speak(letter.char, { lang: lang.code, rate: 0.8 })}
+                  onClick={() => (letter.audio ? playAudio(letter.audio) : speak(letter.name || letter.char, { lang: lang.code, rate: 0.75 }))}
                 >
                   {letter.char}
                 </motion.button>
@@ -112,13 +115,17 @@ export default function Alphabet() {
                 ➡️
               </button>
             </div>
-            {letter.sound && <div className="chip">🗣️ sounds like “{letter.sound}”</div>}
+            <div className="row" style={{ justifyContent: 'center', gap: 8 }}>
+              {letter.name && <div className="chip">🏷️ {letter.name}</div>}
+              {letter.words?.[0] && <div className="chip">🗣️ {letterPhrase(lang, letter, letter.words[0])}</div>}
+              {letter.sound && lang.code !== 'bn' && <div className="chip">🔤 “{letter.sound}”</div>}
+            </div>
             <div className="pill-tabs">
               <button className={tab === 'words' ? 'active' : ''} onClick={() => setTab('words')}>
-                🍎 Words
+                🍎 {t('words')}
               </button>
               <button className={tab === 'trace' ? 'active' : ''} onClick={() => setTab('trace')}>
-                ✏️ Trace
+                ✏️ {t('trace')}
               </button>
               <button className={tab === 'say' ? 'active' : ''} onClick={() => setTab('say')}>
                 🎤 {t('sayIt')}
@@ -137,7 +144,7 @@ export default function Alphabet() {
                     transition={{ delay: 0.15 * i }}
                     whileTap={{ scale: 0.92 }}
                     onClick={() => {
-                      speak(`${w.word}`, { lang: lang.code, rate: 0.8 });
+                      speak(w.sentence ? `${w.word}। ${w.sentence}` : w.word, { lang: lang.code });
                       if (!learned(letter.char)) markLearned(1);
                     }}
                   >
@@ -148,7 +155,7 @@ export default function Alphabet() {
                       <span style={{ color: theme.primary }}>{letter.char}</span>
                       {w.word.startsWith(letter.char) ? w.word.slice(letter.char.length) : ` · ${w.word}`}
                     </b>
-                    {w.meaning && <span className="muted">{w.meaning}</span>}
+                    {(w.sentence || w.meaning) && <span className="muted">{w.sentence || w.meaning}</span>}
                     <span className="chip">🔈 {t('listen')}</span>
                   </motion.button>
                 ))}
@@ -162,7 +169,7 @@ export default function Alphabet() {
                 onScore={(r) => r.stars >= 2 && markLearned(r.stars)}
               />
             )}
-            <SpeakButton text={letter.char} lang={lang.code} label={`${t('listen')} “${letter.char}”`} className="btn ghost small" rate={0.7} />
+            <SpeakButton text={letter.name || letter.char} lang={lang.code} label={`${t('listen')} “${letter.char}”`} className="btn ghost small" rate={0.7} />
           </div>
         )}
       </Modal>

@@ -109,3 +109,39 @@ test('daily missions never loop forever, whatever features are on', async () => 
     assert.equal(new Set(m.map((x) => x.id)).size, m.length);
   }
 });
+
+test('speech: mixed text is split by script so each part gets the right voice', async () => {
+  const { segments } = await import('../src/lib/speech.js');
+  const s = segments('Car. গাড়ি', 'en');
+  assert.deepEqual(s.map((x) => [x.lang, x.text.trim()]), [['en', 'Car.'], ['bn', 'গাড়ি']]);
+  assert.equal(s[1].start, 5);
+  assert.deepEqual(segments('অ-তে অজগর', 'bn').map((x) => x.lang), ['bn']);
+  assert.deepEqual(segments('দারুণ! Great job!', 'bn').map((x) => x.lang), ['bn', 'en']);
+  assert.deepEqual(segments('৫ + ৩ = কত?', 'bn').map((x) => x.lang), ['bn']);
+});
+
+test('games: tic-tac-toe robot blocks and wins; spellable words split by grapheme', async () => {
+  const { robotMove, winner, spellableWords, graphemes } = await import('../src/lib/games.js');
+  // X threatens the top row: a perfect robot must block at 2
+  assert.equal(robotMove(['X', 'X', null, null, 'O', null, null, null, null], 1), 2);
+  // O can win on the diagonal
+  assert.equal(robotMove(['O', 'X', 'X', null, 'O', null, 'X', null, null], 1), 8);
+  assert.equal(winner(['X', 'X', 'X', null, null, null, null, null, null]).who, 'X');
+  assert.deepEqual(graphemes('কলা', 'bn'), ['ক', 'লা']);
+  const bn = seed.languages.find((l) => l.code === 'bn');
+  const words = spellableWords(bn, '5-7');
+  assert.ok(words.length > 10);
+  assert.ok(words.every((w) => !w.word.includes('্') && w.parts.length <= 4));
+});
+
+test('games: more-or-less always has exactly one right side', async () => {
+  const { makeCompare } = await import('../src/lib/games.js');
+  for (const age of ['2-4', '5-7', '8-10'])
+    for (let i = 0; i < 200; i++) {
+      const q = makeCompare(age);
+      assert.notEqual(q.a, q.b);
+      const right = q.askMore ? Math.max(q.a, q.b) : Math.min(q.a, q.b);
+      assert.equal([q.a, q.b][q.answer], right);
+      if (age === '2-4') assert.ok(q.a <= 6 && q.b <= 6 && q.askMore);
+    }
+});

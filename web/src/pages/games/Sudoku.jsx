@@ -14,7 +14,8 @@ const LEVELS = [
 ];
 
 export default function Sudoku() {
-  const { profile, complete } = useApp();
+  const { profile, complete, t } = useApp();
+  const ui = profile.uiLang === 'bn' ? 'bn' : 'en';
   const startLevel = Math.max(0, LEVELS.findIndex((l) => l.ages === profile.age));
   const [lv, setLv] = useState(startLevel);
   const [game, setGame] = useState(() => newGame(LEVELS[startLevel]));
@@ -46,7 +47,7 @@ export default function Sudoku() {
     if (isSolved(grid)) {
       setWon(true);
       complete('game', { id: 'sudoku', name: `Sudoku ${n}x${n}`, stars: n === 3 ? 2 : n === 4 ? 3 : 5 });
-      speak('You solved the Sudoku! Amazing brain power!');
+      speak(t('sudokuWin'), { lang: ui });
     }
   };
 
@@ -56,7 +57,8 @@ export default function Sudoku() {
     if (!empties.length) return;
     const [r, c] = empties[Math.floor(Math.random() * empties.length)];
     setSel([r, c]);
-    speak(`Try ${n === 3 ? ['', 'apple', 'star', 'fish'][game.solution[r][c]] : game.solution[r][c]} here!`);
+    const names = ui === 'bn' ? ['', 'আপেল', 'তারা', 'মাছ'] : ['', 'apple', 'star', 'fish'];
+    speak(t('tryHere', { x: n === 3 ? names[game.solution[r][c]] : game.solution[r][c] }), { lang: ui });
   };
 
   return (
@@ -105,10 +107,10 @@ export default function Sudoku() {
       </div>
       <div className="row" style={{ justifyContent: 'center', marginTop: 12 }}>
         <button className="btn ghost small" onClick={hint}>
-          💡 Hint
+          💡 {t('hint')}
         </button>
         <button className="btn ghost small" onClick={() => restart()}>
-          🔁 New puzzle
+          🔁 {t('newPuzzle')}
         </button>
       </div>
       {won && (

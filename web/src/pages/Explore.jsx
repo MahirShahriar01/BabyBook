@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { useApp } from '../store/AppContext.jsx';
 import { Page, Tile, TopBar } from '../components/ui.jsx';
+import { topicTitle } from '../lib/localize.js';
 
 export default function Explore() {
   const { content, profile, progress, t } = useApp();
@@ -18,8 +19,8 @@ export default function Explore() {
           <Tile
             key={tp.id}
             emoji={tp.emoji}
-            label={tp.title}
-            sub={`${seen(tp)} / ${tp.items.length} discovered`}
+            label={topicTitle(tp, profile.uiLang)}
+            sub={t('discovered', { n: seen(tp), t: tp.items.length })}
             color={tp.color}
             delay={i * 0.04}
             anim={`anim-${tp.animation === 'drive' || tp.animation === 'fly' || tp.animation === 'sail' ? 'float' : tp.animation || 'bounce'}`}

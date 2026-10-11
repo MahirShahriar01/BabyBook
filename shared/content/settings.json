@@ -278,5 +278,10 @@
       "Animals"
     ]
   },
-  "dailyMissions": 3
+  "dailyMissions": 3,
+  "voice": {
+    "kidRate": 0.85,
+    "cloudTtsUrl": "",
+    "cloudFallback": true
+  }
 }

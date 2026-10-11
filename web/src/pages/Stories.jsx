@@ -9,7 +9,9 @@ export default function Stories() {
   const [showAll, setShowAll] = useState(false);
   const published = content.stories.filter((s) => s.published !== false);
   const forAge = published.filter((s) => !profile.age || !s.ageGroups?.length || s.ageGroups.includes(profile.age));
-  const list = showAll ? published : forAge;
+  // the kid's own language first (Bangla stories on top in Bangla mode)
+  const mine = (s) => (s.language === profile.uiLang || s.language === profile.learnLang ? 0 : 1);
+  const list = [...(showAll ? published : forAge)].sort((a, b) => mine(a) - mine(b));
   const langs = Object.fromEntries(content.languages.map((l) => [l.code, l]));
 
   return (
@@ -29,7 +31,7 @@ export default function Stories() {
             key={s.id}
             emoji={s.emoji || '📘'}
             label={s.title}
-            sub={`${langs[s.language]?.flag || ''} ${s.pages.length} pages ${progress.done[`story:${s.id}`] ? '· ⭐ read' : ''}`}
+            sub={`${langs[s.language]?.flag || ''} ${t('pages', { n: s.pages.length })} ${progress.done[`story:${s.id}`] ? '· ⭐' : ''}`}
             color={s.color || '#1E90FF'}
             delay={i * 0.05}
             anim="anim-float"

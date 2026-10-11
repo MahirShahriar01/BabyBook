@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../i18n.dart';
+import '../localize.dart';
 import '../models/content.dart';
 import '../services/speech_service.dart';
 import '../state/app_state.dart';
@@ -31,6 +32,7 @@ class _AlphabetScreenState extends State<AlphabetScreen> {
       emoji: '🔤',
       body: Column(
         children: [
+          VoiceHint(lang: lang.code),
           SizedBox(
             height: 52,
             child: ListView(
@@ -146,9 +148,15 @@ class _LetterSheetState extends State<LetterSheet> {
     WidgetsBinding.instance.addPostFrameCallback((_) => _intro());
   }
 
+  bool drawing = false;
+
   void _intro() {
-    final w = l.words.isNotEmpty ? l.words.first.word : '';
-    SpeechService.instance.speak(w.isEmpty ? l.char : '${l.char}. ${l.char} for $w', lang: widget.lang.code, rate: 0.85);
+    // admin-recorded phonics wins; otherwise "অ। অ-তে অজগর। অজগর অনেক বড় একটা সাপ।"
+    if (l.audio.isNotEmpty) {
+      SpeechService.instance.playUrl(l.audio);
+    } else {
+      SpeechService.instance.speak(letterSpeech(widget.lang, l), lang: widget.lang.code);
+    }
   }
 
   void _learn(int stars) {
@@ -172,6 +180,8 @@ class _LetterSheetState extends State<LetterSheet> {
         ),
         child: ListView(
           controller: scroll,
+          // while the child traces, the sheet must not scroll or drag away under the finger
+          physics: drawing ? const NeverScrollableScrollPhysics() : null,
           padding: const EdgeInsets.all(18),
           children: [
             Row(
@@ -187,7 +197,7 @@ class _LetterSheetState extends State<LetterSheet> {
                 ),
                 Expanded(
                   child: GestureDetector(
-                    onTap: () => SpeechService.instance.speak(l.char, lang: code, rate: 0.8),
+                    onTap: () => l.audio.isNotEmpty ? SpeechService.instance.playUrl(l.audio) : SpeechService.instance.speak(l.name, lang: code, rate: 0.7),
                     child: TweenAnimationBuilder<double>(
                       key: ValueKey(l.char),
                       tween: Tween(begin: 0, end: 1),
@@ -219,16 +229,21 @@ class _LetterSheetState extends State<LetterSheet> {
                 ),
               ],
             ),
-            if (l.sound.isNotEmpty)
-              Center(
-                child: Text('🗣️ sounds like "${l.sound}"', style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w700)),
-              ),
+            Wrap(
+              alignment: WrapAlignment.center,
+              spacing: 8,
+              children: [
+                if (l.hasName) Chip(label: Text('🏷️ ${l.name}', style: const TextStyle(fontWeight: FontWeight.w700))),
+                if (l.words.isNotEmpty) Chip(label: Text('🗣️ ${letterPhrase(widget.lang, l.char, l.words.first)}', style: const TextStyle(fontWeight: FontWeight.w700))),
+                if (l.sound.isNotEmpty && code != 'bn') Chip(label: Text('🔤 "${l.sound}"')),
+              ],
+            ),
             const SizedBox(height: 12),
             Wrap(
               alignment: WrapAlignment.center,
               spacing: 8,
               children: [
-                for (final (k, label) in [('words', '🍎 Words'), ('trace', '✏️ Trace'), ('say', '🎤 ${tr(st.profile.uiLang, 'sayIt')}')])
+                for (final (k, label) in [('words', '🍎 ${tr(st.profile.uiLang, 'words')}'), ('trace', '✏️ ${tr(st.profile.uiLang, 'trace')}'), ('say', '🎤 ${tr(st.profile.uiLang, 'sayIt')}')])
                   KidButton(label: label, ghost: tab != k, onTap: () => setState(() => tab = k)),
               ],
             ),
@@ -242,7 +257,7 @@ class _LetterSheetState extends State<LetterSheet> {
                   for (final (k, w) in l.words.indexed)
                     Bouncy(
                       onTap: () {
-                        SpeechService.instance.speak(w.word, lang: code, rate: 0.8);
+                        SpeechService.instance.speak(w.sentence.isEmpty ? w.word : '${w.word}। ${w.sentence}', lang: code);
                         _learn(1);
                       },
                       child: SizedBox(
@@ -253,7 +268,7 @@ class _LetterSheetState extends State<LetterSheet> {
                             children: [
                               AnimatedEmoji(w.emoji, size: 56, anim: 'bounce', delay: k * 200),
                               Text(w.word, style: const TextStyle(fontSize: 24, fontWeight: FontWeight.w800)),
-                              if (w.meaning.isNotEmpty) Text(w.meaning, textAlign: TextAlign.center),
+                              if (w.sentence.isNotEmpty || w.meaning.isNotEmpty) Text(w.sentence.isNotEmpty ? w.sentence : w.meaning, textAlign: TextAlign.center),
                               const Text('🔈', style: TextStyle(fontSize: 20)),
                             ],
                           ),
@@ -262,7 +277,18 @@ class _LetterSheetState extends State<LetterSheet> {
                     ),
                 ],
               ),
-            if (tab == 'trace') TracePad(char: l.char, color: t.primary, onDone: () => _learn(2)),
+            if (tab == 'trace') ...[
+              Text(tr(st.profile.uiLang, 'traceHint'), textAlign: TextAlign.center, style: const TextStyle(fontWeight: FontWeight.w700)),
+              const SizedBox(height: 8),
+              TracePad(
+                char: l.char,
+                color: t.primary,
+                fontFamily: code == 'bn' ? 'HindSiliguri' : 'Baloo2',
+                label: (n) => '✏️ ${tr(st.profile.uiLang, 'traced', {'n': n})}',
+                onDrawingChanged: (d) => setState(() => drawing = d),
+                onDone: () => _learn(2),
+              ),
+            ],
             if (tab == 'say') SayItCard(word: l.words.isNotEmpty ? l.words.first.word : l.char, lang: code, onScore: (s) => s >= 2 ? _learn(s) : null),
             const SizedBox(height: 20),
           ],

@@ -62,9 +62,12 @@ export default function Topics() {
       >
         {draft && (
           <div className="space-y-4">
-            <div className="grid gap-3 sm:grid-cols-[1fr_90px_100px_150px]">
+            <div className="grid gap-3 sm:grid-cols-[1fr_1fr_80px_90px_130px]">
               <Field label="Title">
                 <Input value={draft.title} onChange={(v) => set({ title: v })} />
+              </Field>
+              <Field label="Title (বাংলা)">
+                <Input value={draft.titleBn} onChange={(v) => set({ titleBn: v })} />
               </Field>
               <Field label="Emoji">
                 <Input value={draft.emoji} onChange={(v) => set({ emoji: v })} />
@@ -81,7 +84,7 @@ export default function Topics() {
             </Field>
             <Toggle checked={draft.published !== false} onChange={(v) => set({ published: v })} label="Visible to kids" />
             <div className="overflow-x-auto">
-              <table className="table-clean w-full min-w-[760px]">
+              <table className="table-clean w-full min-w-[1000px]">
                 <thead>
                   <tr>
                     <th>Emoji</th>
@@ -89,6 +92,7 @@ export default function Topics() {
                     <th>Bangla</th>
                     <th>Sound</th>
                     <th>Fun fact (spoken)</th>
+                    <th>মজার তথ্য (বাংলা)</th>
                     <th />
                   </tr>
                 </thead>
@@ -107,8 +111,11 @@ export default function Topics() {
                       <td>
                         <Input value={it.sound} onChange={(v) => setItem(i, { sound: v })} placeholder="Roar!" />
                       </td>
-                      <td className="min-w-[260px]">
+                      <td className="min-w-[240px]">
                         <Input value={it.fact} onChange={(v) => setItem(i, { fact: v })} />
+                      </td>
+                      <td className="min-w-[240px]">
+                        <Input value={it.bnFact} onChange={(v) => setItem(i, { bnFact: v })} />
                       </td>
                       <td>
                         <Button size="sm" variant="ghost" className="text-rose-600" onClick={() => set({ items: draft.items.filter((_, k) => k !== i) })}>
@@ -120,7 +127,7 @@ export default function Topics() {
                 </tbody>
               </table>
             </div>
-            <Button variant="subtle" onClick={() => set({ items: [...draft.items, { id: '', name: '', emoji: '', fact: '', bn: '', sound: '' }] })}>
+            <Button variant="subtle" onClick={() => set({ items: [...draft.items, { id: '', name: '', emoji: '', fact: '', bn: '', bnFact: '', sound: '' }] })}>
               ＋ Add item
             </Button>
           </div>

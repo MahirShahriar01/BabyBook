@@ -22,5 +22,14 @@ supabase secrets set ALLOWED_ORIGINS=https://your-kids-site.com
 ```
 Then Admin → Talking Buddy → *Use cloud AI* → `https://<project>.functions.supabase.co/buddy`. Any OpenAI-compatible provider works (Gemini free tier, OpenAI `gpt-4o-mini`, Groq, OpenRouter, local Ollama). The on-device safety filter runs first; the child's name is never sent.
 
+## Optional: cloud voice for Bangla (when a device has none)
+Most desktop browsers (except Microsoft Edge) and some Android phones have **no Bangla voice**, so the apps would stay silent. The `tts` function fixes that with Google Cloud Text-to-Speech (free tier covers millions of characters per month) and caches every clip in Storage, so each sentence is synthesised only once.
+```bash
+supabase functions deploy tts --no-verify-jwt
+supabase secrets set GOOGLE_TTS_API_KEY=...          # Google Cloud console → enable "Cloud Text-to-Speech API" → Credentials → API key
+supabase secrets set ALLOWED_ORIGINS=https://your-kids-site.com
+```
+Then Admin → App Settings → **Voices** → Cloud voice URL = `https://<project>.functions.supabase.co/tts`. Device voices are always tried first; the cloud voice is only used for languages the device can't speak.
+
 ## Tables
 `app_settings`, `languages`, `stories`, `videos`, `topics`, `quiz` (JSONB `data` + `published`/`enabled` + `sort`), `events` (anonymous, insert-only for apps), `admins` (owner / editor / viewer). Views: `report_daily`, `report_top_items`.

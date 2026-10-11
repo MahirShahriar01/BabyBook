@@ -6,6 +6,7 @@ import { loadProfile, loadProgress, missionsFor, saveProfile, saveProgress, toda
 import { translator } from '../lib/i18n.js';
 import { setAnalyticsContext, track } from '../lib/analytics.js';
 import { setSoundEnabled, sfx } from '../lib/sound.js';
+import { configureSpeech } from '../lib/speech.js';
 
 const AppCtx = createContext(null);
 export const useApp = () => useContext(AppCtx);
@@ -41,6 +42,7 @@ export function AppProvider({ children }) {
   useEffect(() => applyTheme(theme, settings.fontFamily), [theme, settings.fontFamily]);
   useEffect(() => setAnalyticsContext(profile), [profile]);
   useEffect(() => setSoundEnabled(profile.sound !== false), [profile.sound]);
+  useEffect(() => configureSpeech(settings.voice), [settings.voice]);
 
   const setProfile = useCallback((patch) => {
     setProfileState((p) => {

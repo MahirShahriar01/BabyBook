@@ -257,7 +257,7 @@ text(s, Inches(0.7), Inches(0.8), Inches(7), Inches(0.5), '🚀  A free AI learn
 text(s, Inches(0.7), Inches(1.45), Inches(6.2), Inches(2.2), ['Kids Explorer', 'AI'], size=54, bold=True, font=TITLE_FONT)
 text(s, Inches(0.7), Inches(3.55), Inches(6.2), Inches(1.2), 'Alphabets • Stories • Brain games • Talking AI buddy • Cartoons — in English, বাংলা and more. No sign-up. Safe. Colorful.', size=19, color=SOFT)
 pills(s, Inches(0.7), Inches(4.85), ['🌐 Website', '📱 Android app', '🛠️ Admin panel'], (PINK, GREEN, VIOLET), size=15)
-pills(s, Inches(0.7), Inches(5.45), ['0 sign-ups', '5 languages', '15 explore topics', '5 brain games', '100% free AI buddy'], (INK2,) * 5, size=12)
+pills(s, Inches(0.7), Inches(5.45), ['0 sign-ups', '5 languages', '15 explore topics', '10 brain games', '100% free AI buddy'], (INK2,) * 5, size=12)
 image(s, shot('web-home'), Inches(7.3), Inches(1.15), w=Inches(4.9))
 phone(s, shot('03-home-space', True), Inches(10.9), Inches(3.35), Inches(3.55))
 n += 1
@@ -381,16 +381,21 @@ footer(s, n)
 
 # 8 ─ Games ────────────────────────────────────────────────────────────────
 s = new(RGBColor(0x0B, 0x3B, 0x2A), INK)
-header(s, 'BRAIN GAMES', 'Five games that grow with the child', GREEN)
+header(s, 'BRAIN GAMES', 'Ten games that grow with the child', GREEN)
 image(s, shot('web-sudoku'), Inches(0.7), Inches(2.0), w=Inches(6.3))
 phone(s, shot('07-games', True), Inches(7.5), Inches(2.0), Inches(4.5))
 rich(s, Inches(10.1), Inches(2.0), Inches(3.0), Inches(4.8), [
-    ('🔢', 'Kids Sudoku ', '3×3 pictures → 4×4 → 6×6, hints, conflict glow'),
-    ('🃏', 'Memory Match ', '3 → 8 pairs by age'),
-    ('🔺', 'What comes next? ', 'AB/ABC patterns & number sequences, drag & drop'),
-    ('➕', 'Number Pop ', 'count → add → × tables'),
-    ('🕵️', 'Odd One Out ', 'cross-topic reasoning'),
-], size=14)
+    ('🔢', 'Sudoku ', '3×3 pictures → 6×6'),
+    ('🔡', 'Word Builder ', 'spell in English & বাংলা'),
+    ('🎈', 'Letter Pop ', 'listen & pop'),
+    ('🃏', 'Memory ', '3 → 8 pairs'),
+    ('🔺', 'Patterns ', 'what comes next?'),
+    ('➕', 'Number Pop ', 'count → × tables'),
+    ('⚖️', 'More or Less ', 'compare'),
+    ('👤', 'Shadow Match ', 'visual skills'),
+    ('🕵️', 'Odd One Out ', 'reasoning'),
+    ('❌', 'Tic-Tac-Toe ', 'vs an AI robot'),
+], size=12, gap=2)
 n += 1
 footer(s, n)
 
@@ -540,7 +545,7 @@ footer(s, n)
 # 18 ─ Quality ─────────────────────────────────────────────────────────────
 s = new()
 header(s, 'QUALITY', 'Tested, linted and documented', TEAL)
-stats = [('52', 'Flutter tests', 'engine parity, games, every screen rendered at phone size, onboarding flow', GREEN), ('14', 'Web unit tests', 'buddy engine, sudoku, AI-lab algorithms, content', PINK), ('0', 'Lint issues', 'flutter analyze · ESLint (web + admin)', VIOLET), ('8', 'Guides', 'README per app, build guide (Win/mac), Play Store, privacy, admin', ORANGE)]
+stats = [('98', 'Flutter tests', 'engine parity, tracing, games, every screen in English & Bangla, onboarding flow', GREEN), ('17', 'Web unit tests', 'buddy engine, speech segments, games, AI-lab, content', PINK), ('0', 'Lint issues', 'flutter analyze · ESLint (web + admin)', VIOLET), ('8', 'Guides', 'README per app, build guide (Win/mac), Play Store, privacy, admin', ORANGE)]
 for i, (big, t, d, c) in enumerate(stats):
     x = Inches(0.6 + i * 3.1)
     card(s, x, Inches(2.3), Inches(2.85), Inches(3.4), c, 0.15)

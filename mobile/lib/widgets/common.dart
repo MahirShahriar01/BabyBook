@@ -9,6 +9,7 @@ import '../models/content.dart';
 import '../services/ads_service.dart';
 import '../services/buddy_engine.dart';
 import '../services/speech_service.dart';
+import '../i18n.dart';
 import '../state/app_state.dart';
 
 const palette = [
@@ -32,7 +33,7 @@ void tapFeedback() {
 
 Future<void> say(BuildContext context, String text, {String? lang, double? pitch, double? rate, void Function(int, int)? onWord}) {
   final st = context.read<AppState>();
-  return SpeechService.instance.speak(text, lang: lang ?? st.profile.uiLang, pitch: pitch ?? 1.15, rate: rate ?? 0.95, onWord: onWord);
+  return SpeechService.instance.speak(text, lang: lang ?? st.profile.uiLang, pitch: pitch ?? 1.15, rate: rate, onWord: onWord);
 }
 
 Future<T?> go<T>(BuildContext context, Widget page) {
@@ -626,16 +627,16 @@ class _SayItCardState extends State<SayItCard> {
           ),
           const SizedBox(height: 8),
           Text(
-            _state == 'listening' ? 'Listening… say it now!' : 'Tap and say "${widget.word}"',
+            _state == 'listening' ? tr(context.read<AppState>().profile.uiLang, 'listening') : tr(context.read<AppState>().profile.uiLang, 'sayWord', {'x': widget.word}),
             style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 17),
             textAlign: TextAlign.center,
           ),
           if (_state == 'result') ...[
             const SizedBox(height: 6),
             Text('⭐' * _stars + '☆' * (3 - _stars), style: const TextStyle(fontSize: 32)),
-            Text('I heard: "$_heard" · $_score%', style: const TextStyle(fontSize: 14)),
+            Text('👂 "$_heard" · $_score%', style: const TextStyle(fontSize: 14)),
           ],
-          if (_state == 'error') const Text('I could not hear you. Check the microphone 🎧', textAlign: TextAlign.center),
+          if (_state == 'error') const Text('🎤❓ 🎧', textAlign: TextAlign.center, style: TextStyle(fontSize: 22)),
         ],
       ),
     );
@@ -651,3 +652,62 @@ class _SayItCardState extends State<SayItCard> {
 Color textOn(Color c) => c.computeLuminance() > 0.6 ? Colors.black87 : Colors.white;
 
 bool forKid(BuildContext context, List<String> ages) => forAge(ages, context.read<AppState>().profile.age);
+
+
+const _langNames = {
+  'bn': {'en': 'Bangla', 'bn': 'বাংলা'},
+  'hi': {'en': 'Hindi', 'bn': 'হিন্দি'},
+  'es': {'en': 'Spanish', 'bn': 'স্প্যানিশ'},
+  'fr': {'en': 'French', 'bn': 'ফরাসি'},
+};
+
+/// Shows grown-ups how to install a missing voice (e.g. Bangla) with a one-tap shortcut.
+class VoiceHint extends StatefulWidget {
+  const VoiceHint({super.key, required this.lang});
+  final String lang;
+  @override
+  State<VoiceHint> createState() => _VoiceHintState();
+}
+
+class _VoiceHintState extends State<VoiceHint> {
+  @override
+  void initState() {
+    super.initState();
+    if (widget.lang != 'en') SpeechService.instance.resolve(widget.lang);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final ui = context.watch<AppState>().profile.uiLang;
+    return ValueListenableBuilder<Set<String>>(
+      valueListenable: SpeechService.instance.missing,
+      builder: (context, missing, _) {
+        if (!missing.contains(widget.lang)) return const SizedBox.shrink();
+        final name = _langNames[widget.lang]?[ui] ?? widget.lang;
+        return Padding(
+          padding: const EdgeInsets.fromLTRB(12, 0, 12, 8),
+          child: GlassBox(
+            padding: const EdgeInsets.all(12),
+            child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+              Text('🔇 ${tr(ui, 'noVoice', {'lang': name})}', style: const TextStyle(fontWeight: FontWeight.w700)),
+              const SizedBox(height: 4),
+              Text('👨‍👩‍👧 ${tr(ui, 'voiceSteps', {'lang': name})}', style: const TextStyle(fontSize: 13)),
+              const SizedBox(height: 6),
+              Wrap(spacing: 8, children: [
+                KidButton(label: '⚙️ ${tr(ui, 'installVoice')}', onTap: SpeechService.instance.openVoiceSettings),
+                KidButton(
+                  label: '🔄 ${tr(ui, 'checkAgain')}',
+                  ghost: true,
+                  onTap: () {
+                    SpeechService.instance.recheckVoices();
+                    SpeechService.instance.resolve(widget.lang);
+                  },
+                ),
+              ]),
+            ]),
+          ),
+        );
+      },
+    );
+  }
+}
