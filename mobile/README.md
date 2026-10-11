@@ -11,7 +11,7 @@ Step-by-step for **Windows & macOS**: [../docs/BUILD_GUIDE.md](../docs/BUILD_GUI
 flutter pub get
 flutter run                     # emulator or USB device
 flutter analyze                 # no issues
-flutter test                    # 52 tests: engine parity, games, every screen at phone size, onboarding flow
+flutter test                    # 98 tests: engine parity, tracing, games, every screen in English + Bangla, onboarding flow
 ```
 
 ### Play Store screenshots without a device

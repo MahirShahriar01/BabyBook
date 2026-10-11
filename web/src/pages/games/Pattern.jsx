@@ -31,7 +31,7 @@ export function makePattern(age, rnd = Math.random) {
 }
 
 export default function Pattern() {
-  const { profile, complete } = useApp();
+  const { profile, complete, t } = useApp();
   const [p, setP] = useState(() => makePattern(profile.age));
   const [streak, setStreak] = useState(0);
   const [wrong, setWrong] = useState(null);
@@ -53,13 +53,13 @@ export default function Pattern() {
     } else {
       sfx.wrong();
       setWrong(o);
-      speak('Look again. What repeats?');
+      speak(t('lookAgain'), { lang: profile.uiLang });
     }
   };
 
   return (
     <Page>
-      <TopBar title="What comes next?" emoji="🔺" back="/games" right={<span className="chip">🔥 {streak}</span>} />
+      <TopBar title={t('whatNext')} emoji="🔺" back="/games" right={<span className="chip">🔥 {streak}</span>} />
       <div className="card center" style={{ gap: 20, padding: 24 }}>
         <div className="row" style={{ justifyContent: 'center', fontSize: 'clamp(1.8rem, 6vw, 3rem)', gap: 8 }}>
           {p.seq.map((x, i) => (

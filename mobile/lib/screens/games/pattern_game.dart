@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../i18n.dart';
 import '../../services/logic.dart';
 import '../../services/speech_service.dart';
 import '../../state/app_state.dart';
@@ -71,14 +72,14 @@ class _PatternGameState extends State<PatternGame> {
       });
     } else {
       setState(() => wrong = o);
-      SpeechService.instance.speak('Look again. What repeats?');
+      SpeechService.instance.speak(tr(context.read<AppState>().profile.uiLang, 'lookAgain'), lang: context.read<AppState>().profile.uiLang);
     }
   }
 
   @override
   Widget build(BuildContext context) {
     return KidScaffold(
-      title: 'What comes next?',
+      title: tr(context.read<AppState>().profile.uiLang, 'whatNext'),
       emoji: '🔺',
       actions: [
         Padding(

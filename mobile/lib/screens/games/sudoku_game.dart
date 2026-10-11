@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../i18n.dart';
 import '../../services/logic.dart';
 import '../../services/speech_service.dart';
 import '../../state/app_state.dart';
@@ -20,6 +21,7 @@ class _SudokuGameState extends State<SudokuGame> {
   late SudokuPuzzle p;
   (int, int)? sel;
   bool won = false;
+  String get _ui => context.read<AppState>().profile.uiLang;
 
   @override
   void initState() {
@@ -47,7 +49,7 @@ class _SudokuGameState extends State<SudokuGame> {
     if (sudokuSolved(p.grid)) {
       setState(() => won = true);
       finishActivity(context, 'game', id: 'sudoku', name: 'Sudoku ${n}x$n', stars: n == 3 ? 2 : (n == 4 ? 3 : 5));
-      SpeechService.instance.speak('You solved the Sudoku! Amazing brain power!');
+      SpeechService.instance.speak(tr(_ui, 'sudokuWin'), lang: _ui);
     }
   }
 
@@ -130,7 +132,7 @@ class _SudokuGameState extends State<SudokuGame> {
             alignment: WrapAlignment.center,
             children: [
               KidButton(
-                label: '💡 Hint',
+                label: '💡 ${tr(_ui, 'hint')}',
                 ghost: true,
                 onTap: () {
                   for (var r = 0; r < n; r++) {
@@ -138,14 +140,14 @@ class _SudokuGameState extends State<SudokuGame> {
                       if (p.grid[r][c] == 0) {
                         setState(() => sel = (r, c));
                         final v = p.solution[r][c];
-                        SpeechService.instance.speak('Try ${n == 3 ? ['', 'apple', 'star', 'fish'][v] : v} here!');
+                        SpeechService.instance.speak(tr(_ui, 'tryHere', {'x': n == 3 ? (_ui == 'bn' ? ['', 'আপেল', 'তারা', 'মাছ'] : ['', 'apple', 'star', 'fish'])[v] : v}), lang: _ui);
                         return;
                       }
                     }
                   }
                 },
               ),
-              KidButton(label: '🔁 New puzzle', ghost: true, onTap: () => setState(_new)),
+              KidButton(label: '🔁 ${tr(_ui, 'newPuzzle')}', ghost: true, onTap: () => setState(_new)),
             ],
           ),
           if (won)

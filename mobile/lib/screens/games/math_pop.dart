@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../i18n.dart';
 import '../../services/logic.dart';
 import '../../services/speech_service.dart';
 import '../../state/app_state.dart';
@@ -66,6 +67,7 @@ class _MathPopState extends State<MathPop> with SingleTickerProviderStateMixin {
   late final AnimationController _float = AnimationController(vsync: this, duration: const Duration(seconds: 2))..repeat(reverse: true);
   int score = 0;
   int? popped;
+  String get _ui => context.read<AppState>().profile.uiLang;
 
   @override
   void dispose() {
@@ -78,10 +80,10 @@ class _MathPopState extends State<MathPop> with SingleTickerProviderStateMixin {
     setState(() => popped = o);
     if (o == p.answer) {
       score++;
-      SpeechService.instance.speak('$o! Correct!');
+      SpeechService.instance.speak('$o! ${tr(_ui, 'correct')}', lang: _ui);
       if (score % 5 == 0) finishActivity(context, 'game', id: 'math', name: 'Number Pop x5', stars: 3);
     } else {
-      SpeechService.instance.speak('Oops. The answer is ${p.answer}.');
+      SpeechService.instance.speak(tr(_ui, 'oops', {'x': p.answer}), lang: _ui);
     }
     Future.delayed(const Duration(milliseconds: 1300), () {
       if (!mounted) return;

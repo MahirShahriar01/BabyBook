@@ -27,7 +27,7 @@ final modules = <String, ModuleInfo>{
   'alphabet': ModuleInfo('🔤', const Color(0xFFFF4FA3), 'ABC • অআ • ¡Hola!', 'wobble', () => const AlphabetScreen()),
   'explore': ModuleInfo('🦁', const Color(0xFFFF8A3D), 'Animals • Planes • World', 'bounce', () => const ExploreScreen()),
   'stories': ModuleInfo('📖', const Color(0xFF1E90FF), 'Read & learn morals', 'float', () => const StoriesScreen()),
-  'games': ModuleInfo('🧩', const Color(0xFF22B573), 'Sudoku • Memory • Logic', 'wobble', () => const GamesScreen()),
+  'games': ModuleInfo('🧩', const Color(0xFF22B573), '10 games: Sudoku • Words • Robot', 'wobble', () => const GamesScreen()),
   'buddy': ModuleInfo('🤖', const Color(0xFF7C5CFF), 'Talk & speak better', 'pulse', () => const BuddyScreen()),
   'quiz': ModuleInfo('❓', const Color(0xFFFF5D73), 'General knowledge', 'bounce', () => const QuizScreen()),
   'videos': ModuleInfo('📺', const Color(0xFF00C2A8), 'Safe cartoons', 'float', () => const VideosScreen()),
@@ -96,11 +96,11 @@ class HomeScreen extends StatelessWidget {
                             children: [
                               Text('🏆 ${tr(lang, 'level')} ${st.level}', style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w800)),
 
-                              Text('🔥 ${st.streakCount} day streak', style: const TextStyle(fontWeight: FontWeight.w700)),
+                              Text('🔥 ${tr(lang, 'streak', {'n': st.streakCount})}', style: const TextStyle(fontWeight: FontWeight.w700)),
                             ],
                           ),
                           const SizedBox(height: 6),
-                          Text('${10 - st.stars % 10} more ⭐ to reach ${tr(lang, 'level')} ${st.level + 1}'),
+                          Text(tr(lang, 'toNext', {'n': 10 - st.stars % 10, 'm': st.level + 1})),
                           const SizedBox(height: 6),
                           KidProgress(value: (st.stars % 10) / 10),
                         ],
@@ -124,7 +124,7 @@ class HomeScreen extends StatelessWidget {
                                       const SizedBox(width: 10),
                                       Expanded(
                                         child: Text(
-                                          m.text,
+                                          tr(lang, 'mission_${m.id}'),
                                           style: TextStyle(fontWeight: FontWeight.w700, decoration: m.count >= m.goal ? TextDecoration.lineThrough : null),
                                         ),
                                       ),
@@ -138,7 +138,7 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ],
                     const SizedBox(height: 18),
-                    const Text('🗺️ Adventure Map', style: TextStyle(fontSize: 22, fontWeight: FontWeight.w800)),
+                    Text('🗺️ ${tr(lang, 'map')}', style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w800)),
                     const SizedBox(height: 10),
                     GridView.builder(
                       shrinkWrap: true,
@@ -156,7 +156,7 @@ class HomeScreen extends StatelessWidget {
                         return KidTile(
                           emoji: m.emoji,
                           label: tr(lang, k),
-                          sub: m.sub,
+                          sub: tr(lang, 'sub_$k'),
                           color: m.color,
                           anim: m.anim,
                           badge: '${tr(lang, 'level')} ${i + 1}',

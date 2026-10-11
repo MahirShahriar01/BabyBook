@@ -16,6 +16,11 @@ const Memory = lazy(() => import('./pages/games/Memory.jsx'));
 const Pattern = lazy(() => import('./pages/games/Pattern.jsx'));
 const MathPop = lazy(() => import('./pages/games/MathPop.jsx'));
 const OddOneOut = lazy(() => import('./pages/games/OddOneOut.jsx'));
+const WordBuilder = lazy(() => import('./pages/games/WordBuilder.jsx'));
+const LetterPop = lazy(() => import('./pages/games/LetterPop.jsx'));
+const ShadowMatch = lazy(() => import('./pages/games/ShadowMatch.jsx'));
+const TicTacToe = lazy(() => import('./pages/games/TicTacToe.jsx'));
+const MoreOrLess = lazy(() => import('./pages/games/MoreOrLess.jsx'));
 const Explore = lazy(() => import('./pages/Explore.jsx'));
 const Topic = lazy(() => import('./pages/Topic.jsx'));
 const Quiz = lazy(() => import('./pages/Quiz.jsx'));
@@ -65,6 +70,11 @@ export default function App() {
               <Route path="/games/pattern" element={<Feature name="games"><Pattern /></Feature>} />
               <Route path="/games/math" element={<Feature name="games"><MathPop /></Feature>} />
               <Route path="/games/odd" element={<Feature name="games"><OddOneOut /></Feature>} />
+              <Route path="/games/words" element={<Feature name="games"><WordBuilder /></Feature>} />
+              <Route path="/games/letters" element={<Feature name="games"><LetterPop /></Feature>} />
+              <Route path="/games/shadow" element={<Feature name="games"><ShadowMatch /></Feature>} />
+              <Route path="/games/tictactoe" element={<Feature name="games"><TicTacToe /></Feature>} />
+              <Route path="/games/compare" element={<Feature name="games"><MoreOrLess /></Feature>} />
               <Route path="/explore" element={<Feature name="explore"><Explore /></Feature>} />
               <Route path="/explore/:id" element={<Feature name="explore"><Topic /></Feature>} />
               <Route path="/quiz" element={<Feature name="quiz"><Quiz /></Feature>} />

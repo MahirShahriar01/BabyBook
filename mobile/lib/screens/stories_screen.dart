@@ -20,7 +20,9 @@ class _StoriesScreenState extends State<StoriesScreen> {
     final st = context.watch<AppState>();
     final stories = st.content.stories;
     final mine = stories.where((s) => forAge(s.ageGroups, st.profile.age)).toList();
-    final list = all ? stories : mine;
+    // the kid's own language first (Bangla stories on top in Bangla mode)
+    int own(Story s) => s.language == st.profile.uiLang || s.language == st.profile.learnLang ? 0 : 1;
+    final list = [...(all ? stories : mine)]..sort((a, b) => own(a) - own(b));
     final flags = {for (final l in st.content.languages) l.code: l.flag};
     return KidScaffold(
       title: tr(st.profile.uiLang, 'stories'),
@@ -50,7 +52,7 @@ class _StoriesScreenState extends State<StoriesScreen> {
               return KidTile(
                 emoji: s.emoji,
                 label: s.title,
-                sub: '${flags[s.language] ?? ''} ${s.pages.length} pages${st.isDone('story:${s.id}') ? ' · ⭐' : ''}',
+                sub: '${flags[s.language] ?? ''} ${tr(st.profile.uiLang, 'pages', {'n': s.pages.length})}${st.isDone('story:${s.id}') ? ' · ⭐' : ''}',
                 color: s.color,
                 anim: 'float',
                 onTap: () => go(context, StoryReader(story: s)),
@@ -80,6 +82,7 @@ class _StoryReaderState extends State<StoryReader> {
   int? picked;
 
   Story get s => widget.story;
+  String get _ui => context.read<AppState>().profile.uiLang;
 
   @override
   void dispose() {
@@ -90,18 +93,21 @@ class _StoryReaderState extends State<StoryReader> {
 
   Future<void> _narrate() async {
     setState(() => reading = true);
-    await SpeechService.instance.speak(
-      s.pages[page].text,
-      lang: s.language,
-      rate: 0.88,
-      onWord: (a, b) {
-        if (!mounted) return;
-        setState(() {
-          wordStart = a;
-          wordEnd = b;
-        });
-      },
-    );
+    void onWord(int a, int b) {
+      if (!mounted) return;
+      setState(() {
+        wordStart = a;
+        wordEnd = b;
+      });
+    }
+
+    // admin-uploaded narration wins over text-to-speech; both highlight words
+    final p = s.pages[page];
+    if (p.audio.isNotEmpty) {
+      await SpeechService.instance.playUrl(p.audio, text: p.text, onWord: onWord);
+    } else {
+      await SpeechService.instance.speak(p.text, lang: s.language, onWord: onWord);
+    }
     if (!mounted) return;
     setState(() {
       reading = false;
@@ -178,6 +184,7 @@ class _StoryReaderState extends State<StoryReader> {
         child: switch (phase) {
           'read' => Column(
             children: [
+              VoiceHint(lang: s.language),
               KidProgress(value: (page + 1) / s.pages.length),
               const SizedBox(height: 12),
               Expanded(
@@ -249,7 +256,7 @@ class _StoryReaderState extends State<StoryReader> {
                 alignment: WrapAlignment.center,
                 children: [
                   KidButton(label: '⬅️', ghost: true, onTap: page == 0 ? null : () => _turn(-1)),
-                  KidButton(label: reading ? '⏹️ Stop' : '🔊 Read to me', onTap: reading ? () => SpeechService.instance.stop() : _narrate),
+                  KidButton(label: reading ? '⏹️ ${tr(_ui, 'stop')}' : '🔊 ${tr(_ui, 'readToMe')}', onTap: reading ? () => SpeechService.instance.stop() : _narrate),
                   KidButton(
                     label: auto ? '⏸️ Auto' : '▶️ Auto',
                     ghost: !auto,
@@ -270,7 +277,7 @@ class _StoryReaderState extends State<StoryReader> {
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   const AnimatedEmoji('💡', size: 80, anim: 'wobble'),
-                  const Text('Moral of the story', style: TextStyle(fontSize: 26, fontWeight: FontWeight.w800)),
+                  Text(tr(_ui, 'moral'), style: const TextStyle(fontSize: 26, fontWeight: FontWeight.w800)),
                   const SizedBox(height: 10),
                   Text(
                     s.moral,
@@ -282,12 +289,12 @@ class _StoryReaderState extends State<StoryReader> {
                     spacing: 10,
                     children: [
                       KidButton(
-                        label: '🔊 Hear again',
+                        label: '🔊 ${tr(_ui, 'hearAgain')}',
                         ghost: true,
                         onTap: () => SpeechService.instance.speak(s.moral, lang: s.language),
                       ),
                       KidButton(
-                        label: s.quiz.isEmpty ? '🎉 Finish' : '❓ Quiz time!',
+                        label: s.quiz.isEmpty ? '🎉 ${tr(_ui, 'finish')}' : '❓ ${tr(_ui, 'quizTime')}',
                         onTap: () {
                           if (s.quiz.isEmpty) {
                             setState(() => phase = 'done');
@@ -309,7 +316,7 @@ class _StoryReaderState extends State<StoryReader> {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  Text('Question ${q + 1} / ${s.quiz.length}', style: const TextStyle(fontWeight: FontWeight.w700)),
+                  Text(tr(_ui, 'question', {'n': q + 1, 't': s.quiz.length}), style: const TextStyle(fontWeight: FontWeight.w700)),
                   const SizedBox(height: 10),
                   Text(
                     s.quiz[q].question,
@@ -344,14 +351,14 @@ class _StoryReaderState extends State<StoryReader> {
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   const AnimatedEmoji('🏆', size: 80),
-                  const Text('You finished the story!', style: TextStyle(fontSize: 24, fontWeight: FontWeight.w800)),
+                  Text(tr(_ui, 'finishedStory'), style: const TextStyle(fontSize: 24, fontWeight: FontWeight.w800)),
                   if (s.quiz.isNotEmpty) Text('Quiz: $score / ${s.quiz.length} ${'⭐' * score}', style: const TextStyle(fontSize: 20)),
                   const SizedBox(height: 16),
                   Wrap(
                     spacing: 10,
                     children: [
                       KidButton(
-                        label: '🔁 Read again',
+                        label: '🔁 ${tr(_ui, 'readAgain')}',
                         ghost: true,
                         onTap: () => setState(() {
                           phase = 'read';
@@ -360,7 +367,7 @@ class _StoryReaderState extends State<StoryReader> {
                           score = 0;
                         }),
                       ),
-                      KidButton(label: '📚 More stories', onTap: () => Navigator.pop(context)),
+                      KidButton(label: '📚 ${tr(_ui, 'moreStories')}', onTap: () => Navigator.pop(context)),
                     ],
                   ),
                 ],

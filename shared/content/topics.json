@@ -18,7 +18,8 @@
     "emoji": "🦁",
     "fact": "The lion is called the king of the jungle. A lion's roar can be heard 8 km away!",
     "bn": "সিংহ",
-    "sound": "Roar!"
+    "sound": "Roar!",
+    "bnFact": "সিংহকে বনের রাজা বলা হয়। সিংহের গর্জন অনেক দূর থেকে শোনা যায়।"
    },
    {
     "id": "elephant",
@@ -26,7 +27,8 @@
     "emoji": "🐘",
     "fact": "Elephants are the biggest land animals. They use their trunk like a hand.",
     "bn": "হাতি",
-    "sound": "Pawoo!"
+    "sound": "Pawoo!",
+    "bnFact": "হাতি সবচেয়ে বড় স্থলপ্রাণী। হাতি শুঁড় দিয়ে হাতের মতো কাজ করে।"
    },
    {
     "id": "tiger",
@@ -34,7 +36,8 @@
     "emoji": "🐯",
     "fact": "The Royal Bengal Tiger lives in the Sundarbans. Every tiger has unique stripes.",
     "bn": "বাঘ",
-    "sound": "Grrr!"
+    "sound": "Grrr!",
+    "bnFact": "রয়েল বেঙ্গল টাইগার সুন্দরবনে থাকে। এটি আমাদের জাতীয় পশু।"
    },
    {
     "id": "dog",
@@ -42,7 +45,8 @@
     "emoji": "🐶",
     "fact": "Dogs can smell things 10,000 times better than people.",
     "bn": "কুকুর",
-    "sound": "Woof woof!"
+    "sound": "Woof woof!",
+    "bnFact": "কুকুর খুব বিশ্বস্ত বন্ধু। কুকুর অনেক দূরের গন্ধ পায়।"
    },
    {
     "id": "cat",
@@ -50,7 +54,8 @@
     "emoji": "🐱",
     "fact": "Cats sleep for about 13 to 16 hours a day.",
     "bn": "বিড়াল",
-    "sound": "Meow!"
+    "sound": "Meow!",
+    "bnFact": "বিড়াল দিনের অনেকটা সময় ঘুমায়। বিড়াল মিউ মিউ করে ডাকে।"
    },
    {
     "id": "cow",
@@ -58,7 +63,8 @@
     "emoji": "🐮",
     "fact": "Cows give us milk. They have four parts in their stomach.",
     "bn": "গরু",
-    "sound": "Moo!"
+    "sound": "Moo!",
+    "bnFact": "গরু আমাদের দুধ দেয়। গরু হাম্বা হাম্বা ডাকে।"
    },
    {
     "id": "monkey",
@@ -66,7 +72,8 @@
     "emoji": "🐵",
     "fact": "Monkeys use their tails to hold branches.",
     "bn": "বানর",
-    "sound": "Ooh ooh aah aah!"
+    "sound": "Ooh ooh aah aah!",
+    "bnFact": "বানর গাছে গাছে লাফিয়ে বেড়ায়। বানর কলা খেতে ভালোবাসে।"
    },
    {
     "id": "giraffe",
@@ -74,7 +81,8 @@
     "emoji": "🦒",
     "fact": "The giraffe is the tallest animal in the world.",
     "bn": "জিরাফ",
-    "sound": "Hmmm!"
+    "sound": "Hmmm!",
+    "bnFact": "জিরাফ পৃথিবীর সবচেয়ে লম্বা প্রাণী। তার গলা অনেক লম্বা।"
    },
    {
     "id": "zebra",
@@ -82,7 +90,8 @@
     "emoji": "🦓",
     "fact": "No two zebras have the same stripes.",
     "bn": "জেব্রা",
-    "sound": "Neigh!"
+    "sound": "Neigh!",
+    "bnFact": "জেব্রার গায়ে সাদা-কালো ডোরা। কোনো দুটি জেব্রার ডোরা এক রকম নয়।"
    },
    {
     "id": "panda",
@@ -90,7 +99,8 @@
     "emoji": "🐼",
     "fact": "Pandas eat bamboo for up to 12 hours every day.",
     "bn": "পান্ডা",
-    "sound": "Squeak!"
+    "sound": "Squeak!",
+    "bnFact": "পান্ডা সারাদিন বাঁশ খায়। পান্ডা দেখতে খুব আদুরে।"
    },
    {
     "id": "kangaroo",
@@ -98,7 +108,8 @@
     "emoji": "🦘",
     "fact": "Baby kangaroos are called joeys and live in their mother's pouch.",
     "bn": "ক্যাঙ্গারু",
-    "sound": "Boing!"
+    "sound": "Boing!",
+    "bnFact": "ক্যাঙ্গারু লাফিয়ে চলে। মা ক্যাঙ্গারু পেটের থলিতে বাচ্চা রাখে।"
    },
    {
     "id": "rabbit",
@@ -106,7 +117,8 @@
     "emoji": "🐰",
     "fact": "Rabbits can turn their ears to hear sounds all around.",
     "bn": "খরগোশ",
-    "sound": "Sniff sniff!"
+    "sound": "Sniff sniff!",
+    "bnFact": "খরগোশের কান লম্বা। খরগোশ গাজর খেতে ভালোবাসে।"
    },
    {
     "id": "horse",
@@ -114,7 +126,8 @@
     "emoji": "🐴",
     "fact": "Horses can sleep standing up.",
     "bn": "ঘোড়া",
-    "sound": "Neigh!"
+    "sound": "Neigh!",
+    "bnFact": "ঘোড়া খুব জোরে দৌড়ায়। ঘোড়া দাঁড়িয়ে দাঁড়িয়েও ঘুমাতে পারে।"
    },
    {
     "id": "frog",
@@ -122,7 +135,8 @@
     "emoji": "🐸",
     "fact": "Frogs drink water through their skin.",
     "bn": "ব্যাঙ",
-    "sound": "Ribbit!"
+    "sound": "Ribbit!",
+    "bnFact": "ব্যাঙ লাফ দিয়ে চলে। ব্যাঙ ঘ্যাঙর ঘ্যাঙ ডাকে।"
    },
    {
     "id": "dolphin",
@@ -130,7 +144,8 @@
     "emoji": "🐬",
     "fact": "Dolphins are very smart and talk to each other with clicks and whistles.",
     "bn": "ডলফিন",
-    "sound": "Click click!"
+    "sound": "Click click!",
+    "bnFact": "ডলফিন খুব বুদ্ধিমান। ডলফিন শিস দিয়ে একে অপরের সাথে কথা বলে।"
    },
    {
     "id": "whale",
@@ -138,7 +153,8 @@
     "emoji": "🐳",
     "fact": "The blue whale is the biggest animal that has ever lived.",
     "bn": "তিমি",
-    "sound": "Whooo!"
+    "sound": "Whooo!",
+    "bnFact": "নীল তিমি পৃথিবীর সবচেয়ে বড় প্রাণী।"
    },
    {
     "id": "bee",
@@ -146,16 +162,19 @@
     "emoji": "🐝",
     "fact": "Bees make honey and help flowers grow.",
     "bn": "মৌমাছি",
-    "sound": "Buzz buzz!"
+    "sound": "Buzz buzz!",
+    "bnFact": "মৌমাছি মধু বানায়। মৌমাছি ফুলে ফুলে ঘুরে বেড়ায়।"
    },
    {
     "id": "butterfly",
     "name": "Butterfly",
     "emoji": "🦋",
     "fact": "A butterfly starts life as a caterpillar.",
-    "bn": "প্রজাপতি"
+    "bn": "প্রজাপতি",
+    "bnFact": "প্রজাপতির ডানা রঙিন। প্রজাপতি আগে শুঁয়োপোকা থাকে।"
    }
-  ]
+  ],
+  "titleBn": "প্রাণী"
  },
  {
   "id": "birds",
@@ -176,7 +195,8 @@
     "emoji": "🦜",
     "fact": "Parrots can learn to copy human words.",
     "bn": "টিয়া",
-    "sound": "Hello!"
+    "sound": "Hello!",
+    "bnFact": "টিয়া পাখি সবুজ রঙের। টিয়া মানুষের কথা নকল করতে পারে।"
    },
    {
     "id": "owl",
@@ -184,7 +204,8 @@
     "emoji": "🦉",
     "fact": "Owls can turn their heads almost all the way around.",
     "bn": "পেঁচা",
-    "sound": "Hoo hoo!"
+    "sound": "Hoo hoo!",
+    "bnFact": "পেঁচা রাতে জেগে থাকে। পেঁচা মাথা অনেকখানি ঘোরাতে পারে।"
    },
    {
     "id": "peacock",
@@ -192,7 +213,8 @@
     "emoji": "🦚",
     "fact": "The peacock opens its colorful tail like a fan.",
     "bn": "ময়ূর",
-    "sound": "Mee-ow!"
+    "sound": "Mee-ow!",
+    "bnFact": "ময়ূর রঙিন পেখম মেলে নাচে।"
    },
    {
     "id": "penguin",
@@ -200,7 +222,8 @@
     "emoji": "🐧",
     "fact": "Penguins cannot fly, but they are great swimmers.",
     "bn": "পেঙ্গুইন",
-    "sound": "Squawk!"
+    "sound": "Squawk!",
+    "bnFact": "পেঙ্গুইন উড়তে পারে না, কিন্তু খুব ভালো সাঁতার কাটে।"
    },
    {
     "id": "eagle",
@@ -208,7 +231,8 @@
     "emoji": "🦅",
     "fact": "Eagles can see a rabbit from very high up in the sky.",
     "bn": "ঈগল",
-    "sound": "Screech!"
+    "sound": "Screech!",
+    "bnFact": "ঈগল অনেক উঁচু থেকেও ছোট জিনিস দেখতে পায়।"
    },
    {
     "id": "duck",
@@ -216,7 +240,8 @@
     "emoji": "🦆",
     "fact": "Ducks have waterproof feathers.",
     "bn": "হাঁস",
-    "sound": "Quack quack!"
+    "sound": "Quack quack!",
+    "bnFact": "হাঁস পানিতে ভাসে। হাঁস প্যাঁক প্যাঁক ডাকে।"
    },
    {
     "id": "hen",
@@ -224,7 +249,8 @@
     "emoji": "🐔",
     "fact": "Hens lay eggs. A baby hen is called a chick.",
     "bn": "মুরগি",
-    "sound": "Cluck cluck!"
+    "sound": "Cluck cluck!",
+    "bnFact": "মুরগি ডিম পাড়ে। মুরগির বাচ্চাকে ছানা বলে।"
    },
    {
     "id": "crow",
@@ -232,7 +258,8 @@
     "emoji": "🐦‍⬛",
     "fact": "Crows are very clever birds that can solve puzzles.",
     "bn": "কাক",
-    "sound": "Caw caw!"
+    "sound": "Caw caw!",
+    "bnFact": "কাক খুব চালাক পাখি। কাক কা কা ডাকে।"
    },
    {
     "id": "magpie_robin",
@@ -240,9 +267,11 @@
     "emoji": "🐦",
     "fact": "The doel (magpie robin) is the national bird of Bangladesh.",
     "bn": "দোয়েল",
-    "sound": "Tweet tweet!"
+    "sound": "Tweet tweet!",
+    "bnFact": "দোয়েল আমাদের জাতীয় পাখি। দোয়েল সুন্দর শিস দেয়।"
    }
-  ]
+  ],
+  "titleBn": "পাখি"
  },
  {
   "id": "fruits",
@@ -261,86 +290,99 @@
     "name": "Apple",
     "emoji": "🍎",
     "fact": "Apples can be red, green or yellow.",
-    "bn": "আপেল"
+    "bn": "আপেল",
+    "bnFact": "আপেল লাল, সবুজ বা হলুদ হতে পারে।"
    },
    {
     "id": "banana",
     "name": "Banana",
     "emoji": "🍌",
     "fact": "Bananas give us quick energy to play.",
-    "bn": "কলা"
+    "bn": "কলা",
+    "bnFact": "কলা খেলে শরীরে শক্তি আসে।"
    },
    {
     "id": "mango",
     "name": "Mango",
     "emoji": "🥭",
     "fact": "The mango is the national tree of Bangladesh and a favorite summer fruit.",
-    "bn": "আম"
+    "bn": "আম",
+    "bnFact": "আম আমাদের জাতীয় গাছ। গরমকালে মিষ্টি আম পাকে।"
    },
    {
     "id": "orange",
     "name": "Orange",
     "emoji": "🍊",
     "fact": "Oranges are full of vitamin C.",
-    "bn": "কমলা"
+    "bn": "কমলা",
+    "bnFact": "কমলায় অনেক ভিটামিন সি আছে।"
    },
    {
     "id": "grapes",
     "name": "Grapes",
     "emoji": "🍇",
     "fact": "Grapes grow in bunches on vines.",
-    "bn": "আঙুর"
+    "bn": "আঙুর",
+    "bnFact": "আঙুর থোকায় থোকায় ধরে।"
    },
    {
     "id": "watermelon",
     "name": "Watermelon",
     "emoji": "🍉",
     "fact": "A watermelon is about 92% water.",
-    "bn": "তরমুজ"
+    "bn": "তরমুজ",
+    "bnFact": "তরমুজে অনেক পানি থাকে। গরমে খেতে মজা।"
    },
    {
     "id": "strawberry",
     "name": "Strawberry",
     "emoji": "🍓",
     "fact": "Strawberries wear their seeds on the outside.",
-    "bn": "স্ট্রবেরি"
+    "bn": "স্ট্রবেরি",
+    "bnFact": "স্ট্রবেরির বীজ থাকে বাইরের দিকে।"
    },
    {
     "id": "pineapple",
     "name": "Pineapple",
     "emoji": "🍍",
     "fact": "A pineapple takes about two years to grow.",
-    "bn": "আনারস"
+    "bn": "আনারস",
+    "bnFact": "আনারস বাইরে কাঁটাওয়ালা, ভেতরে রসালো।"
    },
    {
     "id": "jackfruit",
     "name": "Jackfruit",
     "emoji": "🍈",
     "fact": "The jackfruit is the national fruit of Bangladesh. It is the biggest tree fruit!",
-    "bn": "কাঁঠাল"
+    "bn": "কাঁঠাল",
+    "bnFact": "কাঁঠাল আমাদের জাতীয় ফল। এটি গাছের সবচেয়ে বড় ফল।"
    },
    {
     "id": "carrot",
     "name": "Carrot",
     "emoji": "🥕",
     "fact": "Carrots help keep your eyes healthy.",
-    "bn": "গাজর"
+    "bn": "গাজর",
+    "bnFact": "গাজর চোখের জন্য ভালো।"
    },
    {
     "id": "tomato",
     "name": "Tomato",
     "emoji": "🍅",
     "fact": "A tomato is really a fruit!",
-    "bn": "টমেটো"
+    "bn": "টমেটো",
+    "bnFact": "টমেটো আসলে একটি ফল!"
    },
    {
     "id": "broccoli",
     "name": "Broccoli",
     "emoji": "🥦",
     "fact": "Broccoli looks like a tiny tree.",
-    "bn": "ব্রকলি"
+    "bn": "ব্রকলি",
+    "bnFact": "ব্রকলি দেখতে ছোট্ট গাছের মতো।"
    }
-  ]
+  ],
+  "titleBn": "ফল ও সবজি"
  },
  {
   "id": "vehicles",
@@ -361,7 +403,8 @@
     "emoji": "🚗",
     "fact": "Cars have four wheels and carry families.",
     "bn": "গাড়ি",
-    "sound": "Vroom vroom!"
+    "sound": "Vroom vroom!",
+    "bnFact": "গাড়ির চারটি চাকা। গাড়ি করে আমরা বেড়াতে যাই।"
    },
    {
     "id": "bus",
@@ -369,7 +412,8 @@
     "emoji": "🚌",
     "fact": "A bus can carry many people at once.",
     "bn": "বাস",
-    "sound": "Beep beep!"
+    "sound": "Beep beep!",
+    "bnFact": "বাসে একসাথে অনেক মানুষ চড়তে পারে।"
    },
    {
     "id": "train",
@@ -377,7 +421,8 @@
     "emoji": "🚆",
     "fact": "Trains run on tracks and pull many coaches.",
     "bn": "ট্রেন",
-    "sound": "Choo choo!"
+    "sound": "Choo choo!",
+    "bnFact": "ট্রেন লাইনের ওপর দিয়ে চলে। ঝিক ঝিক ঝিক!"
    },
    {
     "id": "bicycle",
@@ -385,7 +430,8 @@
     "emoji": "🚲",
     "fact": "A bicycle has two wheels and pedals.",
     "bn": "সাইকেল",
-    "sound": "Ring ring!"
+    "sound": "Ring ring!",
+    "bnFact": "সাইকেলের দুটি চাকা আর প্যাডেল আছে।"
    },
    {
     "id": "rickshaw",
@@ -393,7 +439,8 @@
     "emoji": "🛺",
     "fact": "Rickshaws are colorful rides seen in Dhaka.",
     "bn": "রিকশা",
-    "sound": "Tring tring!"
+    "sound": "Tring tring!",
+    "bnFact": "রিকশা আমাদের দেশের রঙিন বাহন। ক্রিং ক্রিং!"
    },
    {
     "id": "fire_truck",
@@ -401,7 +448,8 @@
     "emoji": "🚒",
     "fact": "Fire trucks carry water and ladders to put out fires.",
     "bn": "দমকল",
-    "sound": "Nee-naw!"
+    "sound": "Nee-naw!",
+    "bnFact": "দমকল পানি দিয়ে আগুন নেভায়।"
    },
    {
     "id": "ambulance",
@@ -409,7 +457,8 @@
     "emoji": "🚑",
     "fact": "An ambulance takes sick people to the hospital fast.",
     "bn": "অ্যাম্বুলেন্স",
-    "sound": "Wee-woo!"
+    "sound": "Wee-woo!",
+    "bnFact": "অ্যাম্বুলেন্স অসুস্থ মানুষকে দ্রুত হাসপাতালে নেয়।"
    },
    {
     "id": "police_car",
@@ -417,7 +466,8 @@
     "emoji": "🚓",
     "fact": "Police cars help keep people safe.",
     "bn": "পুলিশের গাড়ি",
-    "sound": "Wee-woo!"
+    "sound": "Wee-woo!",
+    "bnFact": "পুলিশের গাড়ি মানুষকে নিরাপদ রাখতে সাহায্য করে।"
    },
    {
     "id": "tractor",
@@ -425,7 +475,8 @@
     "emoji": "🚜",
     "fact": "Tractors help farmers plough their fields.",
     "bn": "ট্রাক্টর",
-    "sound": "Put put put!"
+    "sound": "Put put put!",
+    "bnFact": "ট্রাক্টর দিয়ে কৃষক জমি চাষ করেন।"
    },
    {
     "id": "motorbike",
@@ -433,9 +484,11 @@
     "emoji": "🏍️",
     "fact": "A motorbike is fast and has two wheels.",
     "bn": "মোটরসাইকেল",
-    "sound": "Vrrrm!"
+    "sound": "Vrrrm!",
+    "bnFact": "মোটরসাইকেলের দুটি চাকা, আর এটি খুব জোরে চলে।"
    }
-  ]
+  ],
+  "titleBn": "যানবাহন"
  },
  {
   "id": "ships",
@@ -456,7 +509,8 @@
     "emoji": "🚢",
     "fact": "Big ships carry goods across oceans.",
     "bn": "জাহাজ",
-    "sound": "Toot toot!"
+    "sound": "Toot toot!",
+    "bnFact": "বড় জাহাজ সাগর পাড়ি দিয়ে মালপত্র নিয়ে যায়।"
    },
    {
     "id": "sailboat",
@@ -464,7 +518,8 @@
     "emoji": "⛵",
     "fact": "A sailboat uses wind to move.",
     "bn": "পালতোলা নৌকা",
-    "sound": "Whoosh!"
+    "sound": "Whoosh!",
+    "bnFact": "পালতোলা নৌকা বাতাসে চলে।"
    },
    {
     "id": "boat",
@@ -472,7 +527,8 @@
     "emoji": "🛶",
     "fact": "You move a canoe with paddles.",
     "bn": "নৌকা",
-    "sound": "Splash!"
+    "sound": "Splash!",
+    "bnFact": "বৈঠা বেয়ে নৌকা চালানো হয়।"
    },
    {
     "id": "speedboat",
@@ -480,7 +536,8 @@
     "emoji": "🚤",
     "fact": "Speedboats zoom fast on the water.",
     "bn": "স্পিডবোট",
-    "sound": "Zoom!"
+    "sound": "Zoom!",
+    "bnFact": "স্পিডবোট পানির ওপর দিয়ে খুব জোরে ছোটে।"
    },
    {
     "id": "ferry",
@@ -488,7 +545,8 @@
     "emoji": "⛴️",
     "fact": "A ferry carries people and cars across rivers.",
     "bn": "ফেরি",
-    "sound": "Hooonk!"
+    "sound": "Hooonk!",
+    "bnFact": "ফেরি নদী পার করে মানুষ আর গাড়ি নিয়ে যায়।"
    },
    {
     "id": "submarine",
@@ -496,16 +554,19 @@
     "emoji": "🛳️",
     "fact": "A submarine can travel deep under the sea.",
     "bn": "সাবমেরিন",
-    "sound": "Bloop!"
+    "sound": "Bloop!",
+    "bnFact": "সাবমেরিন পানির অনেক নিচে চলতে পারে।"
    },
    {
     "id": "anchor",
     "name": "Anchor",
     "emoji": "⚓",
     "fact": "An anchor stops a ship from floating away.",
-    "bn": "নোঙর"
+    "bn": "নোঙর",
+    "bnFact": "নোঙর জাহাজকে এক জায়গায় থামিয়ে রাখে।"
    }
-  ]
+  ],
+  "titleBn": "জাহাজ ও নৌকা"
  },
  {
   "id": "sky",
@@ -526,7 +587,8 @@
     "emoji": "✈️",
     "fact": "Airplanes fly high above the clouds.",
     "bn": "উড়োজাহাজ",
-    "sound": "Zoooom!"
+    "sound": "Zoooom!",
+    "bnFact": "উড়োজাহাজ মেঘের ওপর দিয়ে উড়ে যায়।"
    },
    {
     "id": "helicopter",
@@ -534,7 +596,8 @@
     "emoji": "🚁",
     "fact": "Helicopters can fly straight up and hover.",
     "bn": "হেলিকপ্টার",
-    "sound": "Chop chop chop!"
+    "sound": "Chop chop chop!",
+    "bnFact": "হেলিকপ্টার সোজা ওপরে উঠতে পারে।"
    },
    {
     "id": "rocket",
@@ -542,21 +605,24 @@
     "emoji": "🚀",
     "fact": "Rockets carry astronauts into space.",
     "bn": "রকেট",
-    "sound": "3, 2, 1, blast off!"
+    "sound": "3, 2, 1, blast off!",
+    "bnFact": "রকেট নভোচারীদের মহাকাশে নিয়ে যায়।"
    },
    {
     "id": "balloon",
     "name": "Hot Air Balloon",
     "emoji": "🎈",
     "fact": "Hot air balloons float because hot air is lighter.",
-    "bn": "বেলুন"
+    "bn": "বেলুন",
+    "bnFact": "গরম বাতাস হালকা, তাই বেলুন আকাশে ভাসে।"
    },
    {
     "id": "parachute",
     "name": "Parachute",
     "emoji": "🪂",
     "fact": "A parachute helps people float down slowly.",
-    "bn": "প্যারাশুট"
+    "bn": "প্যারাশুট",
+    "bnFact": "প্যারাশুট দিয়ে ধীরে ধীরে নিচে নামা যায়।"
    },
    {
     "id": "satellite",
@@ -564,9 +630,11 @@
     "emoji": "🛰️",
     "fact": "Satellites go around Earth and help us watch the weather.",
     "bn": "কৃত্রিম উপগ্রহ",
-    "sound": "Beep beep!"
+    "sound": "Beep beep!",
+    "bnFact": "কৃত্রিম উপগ্রহ পৃথিবীর চারপাশে ঘোরে আর আবহাওয়ার খবর দেয়।"
    }
-  ]
+  ],
+  "titleBn": "উড়োজাহাজ ও আকাশ"
  },
  {
   "id": "shapes",
@@ -585,58 +653,67 @@
     "name": "Circle",
     "emoji": "🔴",
     "fact": "A circle is round like a ball. It has no corners.",
-    "bn": "বৃত্ত"
+    "bn": "বৃত্ত",
+    "bnFact": "বৃত্ত বলের মতো গোল। এর কোনো কোণ নেই।"
    },
    {
     "id": "square",
     "name": "Square",
     "emoji": "🟥",
     "fact": "A square has 4 equal sides and 4 corners.",
-    "bn": "বর্গ"
+    "bn": "বর্গ",
+    "bnFact": "বর্গের চারটি সমান বাহু আর চারটি কোণ।"
    },
    {
     "id": "triangle",
     "name": "Triangle",
     "emoji": "🔺",
     "fact": "A triangle has 3 sides and 3 corners.",
-    "bn": "ত্রিভুজ"
+    "bn": "ত্রিভুজ",
+    "bnFact": "ত্রিভুজের তিনটি বাহু আর তিনটি কোণ।"
    },
    {
     "id": "rectangle",
     "name": "Rectangle",
     "emoji": "▬",
     "fact": "A rectangle has 4 sides, like a door.",
-    "bn": "আয়তক্ষেত্র"
+    "bn": "আয়তক্ষেত্র",
+    "bnFact": "আয়তক্ষেত্র দরজার মতো দেখতে। এর চারটি বাহু।"
    },
    {
     "id": "star",
     "name": "Star",
     "emoji": "⭐",
     "fact": "A star shape has 5 points.",
-    "bn": "তারা"
+    "bn": "তারা",
+    "bnFact": "তারার পাঁচটি কোণা।"
    },
    {
     "id": "heart",
     "name": "Heart",
     "emoji": "❤️",
     "fact": "A heart shape means love.",
-    "bn": "হৃদয়"
+    "bn": "হৃদয়",
+    "bnFact": "হৃদয় আকার ভালোবাসা বোঝায়।"
    },
    {
     "id": "diamond",
     "name": "Diamond",
     "emoji": "🔷",
     "fact": "A diamond is like a square standing on its corner.",
-    "bn": "রম্বস"
+    "bn": "রম্বস",
+    "bnFact": "রম্বস দেখতে কোণায় দাঁড়ানো বর্গের মতো।"
    },
    {
     "id": "oval",
     "name": "Oval",
     "emoji": "🥚",
     "fact": "An oval is like a stretched circle, the shape of an egg.",
-    "bn": "ডিম্বাকার"
+    "bn": "ডিম্বাকার",
+    "bnFact": "ডিম্বাকার দেখতে ডিমের মতো।"
    }
-  ]
+  ],
+  "titleBn": "আকার"
  },
  {
   "id": "colors",
@@ -656,7 +733,8 @@
     "emoji": "🟥",
     "fact": "Red is the color of apples and fire trucks.",
     "bn": "লাল",
-    "hex": "#FF3B30"
+    "hex": "#FF3B30",
+    "bnFact": "আপেল আর দমকলের রং লাল।"
    },
    {
     "id": "blue",
@@ -664,7 +742,8 @@
     "emoji": "🟦",
     "fact": "Blue is the color of the sky and the sea.",
     "bn": "নীল",
-    "hex": "#1E90FF"
+    "hex": "#1E90FF",
+    "bnFact": "আকাশ আর সাগরের রং নীল।"
    },
    {
     "id": "yellow",
@@ -672,7 +751,8 @@
     "emoji": "🟨",
     "fact": "Yellow is the color of the sun and bananas.",
     "bn": "হলুদ",
-    "hex": "#FFD60A"
+    "hex": "#FFD60A",
+    "bnFact": "সূর্য আর কলার রং হলুদ।"
    },
    {
     "id": "green",
@@ -680,7 +760,8 @@
     "emoji": "🟩",
     "fact": "Green is the color of leaves and grass.",
     "bn": "সবুজ",
-    "hex": "#34C759"
+    "hex": "#34C759",
+    "bnFact": "পাতা আর ঘাসের রং সবুজ।"
    },
    {
     "id": "orange_c",
@@ -688,7 +769,8 @@
     "emoji": "🟧",
     "fact": "Orange is red and yellow mixed together.",
     "bn": "কমলা",
-    "hex": "#FF9500"
+    "hex": "#FF9500",
+    "bnFact": "লাল আর হলুদ মেশালে কমলা হয়।"
    },
    {
     "id": "purple",
@@ -696,7 +778,8 @@
     "emoji": "🟪",
     "fact": "Purple is red and blue mixed together.",
     "bn": "বেগুনি",
-    "hex": "#AF52DE"
+    "hex": "#AF52DE",
+    "bnFact": "লাল আর নীল মেশালে বেগুনি হয়।"
    },
    {
     "id": "pink",
@@ -704,7 +787,8 @@
     "emoji": "🩷",
     "fact": "Pink is red and white mixed together.",
     "bn": "গোলাপি",
-    "hex": "#FF6FB5"
+    "hex": "#FF6FB5",
+    "bnFact": "লাল আর সাদা মেশালে গোলাপি হয়।"
    },
    {
     "id": "brown",
@@ -712,7 +796,8 @@
     "emoji": "🟫",
     "fact": "Brown is the color of chocolate and tree trunks.",
     "bn": "বাদামি",
-    "hex": "#8B5A2B"
+    "hex": "#8B5A2B",
+    "bnFact": "চকলেট আর গাছের গুঁড়ির রং বাদামি।"
    },
    {
     "id": "black",
@@ -720,7 +805,8 @@
     "emoji": "⬛",
     "fact": "Black is the color of the night sky.",
     "bn": "কালো",
-    "hex": "#222222"
+    "hex": "#222222",
+    "bnFact": "রাতের আকাশের রং কালো।"
    },
    {
     "id": "white",
@@ -728,9 +814,11 @@
     "emoji": "⬜",
     "fact": "White is the color of milk and clouds.",
     "bn": "সাদা",
-    "hex": "#F5F5F5"
+    "hex": "#F5F5F5",
+    "bnFact": "দুধ আর মেঘের রং সাদা।"
    }
-  ]
+  ],
+  "titleBn": "রং"
  },
  {
   "id": "numbers",
@@ -751,7 +839,8 @@
     "fact": "1 — count 1 🍎!",
     "bn": "এক",
     "count": 1,
-    "object": "🍎"
+    "object": "🍎",
+    "bnFact": "এক — একটি আম গুনি।"
    },
    {
     "id": "n2",
@@ -760,7 +849,8 @@
     "fact": "2 — count 2 🐥!",
     "bn": "দুই",
     "count": 2,
-    "object": "🐥"
+    "object": "🐥",
+    "bnFact": "দুই — দুটি ছানা গুনি।"
    },
    {
     "id": "n3",
@@ -769,7 +859,8 @@
     "fact": "3 — count 3 ⭐!",
     "bn": "তিন",
     "count": 3,
-    "object": "⭐"
+    "object": "⭐",
+    "bnFact": "তিন — তিনটি তারা গুনি।"
    },
    {
     "id": "n4",
@@ -778,7 +869,8 @@
     "fact": "4 — count 4 🎈!",
     "bn": "চার",
     "count": 4,
-    "object": "🎈"
+    "object": "🎈",
+    "bnFact": "চার — চারটি বেলুন গুনি।"
    },
    {
     "id": "n5",
@@ -787,7 +879,8 @@
     "fact": "5 — count 5 🐟!",
     "bn": "পাঁচ",
     "count": 5,
-    "object": "🐟"
+    "object": "🐟",
+    "bnFact": "পাঁচ — পাঁচটি মাছ গুনি।"
    },
    {
     "id": "n6",
@@ -796,7 +889,8 @@
     "fact": "6 — count 6 🍓!",
     "bn": "ছয়",
     "count": 6,
-    "object": "🍓"
+    "object": "🍓",
+    "bnFact": "ছয় — ছয়টি স্ট্রবেরি গুনি।"
    },
    {
     "id": "n7",
@@ -805,7 +899,8 @@
     "fact": "7 — count 7 🌸!",
     "bn": "সাত",
     "count": 7,
-    "object": "🌸"
+    "object": "🌸",
+    "bnFact": "সাত — সাতটি ফুল গুনি।"
    },
    {
     "id": "n8",
@@ -814,7 +909,8 @@
     "fact": "8 — count 8 🐞!",
     "bn": "আট",
     "count": 8,
-    "object": "🐞"
+    "object": "🐞",
+    "bnFact": "আট — আটটি লেডিবাগ গুনি।"
    },
    {
     "id": "n9",
@@ -823,7 +919,8 @@
     "fact": "9 — count 9 🚗!",
     "bn": "নয়",
     "count": 9,
-    "object": "🚗"
+    "object": "🚗",
+    "bnFact": "নয় — নয়টি গাড়ি গুনি।"
    },
    {
     "id": "n10",
@@ -832,9 +929,11 @@
     "fact": "10 — count 10 🍪!",
     "bn": "দশ",
     "count": 10,
-    "object": "🍪"
+    "object": "🍪",
+    "bnFact": "দশ — দশটি বিস্কুট গুনি।"
    }
-  ]
+  ],
+  "titleBn": "সংখ্যা ১-১০"
  },
  {
   "id": "countries",
@@ -854,7 +953,8 @@
     "emoji": "🇧🇩",
     "fact": "Capital: Dhaka. Home of the Sundarbans, the biggest mangrove forest.",
     "bn": "বাংলাদেশ",
-    "capital": "Dhaka"
+    "capital": "Dhaka",
+    "bnFact": "বাংলাদেশের রাজধানী ঢাকা। এখানে আছে সবচেয়ে বড় ম্যানগ্রোভ বন সুন্দরবন।"
    },
    {
     "id": "india",
@@ -862,7 +962,8 @@
     "emoji": "🇮🇳",
     "fact": "Capital: New Delhi. The Taj Mahal is in India.",
     "bn": "ভারত",
-    "capital": "New Delhi"
+    "capital": "New Delhi",
+    "bnFact": "ভারতের রাজধানী নয়াদিল্লি। তাজমহল ভারতে।"
    },
    {
     "id": "usa",
@@ -870,7 +971,8 @@
     "emoji": "🇺🇸",
     "fact": "Capital: Washington, D.C. It has 50 states.",
     "bn": "যুক্তরাষ্ট্র",
-    "capital": "Washington, D.C."
+    "capital": "Washington, D.C.",
+    "bnFact": "যুক্তরাষ্ট্রের রাজধানী ওয়াশিংটন ডিসি। এখানে ৫০টি অঙ্গরাজ্য।"
    },
    {
     "id": "uk",
@@ -878,7 +980,8 @@
     "emoji": "🇬🇧",
     "fact": "Capital: London. Famous for Big Ben.",
     "bn": "যুক্তরাজ্য",
-    "capital": "London"
+    "capital": "London",
+    "bnFact": "যুক্তরাজ্যের রাজধানী লন্ডন। বিগ বেন ঘড়ি সেখানে।"
    },
    {
     "id": "japan",
@@ -886,7 +989,8 @@
     "emoji": "🇯🇵",
     "fact": "Capital: Tokyo. Called the land of the rising sun.",
     "bn": "জাপান",
-    "capital": "Tokyo"
+    "capital": "Tokyo",
+    "bnFact": "জাপানের রাজধানী টোকিও। একে সূর্যোদয়ের দেশ বলে।"
    },
    {
     "id": "china",
@@ -894,7 +998,8 @@
     "emoji": "🇨🇳",
     "fact": "Capital: Beijing. The Great Wall of China is very, very long.",
     "bn": "চীন",
-    "capital": "Beijing"
+    "capital": "Beijing",
+    "bnFact": "চীনের রাজধানী বেইজিং। চীনের মহাপ্রাচীর অনেক লম্বা।"
    },
    {
     "id": "egypt",
@@ -902,7 +1007,8 @@
     "emoji": "🇪🇬",
     "fact": "Capital: Cairo. Home of the great pyramids.",
     "bn": "মিশর",
-    "capital": "Cairo"
+    "capital": "Cairo",
+    "bnFact": "মিশরের রাজধানী কায়রো। সেখানে বিখ্যাত পিরামিড আছে।"
    },
    {
     "id": "france",
@@ -910,7 +1016,8 @@
     "emoji": "🇫🇷",
     "fact": "Capital: Paris. The Eiffel Tower is in Paris.",
     "bn": "ফ্রান্স",
-    "capital": "Paris"
+    "capital": "Paris",
+    "bnFact": "ফ্রান্সের রাজধানী প্যারিস। আইফেল টাওয়ার সেখানে।"
    },
    {
     "id": "brazil",
@@ -918,7 +1025,8 @@
     "emoji": "🇧🇷",
     "fact": "Capital: Brasília. The Amazon rainforest is in Brazil.",
     "bn": "ব্রাজিল",
-    "capital": "Brasília"
+    "capital": "Brasília",
+    "bnFact": "ব্রাজিলের রাজধানী ব্রাসিলিয়া। আমাজন বন সেখানে।"
    },
    {
     "id": "australia",
@@ -926,7 +1034,8 @@
     "emoji": "🇦🇺",
     "fact": "Capital: Canberra. Kangaroos and koalas live here.",
     "bn": "অস্ট্রেলিয়া",
-    "capital": "Canberra"
+    "capital": "Canberra",
+    "bnFact": "অস্ট্রেলিয়ার রাজধানী ক্যানবেরা। ক্যাঙ্গারু সেখানে থাকে।"
    },
    {
     "id": "saudi",
@@ -934,7 +1043,8 @@
     "emoji": "🇸🇦",
     "fact": "Capital: Riyadh. It has huge deserts.",
     "bn": "সৌদি আরব",
-    "capital": "Riyadh"
+    "capital": "Riyadh",
+    "bnFact": "সৌদি আরবের রাজধানী রিয়াদ। সেখানে বড় বড় মরুভূমি আছে।"
    },
    {
     "id": "canada",
@@ -942,9 +1052,11 @@
     "emoji": "🇨🇦",
     "fact": "Capital: Ottawa. The maple leaf is on its flag.",
     "bn": "কানাডা",
-    "capital": "Ottawa"
+    "capital": "Ottawa",
+    "bnFact": "কানাডার রাজধানী অটোয়া। তাদের পতাকায় ম্যাপল পাতা।"
    }
-  ]
+  ],
+  "titleBn": "দেশ"
  },
  {
   "id": "space",
@@ -963,58 +1075,67 @@
     "name": "Sun",
     "emoji": "☀️",
     "fact": "The Sun is a star. It gives us light and heat.",
-    "bn": "সূর্য"
+    "bn": "সূর্য",
+    "bnFact": "সূর্য একটি তারা। সূর্য আমাদের আলো আর তাপ দেয়।"
    },
    {
     "id": "moon",
     "name": "Moon",
     "emoji": "🌙",
     "fact": "The Moon goes around the Earth.",
-    "bn": "চাঁদ"
+    "bn": "চাঁদ",
+    "bnFact": "চাঁদ পৃথিবীর চারপাশে ঘোরে।"
    },
    {
     "id": "earth",
     "name": "Earth",
     "emoji": "🌍",
     "fact": "Earth is our home planet. It has water and air.",
-    "bn": "পৃথিবী"
+    "bn": "পৃথিবী",
+    "bnFact": "পৃথিবী আমাদের বাড়ি। এখানে পানি আর বাতাস আছে।"
    },
    {
     "id": "mars",
     "name": "Mars",
     "emoji": "🔴",
     "fact": "Mars is called the red planet.",
-    "bn": "মঙ্গল"
+    "bn": "মঙ্গল",
+    "bnFact": "মঙ্গল গ্রহকে লাল গ্রহ বলে।"
    },
    {
     "id": "jupiter",
     "name": "Jupiter",
     "emoji": "🟠",
     "fact": "Jupiter is the biggest planet.",
-    "bn": "বৃহস্পতি"
+    "bn": "বৃহস্পতি",
+    "bnFact": "বৃহস্পতি সবচেয়ে বড় গ্রহ।"
    },
    {
     "id": "saturn",
     "name": "Saturn",
     "emoji": "🪐",
     "fact": "Saturn has beautiful rings made of ice and rock.",
-    "bn": "শনি"
+    "bn": "শনি",
+    "bnFact": "শনি গ্রহের চারপাশে সুন্দর বলয় আছে।"
    },
    {
     "id": "comet",
     "name": "Comet",
     "emoji": "☄️",
     "fact": "A comet is a ball of ice and dust with a shiny tail.",
-    "bn": "ধূমকেতু"
+    "bn": "ধূমকেতু",
+    "bnFact": "ধূমকেতুর উজ্জ্বল লম্বা লেজ থাকে।"
    },
    {
     "id": "astronaut",
     "name": "Astronaut",
     "emoji": "🧑‍🚀",
     "fact": "Astronauts are people who travel to space.",
-    "bn": "নভোচারী"
+    "bn": "নভোচারী",
+    "bnFact": "নভোচারীরা মহাকাশে ভ্রমণ করেন।"
    }
-  ]
+  ],
+  "titleBn": "মহাকাশ"
  },
  {
   "id": "body",
@@ -1033,58 +1154,67 @@
     "name": "Eyes",
     "emoji": "👀",
     "fact": "We see with our eyes.",
-    "bn": "চোখ"
+    "bn": "চোখ",
+    "bnFact": "চোখ দিয়ে আমরা দেখি।"
    },
    {
     "id": "ears",
     "name": "Ears",
     "emoji": "👂",
     "fact": "We hear with our ears.",
-    "bn": "কান"
+    "bn": "কান",
+    "bnFact": "কান দিয়ে আমরা শুনি।"
    },
    {
     "id": "nose",
     "name": "Nose",
     "emoji": "👃",
     "fact": "We smell with our nose.",
-    "bn": "নাক"
+    "bn": "নাক",
+    "bnFact": "নাক দিয়ে আমরা গন্ধ পাই।"
    },
    {
     "id": "mouth",
     "name": "Mouth",
     "emoji": "👄",
     "fact": "We eat and talk with our mouth.",
-    "bn": "মুখ"
+    "bn": "মুখ",
+    "bnFact": "মুখ দিয়ে আমরা খাই আর কথা বলি।"
    },
    {
     "id": "hand",
     "name": "Hand",
     "emoji": "✋",
     "fact": "We have five fingers on each hand.",
-    "bn": "হাত"
+    "bn": "হাত",
+    "bnFact": "প্রতিটি হাতে পাঁচটি আঙুল।"
    },
    {
     "id": "foot",
     "name": "Foot",
     "emoji": "🦶",
     "fact": "We walk and run with our feet.",
-    "bn": "পা"
+    "bn": "পা",
+    "bnFact": "পা দিয়ে আমরা হাঁটি আর দৌড়াই।"
    },
    {
     "id": "brain",
     "name": "Brain",
     "emoji": "🧠",
     "fact": "Our brain helps us think and learn.",
-    "bn": "মস্তিষ্ক"
+    "bn": "মস্তিষ্ক",
+    "bnFact": "মস্তিষ্ক দিয়ে আমরা চিন্তা করি আর শিখি।"
    },
    {
     "id": "teeth",
     "name": "Teeth",
     "emoji": "🦷",
     "fact": "Brush your teeth two times every day!",
-    "bn": "দাঁত"
+    "bn": "দাঁত",
+    "bnFact": "প্রতিদিন দুইবার দাঁত মাজো!"
    }
-  ]
+  ],
+  "titleBn": "আমার শরীর"
  },
  {
   "id": "jobs",
@@ -1103,58 +1233,67 @@
     "name": "Doctor",
     "emoji": "🧑‍⚕️",
     "fact": "Doctors help sick people get well.",
-    "bn": "ডাক্তার"
+    "bn": "ডাক্তার",
+    "bnFact": "ডাক্তার অসুস্থ মানুষকে সুস্থ করেন।"
    },
    {
     "id": "teacher",
     "name": "Teacher",
     "emoji": "🧑‍🏫",
     "fact": "Teachers help us learn new things.",
-    "bn": "শিক্ষক"
+    "bn": "শিক্ষক",
+    "bnFact": "শিক্ষক আমাদের নতুন নতুন জিনিস শেখান।"
    },
    {
     "id": "farmer",
     "name": "Farmer",
     "emoji": "🧑‍🌾",
     "fact": "Farmers grow the food we eat.",
-    "bn": "কৃষক"
+    "bn": "কৃষক",
+    "bnFact": "কৃষক আমাদের খাবারের ফসল ফলান।"
    },
    {
     "id": "firefighter",
     "name": "Firefighter",
     "emoji": "🧑‍🚒",
     "fact": "Firefighters put out fires and rescue people.",
-    "bn": "দমকল কর্মী"
+    "bn": "দমকল কর্মী",
+    "bnFact": "দমকল কর্মী আগুন নেভান আর মানুষ বাঁচান।"
    },
    {
     "id": "pilot",
     "name": "Pilot",
     "emoji": "🧑‍✈️",
     "fact": "Pilots fly airplanes.",
-    "bn": "পাইলট"
+    "bn": "পাইলট",
+    "bnFact": "পাইলট উড়োজাহাজ চালান।"
    },
    {
     "id": "chef",
     "name": "Chef",
     "emoji": "🧑‍🍳",
     "fact": "Chefs cook yummy food.",
-    "bn": "রাঁধুনি"
+    "bn": "রাঁধুনি",
+    "bnFact": "রাঁধুনি মজার মজার খাবার রান্না করেন।"
    },
    {
     "id": "scientist",
     "name": "Scientist",
     "emoji": "🧑‍🔬",
     "fact": "Scientists do experiments to discover new things.",
-    "bn": "বিজ্ঞানী"
+    "bn": "বিজ্ঞানী",
+    "bnFact": "বিজ্ঞানী পরীক্ষা করে নতুন জিনিস আবিষ্কার করেন।"
    },
    {
     "id": "engineer",
     "name": "Engineer",
     "emoji": "🧑‍💻",
     "fact": "Engineers build machines, bridges, apps and robots.",
-    "bn": "প্রকৌশলী"
+    "bn": "প্রকৌশলী",
+    "bnFact": "প্রকৌশলী সেতু, যন্ত্র, অ্যাপ আর রোবট বানান।"
    }
-  ]
+  ],
+  "titleBn": "পেশা ও সাহায্যকারী"
  },
  {
   "id": "feelings",
@@ -1174,51 +1313,59 @@
     "name": "Happy",
     "emoji": "😊",
     "fact": "When we feel happy, we smile. Share your happiness!",
-    "bn": "খুশি"
+    "bn": "খুশি",
+    "bnFact": "খুশি হলে আমরা হাসি। আনন্দ ভাগ করে নাও।"
    },
    {
     "id": "sad",
     "name": "Sad",
     "emoji": "😢",
     "fact": "It is okay to feel sad. Talk to someone you love.",
-    "bn": "দুঃখী"
+    "bn": "দুঃখী",
+    "bnFact": "দুঃখ লাগা স্বাভাবিক। প্রিয় কাউকে বলো।"
    },
    {
     "id": "angry",
     "name": "Angry",
     "emoji": "😠",
     "fact": "When angry, take 3 deep breaths: in... and out.",
-    "bn": "রাগী"
+    "bn": "রাগী",
+    "bnFact": "রাগ হলে তিনবার লম্বা শ্বাস নাও।"
    },
    {
     "id": "scared",
     "name": "Scared",
     "emoji": "😨",
     "fact": "When scared, hold a grown-up's hand. You are brave!",
-    "bn": "ভীত"
+    "bn": "ভীত",
+    "bnFact": "ভয় পেলে বড় কারো হাত ধরো। তুমি সাহসী!"
    },
    {
     "id": "surprised",
     "name": "Surprised",
     "emoji": "😮",
     "fact": "Wow! Surprises can be fun.",
-    "bn": "অবাক"
+    "bn": "অবাক",
+    "bnFact": "বাহ! অবাক হওয়া খুব মজার।"
    },
    {
     "id": "calm",
     "name": "Calm",
     "emoji": "😌",
     "fact": "Calm means quiet and peaceful inside.",
-    "bn": "শান্ত"
+    "bn": "শান্ত",
+    "bnFact": "শান্ত মানে মনের ভেতর চুপচাপ আর আরাম।"
    },
    {
     "id": "kind",
     "name": "Kind",
     "emoji": "🤗",
     "fact": "Being kind makes everyone feel good.",
-    "bn": "দয়ালু"
+    "bn": "দয়ালু",
+    "bnFact": "দয়ালু হলে সবাই ভালো বোধ করে।"
    }
-  ]
+  ],
+  "titleBn": "অনুভূতি"
  },
  {
   "id": "habits",
@@ -1238,57 +1385,66 @@
     "name": "Brush your teeth",
     "emoji": "🪥",
     "fact": "Brush in the morning and before bed.",
-    "bn": "দাঁত মাজো"
+    "bn": "দাঁত মাজো",
+    "bnFact": "সকালে আর রাতে ঘুমানোর আগে দাঁত মাজো।"
    },
    {
     "id": "wash",
     "name": "Wash your hands",
     "emoji": "🧼",
     "fact": "Wash hands with soap for 20 seconds before eating.",
-    "bn": "হাত ধোও"
+    "bn": "হাত ধোও",
+    "bnFact": "খাওয়ার আগে সাবান দিয়ে বিশ সেকেন্ড হাত ধোও।"
    },
    {
     "id": "sleep",
     "name": "Sleep on time",
     "emoji": "🛌",
     "fact": "Good sleep helps you grow and learn.",
-    "bn": "সময়মতো ঘুমাও"
+    "bn": "সময়মতো ঘুমাও",
+    "bnFact": "ভালো ঘুম তোমাকে বড় হতে আর শিখতে সাহায্য করে।"
    },
    {
     "id": "water",
     "name": "Drink water",
     "emoji": "💧",
     "fact": "Water keeps your body happy and healthy.",
-    "bn": "পানি পান করো"
+    "bn": "পানি পান করো",
+    "bnFact": "পানি শরীরকে সুস্থ রাখে।"
    },
    {
     "id": "share",
     "name": "Share with friends",
     "emoji": "🤝",
     "fact": "Sharing makes friends happy.",
-    "bn": "ভাগ করে নাও"
+    "bn": "ভাগ করে নাও",
+    "bnFact": "ভাগ করে নিলে বন্ধুরা খুশি হয়।"
    },
    {
     "id": "thanks",
     "name": "Say thank you",
     "emoji": "🙏",
     "fact": "Say \"thank you\" when someone helps you.",
-    "bn": "ধন্যবাদ বলো"
+    "bn": "ধন্যবাদ বলো",
+    "bnFact": "কেউ সাহায্য করলে বলো, ধন্যবাদ।"
    },
    {
     "id": "tidy",
     "name": "Tidy your toys",
     "emoji": "🧸",
     "fact": "Put toys back after playing.",
-    "bn": "খেলনা গুছিয়ে রাখো"
+    "bn": "খেলনা গুছিয়ে রাখো",
+    "bnFact": "খেলা শেষে খেলনা গুছিয়ে রাখো।"
    },
    {
     "id": "road",
     "name": "Cross the road safely",
     "emoji": "🚦",
     "fact": "Stop, look left and right, then cross with a grown-up.",
-    "bn": "নিরাপদে রাস্তা পার হও"
+    "bn": "নিরাপদে রাস্তা পার হও",
+    "bnFact": "থামো, ডানে-বামে দেখো, তারপর বড় কারো সাথে রাস্তা পার হও।"
    }
-  ]
+  ],
+  "titleBn": "ভালো অভ্যাস"
  }
 ]

@@ -1,24 +1,38 @@
 import 'dart:math';
+import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
-/// Letter tracing pad with sparkle particles. Fires [onDone] once when the kid
-/// has drawn across enough of the letter.
+import '../services/logic.dart';
+
+/// Letter tracing pad with sparkles.
+///
+/// Uses raw pointer events (a `Listener`), so the scrolling bottom sheet can't steal
+/// the finger mid-stroke, and tells the parent to lock scrolling while drawing.
+/// Completion is measured against a pixel mask of the real glyph, so it works for
+/// thin Bangla/Hindi letters as well as fat Latin ones.
 class TracePad extends StatefulWidget {
-  const TracePad({super.key, required this.char, required this.color, this.onDone});
+  const TracePad({super.key, required this.char, required this.color, this.onDone, this.onDrawingChanged, this.fontFamily, this.label});
   final String char;
   final Color color;
+  final String? fontFamily;
+  final String Function(int percent)? label;
   final VoidCallback? onDone;
+  final ValueChanged<bool>? onDrawingChanged;
+
   @override
   State<TracePad> createState() => _TracePadState();
 }
 
 class _Spark {
-  _Spark(this.p, this.v, this.color) : life = 1;
+  _Spark(this.p, this.v, this.color);
   Offset p, v;
-  double life;
+  double life = 1;
   final Color color;
 }
+
+const _grid = 64; // mask resolution (cells per side)
 
 class _TracePadState extends State<TracePad> with SingleTickerProviderStateMixin {
   final List<List<Offset>> strokes = [];
@@ -28,6 +42,9 @@ class _TracePadState extends State<TracePad> with SingleTickerProviderStateMixin
   bool _done = false;
   double coverage = 0;
   Size _size = Size.zero;
+  List<bool>? _mask;
+  String _maskKey = '';
+  int? _pointer;
 
   @override
   void didUpdateWidget(covariant TracePad old) {
@@ -41,12 +58,47 @@ class _TracePadState extends State<TracePad> with SingleTickerProviderStateMixin
     super.dispose();
   }
 
+  TextStyle _style(double side, Paint? paint) => TextStyle(
+        fontSize: side * (widget.char.characters.length > 1 ? 0.42 : 0.68),
+        fontWeight: FontWeight.w800,
+        fontFamily: widget.fontFamily,
+        fontFamilyFallback: const ['Baloo2', 'HindSiliguri'],
+        foreground: paint,
+        color: paint == null ? const Color(0x22000000) : null,
+        height: 1.15,
+      );
+
+  TextPainter _glyph(double side, {Paint? paint}) =>
+      TextPainter(text: TextSpan(text: widget.char, style: _style(side, paint)), textDirection: TextDirection.ltr)..layout();
+
+  Offset _glyphOffset(TextPainter tp, Size size) => Offset((size.width - tp.width) / 2, (size.height - tp.height) / 2);
+
+  /// Rasterise the glyph at grid resolution once per letter/size.
+  Future<void> _buildMask(Size size) async {
+    final key = '${widget.char}@${size.width.round()}';
+    if (_maskKey == key) return;
+    _maskKey = key;
+    final scale = _grid / size.width;
+    final rec = ui.PictureRecorder();
+    final canvas = Canvas(rec)..scale(scale);
+    final tp = _glyph(size.width, paint: Paint()..color = Colors.black);
+    tp.paint(canvas, _glyphOffset(tp, size));
+    final img = await rec.endRecording().toImage(_grid, _grid);
+    final data = await img.toByteData(format: ui.ImageByteFormat.rawRgba);
+    img.dispose();
+    if (data == null || !mounted || _maskKey != key) return;
+    _mask = List.generate(_grid * _grid, (i) => data.getUint8(i * 4 + 3) > 60);
+  }
+
   void _step() {
-    if (sparks.isEmpty) return;
+    if (sparks.isEmpty) {
+      _tick.stop();
+      return;
+    }
     for (final s in sparks) {
       s.p += s.v;
       s.v += const Offset(0, 0.25);
-      s.life -= 0.03;
+      s.life -= 0.035;
     }
     sparks.removeWhere((s) => s.life <= 0);
     setState(() {});
@@ -68,106 +120,134 @@ class _TracePadState extends State<TracePad> with SingleTickerProviderStateMixin
     });
   }
 
-  /// Approximate coverage: sample points inside the glyph's ink box and check
-  /// distance to the drawn strokes. (Pixel-perfect checks need image decoding; this
-  /// is fast and forgiving, which is what toddlers need.)
   void _measure() {
-    if (_size == Size.zero) return;
-    final tp = _glyph(_size);
-    final box = Rect.fromCenter(center: _size.center(Offset.zero), width: tp.width * 0.8, height: tp.height * 0.7);
-    final pts = strokes.expand((s) => s).toList();
-    if (pts.isEmpty) return;
-    var hit = 0, total = 0;
-    final r = _size.width * 0.09;
-    for (var y = box.top; y <= box.bottom; y += box.height / 6) {
-      for (var x = box.left; x <= box.right; x += box.width / 6) {
-        total++;
-        if (pts.any((p) => (p - Offset(x, y)).distance < r)) hit++;
-      }
+    final mask = _mask;
+    if (mask == null || _size == Size.zero) return;
+    final k = _grid / _size.width;
+    final drawn = List<bool>.filled(_grid * _grid, false);
+    for (final s in strokes) {
+      stampStroke(drawn, _grid, [for (final p in s) Point(p.dx * k, p.dy * k)], _brush(_size.width) * k / 2);
     }
-    final outside = pts.where((p) => !box.inflate(r).contains(p)).length / pts.length;
-    setState(() => coverage = hit / max(1, total));
-    if (coverage > 0.42 && outside < 0.35 && !_done) {
+    final (cov, outside) = traceScore(mask, drawn, _grid);
+    setState(() => coverage = cov);
+    if (cov > 0.6 && outside < 0.45 && !_done) {
       _done = true;
+      HapticFeedback.mediumImpact();
       widget.onDone?.call();
     }
   }
 
-  TextPainter _glyph(Size size) => TextPainter(
-    text: TextSpan(
-      text: widget.char,
-      style: TextStyle(fontSize: size.width * (widget.char.characters.length > 1 ? 0.4 : 0.68), fontWeight: FontWeight.w800, color: Colors.black12),
-    ),
-    textDirection: TextDirection.ltr,
-  )..layout();
+  double _brush(double side) => side * 0.075;
+
+  void _down(PointerDownEvent e) {
+    if (_pointer != null) return; // one finger at a time
+    _pointer = e.pointer;
+    widget.onDrawingChanged?.call(true);
+    HapticFeedback.selectionClick();
+    setState(() => strokes.add([e.localPosition]));
+    _spark(e.localPosition);
+  }
+
+  void _move(PointerMoveEvent e) {
+    if (e.pointer != _pointer) return;
+    setState(() => strokes.last.add(e.localPosition));
+    _spark(e.localPosition);
+  }
+
+  void _up(PointerEvent e) {
+    if (e.pointer != _pointer) return;
+    _pointer = null;
+    widget.onDrawingChanged?.call(false);
+    _measure();
+  }
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        AspectRatio(
-          aspectRatio: 1,
-          child: LayoutBuilder(
-            builder: (context, box) {
-              _size = box.biggest;
-              return GestureDetector(
-                onPanStart: (d) => setState(() {
-                  strokes.add([d.localPosition]);
-                  _spark(d.localPosition);
-                }),
-                onPanUpdate: (d) => setState(() {
-                  strokes.last.add(d.localPosition);
-                  _spark(d.localPosition);
-                }),
-                onPanEnd: (_) => _measure(),
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(28),
-                    border: Border.all(color: widget.color.withValues(alpha: 0.3), width: 4),
+    final percent = (coverage * 100).round();
+    return Column(children: [
+      AspectRatio(
+        aspectRatio: 1,
+        child: LayoutBuilder(builder: (context, box) {
+          final size = box.biggest;
+          if (_size != size) {
+            _size = size;
+            _buildMask(size);
+          }
+          return Listener(
+            behavior: HitTestBehavior.opaque,
+            onPointerDown: _down,
+            onPointerMove: _move,
+            onPointerUp: _up,
+            onPointerCancel: _up,
+            // An empty pan handler wins the gesture arena on the pad, so parent scroll views
+            // never start a drag from here (drawing itself uses the raw pointer events above).
+            child: GestureDetector(
+              onPanStart: (_) {},
+              onPanUpdate: (_) {},
+              child: Container(
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(28),
+                border: Border.all(color: _done ? Colors.green : widget.color.withValues(alpha: 0.3), width: 4),
+              ),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(24),
+                child: CustomPaint(
+                  painter: _TracePainter(
+                    fill: _glyph(size.width),
+                    outline: _glyph(
+                      size.width,
+                      paint: Paint()
+                        ..style = PaintingStyle.stroke
+                        ..strokeWidth = 2
+                        ..color = widget.color.withValues(alpha: 0.55),
+                    ),
+                    offsetOf: (tp) => _glyphOffset(tp, size),
+                    strokes: strokes,
+                    sparks: sparks,
+                    color: widget.color,
+                    brush: _brush(size.width),
                   ),
-                  child: CustomPaint(painter: _TracePainter(_glyph(_size), strokes, sparks, widget.color), size: Size.infinite),
+                  size: Size.infinite,
                 ),
-              );
-            },
-          ),
-        ),
-        const SizedBox(height: 8),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text('✏️ ${(coverage * 100).round()}% traced', style: const TextStyle(fontWeight: FontWeight.w800)),
-            const SizedBox(width: 12),
-            TextButton(
-              onPressed: _clear,
-              child: const Text('🧽 Clear', style: TextStyle(fontSize: 18)),
+              ),
             ),
-          ],
-        ),
-      ],
-    );
+            ),
+          );
+        }),
+      ),
+      const SizedBox(height: 8),
+      Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+        Text(_done ? '⭐⭐⭐ $percent%' : (widget.label?.call(percent) ?? '✏️ $percent%'), style: const TextStyle(fontWeight: FontWeight.w800, fontSize: 16)),
+        const SizedBox(width: 12),
+        TextButton.icon(onPressed: _clear, icon: const Text('🧽', style: TextStyle(fontSize: 18)), label: const Text('')),
+      ]),
+    ]);
   }
 }
 
 class _TracePainter extends CustomPainter {
-  _TracePainter(this.glyph, this.strokes, this.sparks, this.color);
-  final TextPainter glyph;
+  _TracePainter({required this.fill, required this.outline, required this.offsetOf, required this.strokes, required this.sparks, required this.color, required this.brush});
+  final TextPainter fill, outline;
+  final Offset Function(TextPainter) offsetOf;
   final List<List<Offset>> strokes;
   final List<_Spark> sparks;
   final Color color;
+  final double brush;
 
   @override
   void paint(Canvas canvas, Size size) {
-    glyph.paint(canvas, Offset((size.width - glyph.width) / 2, (size.height - glyph.height) / 2));
+    fill.paint(canvas, offsetOf(fill));
+    outline.paint(canvas, offsetOf(outline));
     final pen = Paint()
       ..color = color
-      ..strokeWidth = size.width * 0.06
+      ..strokeWidth = brush
       ..strokeCap = StrokeCap.round
       ..strokeJoin = StrokeJoin.round
       ..style = PaintingStyle.stroke;
     for (final s in strokes) {
       if (s.length == 1) {
-        canvas.drawCircle(s.first, pen.strokeWidth / 2, Paint()..color = color);
+        canvas.drawCircle(s.first, brush / 2, Paint()..color = color);
         continue;
       }
       final path = Path()..moveTo(s.first.dx, s.first.dy);

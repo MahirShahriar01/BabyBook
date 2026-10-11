@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useApp } from '../store/AppContext.jsx';
 import { Page, ProgressBar, TopBar, shuffle } from '../components/ui.jsx';
 import { speak } from '../lib/speech.js';
+import { quizText } from '../lib/localize.js';
 import { sfx } from '../lib/sound.js';
 
 const ROUND = 5;
@@ -18,7 +19,9 @@ export default function Quiz() {
   const [i, setI] = useState(0);
   const [picked, setPicked] = useState(null);
   const [score, setScore] = useState(0);
+  const ui = profile.uiLang === 'bn' ? 'bn' : 'en';
   const q = questions[i];
+  const qt = q ? quizText(q, ui) : null;
 
   const choose = (k) => {
     if (picked != null) return;
@@ -28,10 +31,10 @@ export default function Quiz() {
       sfx.star();
       setScore((s) => s + 1);
       complete('quiz', { id: q.id || q.q.slice(0, 40), name: q.q, celebrate: false });
-      speak('Correct!');
+      speak(t('correct'), { lang: ui });
     } else {
       sfx.wrong();
-      speak(`The answer is ${q.options[q.answer]}`);
+      speak(t('answerIs', { x: qt.options[q.answer] }), { lang: ui });
     }
     setTimeout(() => {
       setPicked(null);
@@ -52,12 +55,12 @@ export default function Quiz() {
           <motion.div style={{ fontSize: '5rem' }} animate={{ rotate: [0, -8, 8, 0] }} transition={{ repeat: Infinity, duration: 2.5 }}>
             {q.emoji || '❓'}
           </motion.div>
-          <h2 style={{ fontSize: 'clamp(1.4rem, 4vw, 2rem)' }}>{q.q}</h2>
-          <button className="btn ghost small" onClick={() => speak(q.q)}>
+          <h2 style={{ fontSize: 'clamp(1.4rem, 4vw, 2rem)' }}>{qt.q}</h2>
+          <button className="btn ghost small" onClick={() => speak(qt.q, { lang: ui })}>
             🔈 {t('listen')}
           </button>
           <div className="grid" style={{ width: '100%', gridTemplateColumns: 'repeat(auto-fit, minmax(170px, 1fr))' }}>
-            {q.options.map((o, k) => (
+            {qt.options.map((o, k) => (
               <motion.button
                 key={o}
                 className="btn big"
@@ -87,7 +90,7 @@ export default function Quiz() {
               setSeed((s) => s + 1);
             }}
           >
-            🔁 Play again
+            🔁 {t('playAgain')}
           </button>
         </motion.div>
       )}

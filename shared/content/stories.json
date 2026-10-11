@@ -1,165 +1,1275 @@
 [
-  {
-    "id": "thirsty-crow",
-    "title": "The Thirsty Crow",
-    "language": "en",
-    "emoji": "🐦",
-    "color": "#3DA5FF",
-    "ageGroups": ["2-4", "5-7", "8-10"],
-    "published": true,
-    "pages": [
-      { "scene": "☀️🌵🐦", "image": "", "text": "One hot summer day, a crow was very, very thirsty. He flew here and there looking for water." },
-      { "scene": "🐦🏺", "image": "", "text": "At last he found a pot. But the water was at the very bottom, and his beak could not reach it." },
-      { "scene": "🐦🤔💭", "image": "", "text": "The crow did not give up. He looked around and thought hard. Then he had a clever idea!" },
-      { "scene": "🪨🐦🏺", "image": "", "text": "He picked up small pebbles, one by one, and dropped them into the pot. Plop! Plop! Plop!" },
-      { "scene": "💧🏺🐦😊", "image": "", "text": "Slowly the water rose up, up, up! The crow drank happily and flew away singing." }
+ {
+  "id": "thirsty-crow",
+  "title": "The Thirsty Crow",
+  "language": "en",
+  "emoji": "🐦",
+  "color": "#3DA5FF",
+  "ageGroups": [
+   "2-4",
+   "5-7",
+   "8-10"
+  ],
+  "published": true,
+  "pages": [
+   {
+    "scene": "☀️🌵🐦",
+    "image": "",
+    "text": "One hot summer day, a crow was very, very thirsty. He flew here and there looking for water."
+   },
+   {
+    "scene": "🐦🏺",
+    "image": "",
+    "text": "At last he found a pot. But the water was at the very bottom, and his beak could not reach it."
+   },
+   {
+    "scene": "🐦🤔💭",
+    "image": "",
+    "text": "The crow did not give up. He looked around and thought hard. Then he had a clever idea!"
+   },
+   {
+    "scene": "🪨🐦🏺",
+    "image": "",
+    "text": "He picked up small pebbles, one by one, and dropped them into the pot. Plop! Plop! Plop!"
+   },
+   {
+    "scene": "💧🏺🐦😊",
+    "image": "",
+    "text": "Slowly the water rose up, up, up! The crow drank happily and flew away singing."
+   }
+  ],
+  "moral": "Never give up. Think calmly and you will find a way!",
+  "quiz": [
+   {
+    "question": "What did the crow put into the pot?",
+    "options": [
+     "Pebbles 🪨",
+     "Leaves 🍃",
+     "Bread 🍞"
     ],
-    "moral": "Never give up. Think calmly and you will find a way!",
-    "quiz": [
-      { "question": "What did the crow put into the pot?", "options": ["Pebbles 🪨", "Leaves 🍃", "Bread 🍞"], "answer": 0 },
-      { "question": "How did the crow feel at the end?", "options": ["Sad 😢", "Happy 😊", "Angry 😠"], "answer": 1 }
-    ]
-  },
-  {
-    "id": "lion-and-mouse",
-    "title": "The Lion and the Mouse",
-    "language": "en",
-    "emoji": "🦁",
-    "color": "#FFB23F",
-    "ageGroups": ["2-4", "5-7", "8-10"],
-    "published": true,
-    "pages": [
-      { "scene": "🦁😴🌳", "image": "", "text": "A big lion was sleeping under a tree. A tiny mouse ran over his nose by mistake." },
-      { "scene": "🦁😠🐭", "image": "", "text": "The lion woke up and caught the mouse. \"Please let me go,\" said the mouse. \"One day I will help you!\"" },
-      { "scene": "🦁😂🐭", "image": "", "text": "The lion laughed. \"How can a tiny mouse help me?\" But he was kind and let the mouse go." },
-      { "scene": "🦁🪢😟", "image": "", "text": "A few days later, the lion was caught in a hunter's net. He roared and roared, but he could not get out." },
-      { "scene": "🐭✂️🪢", "image": "", "text": "The little mouse heard him. She ran over and chewed the ropes with her sharp teeth." },
-      { "scene": "🦁❤️🐭", "image": "", "text": "The lion was free! \"Thank you, little friend,\" he said. From that day on, they were best friends." }
+    "answer": 0
+   },
+   {
+    "question": "How did the crow feel at the end?",
+    "options": [
+     "Sad 😢",
+     "Happy 😊",
+     "Angry 😠"
     ],
-    "moral": "Be kind to everyone. Even small friends can do big things!",
-    "quiz": [
-      { "question": "Who saved the lion?", "options": ["An elephant 🐘", "A mouse 🐭", "A bird 🐦"], "answer": 1 },
-      { "question": "How did the mouse free the lion?", "options": ["By singing", "By chewing the ropes", "By calling the police"], "answer": 1 }
-    ]
-  },
-  {
-    "id": "tortoise-and-hare",
-    "title": "The Tortoise and the Hare",
-    "language": "en",
-    "emoji": "🐢",
-    "color": "#22B573",
-    "ageGroups": ["5-7", "8-10"],
-    "published": true,
-    "pages": [
-      { "scene": "🐇💨😎", "image": "", "text": "Hare was very fast, and he liked to show off. \"Nobody can beat me!\" he said." },
-      { "scene": "🐢🙂🏁", "image": "", "text": "Tortoise said calmly, \"Let us have a race.\" All the animals laughed, but the race began." },
-      { "scene": "🐇💨🌳😴", "image": "", "text": "Hare ran far ahead. He was so sure he would win that he lay down under a tree and fell asleep." },
-      { "scene": "🐢🐢🐢➡️", "image": "", "text": "Tortoise kept walking. Slow and steady, step by step, he never stopped." },
-      { "scene": "🐢🏆🎉", "image": "", "text": "When Hare woke up, Tortoise was already crossing the finish line. Everyone cheered for Tortoise!" }
+    "answer": 1
+   }
+  ]
+ },
+ {
+  "id": "lion-and-mouse",
+  "title": "The Lion and the Mouse",
+  "language": "en",
+  "emoji": "🦁",
+  "color": "#FFB23F",
+  "ageGroups": [
+   "2-4",
+   "5-7",
+   "8-10"
+  ],
+  "published": true,
+  "pages": [
+   {
+    "scene": "🦁😴🌳",
+    "image": "",
+    "text": "A big lion was sleeping under a tree. A tiny mouse ran over his nose by mistake."
+   },
+   {
+    "scene": "🦁😠🐭",
+    "image": "",
+    "text": "The lion woke up and caught the mouse. \"Please let me go,\" said the mouse. \"One day I will help you!\""
+   },
+   {
+    "scene": "🦁😂🐭",
+    "image": "",
+    "text": "The lion laughed. \"How can a tiny mouse help me?\" But he was kind and let the mouse go."
+   },
+   {
+    "scene": "🦁🪢😟",
+    "image": "",
+    "text": "A few days later, the lion was caught in a hunter's net. He roared and roared, but he could not get out."
+   },
+   {
+    "scene": "🐭✂️🪢",
+    "image": "",
+    "text": "The little mouse heard him. She ran over and chewed the ropes with her sharp teeth."
+   },
+   {
+    "scene": "🦁❤️🐭",
+    "image": "",
+    "text": "The lion was free! \"Thank you, little friend,\" he said. From that day on, they were best friends."
+   }
+  ],
+  "moral": "Be kind to everyone. Even small friends can do big things!",
+  "quiz": [
+   {
+    "question": "Who saved the lion?",
+    "options": [
+     "An elephant 🐘",
+     "A mouse 🐭",
+     "A bird 🐦"
     ],
-    "moral": "Slow and steady wins the race. Keep trying and never be proud.",
-    "quiz": [
-      { "question": "Who won the race?", "options": ["Hare 🐇", "Tortoise 🐢", "Fox 🦊"], "answer": 1 },
-      { "question": "Why did Hare lose?", "options": ["He fell asleep", "He was hungry", "He got lost"], "answer": 0 }
-    ]
-  },
-  {
-    "id": "ant-and-grasshopper",
-    "title": "The Ant and the Grasshopper",
-    "language": "en",
-    "emoji": "🐜",
-    "color": "#FF8A3D",
-    "ageGroups": ["5-7", "8-10"],
-    "published": true,
-    "pages": [
-      { "scene": "☀️🦗🎻", "image": "", "text": "All summer long, Grasshopper played music and danced in the sunshine." },
-      { "scene": "🐜🌾🐜", "image": "", "text": "Ant worked hard every day, carrying food to her home for the winter." },
-      { "scene": "🦗😄🐜", "image": "", "text": "\"Come and play!\" said Grasshopper. \"I am saving food for winter,\" said Ant." },
-      { "scene": "❄️🦗🥶", "image": "", "text": "Soon winter came. Snow covered everything. Grasshopper was cold and hungry." },
-      { "scene": "🐜🏠🍲🦗", "image": "", "text": "Kind Ant shared her food. Grasshopper said, \"Next summer, I will work AND play!\"" }
+    "answer": 1
+   },
+   {
+    "question": "How did the mouse free the lion?",
+    "options": [
+     "By singing",
+     "By chewing the ropes",
+     "By calling the police"
     ],
-    "moral": "Work today so you are ready for tomorrow — and always share.",
-    "quiz": [
-      { "question": "What did Ant do in summer?", "options": ["Slept", "Saved food", "Played music"], "answer": 1 },
-      { "question": "What came after summer?", "options": ["Winter ❄️", "Spring 🌷", "Birthday 🎂"], "answer": 0 }
-    ]
-  },
-  {
-    "id": "boy-who-cried-wolf",
-    "title": "The Boy Who Cried Wolf",
-    "language": "en",
-    "emoji": "🐺",
-    "color": "#9B5CFF",
-    "ageGroups": ["5-7", "8-10"],
-    "published": true,
-    "pages": [
-      { "scene": "👦🐑🐑⛰️", "image": "", "text": "A shepherd boy watched his sheep on a hill. He felt bored." },
-      { "scene": "👦📣🏃‍♂️🏃‍♀️", "image": "", "text": "As a joke he shouted, \"Wolf! Wolf!\" The villagers ran up the hill, but there was no wolf." },
-      { "scene": "👦😂😠", "image": "", "text": "The boy laughed. He played the same trick again, and the villagers were very upset." },
-      { "scene": "🐺🐑👦😱", "image": "", "text": "Then a real wolf came! \"Wolf! Wolf!\" he cried. But this time nobody believed him." },
-      { "scene": "👦😔💭", "image": "", "text": "The boy learned a big lesson that day. He promised to always tell the truth." }
+    "answer": 1
+   }
+  ]
+ },
+ {
+  "id": "tortoise-and-hare",
+  "title": "The Tortoise and the Hare",
+  "language": "en",
+  "emoji": "🐢",
+  "color": "#22B573",
+  "ageGroups": [
+   "5-7",
+   "8-10"
+  ],
+  "published": true,
+  "pages": [
+   {
+    "scene": "🐇💨😎",
+    "image": "",
+    "text": "Hare was very fast, and he liked to show off. \"Nobody can beat me!\" he said."
+   },
+   {
+    "scene": "🐢🙂🏁",
+    "image": "",
+    "text": "Tortoise said calmly, \"Let us have a race.\" All the animals laughed, but the race began."
+   },
+   {
+    "scene": "🐇💨🌳😴",
+    "image": "",
+    "text": "Hare ran far ahead. He was so sure he would win that he lay down under a tree and fell asleep."
+   },
+   {
+    "scene": "🐢🐢🐢➡️",
+    "image": "",
+    "text": "Tortoise kept walking. Slow and steady, step by step, he never stopped."
+   },
+   {
+    "scene": "🐢🏆🎉",
+    "image": "",
+    "text": "When Hare woke up, Tortoise was already crossing the finish line. Everyone cheered for Tortoise!"
+   }
+  ],
+  "moral": "Slow and steady wins the race. Keep trying and never be proud.",
+  "quiz": [
+   {
+    "question": "Who won the race?",
+    "options": [
+     "Hare 🐇",
+     "Tortoise 🐢",
+     "Fox 🦊"
     ],
-    "moral": "Always tell the truth, so people can trust you.",
-    "quiz": [
-      { "question": "Why did nobody come the last time?", "options": ["They were asleep", "They did not believe him", "It was raining"], "answer": 1 }
-    ]
-  },
-  {
-    "id": "robo-and-seed",
-    "title": "Robo and the Little Seed",
-    "language": "en",
-    "emoji": "🤖",
-    "color": "#00C2D1",
-    "ageGroups": ["2-4", "5-7", "8-10"],
-    "published": true,
-    "pages": [
-      { "scene": "🤖🚀🌍", "image": "", "text": "Robo was a little robot who lived on a space station. He knew millions of facts!" },
-      { "scene": "🤖🌱❓", "image": "", "text": "One day he found a tiny seed. \"What are you?\" he asked. The seed did not answer." },
-      { "scene": "🤖💧☀️🌱", "image": "", "text": "Robo searched his memory: seeds need water, light and care. So he watered it every day." },
-      { "scene": "🤖⏳🌿", "image": "", "text": "Some days nothing happened. Robo learned that some things cannot be rushed — they need patience." },
-      { "scene": "🤖🌻😊", "image": "", "text": "One morning, a bright sunflower smiled at him! \"Facts are great,\" said Robo, \"but caring makes things grow.\"" }
+    "answer": 1
+   },
+   {
+    "question": "Why did Hare lose?",
+    "options": [
+     "He fell asleep",
+     "He was hungry",
+     "He got lost"
     ],
-    "moral": "Learning is wonderful, but kindness and patience help everything grow.",
-    "quiz": [
-      { "question": "What grew from the seed?", "options": ["A tree 🌳", "A sunflower 🌻", "A cactus 🌵"], "answer": 1 },
-      { "question": "What does a seed need?", "options": ["Water and light", "Candy", "Toys"], "answer": 0 }
-    ]
-  },
-  {
-    "id": "trishnarto-kak",
-    "title": "তৃষ্ণার্ত কাক",
-    "language": "bn",
-    "emoji": "🐦",
-    "color": "#FF4FA3",
-    "ageGroups": ["2-4", "5-7", "8-10"],
-    "published": true,
-    "pages": [
-      { "scene": "☀️🌵🐦", "image": "", "text": "এক গরমের দিনে একটি কাকের খুব পিপাসা পেল। সে পানির খোঁজে এদিক-ওদিক উড়ে বেড়াল।" },
-      { "scene": "🐦🏺", "image": "", "text": "অবশেষে সে একটি কলসি দেখতে পেল। কিন্তু পানি ছিল একদম নিচে, তার ঠোঁট পৌঁছাল না।" },
-      { "scene": "🪨🐦🏺", "image": "", "text": "কাকটি হাল ছাড়ল না। সে একটা একটা করে নুড়ি পাথর কলসিতে ফেলতে লাগল।" },
-      { "scene": "💧🐦😊", "image": "", "text": "ধীরে ধীরে পানি উপরে উঠে এল। কাকটি মনের আনন্দে পানি পান করে উড়ে গেল।" }
+    "answer": 0
+   }
+  ]
+ },
+ {
+  "id": "ant-and-grasshopper",
+  "title": "The Ant and the Grasshopper",
+  "language": "en",
+  "emoji": "🐜",
+  "color": "#FF8A3D",
+  "ageGroups": [
+   "5-7",
+   "8-10"
+  ],
+  "published": true,
+  "pages": [
+   {
+    "scene": "☀️🦗🎻",
+    "image": "",
+    "text": "All summer long, Grasshopper played music and danced in the sunshine."
+   },
+   {
+    "scene": "🐜🌾🐜",
+    "image": "",
+    "text": "Ant worked hard every day, carrying food to her home for the winter."
+   },
+   {
+    "scene": "🦗😄🐜",
+    "image": "",
+    "text": "\"Come and play!\" said Grasshopper. \"I am saving food for winter,\" said Ant."
+   },
+   {
+    "scene": "❄️🦗🥶",
+    "image": "",
+    "text": "Soon winter came. Snow covered everything. Grasshopper was cold and hungry."
+   },
+   {
+    "scene": "🐜🏠🍲🦗",
+    "image": "",
+    "text": "Kind Ant shared her food. Grasshopper said, \"Next summer, I will work AND play!\""
+   }
+  ],
+  "moral": "Work today so you are ready for tomorrow — and always share.",
+  "quiz": [
+   {
+    "question": "What did Ant do in summer?",
+    "options": [
+     "Slept",
+     "Saved food",
+     "Played music"
     ],
-    "moral": "ধৈর্য আর বুদ্ধি থাকলে সব সমস্যার সমাধান হয়।",
-    "quiz": [
-      { "question": "কাকটি কলসিতে কী ফেলেছিল?", "options": ["নুড়ি পাথর 🪨", "পাতা 🍃", "রুটি 🍞"], "answer": 0 }
-    ]
-  },
-  {
-    "id": "golden-goose-es",
-    "title": "La Gallina de los Huevos de Oro",
-    "language": "es",
-    "emoji": "🐔",
-    "color": "#FFC93C",
-    "ageGroups": ["5-7", "8-10"],
-    "published": true,
-    "pages": [
-      { "scene": "👨‍🌾🐔🥚✨", "image": "", "text": "Un granjero tenía una gallina mágica. Cada día ponía un huevo de oro." },
-      { "scene": "👨‍🌾🤑", "image": "", "text": "El granjero quería ser rico más rápido. \"¡Quiero todos los huevos ahora!\", pensó." },
-      { "scene": "👨‍🌾😢🐔", "image": "", "text": "Por su impaciencia, perdió a la gallina y ya no tuvo más huevos de oro." }
+    "answer": 1
+   },
+   {
+    "question": "What came after summer?",
+    "options": [
+     "Winter ❄️",
+     "Spring 🌷",
+     "Birthday 🎂"
     ],
-    "moral": "La avaricia rompe el saco. Sé paciente y agradecido.",
-    "quiz": [
-      { "question": "¿Qué ponía la gallina?", "options": ["Huevos de oro 🥚", "Manzanas 🍎", "Piedras 🪨"], "answer": 0 }
-    ]
-  }
+    "answer": 0
+   }
+  ]
+ },
+ {
+  "id": "boy-who-cried-wolf",
+  "title": "The Boy Who Cried Wolf",
+  "language": "en",
+  "emoji": "🐺",
+  "color": "#9B5CFF",
+  "ageGroups": [
+   "5-7",
+   "8-10"
+  ],
+  "published": true,
+  "pages": [
+   {
+    "scene": "👦🐑🐑⛰️",
+    "image": "",
+    "text": "A shepherd boy watched his sheep on a hill. He felt bored."
+   },
+   {
+    "scene": "👦📣🏃‍♂️🏃‍♀️",
+    "image": "",
+    "text": "As a joke he shouted, \"Wolf! Wolf!\" The villagers ran up the hill, but there was no wolf."
+   },
+   {
+    "scene": "👦😂😠",
+    "image": "",
+    "text": "The boy laughed. He played the same trick again, and the villagers were very upset."
+   },
+   {
+    "scene": "🐺🐑👦😱",
+    "image": "",
+    "text": "Then a real wolf came! \"Wolf! Wolf!\" he cried. But this time nobody believed him."
+   },
+   {
+    "scene": "👦😔💭",
+    "image": "",
+    "text": "The boy learned a big lesson that day. He promised to always tell the truth."
+   }
+  ],
+  "moral": "Always tell the truth, so people can trust you.",
+  "quiz": [
+   {
+    "question": "Why did nobody come the last time?",
+    "options": [
+     "They were asleep",
+     "They did not believe him",
+     "It was raining"
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ {
+  "id": "robo-and-seed",
+  "title": "Robo and the Little Seed",
+  "language": "en",
+  "emoji": "🤖",
+  "color": "#00C2D1",
+  "ageGroups": [
+   "2-4",
+   "5-7",
+   "8-10"
+  ],
+  "published": true,
+  "pages": [
+   {
+    "scene": "🤖🚀🌍",
+    "image": "",
+    "text": "Robo was a little robot who lived on a space station. He knew millions of facts!"
+   },
+   {
+    "scene": "🤖🌱❓",
+    "image": "",
+    "text": "One day he found a tiny seed. \"What are you?\" he asked. The seed did not answer."
+   },
+   {
+    "scene": "🤖💧☀️🌱",
+    "image": "",
+    "text": "Robo searched his memory: seeds need water, light and care. So he watered it every day."
+   },
+   {
+    "scene": "🤖⏳🌿",
+    "image": "",
+    "text": "Some days nothing happened. Robo learned that some things cannot be rushed — they need patience."
+   },
+   {
+    "scene": "🤖🌻😊",
+    "image": "",
+    "text": "One morning, a bright sunflower smiled at him! \"Facts are great,\" said Robo, \"but caring makes things grow.\""
+   }
+  ],
+  "moral": "Learning is wonderful, but kindness and patience help everything grow.",
+  "quiz": [
+   {
+    "question": "What grew from the seed?",
+    "options": [
+     "A tree 🌳",
+     "A sunflower 🌻",
+     "A cactus 🌵"
+    ],
+    "answer": 1
+   },
+   {
+    "question": "What does a seed need?",
+    "options": [
+     "Water and light",
+     "Candy",
+     "Toys"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ {
+  "id": "trishnarto-kak",
+  "title": "তৃষ্ণার্ত কাক",
+  "language": "bn",
+  "emoji": "🐦",
+  "color": "#FF4FA3",
+  "ageGroups": [
+   "2-4",
+   "5-7",
+   "8-10"
+  ],
+  "published": true,
+  "pages": [
+   {
+    "scene": "☀️🌵🐦",
+    "image": "",
+    "text": "এক গরমের দিনে একটি কাকের খুব পিপাসা পেল। সে পানির খোঁজে এদিক-ওদিক উড়ে বেড়াল।"
+   },
+   {
+    "scene": "🐦🏺",
+    "image": "",
+    "text": "অবশেষে সে একটি কলসি দেখতে পেল। কিন্তু পানি ছিল একদম নিচে, তার ঠোঁট পৌঁছাল না।"
+   },
+   {
+    "scene": "🪨🐦🏺",
+    "image": "",
+    "text": "কাকটি হাল ছাড়ল না। সে একটা একটা করে নুড়ি পাথর কলসিতে ফেলতে লাগল।"
+   },
+   {
+    "scene": "💧🐦😊",
+    "image": "",
+    "text": "ধীরে ধীরে পানি উপরে উঠে এল। কাকটি মনের আনন্দে পানি পান করে উড়ে গেল।"
+   }
+  ],
+  "moral": "ধৈর্য আর বুদ্ধি থাকলে সব সমস্যার সমাধান হয়।",
+  "quiz": [
+   {
+    "question": "কাকটি কলসিতে কী ফেলেছিল?",
+    "options": [
+     "নুড়ি পাথর 🪨",
+     "পাতা 🍃",
+     "রুটি 🍞"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ {
+  "id": "golden-goose-es",
+  "title": "La Gallina de los Huevos de Oro",
+  "language": "es",
+  "emoji": "🐔",
+  "color": "#FFC93C",
+  "ageGroups": [
+   "5-7",
+   "8-10"
+  ],
+  "published": true,
+  "pages": [
+   {
+    "scene": "👨‍🌾🐔🥚✨",
+    "image": "",
+    "text": "Un granjero tenía una gallina mágica. Cada día ponía un huevo de oro."
+   },
+   {
+    "scene": "👨‍🌾🤑",
+    "image": "",
+    "text": "El granjero quería ser rico más rápido. \"¡Quiero todos los huevos ahora!\", pensó."
+   },
+   {
+    "scene": "👨‍🌾😢🐔",
+    "image": "",
+    "text": "Por su impaciencia, perdió a la gallina y ya no tuvo más huevos de oro."
+   }
+  ],
+  "moral": "La avaricia rompe el saco. Sé paciente y agradecido.",
+  "quiz": [
+   {
+    "question": "¿Qué ponía la gallina?",
+    "options": [
+     "Huevos de oro 🥚",
+     "Manzanas 🍎",
+     "Piedras 🪨"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ {
+  "id": "fox-and-grapes",
+  "title": "The Fox and the Grapes",
+  "language": "en",
+  "emoji": "🦊",
+  "color": "#9B5CFF",
+  "ageGroups": [
+   "2-4",
+   "5-7",
+   "8-10"
+  ],
+  "published": true,
+  "pages": [
+   {
+    "scene": "🦊☀️🌳",
+    "image": "",
+    "text": "One sunny day, a hungry fox was walking in a garden."
+   },
+   {
+    "scene": "🍇🌿🦊",
+    "image": "",
+    "text": "High up on a vine, he saw a bunch of juicy purple grapes. \"Yum! Those look sweet!\" he said."
+   },
+   {
+    "scene": "🦊⬆️🍇",
+    "image": "",
+    "text": "He jumped. He missed! He jumped higher. He missed again!"
+   },
+   {
+    "scene": "🦊😓🍇",
+    "image": "",
+    "text": "He tried again and again until he was very tired. The grapes were still too high."
+   },
+   {
+    "scene": "🦊🙄🚶",
+    "image": "",
+    "text": "At last the fox walked away and said, \"Those grapes are sour anyway!\" But they were not sour at all."
+   }
+  ],
+  "moral": "When we cannot get something, we should not say bad things about it. It is okay to say, \"I could not do it yet.\"",
+  "quiz": [
+   {
+    "question": "What did the fox want?",
+    "options": [
+     "Grapes 🍇",
+     "Fish 🐟",
+     "Bread 🍞"
+    ],
+    "answer": 0
+   },
+   {
+    "question": "Were the grapes really sour?",
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ {
+  "id": "greedy-dog",
+  "title": "The Greedy Dog",
+  "language": "en",
+  "emoji": "🐕",
+  "color": "#FF8A3D",
+  "ageGroups": [
+   "2-4",
+   "5-7",
+   "8-10"
+  ],
+  "published": true,
+  "pages": [
+   {
+    "scene": "🐕🦴😋",
+    "image": "",
+    "text": "A dog found a big, tasty bone. He was so happy!"
+   },
+   {
+    "scene": "🐕🌉🏞️",
+    "image": "",
+    "text": "He carried the bone in his mouth and walked over a little bridge across a river."
+   },
+   {
+    "scene": "🐕👀💧",
+    "image": "",
+    "text": "He looked down into the water and saw another dog with another bone!"
+   },
+   {
+    "scene": "🐕😤🦴",
+    "image": "",
+    "text": "\"I want that bone too!\" thought the greedy dog. He opened his mouth to bark. WOOF!"
+   },
+   {
+    "scene": "💦🦴🐕😢",
+    "image": "",
+    "text": "Splash! His own bone fell into the river. The other dog was only his reflection. Now he had nothing."
+   }
+  ],
+  "moral": "Be happy with what you have. Greed can make us lose everything.",
+  "quiz": [
+   {
+    "question": "What did the dog see in the water?",
+    "options": [
+     "His reflection 🪞",
+     "A fish 🐟",
+     "A cat 🐱"
+    ],
+    "answer": 0
+   },
+   {
+    "question": "What happened to the bone?",
+    "options": [
+     "He ate it",
+     "It fell in the river",
+     "He gave it away"
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ {
+  "id": "honest-woodcutter",
+  "title": "The Honest Woodcutter",
+  "language": "en",
+  "emoji": "🪓",
+  "color": "#22B573",
+  "ageGroups": [
+   "2-4",
+   "5-7",
+   "8-10"
+  ],
+  "published": true,
+  "pages": [
+   {
+    "scene": "🧑‍🌾🌲🪓",
+    "image": "",
+    "text": "A poor woodcutter was cutting wood near a river."
+   },
+   {
+    "scene": "🪓💦😟",
+    "image": "",
+    "text": "Oops! His axe slipped from his hands and fell into the deep water. \"Oh no! How will I work now?\" he cried."
+   },
+   {
+    "scene": "🧚✨🪓",
+    "image": "",
+    "text": "A kind river fairy came up with a shiny golden axe. \"Is this your axe?\" she asked. \"No,\" said the woodcutter."
+   },
+   {
+    "scene": "🧚🥈🪓",
+    "image": "",
+    "text": "She brought a silver axe. \"No, that is not mine either,\" he said."
+   },
+   {
+    "scene": "🧚🪓😊",
+    "image": "",
+    "text": "Then she brought his old iron axe. \"Yes! That one is mine. Thank you!\""
+   },
+   {
+    "scene": "🧚🎁🧑‍🌾",
+    "image": "",
+    "text": "\"You are honest,\" smiled the fairy, and she gave him all three axes as a gift."
+   }
+  ],
+  "moral": "Always tell the truth. Honesty is the best treasure.",
+  "quiz": [
+   {
+    "question": "What fell into the river?",
+    "options": [
+     "An axe 🪓",
+     "A hat 🎩",
+     "A shoe 👟"
+    ],
+    "answer": 0
+   },
+   {
+    "question": "Why did the fairy give him all the axes?",
+    "options": [
+     "He was rich",
+     "He was honest",
+     "He was sad"
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ {
+  "id": "monkey-and-crocodile",
+  "title": "The Monkey and the Crocodile",
+  "language": "en",
+  "emoji": "🐒",
+  "color": "#00C2A8",
+  "ageGroups": [
+   "2-4",
+   "5-7",
+   "8-10"
+  ],
+  "published": true,
+  "pages": [
+   {
+    "scene": "🐒🌳🍎",
+    "image": "",
+    "text": "A clever monkey lived in a tree full of sweet fruits by a river."
+   },
+   {
+    "scene": "🐊🐒🍎",
+    "image": "",
+    "text": "Every day he shared fruits with his friend, a crocodile. They talked and laughed together."
+   },
+   {
+    "scene": "🐊😈❤️",
+    "image": "",
+    "text": "One day the crocodile said, \"Come to my home! Sit on my back.\" But in the middle of the river he said, \"My wife wants to eat your heart!\""
+   },
+   {
+    "scene": "🐒🤔💡",
+    "image": "",
+    "text": "The monkey stayed calm and thought fast. \"Oh no! I left my heart in the tree. Take me back and I will get it.\""
+   },
+   {
+    "scene": "🐒🌳😄",
+    "image": "",
+    "text": "The silly crocodile swam back. The monkey jumped up the tree and said, \"Nobody can leave their heart in a tree! Goodbye!\""
+   }
+  ],
+  "moral": "Stay calm when you are in trouble. Thinking clearly helps you find a way out.",
+  "quiz": [
+   {
+    "question": "Where did the monkey live?",
+    "options": [
+     "In a tree 🌳",
+     "In a cave",
+     "In the river"
+    ],
+    "answer": 0
+   },
+   {
+    "question": "How did the monkey escape?",
+    "options": [
+     "He ran fast",
+     "He used a clever idea",
+     "He called for help"
+    ],
+    "answer": 1
+   }
+  ]
+ },
+ {
+  "id": "shiyal-o-saras",
+  "title": "শিয়াল ও সারস",
+  "language": "bn",
+  "emoji": "🦊",
+  "color": "#FF8A3D",
+  "ageGroups": [
+   "2-4",
+   "5-7",
+   "8-10"
+  ],
+  "published": true,
+  "pages": [
+   {
+    "scene": "🦊🏡🦢",
+    "image": "",
+    "text": "এক বনে থাকত এক চালাক শিয়াল আর এক লম্বা ঠোঁটের সারস পাখি। একদিন শিয়াল সারসকে দাওয়াত দিল।"
+   },
+   {
+    "scene": "🦊🍲🍽️",
+    "image": "",
+    "text": "শিয়াল চ্যাপ্টা থালায় পাতলা স্যুপ খেতে দিল। শিয়াল চেটেপুটে সব খেয়ে ফেলল।"
+   },
+   {
+    "scene": "🦢😟🍽️",
+    "image": "",
+    "text": "কিন্তু সারস লম্বা ঠোঁট দিয়ে কিছুই খেতে পারল না। সে ক্ষুধার্ত অবস্থায় বাড়ি ফিরে গেল।"
+   },
+   {
+    "scene": "🦢🏺🦊",
+    "image": "",
+    "text": "কয়েক দিন পর সারস শিয়ালকে দাওয়াত দিল। সে খাবার দিল লম্বা সরু গলার কলসিতে।"
+   },
+   {
+    "scene": "🦢😋🦊😳",
+    "image": "",
+    "text": "সারস লম্বা ঠোঁট ডুবিয়ে মজা করে খেল। শিয়াল কিছুই খেতে পারল না। সে বুঝল, সারসের সাথে সে ঠিক কাজ করেনি।"
+   }
+  ],
+  "moral": "অন্যের সাথে তেমন আচরণ করো, যেমন আচরণ তুমি নিজে পেতে চাও।",
+  "quiz": [
+   {
+    "question": "শিয়াল সারসকে কীসে খাবার দিয়েছিল?",
+    "options": [
+     "চ্যাপ্টা থালায় 🍽️",
+     "কলসিতে 🏺",
+     "বাটিতে 🥣"
+    ],
+    "answer": 0
+   },
+   {
+    "question": "শেষে শিয়াল কী বুঝল?",
+    "options": [
+     "সে ঠিক কাজ করেনি",
+     "সারস খারাপ",
+     "খাবার মজার ছিল না"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ {
+  "id": "khorgosh-o-kochchhop",
+  "title": "খরগোশ ও কচ্ছপ",
+  "language": "bn",
+  "emoji": "🐢",
+  "color": "#22B573",
+  "ageGroups": [
+   "2-4",
+   "5-7",
+   "8-10"
+  ],
+  "published": true,
+  "pages": [
+   {
+    "scene": "🐇💨🐢",
+    "image": "",
+    "text": "এক খরগোশ খুব জোরে দৌড়াতে পারত। সে কচ্ছপকে দেখে হাসত, \"তুমি কত ধীরে হাঁটো!\""
+   },
+   {
+    "scene": "🐢🏁🐇",
+    "image": "",
+    "text": "কচ্ছপ শান্তভাবে বলল, \"চলো, আমরা দৌড় প্রতিযোগিতা করি।\" খরগোশ হেসে রাজি হলো।"
+   },
+   {
+    "scene": "🐇💨🌳",
+    "image": "",
+    "text": "দৌড় শুরু হলো! খরগোশ নিমেষে অনেক দূর চলে গেল।"
+   },
+   {
+    "scene": "🐇😴🌳",
+    "image": "",
+    "text": "খরগোশ ভাবল, \"কচ্ছপ তো অনেক পেছনে। একটু ঘুমিয়ে নিই।\" সে গাছের ছায়ায় ঘুমিয়ে পড়ল।"
+   },
+   {
+    "scene": "🐢🚶‍♂️🏁",
+    "image": "",
+    "text": "কচ্ছপ একটুও থামল না। ধীরে ধীরে, কিন্তু একটানা হেঁটে চলল।"
+   },
+   {
+    "scene": "🐢🏆🐇😮",
+    "image": "",
+    "text": "খরগোশ জেগে উঠে দেখে, কচ্ছপ শেষ দাগ পার হয়ে গেছে! কচ্ছপ জিতে গেল।"
+   }
+  ],
+  "moral": "ধীরে হলেও লেগে থাকলে জয় আসবেই। অহংকার করা ভালো নয়।",
+  "quiz": [
+   {
+    "question": "দৌড়ে কে জিতল?",
+    "options": [
+     "কচ্ছপ 🐢",
+     "খরগোশ 🐇"
+    ],
+    "answer": 0
+   },
+   {
+    "question": "খরগোশ পথে কী করল?",
+    "options": [
+     "ঘুমিয়ে পড়ল 😴",
+     "খাবার খেল",
+     "গান গাইল"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ {
+  "id": "singho-o-indur",
+  "title": "সিংহ ও ইঁদুর",
+  "language": "bn",
+  "emoji": "🦁",
+  "color": "#FFB23F",
+  "ageGroups": [
+   "2-4",
+   "5-7",
+   "8-10"
+  ],
+  "published": true,
+  "pages": [
+   {
+    "scene": "🦁😴🌳",
+    "image": "",
+    "text": "এক বনে গাছের নিচে এক বিশাল সিংহ ঘুমাচ্ছিল। একটা ছোট্ট ইঁদুর ভুল করে তার নাকের ওপর দিয়ে দৌড়ে গেল।"
+   },
+   {
+    "scene": "🦁😠🐭",
+    "image": "",
+    "text": "সিংহ জেগে উঠে ইঁদুরকে থাবা দিয়ে ধরে ফেলল। ইঁদুর বলল, \"দয়া করে আমাকে ছেড়ে দাও। একদিন আমি তোমার উপকার করব।\""
+   },
+   {
+    "scene": "🦁😂🐭",
+    "image": "",
+    "text": "সিংহ হাসল, \"এত ছোট্ট ইঁদুর আমার কী উপকার করবে?\" তবুও দয়া করে সে ইঁদুরকে ছেড়ে দিল।"
+   },
+   {
+    "scene": "🦁🪢😟",
+    "image": "",
+    "text": "কয়েক দিন পর সিংহ এক শিকারির জালে আটকে গেল। সে গর্জন করল, কিন্তু বের হতে পারল না।"
+   },
+   {
+    "scene": "🐭✂️🪢",
+    "image": "",
+    "text": "ইঁদুর গর্জন শুনে ছুটে এল। ধারালো দাঁত দিয়ে সে জালের দড়ি কেটে দিল।"
+   },
+   {
+    "scene": "🦁❤️🐭",
+    "image": "",
+    "text": "সিংহ মুক্ত হলো! সে বলল, \"ধন্যবাদ, ছোট্ট বন্ধু।\" সেদিন থেকে তারা ভালো বন্ধু হয়ে গেল।"
+   }
+  ],
+  "moral": "সবার প্রতি দয়া করো। ছোটরাও অনেক বড় উপকার করতে পারে।",
+  "quiz": [
+   {
+    "question": "সিংহ কীসে আটকে গিয়েছিল?",
+    "options": [
+     "জালে 🪢",
+     "গর্তে",
+     "খাঁচায়"
+    ],
+    "answer": 0
+   },
+   {
+    "question": "ইঁদুর কীভাবে সাহায্য করল?",
+    "options": [
+     "দাঁত দিয়ে দড়ি কেটে",
+     "শিকারিকে ডেকে",
+     "গান গেয়ে"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ {
+  "id": "pipra-o-ghasforing",
+  "title": "পিঁপড়া ও ঘাসফড়িং",
+  "language": "bn",
+  "emoji": "🐜",
+  "color": "#3DA5FF",
+  "ageGroups": [
+   "2-4",
+   "5-7",
+   "8-10"
+  ],
+  "published": true,
+  "pages": [
+   {
+    "scene": "☀️🐜🌾",
+    "image": "",
+    "text": "গরমকালে পিঁপড়ারা সারাদিন কাজ করত। তারা শীতের জন্য খাবার জমাত।"
+   },
+   {
+    "scene": "🦗🎻☀️",
+    "image": "",
+    "text": "ঘাসফড়িং শুধু গান গাইত আর লাফাত। সে বলত, \"এত কাজ কেন? চলো মজা করি!\""
+   },
+   {
+    "scene": "🐜🌾🏠",
+    "image": "",
+    "text": "পিঁপড়া বলল, \"শীত আসছে। এখনই খাবার জমিয়ে রাখা দরকার।\" ঘাসফড়িং কথা শুনল না।"
+   },
+   {
+    "scene": "❄️🦗🥶",
+    "image": "",
+    "text": "শীত এলো। চারদিকে ঠান্ডা, কোথাও খাবার নেই। ঘাসফড়িং খুব ক্ষুধার্ত হলো।"
+   },
+   {
+    "scene": "🦗🚪🐜",
+    "image": "",
+    "text": "সে পিঁপড়ার বাসায় গিয়ে খাবার চাইল। পিঁপড়ারা দয়া করে তাকে খাবার দিল।"
+   },
+   {
+    "scene": "🦗🙏🐜",
+    "image": "",
+    "text": "ঘাসফড়িং বলল, \"এবার থেকে আমিও কাজ করব, তারপর খেলব।\""
+   }
+  ],
+  "moral": "আগে থেকে পরিশ্রম করে প্রস্তুত থাকা ভালো। কাজের পরে খেলা।",
+  "quiz": [
+   {
+    "question": "পিঁপড়ারা গরমকালে কী করত?",
+    "options": [
+     "খাবার জমাত 🌾",
+     "ঘুমাত",
+     "গান গাইত"
+    ],
+    "answer": 0
+   },
+   {
+    "question": "শীতে ঘাসফড়িংয়ের কী হলো?",
+    "options": [
+     "খুব ক্ষুধার্ত হলো",
+     "খুশি হলো",
+     "অনেক খাবার পেল"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ {
+  "id": "rakhal-chhele",
+  "title": "রাখাল ছেলে ও বাঘ",
+  "language": "bn",
+  "emoji": "🐑",
+  "color": "#FF5D73",
+  "ageGroups": [
+   "2-4",
+   "5-7",
+   "8-10"
+  ],
+  "published": true,
+  "pages": [
+   {
+    "scene": "👦🐑⛰️",
+    "image": "",
+    "text": "এক গ্রামে এক রাখাল ছেলে পাহাড়ের ধারে ভেড়া চরাত।"
+   },
+   {
+    "scene": "👦📣😂",
+    "image": "",
+    "text": "একদিন মজা করার জন্য সে চিৎকার করল, \"বাঘ এসেছে! বাঘ এসেছে!\" গ্রামের লোকেরা লাঠি নিয়ে ছুটে এল।"
+   },
+   {
+    "scene": "👨‍🌾😠👦",
+    "image": "",
+    "text": "এসে দেখে কোনো বাঘ নেই! ছেলেটি হাসতে লাগল। লোকেরা রাগ করে ফিরে গেল।"
+   },
+   {
+    "scene": "👦📣🔁",
+    "image": "",
+    "text": "আরেক দিন সে আবার মিথ্যা বলল। লোকেরা আবার ছুটে এসে বোকা বনে গেল।"
+   },
+   {
+    "scene": "🐯🐑😱",
+    "image": "",
+    "text": "তারপর একদিন সত্যিই বাঘ এলো! ছেলেটি চিৎকার করল, \"বাঘ! বাঘ! বাঁচাও!\""
+   },
+   {
+    "scene": "🏘️🙉👦😢",
+    "image": "",
+    "text": "এবার কেউ এল না। সবাই ভাবল, সে আবার মিথ্যা বলছে। বাঘ একটি ভেড়া নিয়ে গেল। ছেলেটি খুব কাঁদল।"
+   }
+  ],
+  "moral": "মিথ্যা বললে মানুষ বিশ্বাস হারায়। সবসময় সত্য কথা বলো।",
+  "quiz": [
+   {
+    "question": "ছেলেটি কী নিয়ে মিথ্যা বলত?",
+    "options": [
+     "বাঘ এসেছে 🐯",
+     "বৃষ্টি হচ্ছে",
+     "আগুন লেগেছে"
+    ],
+    "answer": 0
+   },
+   {
+    "question": "শেষবার কেন কেউ এল না?",
+    "options": [
+     "সবাই ভাবল সে মিথ্যা বলছে",
+     "সবাই ঘুমাচ্ছিল",
+     "রাস্তা বন্ধ ছিল"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ {
+  "id": "lobhi-kukur",
+  "title": "লোভী কুকুর",
+  "language": "bn",
+  "emoji": "🐕",
+  "color": "#9B5CFF",
+  "ageGroups": [
+   "2-4",
+   "5-7",
+   "8-10"
+  ],
+  "published": true,
+  "pages": [
+   {
+    "scene": "🐕🦴😋",
+    "image": "",
+    "text": "একটি কুকুর একটা বড় হাড় পেল। সে খুব খুশি হলো।"
+   },
+   {
+    "scene": "🐕🌉🏞️",
+    "image": "",
+    "text": "হাড়টি মুখে নিয়ে সে নদীর ওপরের ছোট সাঁকো দিয়ে যাচ্ছিল।"
+   },
+   {
+    "scene": "🐕👀💧",
+    "image": "",
+    "text": "পানিতে তাকিয়ে সে দেখল, আরেকটা কুকুরের মুখেও একটা হাড়!"
+   },
+   {
+    "scene": "🐕😤🦴",
+    "image": "",
+    "text": "লোভী কুকুর ভাবল, \"ওই হাড়টাও আমার চাই!\" সে ঘেউ ঘেউ করতে মুখ খুলল।"
+   },
+   {
+    "scene": "💦🦴🐕😢",
+    "image": "",
+    "text": "ঝপাং! তার নিজের হাড়টা নদীতে পড়ে গেল। পানির কুকুরটা ছিল তারই ছায়া। এখন তার কিছুই রইল না।"
+   }
+  ],
+  "moral": "যা আছে তাতেই খুশি থাকো। লোভ করলে সব হারাতে হয়।",
+  "quiz": [
+   {
+    "question": "কুকুর পানিতে কী দেখেছিল?",
+    "options": [
+     "নিজের ছায়া 🪞",
+     "একটি মাছ",
+     "একটি বিড়াল"
+    ],
+    "answer": 0
+   },
+   {
+    "question": "হাড়টির কী হলো?",
+    "options": [
+     "নদীতে পড়ে গেল",
+     "সে খেয়ে ফেলল",
+     "বন্ধুকে দিল"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ {
+  "id": "sot-kathure",
+  "title": "সৎ কাঠুরে",
+  "language": "bn",
+  "emoji": "🪓",
+  "color": "#22B573",
+  "ageGroups": [
+   "2-4",
+   "5-7",
+   "8-10"
+  ],
+  "published": true,
+  "pages": [
+   {
+    "scene": "🧑‍🌾🌲🪓",
+    "image": "",
+    "text": "এক গরিব কাঠুরে নদীর ধারে কাঠ কাটছিল।"
+   },
+   {
+    "scene": "🪓💦😟",
+    "image": "",
+    "text": "হঠাৎ তার কুড়ালটি হাত ফসকে গভীর নদীতে পড়ে গেল। সে কেঁদে বলল, \"এখন আমি কাজ করব কীভাবে?\""
+   },
+   {
+    "scene": "🧚✨🪓",
+    "image": "",
+    "text": "নদী থেকে এক দয়ালু পরী উঠে এল। সে একটি সোনার কুড়াল দেখিয়ে বলল, \"এটা কি তোমার?\" কাঠুরে বলল, \"না।\""
+   },
+   {
+    "scene": "🧚🥈🪓",
+    "image": "",
+    "text": "পরী একটি রুপার কুড়াল আনল। কাঠুরে বলল, \"না, এটাও আমার নয়।\""
+   },
+   {
+    "scene": "🧚🪓😊",
+    "image": "",
+    "text": "এবার পরী তার পুরনো লোহার কুড়ালটি আনল। কাঠুরে খুশি হয়ে বলল, \"হ্যাঁ! এটাই আমার।\""
+   },
+   {
+    "scene": "🧚🎁🧑‍🌾",
+    "image": "",
+    "text": "পরী হেসে বলল, \"তুমি সৎ মানুষ।\" সে উপহার হিসেবে তিনটি কুড়ালই তাকে দিয়ে দিল।"
+   }
+  ],
+  "moral": "সবসময় সত্য বলো। সততাই সবচেয়ে বড় সম্পদ।",
+  "quiz": [
+   {
+    "question": "নদীতে কী পড়ে গিয়েছিল?",
+    "options": [
+     "কুড়াল 🪓",
+     "জুতা",
+     "টুপি"
+    ],
+    "answer": 0
+   },
+   {
+    "question": "পরী কেন তিনটি কুড়ালই দিল?",
+    "options": [
+     "কাঠুরে সৎ ছিল",
+     "কাঠুরে ধনী ছিল",
+     "কাঠুরে কাঁদছিল"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ {
+  "id": "tuntuni-o-biral",
+  "title": "টুনটুনি ও বিড়াল",
+  "language": "bn",
+  "emoji": "🐦",
+  "color": "#FFC93C",
+  "ageGroups": [
+   "2-4",
+   "5-7",
+   "8-10"
+  ],
+  "published": true,
+  "pages": [
+   {
+    "scene": "🐦🌿🏡",
+    "image": "",
+    "text": "বাগানের এক বেগুন গাছে টুনটুনি পাখি সুন্দর একটা বাসা বানাল। বাসায় তার তিনটি ছোট্ট ছানা।"
+   },
+   {
+    "scene": "🐱👀🐦",
+    "image": "",
+    "text": "এক দুষ্টু বিড়াল রোজ গাছের নিচে এসে বসে থাকে। সে ছানাগুলো খেতে চায়।"
+   },
+   {
+    "scene": "🐱🗣️🐦",
+    "image": "",
+    "text": "বিড়াল মিষ্টি করে বলল, \"টুনটুনি, তোমার ছানাদের একটু দেখাও না, আমি আদর করব।\""
+   },
+   {
+    "scene": "🐦🤔💡",
+    "image": "",
+    "text": "চালাক টুনটুনি বুঝে ফেলল। সে বলল, \"আগে ছানাদের একটু বড় হতে দাও, তারপর দেখাব।\""
+   },
+   {
+    "scene": "🐦🐣🐣🐣",
+    "image": "",
+    "text": "কয়েক দিনে ছানারা উড়তে শিখে গেল। টুনটুনি বলল, \"চলো, সবাই উড়ে যাই!\""
+   },
+   {
+    "scene": "🐦💨🐱😮",
+    "image": "",
+    "text": "বিড়াল এসে দেখে বাসা খালি! টুনটুনি আর তার ছানারা উঁচু ডালে বসে গান গাইছে।"
+   }
+  ],
+  "moral": "বুদ্ধি থাকলে ছোটরাও বিপদ থেকে বাঁচতে পারে। অচেনা মিষ্টি কথায় ভুলতে নেই।",
+  "quiz": [
+   {
+    "question": "টুনটুনির বাসা কোথায় ছিল?",
+    "options": [
+     "বেগুন গাছে 🌿",
+     "পুকুরে",
+     "ছাদে"
+    ],
+    "answer": 0
+   },
+   {
+    "question": "বিড়াল কী চাইত?",
+    "options": [
+     "ছানাদের খেতে",
+     "গান শুনতে",
+     "বাসা বানাতে"
+    ],
+    "answer": 0
+   }
+  ]
+ },
+ {
+  "id": "banorer-ruti-bhag",
+  "title": "বানরের রুটি ভাগ",
+  "language": "bn",
+  "emoji": "🐒",
+  "color": "#00C2A8",
+  "ageGroups": [
+   "2-4",
+   "5-7",
+   "8-10"
+  ],
+  "published": true,
+  "pages": [
+   {
+    "scene": "🐱🍞🐱",
+    "image": "",
+    "text": "দুটি বিড়াল একটা রুটি পেল। কিন্তু কে বেশি খাবে, তা নিয়ে তারা ঝগড়া শুরু করল।"
+   },
+   {
+    "scene": "🐒⚖️🍞",
+    "image": "",
+    "text": "এক চালাক বানর বলল, \"ঝগড়া কোরো না। আমি দাঁড়িপাল্লায় সমান ভাগ করে দিচ্ছি।\""
+   },
+   {
+    "scene": "🐒⚖️😋",
+    "image": "",
+    "text": "বানর রুটি দুই ভাগ করল। যে ভাগ ভারী, সেখান থেকে এক কামড় খেয়ে নিল।"
+   },
+   {
+    "scene": "🐒😋😋",
+    "image": "",
+    "text": "এবার অন্য ভাগটি ভারী হলো। বানর সেখান থেকেও কামড় দিল। এভাবে চলতেই থাকল।"
+   },
+   {
+    "scene": "🐒🍞❌🐱😢",
+    "image": "",
+    "text": "শেষে রুটির আর কিছুই রইল না! বানর সব খেয়ে চলে গেল। বিড়াল দুটি হাঁ করে তাকিয়ে রইল।"
+   }
+  ],
+  "moral": "ঝগড়া করলে নিজেদেরই ক্ষতি হয়। মিলেমিশে ভাগ করে নাও।",
+  "quiz": [
+   {
+    "question": "বিড়ালরা কী নিয়ে ঝগড়া করছিল?",
+    "options": [
+     "রুটি 🍞",
+     "বল",
+     "দুধ"
+    ],
+    "answer": 0
+   },
+   {
+    "question": "শেষে রুটি কে খেল?",
+    "options": [
+     "বানর 🐒",
+     "বড় বিড়াল",
+     "ছোট বিড়াল"
+    ],
+    "answer": 0
+   }
+  ]
+ }
 ]

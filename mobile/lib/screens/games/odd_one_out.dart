@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../../models/content.dart';
+import '../../i18n.dart';
+import '../../localize.dart';
 import '../../services/logic.dart';
 import '../../services/speech_service.dart';
 import '../../state/app_state.dart';
@@ -21,6 +23,7 @@ class _OddOneOutState extends State<OddOneOut> {
   final wrong = <String>{};
   bool found = false;
   int score = 0;
+  String get _ui => context.read<AppState>().profile.uiLang == 'bn' ? 'bn' : 'en';
 
   @override
   void initState() {
@@ -45,7 +48,7 @@ class _OddOneOutState extends State<OddOneOut> {
         found = true;
         score++;
       });
-      SpeechService.instance.speak('Yes! ${it.name} is not in ${group.title}. It belongs to ${oddGroup.title}.');
+      SpeechService.instance.speak(tr(_ui, 'oddRight', {'x': itemName(it, _ui), 'g': topicTitle(group, _ui), 'o': topicTitle(oddGroup, _ui)}), lang: _ui);
       if (score % 3 == 0) finishActivity(context, 'game', id: 'odd', name: 'Odd one out x3', stars: 2);
     } else {
       tapFeedback();
@@ -61,10 +64,10 @@ class _OddOneOutState extends State<OddOneOut> {
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
-          const Text(
-            'Which one does not belong?',
+          Text(
+            tr(_ui, 'whichOdd'),
             textAlign: TextAlign.center,
-            style: TextStyle(fontSize: 24, fontWeight: FontWeight.w800),
+            style: const TextStyle(fontSize: 24, fontWeight: FontWeight.w800),
           ),
           const SizedBox(height: 14),
           Center(
@@ -88,7 +91,7 @@ class _OddOneOutState extends State<OddOneOut> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               AnimatedEmoji(it.emoji, size: 56, anim: found && it.id == odd.id ? 'wobble' : 'float'),
-                              Text(it.name, style: const TextStyle(fontWeight: FontWeight.w700)),
+                              Text(itemName(it, _ui), style: const TextStyle(fontWeight: FontWeight.w700)),
                             ],
                           ),
                         ),
@@ -101,13 +104,13 @@ class _OddOneOutState extends State<OddOneOut> {
           if (found) ...[
             const SizedBox(height: 14),
             Text(
-              '${odd.emoji} belongs to ${oddGroup.emoji} ${oddGroup.title}; the others are ${group.emoji} ${group.title}!',
+              '${odd.emoji} → ${oddGroup.emoji} ${topicTitle(oddGroup, _ui)} · ${group.emoji} ${topicTitle(group, _ui)}',
               textAlign: TextAlign.center,
               style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w700),
             ),
             const SizedBox(height: 10),
             Center(
-              child: KidButton(label: '➡️ Next', onTap: () => setState(_make)),
+              child: KidButton(label: '➡️ ${tr(_ui, 'next')}', onTap: () => setState(_make)),
             ),
           ],
         ],

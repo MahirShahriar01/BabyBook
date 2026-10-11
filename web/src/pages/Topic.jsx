@@ -2,15 +2,17 @@ import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useParams } from 'react-router-dom';
 import { useApp } from '../store/AppContext.jsx';
-import { Page, TopBar, shuffle } from '../components/ui.jsx';
+import { Page, TopBar, VoiceHint, shuffle } from '../components/ui.jsx';
 import SayIt from '../components/SayIt.jsx';
 import { speak } from '../lib/speech.js';
+import { itemFact, itemName, topicTitle } from '../lib/localize.js';
 import { sfx } from '../lib/sound.js';
 
 /** One topic (animals, vehicles, ...): animated card carousel + "find it" mini game. */
 export default function Topic() {
   const { id } = useParams();
-  const { content, profile, progress, complete } = useApp();
+  const { content, profile, progress, complete, t } = useApp();
+  const ui = profile.uiLang === 'bn' ? 'bn' : 'en';
   const topic = (content.topics || []).find((tp) => tp.id === id);
   const [idx, setIdx] = useState(0);
   const [mode, setMode] = useState('learn'); // learn | find
@@ -23,10 +25,13 @@ export default function Topic() {
   const key = (it) => `explore:${topic.id}:${it.id}`;
 
   const present = async (it) => {
-    const line = `${it.name}. ${it.sound ? it.sound + ' ' : ''}${it.fact}`;
     if (!progress.done[key(it)]) complete('explore', { id: `${topic.id}:${it.id}`, name: it.name, celebrate: false });
-    await speak(line, { lang: 'en', rate: 0.9 });
-    if (bn && it.bn) await speak(it.bn, { lang: 'bn' });
+    const stop = ui === 'bn' ? '।' : '.';
+    // Bangla mode: Bangla name + Bangla fact, then the English word ("ইংরেজিতে Car").
+    // English mode: English, plus the Bangla name when the kid is learning Bangla.
+    const line = `${itemName(it, ui)}${stop} ${it.sound ? it.sound + ' ' : ''}${itemFact(it, ui)}`;
+    await speak(ui === 'bn' ? `${line} ইংরেজিতে, ${it.name}.` : line, { lang: ui });
+    if (ui !== 'bn' && bn && it.bn) await speak(it.bn, { lang: 'bn' });
   };
 
   const go = (d) => {
@@ -40,18 +45,18 @@ export default function Topic() {
     const opts = shuffle(items).slice(0, Math.min(4, items.length));
     const target = opts[Math.floor(Math.random() * opts.length)];
     setRound({ opts, target, wrong: [] });
-    speak(`Find the ${target.name}!`, { lang: 'en' });
+    speak(t('find', { x: itemName(target, ui) }), { lang: ui });
   };
 
   const pick = (o) => {
     if (o.id === round.target.id) {
       complete('game', { id: `find:${topic.id}`, name: `Find ${topic.title}` });
       setTimeout(newRound, 1400);
-      speak(`Yes! ${o.name}!`);
+      speak(t('yesIt', { x: itemName(o, ui) }), { lang: ui });
     } else {
       sfx.wrong();
       setRound({ ...round, wrong: [...round.wrong, o.id] });
-      speak(`That is a ${o.name}. Try again!`);
+      speak(t('thatIs', { x: itemName(o, ui) }), { lang: ui });
     }
   };
 
@@ -59,10 +64,11 @@ export default function Topic() {
 
   return (
     <Page>
-      <TopBar title={topic.title} emoji={topic.emoji} back="/explore" />
+      <TopBar title={topicTitle(topic, ui)} emoji={topic.emoji} back="/explore" />
+      <VoiceHint lang={ui} />
       <div className="pill-tabs">
         <button className={mode === 'learn' ? 'active' : ''} onClick={() => setMode('learn')}>
-          👀 Learn
+          👀 {t('learn')}
         </button>
         <button
           className={mode === 'find' ? 'active' : ''}
@@ -71,7 +77,7 @@ export default function Topic() {
             newRound();
           }}
         >
-          🔍 Find it game
+          🔍 {t('findGame')}
         </button>
       </div>
 
@@ -105,11 +111,11 @@ export default function Topic() {
               <div className="center" style={{ gap: 6, marginTop: 10 }}>
                 <h2 style={{ fontSize: '2.4rem' }}>
                   {item.count ? `${item.count} · ` : ''}
-                  {item.name} {item.emoji && item.count ? item.emoji : ''}
+                  {itemName(item, ui)} {item.emoji && item.count ? item.emoji : ''}
                 </h2>
-                {item.bn && <div style={{ fontSize: '1.5rem', fontWeight: 700 }}>{item.bn}</div>}
+                {ui === 'bn' ? <div style={{ fontSize: '1.4rem', fontWeight: 700 }}>🇬🇧 {item.name}</div> : item.bn && <div style={{ fontSize: '1.5rem', fontWeight: 700 }}>{item.bn}</div>}
                 {item.sound && <div className="chip">🔊 “{item.sound}”</div>}
-                <p style={{ fontSize: '1.2rem', maxWidth: 560 }}>{item.fact}</p>
+                <p style={{ fontSize: '1.2rem', maxWidth: 560 }}>{itemFact(item, ui)}</p>
               </div>
             </motion.div>
           </AnimatePresence>
@@ -118,13 +124,13 @@ export default function Topic() {
               ⬅️
             </button>
             <button className="btn" onClick={() => present(item)}>
-              🔊 Tell me
+              🔊 {t('tellMe')}
             </button>
             <button className="btn ghost" onClick={() => go(1)}>
               ➡️
             </button>
           </div>
-          <SayIt word={item.name} lang="en" onScore={(r) => r.stars >= 2 && complete('explore', { id: `say:${item.id}`, name: item.name, stars: r.stars })} />
+          <SayIt word={itemName(item, ui)} lang={ui} onScore={(r) => r.stars >= 2 && complete('explore', { id: `say:${item.id}`, name: item.name, stars: r.stars })} />
           <div className="grid" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(70px, 1fr))', marginTop: 14 }}>
             {items.map((it, i) => (
               <button
@@ -148,10 +154,10 @@ export default function Topic() {
       {mode === 'find' && round && (
         <div className="card center" style={{ gap: 16 }}>
           <h2>
-            Find the <span style={{ color: 'var(--primary)' }}>{round.target.name}</span>!
+            {t('find', { x: itemName(round.target, ui) })}
           </h2>
-          <button className="btn ghost small" onClick={() => speak(`Find the ${round.target.name}!`)}>
-            🔈 Hear again
+          <button className="btn ghost small" onClick={() => speak(t('find', { x: itemName(round.target, ui) }), { lang: ui })}>
+            🔈 {t('hearAgain')}
           </button>
           <div className="grid" style={{ gridTemplateColumns: 'repeat(2, 1fr)', width: 'min(460px, 100%)' }}>
             {round.opts.map((o) => (

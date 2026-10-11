@@ -1,9 +1,9 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { useApp } from '../store/AppContext.jsx';
 import { levelFor } from '../lib/progress.js';
-import { speak } from '../lib/speech.js';
+import { missingVoice, onVoicesReady, speak } from '../lib/speech.js';
 import { sfx } from '../lib/sound.js';
 
 const FLOATERS = ['⭐', '🎈', '☁️', '✨', '🪐', '🌈', '🫧', '💫', '🍭', '🦋'];
@@ -237,3 +237,40 @@ export const shuffle = (arr) => {
   }
   return a;
 };
+
+const VOICE_HELP = {
+  android: {
+    bn: 'Android: Settings → System → Languages → Text-to-speech → Google → ⚙️ → Install voice data → বাংলা (বাংলাদেশ). Then reopen the app.',
+    hi: 'Android: Settings → Text-to-speech → Google → ⚙️ → Install voice data → हिन्दी.',
+  },
+  windows: {
+    bn: 'Windows: open this site in Microsoft Edge (it has natural Bangla voices), or Settings → Time & language → Speech → Add voices → Bangla.',
+    hi: 'Windows: use Microsoft Edge, or Settings → Time & language → Speech → Add voices → Hindi.',
+  },
+  apple: {
+    bn: 'iPhone/Mac: Settings → Accessibility → Spoken Content → Voices → add a Bangla voice if available, or use Chrome on Android / Microsoft Edge.',
+    hi: 'iPhone/Mac: Settings → Accessibility → Spoken Content → Voices → Hindi.',
+  },
+};
+const LANG_NAMES = { bn: { en: 'Bangla', bn: 'বাংলা' }, hi: { en: 'Hindi', bn: 'হিন্দি' }, es: { en: 'Spanish', bn: 'স্প্যানিশ' }, fr: { en: 'French', bn: 'ফরাসি' } };
+
+/** Friendly notice when the device cannot speak a language, with how to fix it. */
+export function VoiceHint({ lang }) {
+  const { t, settings } = useApp();
+  const [missing, setMissing] = useState(false);
+  const [open, setOpen] = useState(false);
+  useEffect(() => onVoicesReady(() => setMissing(missingVoice(lang))), [lang, settings.voice]);
+  if (!missing || lang === 'en') return null;
+  const ua = navigator.userAgent;
+  const os = /android/i.test(ua) ? 'android' : /iphone|ipad|mac/i.test(ua) ? 'apple' : 'windows';
+  const help = VOICE_HELP[os][lang] || VOICE_HELP.android.bn;
+  return (
+    <div className="card" style={{ margin: '0 0 12px', padding: 12, fontSize: '0.95rem', fontWeight: 600 }}>
+      🔇 {t('noVoice', { lang: LANG_NAMES[lang]?.[t.lang] || lang })}{' '}
+      <button className="btn ghost small" onClick={() => setOpen((o) => !o)}>
+        {t('fixVoice')}
+      </button>
+      {open && <p style={{ margin: '8px 0 0' }}>👨‍👩‍👧 {help}</p>}
+    </div>
+  );
+}

@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { listen, speak, sttSupported } from '../lib/speech.js';
 import { pronunciationScore, syllables } from '../lib/buddyEngine.js';
 import { sfx } from '../lib/sound.js';
+import { useApp } from '../store/AppContext.jsx';
 
 const FEEDBACK = {
   en: ['Let\'s try again together!', 'Good try!', 'Very good!', 'Perfect pronunciation!'],
@@ -17,6 +18,7 @@ const FEEDBACK = {
  * with the target and give 0-3 stars plus a slow, syllable-by-syllable model answer.
  */
 export default function SayIt({ word, lang = 'en', onScore }) {
+  const { t } = useApp();
   const [state, setState] = useState('idle'); // idle | listening | result | error
   const [res, setRes] = useState(null);
 
@@ -56,14 +58,18 @@ export default function SayIt({ word, lang = 'en', onScore }) {
       <button className={`mic ${state === 'listening' ? 'live' : ''}`} onClick={run} disabled={state === 'listening'} aria-label="Say it">
         🎤
       </button>
-      <b>{state === 'listening' ? 'Listening… say it now!' : `Tap and say "${word}"`}</b>
+      <b>{state === 'listening' ? t('listening') : t('sayWord', { x: word })}</b>
       {state === 'result' && res && (
         <motion.div initial={{ scale: 0.6, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} className="center" style={{ gap: 4 }}>
           <div style={{ fontSize: '2.2rem' }}>{'⭐'.repeat(res.stars) + '☆'.repeat(3 - res.stars)}</div>
           <div className="muted">
             I heard: “{res.heard || '…'}” · {res.score}%
           </div>
-          {res.stars < 3 && <div>Say it slowly: <b>{syllables(word).join(' · ')}</b></div>}
+          {res.stars < 3 && (
+            <div>
+              {t('sayingSlowly')}: <b>{syllables(word).join(' · ')}</b>
+            </div>
+          )}
         </motion.div>
       )}
       {state === 'error' && <div className="muted">I could not hear you. Check the microphone and try again 🎧</div>}

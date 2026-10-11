@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../i18n.dart';
+import '../localize.dart';
 import '../models/content.dart';
 import '../services/logic.dart';
 import '../services/speech_service.dart';
@@ -32,8 +33,8 @@ class ExploreScreen extends StatelessWidget {
           final seen = tp.items.where((it) => st.isDone('explore:${tp.id}:${it.id}')).length;
           return KidTile(
             emoji: tp.emoji,
-            label: tp.title,
-            sub: '$seen / ${tp.items.length} discovered',
+            label: topicTitle(tp, st.profile.uiLang),
+            sub: tr(st.profile.uiLang, 'discovered', {'n': seen, 't': tp.items.length}),
             color: tp.color,
             anim: 'float',
             onTap: () => go(context, TopicScreen(topic: tp)),
@@ -59,6 +60,7 @@ class _TopicScreenState extends State<TopicScreen> {
   final wrong = <String>{};
 
   Topic get tp => widget.topic;
+  String get _ui => context.read<AppState>().profile.uiLang == 'bn' ? 'bn' : 'en';
   TopicItem get item => tp.items[idx];
 
   @override
@@ -70,8 +72,12 @@ class _TopicScreenState extends State<TopicScreen> {
   Future<void> _present(TopicItem it) async {
     final st = context.read<AppState>();
     if (!st.isDone('explore:${tp.id}:${it.id}')) finishActivity(context, 'explore', id: '${tp.id}:${it.id}', name: it.name, celebrate: false);
-    await SpeechService.instance.speak('${it.name}. ${it.sound.isNotEmpty ? '${it.sound} ' : ''}${it.fact}', rate: 0.9);
-    if ((st.profile.uiLang == 'bn' || st.profile.learnLang == 'bn') && it.bn.isNotEmpty) await SpeechService.instance.speak(it.bn, lang: 'bn');
+    final ui = _ui;
+    final stop = ui == 'bn' ? '।' : '.';
+    // Bangla mode: Bangla name + Bangla fact, then the English word. English mode: English (+ Bangla name if learning Bangla).
+    final line = '${itemName(it, ui)}$stop ${it.sound.isNotEmpty ? '${it.sound} ' : ''}${itemFact(it, ui)}';
+    await SpeechService.instance.speak(ui == 'bn' ? '$line ইংরেজিতে, ${it.name}.' : line, lang: ui);
+    if (ui != 'bn' && st.profile.learnLang == 'bn' && it.bn.isNotEmpty) await SpeechService.instance.speak(it.bn, lang: 'bn');
   }
 
   void _goTo(int d) {
@@ -84,18 +90,18 @@ class _TopicScreenState extends State<TopicScreen> {
     opts = shuffled(tp.items).take(4).toList();
     target = shuffled(opts).first;
     wrong.clear();
-    SpeechService.instance.speak('Find the ${target!.name}!');
+    SpeechService.instance.speak(tr(_ui, 'find', {'x': itemName(target!, _ui)}), lang: _ui);
   }
 
   void _pick(TopicItem o) {
     if (o.id == target!.id) {
       finishActivity(context, 'game', id: 'find:${tp.id}', name: 'Find ${tp.title}');
-      SpeechService.instance.speak('Yes! ${o.name}!');
+      SpeechService.instance.speak(tr(_ui, 'yesIt', {'x': itemName(o, _ui)}), lang: _ui);
       Future.delayed(const Duration(milliseconds: 1400), () => mounted ? setState(_round) : null);
     } else {
       tapFeedback();
       setState(() => wrong.add(o.id));
-      SpeechService.instance.speak('That is a ${o.name}. Try again!');
+      SpeechService.instance.speak(tr(_ui, 'thatIs', {'x': itemName(o, _ui)}), lang: _ui);
     }
   }
 
@@ -103,7 +109,7 @@ class _TopicScreenState extends State<TopicScreen> {
   Widget build(BuildContext context) {
     final st = context.watch<AppState>();
     return KidScaffold(
-      title: tp.title,
+      title: topicTitle(tp, _ui),
       emoji: tp.emoji,
       body: ListView(
         padding: const EdgeInsets.all(14),
@@ -112,9 +118,9 @@ class _TopicScreenState extends State<TopicScreen> {
             spacing: 8,
             alignment: WrapAlignment.center,
             children: [
-              KidButton(label: '👀 Learn', ghost: findMode, onTap: () => setState(() => findMode = false)),
+              KidButton(label: '👀 ${tr(_ui, 'learn')}', ghost: findMode, onTap: () => setState(() => findMode = false)),
               KidButton(
-                label: '🔍 Find it game',
+                label: '🔍 ${tr(_ui, 'findGame')}',
                 ghost: !findMode,
                 onTap: () => setState(() {
                   findMode = true;
@@ -147,11 +153,11 @@ class _TopicScreenState extends State<TopicScreen> {
                       ),
                       if (item.count > 0) Wrap(children: [for (var i = 0; i < item.count; i++) Text(item.object, style: const TextStyle(fontSize: 30))]),
                       const SizedBox(height: 10),
-                      Text(item.count > 0 ? '${item.count} · ${item.name}' : item.name, style: const TextStyle(fontSize: 34, fontWeight: FontWeight.w800)),
-                      if (item.bn.isNotEmpty) Text(item.bn, style: const TextStyle(fontSize: 24, fontWeight: FontWeight.w700)),
+                      Text(item.count > 0 ? '${digits(item.count, _ui)} · ${itemName(item, _ui)}' : itemName(item, _ui), style: const TextStyle(fontSize: 34, fontWeight: FontWeight.w800)),
+                      if (_ui == 'bn') Text('🇬🇧 ${item.name}', style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w700)) else if (item.bn.isNotEmpty) Text(item.bn, style: const TextStyle(fontSize: 24, fontWeight: FontWeight.w700)),
                       if (item.sound.isNotEmpty) Text('🔊 "${item.sound}"', style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w700)),
                       const SizedBox(height: 6),
-                      Text(item.fact, textAlign: TextAlign.center, style: const TextStyle(fontSize: 18)),
+                      Text(itemFact(item, _ui), textAlign: TextAlign.center, style: const TextStyle(fontSize: 18)),
                     ],
                   ),
                 ),
@@ -163,14 +169,15 @@ class _TopicScreenState extends State<TopicScreen> {
               alignment: WrapAlignment.center,
               children: [
                 KidButton(label: '⬅️', ghost: true, onTap: () => _goTo(-1)),
-                KidButton(label: '🔊 Tell me', onTap: () => _present(item)),
+                KidButton(label: '🔊 ${tr(_ui, 'tellMe')}', onTap: () => _present(item)),
                 KidButton(label: '➡️', ghost: true, onTap: () => _goTo(1)),
               ],
             ),
             const SizedBox(height: 12),
             SayItCard(
               key: ValueKey('say${item.id}'),
-              word: item.name,
+              word: itemName(item, _ui),
+              lang: _ui,
               onScore: (s) => s >= 2 ? finishActivity(context, 'explore', id: 'say:${item.id}', name: item.name, stars: s) : null,
             ),
             const SizedBox(height: 12),
@@ -200,13 +207,13 @@ class _TopicScreenState extends State<TopicScreen> {
             ),
           ] else if (target != null) ...[
             Text(
-              'Find the ${target!.name}!',
+              tr(_ui, 'find', {'x': itemName(target!, _ui)}),
               textAlign: TextAlign.center,
               style: const TextStyle(fontSize: 28, fontWeight: FontWeight.w800),
             ),
             TextButton(
-              onPressed: () => SpeechService.instance.speak('Find the ${target!.name}!'),
-              child: const Text('🔈 Hear again', style: TextStyle(fontSize: 18)),
+              onPressed: () => SpeechService.instance.speak(tr(_ui, 'find', {'x': itemName(target!, _ui)}), lang: _ui),
+              child: Text('🔈 ${tr(_ui, 'hearAgain')}', style: const TextStyle(fontSize: 18)),
             ),
             GridView.count(
               shrinkWrap: true,

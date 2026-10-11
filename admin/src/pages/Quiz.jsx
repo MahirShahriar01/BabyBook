@@ -95,6 +95,23 @@ export default function Quiz() {
                 )}
               </div>
             </Field>
+            <Field label="বাংলা প্রশ্ন (Bangla question, optional)">
+              <Input value={draft.bn?.q} onChange={(v) => set({ bn: { q: v, options: draft.bn?.options || draft.options.map(() => '') } })} />
+            </Field>
+            {draft.bn?.q && (
+              <Field label="বাংলা উত্তরগুলো (same order as above)">
+                <div className="grid gap-2 sm:grid-cols-2">
+                  {draft.options.map((_, k) => (
+                    <Input
+                      key={k}
+                      value={draft.bn?.options?.[k]}
+                      placeholder={draft.options[k]}
+                      onChange={(v) => set({ bn: { ...draft.bn, options: draft.options.map((__, j) => (j === k ? v : draft.bn?.options?.[j] || '')) } })}
+                    />
+                  ))}
+                </div>
+              </Field>
+            )}
             <Field label="Ages">
               <AgeChips value={draft.ageGroups} onChange={(v) => set({ ageGroups: v })} />
             </Field>

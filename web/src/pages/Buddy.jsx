@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useApp } from '../store/AppContext.jsx';
-import { Page, TopBar } from '../components/ui.jsx';
+import { Page, TopBar, VoiceHint } from '../components/ui.jsx';
 import SayIt from '../components/SayIt.jsx';
 import { analyze, greeting } from '../lib/buddyEngine.js';
 import { listen, speak, stopSpeaking, sttSupported } from '../lib/speech.js';
@@ -145,6 +145,7 @@ export default function Buddy() {
   return (
     <Page>
       <TopBar title={t('buddy')} emoji="🤖" />
+      <VoiceHint lang={lang} />
       <div className="grid" style={{ gridTemplateColumns: 'minmax(0, 1fr)', gap: 14 }}>
         {/* persona + language pickers */}
         <div className="card">

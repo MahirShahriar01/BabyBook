@@ -99,7 +99,14 @@ export default function Alphabet() {
                 <Input value={draft.ttsLocale} onChange={(v) => set({ ttsLocale: v })} />
               </Field>
             </div>
-            <Toggle checked={draft.enabled !== false} onChange={(v) => set({ enabled: v })} label="Enabled in the apps" />
+            <div className="grid gap-3 sm:grid-cols-2">
+              <Field label="Letter phrase" hint='Spoken intro, e.g. "{char} for {word}", "{char}-তে {word}", "{char} से {word}"'>
+                <Input value={draft.letterPhrase} onChange={(v) => set({ letterPhrase: v })} />
+              </Field>
+              <div className="pt-6">
+                <Toggle checked={draft.enabled !== false} onChange={(v) => set({ enabled: v })} label="Enabled in the apps" />
+              </div>
+            </div>
 
             <div className="flex flex-wrap items-center gap-2">
               {draft.groups.map((x, i) => (
@@ -141,15 +148,19 @@ export default function Alphabet() {
                 </div>
                 <div className="space-y-2">
                   {group.letters.map((le, li) => (
-                    <div key={li} className="grid items-start gap-2 rounded-xl border border-slate-200 p-3 md:grid-cols-[70px_110px_1fr_40px]">
+                    <div key={li} className="grid items-start gap-2 rounded-xl border border-slate-200 p-3 md:grid-cols-[70px_170px_1fr_40px]">
                       <Input value={le.char} onChange={(v) => setLetter(li, { char: v })} className="text-center text-xl font-bold" />
-                      <Input value={le.sound} onChange={(v) => setLetter(li, { sound: v })} placeholder="sounds like" />
+                      <div className="space-y-1">
+                        <Input value={le.sound} onChange={(v) => setLetter(li, { sound: v })} placeholder="sounds like" />
+                        <Input value={le.name} onChange={(v) => setLetter(li, { name: v })} placeholder="spoken name (e.g. দন্ত্য ন)" />
+                      </div>
                       <div className="space-y-1">
                         {(le.words || []).map((w, wi) => (
-                          <div key={wi} className="grid gap-1 sm:grid-cols-[60px_1fr_1.4fr_32px]">
+                          <div key={wi} className="grid gap-1 sm:grid-cols-[60px_1fr_1fr_1.4fr_32px]">
                             <Input value={w.emoji} onChange={(v) => setWord(li, wi, { emoji: v })} />
                             <Input value={w.word} onChange={(v) => setWord(li, wi, { word: v })} placeholder="word" />
                             <Input value={w.meaning} onChange={(v) => setWord(li, wi, { meaning: v })} placeholder="meaning" />
+                            <Input value={w.sentence} onChange={(v) => setWord(li, wi, { sentence: v })} placeholder="kid sentence (spoken)" />
                             <Button size="sm" variant="ghost" onClick={() => setLetter(li, { words: le.words.filter((_, k) => k !== wi) })}>
                               ×
                             </Button>

@@ -98,4 +98,53 @@ void main() {
       expect(predictNext(['a', 'b', 'a', 'b', 'a'], ['a', 'b']).first.key, 'b');
     });
   });
+
+  group('speech segments', () {
+    test('mixed English + Bangla is split by script', () {
+      final s = speechSegments('Car. গাড়ি', 'en');
+      expect(s.map((x) => '${x.lang}:${x.text.trim()}').toList(), ['en:Car.', 'bn:গাড়ি']);
+      expect(s[1].start, 5);
+      expect(speechSegments('অ-তে অজগর', 'bn').map((x) => x.lang).toList(), ['bn']);
+      expect(speechSegments('দারুণ! Great job!', 'bn').map((x) => x.lang).toList(), ['bn', 'en']);
+      expect(speechSegments('৫ + ৩ = কত?', 'bn').map((x) => x.lang).toList(), ['bn']);
+    });
+  });
+
+  group('tracing score', () {
+    const n = 20;
+    // a vertical bar letter in columns 8..11
+    final glyph = List.generate(n * n, (k) => (k % n) >= 8 && (k % n) <= 11 && (k ~/ n) >= 2 && (k ~/ n) <= 17);
+    test('tracing along the letter scores high with little outside ink', () {
+      final drawn = List.filled(n * n, false);
+      stampStroke(drawn, n, [const Point(9.5, 2.0), const Point(9.5, 17.0)], 2.5);
+      final (cov, out) = traceScore(glyph, drawn, n);
+      expect(cov, greaterThan(0.6));
+      expect(out, lessThan(0.2));
+    });
+    test('scribbling away from the letter scores low', () {
+      final drawn = List.filled(n * n, false);
+      stampStroke(drawn, n, [const Point(1.0, 1.0), const Point(3.0, 18.0)], 2);
+      final (cov, out) = traceScore(glyph, drawn, n);
+      expect(cov, lessThan(0.1));
+      expect(out, greaterThan(0.8));
+    });
+  });
+
+  group('new games', () {
+    test('tic-tac-toe robot blocks and wins', () {
+      expect(robotMove(['X', 'X', null, null, 'O', null, null, null, null], skill: 1), 2);
+      expect(robotMove(['O', 'X', 'X', null, 'O', null, 'X', null, null], skill: 1), 8);
+      expect(tttWinner(['X', 'X', 'X', null, null, null, null, null, null]).$1, 'X');
+    });
+    test('more-or-less has exactly one right side', () {
+      for (final age in ['2-4', '5-7', '8-10']) {
+        for (var i = 0; i < 200; i++) {
+          final q = makeCompare(age);
+          expect(q.a == q.b, isFalse);
+          final right = q.askMore ? max(q.a, q.b) : min(q.a, q.b);
+          expect([q.a, q.b][q.answer], right);
+        }
+      }
+    });
+  });
 }

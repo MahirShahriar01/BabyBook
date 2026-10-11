@@ -22,9 +22,9 @@ All three run **offline out of the box** with bundled sample content. Connect Su
 | 🎮 | **Level-style onboarding**: name → age → hero (boy / girl / superhero / robot / cosmic) → color theme | ✅ | ✅ |
 | 🗺️ | **Adventure map** home with levels, stars, stickers, badges, daily missions and streaks | ✅ | ✅ |
 | 🔤 | **Alphabets**: English, Bangla (vowels, consonants, numbers), Spanish, French, Hindi + any admin-added language. Animated letters, word cards, **letter tracing with sparkles**, pronunciation scoring | ✅ | ✅ |
-| 📖 | **Storyteller**: page-by-page flipbook, narration with **word highlighting**, *moral of the story* card and quiz | ✅ | ✅ |
+| 📖 | **Storyteller**: **10 Bangla + 10 English stories** (and Spanish), page-by-page flipbook, narration with **word highlighting**, *moral of the story* card and quiz | ✅ | ✅ |
 | 📺 | **Age-curated cartoons** from YouTube (privacy-enhanced, no outbound links) — admin sets videos per age group | ✅ | ✅ |
-| 🧩 | **Brain games**: Kids Sudoku (3×3 icons / 4×4 / 6×6), Memory Match, What-comes-next patterns, Number Pop math, Odd One Out | ✅ | ✅ |
+| 🧩 | **10 brain games**: Kids Sudoku (3×3 icons / 4×4 / 6×6), Memory Match, Word Builder (spell in English or বাংলা), Letter Pop (listen & pop), What-comes-next, Number Pop, More or Less, Shadow Match, Odd One Out, Tic-Tac-Toe vs an AI robot | ✅ | ✅ |
 | 🌍 | **Explore**: animals, birds, fruits, vehicles, ships, planes, shapes, colors, numbers, countries, space, body, jobs, feelings, good habits — with audio facts, sounds, Bangla names and themed animations (drive / sail / fly / orbit…) | ✅ | ✅ |
 | ❓ | **General-knowledge quiz** filtered by age | ✅ | ✅ |
 | 🤖 | **Talking Buddy**: kid speaks or types in English / Bangla / Spanish / French / Hindi; buddy corrects grammar, dialect, punctuation and capitals, teaches polite/formal words and meanings, answers questions — **in voice and text**. 5 switchable voices. **100% free, on-device.** Optional cloud AI. | ✅ | ✅ |
